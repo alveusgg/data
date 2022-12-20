@@ -7,5 +7,14 @@
   },
   "training-center": {
     "label": "Training Center"
+  },
+  "pasture-shed": {
+    "label": "Pasture Shed"
+  },
+  "tools-shed": {
+    "label": "Tools Shed"
+  },
+  "purple-martin-nests": {
+    "label": "Purple Martin Nests"
   }
 }

@@ -6,8 +6,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821968,
-                    28.556568
+                    -38.822082,
+                    28.556527
                 ]
             },
             "properties": {
@@ -27,8 +27,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822182,
-                    28.556591
+                    -38.822175,
+                    28.556554
                 ]
             },
             "properties": {
@@ -48,8 +48,29 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822202,
-                    28.556683
+                    -38.822227,
+                    28.556617
+                ]
+            },
+            "properties": {
+                "id": "tortellini_puppy",
+                "name": "tortellini_puppy",
+                "type": "ambassador"
+            },
+            "bbox": [
+                -38.822182,
+                28.556591,
+                -38.822182,
+                28.556591
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822233,
+                    28.556689
                 ]
             },
             "properties": {
@@ -120,8 +141,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821909,
-                    28.556418
+                    -38.821937,
+                    28.556479
                 ]
             },
             "properties": {
@@ -141,8 +162,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.82214,
-                    28.556701
+                    -38.822108,
+                    28.556741
                 ]
             },
             "properties": {
@@ -162,8 +183,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822662,
-                    28.557214
+                    -38.82268,
+                    28.557211
                 ]
             },
             "properties": {
@@ -183,8 +204,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822874,
-                    28.557253
+                    -38.822923,
+                    28.557273
                 ]
             },
             "properties": {
@@ -246,8 +267,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822031,
-                    28.55633
+                    -38.821996,
+                    28.556368
                 ]
             },
             "properties": {
@@ -288,8 +309,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.823161,
-                    28.556696
+                    -38.823226,
+                    28.556666
                 ]
             },
             "properties": {
@@ -297,7 +318,7 @@
                 "name": "serrano",
                 "type": "ambassador"
             },
-                        "bbox": [
+            "bbox": [
                 -38.823161,
                 28.556696,
                 -38.823161,
@@ -330,8 +351,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822785,
-                    28.557194
+                    -38.822774,
+                    28.557174
                 ]
             },
             "properties": {
@@ -351,8 +372,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822608,
-                    28.557258
+                    -38.82261,
+                    28.557274
                 ]
             },
             "properties": {
@@ -372,8 +393,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822556,
-                    28.557215
+                    -38.822526,
+                    28.557204
                 ]
             },
             "properties": {
@@ -393,8 +414,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822117,
-                    28.556326
+                    -38.822077,
+                    28.556361
                 ]
             },
             "properties": {
@@ -435,8 +456,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821963,
-                    28.55637
+                    -38.821927,
+                    28.556412
                 ]
             },
             "properties": {
@@ -477,8 +498,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822214,
-                    28.556634
+                    -38.822184,
+                    28.556729
                 ]
             },
             "properties": {
@@ -498,8 +519,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822873,
-                    28.557188
+                    -38.822888,
+                    28.557182
                 ]
             },
             "properties": {
@@ -519,8 +540,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822788,
-                    28.557261
+                    -38.82278,
+                    28.557273
                 ]
             },
             "properties": {
@@ -561,8 +582,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822611,
-                    28.557169
+                    -38.822603,
+                    28.557149
                 ]
             },
             "properties": {
@@ -624,8 +645,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822084,
-                    28.556695
+                    -38.822025,
+                    28.556723
                 ]
             },
             "properties": {
@@ -645,8 +666,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.822023,
-                    28.556681
+                    -38.821978,
+                    28.556666
                 ]
             },
             "properties": {
@@ -666,8 +687,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821981,
-                    28.556649
+                    -38.821962,
+                    28.556601
                 ]
             },
             "properties": {
@@ -687,8 +708,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821958,
-                    28.556606
+                    -38.821997,
+                    28.556538
                 ]
             },
             "properties": {
@@ -775,11 +796,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "tools-shed-bg",
-                "name": "tools-shed-bg",
-                "type": "background"
-            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -787,10 +803,6 @@
                         [
                             -38.821799,
                             28.556719
-                        ],
-                        [
-                            -38.821892,
-                            28.556811
                         ],
                         [
                             -38.821892,
@@ -811,6 +823,11 @@
                     ]
                 ]
             },
+            "properties": {
+                "id": "tools-shed-bg",
+                "name": "tools-shed-bg",
+                "type": "background"
+            },
             "bbox": [
                 -38.821965,
                 28.556665,
@@ -820,11 +837,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "court-bg",
-                "type": "background",
-                "name": "court-bg"
-            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -842,20 +854,28 @@
                             28.55648
                         ],
                         [
-                            -38.82188,
-                            28.556532
+                            -38.821819,
+                            28.556572
                         ],
                         [
-                            -38.821893,
-                            28.556611
+                            -38.821749,
+                            28.556701
                         ],
                         [
-                            -38.821984,
-                            28.556663
+                            -38.821794,
+                            28.556712
                         ],
                         [
-                            -38.822035,
-                            28.556686
+                            -38.821871,
+                            28.556646
+                        ],
+                        [
+                            -38.821965,
+                            28.556624
+                        ],
+                        [
+                            -38.822058,
+                            28.556653
                         ],
                         [
                             -38.82215,
@@ -910,16 +930,12 @@
                             28.556383
                         ],
                         [
-                            -38.82206,
-                            28.556374
+                            -38.822084,
+                            28.556365
                         ],
                         [
                             -38.822025,
                             28.556376
-                        ],
-                        [
-                            -38.822001,
-                            28.556384
                         ],
                         [
                             -38.822001,
@@ -931,6 +947,11 @@
                         ]
                     ]
                 ]
+            },
+            "properties": {
+                "id": "court-bg",
+                "type": "background",
+                "name": "court-bg"
             },
             "bbox": [
                 -38.822369,
@@ -1044,11 +1065,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "training-center-bg",
-                "name": "training-center-bg",
-                "type": "background"
-            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -1076,6 +1092,11 @@
                     ]
                 ]
             },
+            "properties": {
+                "id": "training-center-bg",
+                "name": "training-center-bg",
+                "type": "background"
+            },
             "bbox": [
                 -38.822743,
                 28.556467,
@@ -1085,17 +1106,17 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "pasture-shed",
-                "name": "pasture-shed",
-                "type": "facility"
-            },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     -38.823001,
                     28.556582
                 ]
+            },
+            "properties": {
+                "id": "pasture-shed",
+                "name": "pasture-shed",
+                "type": "facility"
             },
             "bbox": [
                 -38.823001,
@@ -1106,11 +1127,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "house-bg",
-                "type": "background",
-                "name": "house-bg"
-            },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -1138,6 +1154,11 @@
                     ]
                 ]
             },
+            "properties": {
+                "id": "house-bg",
+                "type": "background",
+                "name": "house-bg"
+            },
             "bbox": [
                 -38.822371,
                 28.556456,
@@ -1147,17 +1168,17 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "purple-martin-nests",
-                "name": "purple-martin-nests",
-                "type": "facility"
-            },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     -38.82281,
                     28.556595
                 ]
+            },
+            "properties": {
+                "id": "purple-martin-nests",
+                "name": "purple-martin-nests",
+                "type": "facility"
             },
             "bbox": [
                 -38.82281,
@@ -1228,7 +1249,7 @@
             },
             "properties": {
                 "id": "dividing-fence",
-                "type": "background",
+                "type": "perimeter",
                 "name": "dividing-fence"
             },
             "bbox": [
@@ -1243,8 +1264,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.82283,
-                    28.557225
+                    -38.822832,
+                    28.557215
                 ]
             },
             "properties": {
@@ -1303,17 +1324,17 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "pasture",
-                "name": "pasture",
-                "type": "enclosure"
-            },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     -38.823425,
                     28.556883
                 ]
+            },
+            "properties": {
+                "id": "pasture",
+                "name": "pasture",
+                "type": "enclosure"
             },
             "bbox": [
                 -38.823425,
@@ -1422,8 +1443,8 @@
                         28.556798
                     ],
                     [
-                        -38.821766,
-                        28.556705
+                        -38.821773,
+                        28.556704
                     ],
                     [
                         -38.821628,
@@ -1525,11 +1546,6 @@
         },
         {
             "type": "Feature",
-            "properties": {
-                "id": "path3",
-                "type": "path",
-                "name": "path3"
-            },
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1571,6 +1587,11 @@
                     ]
                 ]
             },
+            "properties": {
+                "id": "path3",
+                "type": "path",
+                "name": "path3"
+            },
             "bbox": [
                 -38.822875,
                 28.556561,
@@ -1603,33 +1624,6 @@
                 28.556689,
                 -38.822303,
                 28.5568
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "path",
-                "id": "path4",
-                "name": "path4"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -38.821767,
-                        28.556704
-                    ],
-                    [
-                        -38.821886,
-                        28.556569
-                    ]
-                ]
-            },
-            "bbox": [
-                -38.821886,
-                28.556569,
-                -38.821767,
-                28.556704
             ]
         }
     ]

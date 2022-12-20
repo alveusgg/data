@@ -20,6 +20,13 @@
     "ambassadors": ["mia", "tico", "miley", "siren"],
     "nonAmbassadors": []
   },
+  "new-crow-enclosure": {
+    "label": "New crow enclosure",
+    "cams": [],
+    "facilities": [],
+    "ambassadors": [],
+    "nonAmbassadors": []
+  },
   "foxes": {
     "label": "Parrot aviary",
     "cams": ["parrotcam"],
