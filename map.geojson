@@ -471,8 +471,8 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "jalepeno",
-                "name": "jalepeno",
+                "id": "jalapeno",
+                "name": "jalapeno",
                 "type": "ambassador"
             },
             "geometry": {
