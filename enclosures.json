@@ -1,0 +1,51 @@
+{
+  "pasture": {
+    "label": "Pasture",
+    "cams": ["pasturecam"],
+    "facilities": [],
+    "ambassadors": ["stompy", "winnie", "serrano", "jalapeno"],
+    "nonAmbassadors": ["acero"]
+  },
+  "parrot-aviary": {
+    "label": "Parrot aviary",
+    "cams": ["parrotcam"],
+    "facilities": [],
+    "ambassadors": ["mia", "tico", "miley", "siren"],
+    "nonAmbassadors": []
+  },
+  "crow-aviary": {
+    "label": "Crow aviary",
+    "cams": ["parrotcam"],
+    "facilities": [],
+    "ambassadors": ["mia", "tico", "miley", "siren"],
+    "nonAmbassadors": []
+  },
+  "foxes": {
+    "label": "Parrot aviary",
+    "cams": ["parrotcam"],
+    "facilities": [],
+    "ambassadors": ["mia", "tico", "miley", "siren"],
+    "nonAmbassadors": []
+  },
+  "chincillas": {
+    "label": "Parrot aviary",
+    "cams": ["parrotcam"],
+    "facilities": [],
+    "ambassadors": ["moomin", "snork"],
+    "nonAmbassadors": []
+  },
+  "rats": {
+    "label": "Rat enclosure",
+    "cams": [],
+    "facilities": [],
+    "ambassadors": ["nilla", "chips-ahoy"],
+    "nonAmbassadors": []
+  },
+  "chickens": {
+    "label": "Chicken enclosure",
+    "cams": [],
+    "facilities": [],
+    "ambassadors": ["oliver", "nugget", "henrietta", "henrique"],
+    "nonAmbassadors": []
+  }
+}

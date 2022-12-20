@@ -1,0 +1,11 @@
+{
+  "nuthouse": {
+    "label": "Nutrition House"
+  },
+  "studio": {
+    "label": "Studio"
+  },
+  "training-center": {
+    "label": "Training Center"
+  }
+}
