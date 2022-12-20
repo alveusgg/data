@@ -114,27 +114,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.82268,
-                    28.557211
-                ]
-            },
-            "properties": {
-                "id": "henrique",
-                "name": "henrique",
-                "type": "ambassador"
-            },
-            "bbox": [
-                -38.822662,
-                28.557214,
-                -38.822662,
-                28.557214
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -38.822923,
                     28.557273
                 ]
@@ -282,34 +261,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.82261,
-                    28.557274
-                ]
-            },
-            "properties": {
-                "id": "henrietta",
-                "name": "henrietta",
-                "type": "ambassador"
-            },
-            "bbox": [
-                -38.822608,
-                28.557258,
-                -38.822608,
-                28.557258
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -38.822526,
                     28.557204
                 ]
             },
             "properties": {
-                "id": "nugget",
-                "name": "nugget",
+                "id": "nugget_henrique_henrietta",
+                "name": "nugget_henrique_henrietta",
                 "type": "ambassador"
             },
             "bbox": [
@@ -465,27 +423,6 @@
                 28.557261,
                 -38.822788,
                 28.557261
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822945,
-                    28.556793
-                ]
-            },
-            "properties": {
-                "id": "acero",
-                "name": "acero",
-                "type": "nonAmbassador"
-            },
-            "bbox": [
-                -38.822945,
-                28.556793,
-                -38.822945,
-                28.556793
             ]
         },
         {
