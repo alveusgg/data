@@ -15,7 +15,6 @@
                 "name": "georgie",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821968,
                 28.556568,
@@ -37,7 +36,6 @@
                 "name": "noodle",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822182,
                 28.556591,
@@ -59,7 +57,6 @@
                 "name": "barbara_baked-bean",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822202,
                 28.556683,
@@ -111,7 +108,6 @@
                 "stroke-width": 2,
                 "stroke-opacity": 1
             },
-            "id": "perimeter",
             "bbox": [
                 -38.824182,
                 28.556265,
@@ -129,11 +125,10 @@
                 ]
             },
             "properties": {
-                "id": "cips-ahoy",
-                "name": "cips-ahoy",
+                "id": "chips-ahoy",
+                "name": "chips-ahoy",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821909,
                 28.556418,
@@ -155,7 +150,6 @@
                 "name": "bb",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.82214,
                 28.556701,
@@ -177,7 +171,6 @@
                 "name": "henrique",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822662,
                 28.557214,
@@ -199,7 +192,6 @@
                 "name": "miley",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822874,
                 28.557253,
@@ -221,7 +213,6 @@
                 "name": "jalapeno",
                 "type": "ambassador"
             },
-            "id": "jalapeno",
             "bbox": [
                 -38.823217,
                 28.556843,
@@ -243,7 +234,6 @@
                 "name": "abbot",
                 "type": "ambassador"
             },
-            "id": "abbott",
             "bbox": [
                 -38.821116,
                 28.556605,
@@ -265,7 +255,6 @@
                 "name": "snork",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822031,
                 28.55633,
@@ -287,7 +276,6 @@
                 "name": "winnie",
                 "type": "ambassador"
             },
-            "id": "winnie",
             "bbox": [
                 -38.82302,
                 28.55668,
@@ -309,8 +297,7 @@
                 "name": "serrano",
                 "type": "ambassador"
             },
-            "id": "serrano",
-            "bbox": [
+                        "bbox": [
                 -38.823161,
                 28.556696,
                 -38.823161,
@@ -331,7 +318,6 @@
                 "name": "reed",
                 "type": "ambassador"
             },
-            "id": "reed",
             "bbox": [
                 -38.820617,
                 28.556809,
@@ -353,7 +339,6 @@
                 "name": "siren",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822785,
                 28.557194,
@@ -375,7 +360,6 @@
                 "name": "henrietta",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822608,
                 28.557258,
@@ -397,7 +381,6 @@
                 "name": "nugget",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822556,
                 28.557215,
@@ -419,7 +402,6 @@
                 "name": "moomin",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822117,
                 28.556326,
@@ -441,7 +423,6 @@
                 "name": "coconut",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821432,
                 28.556628,
@@ -463,7 +444,6 @@
                 "name": "nilla",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821963,
                 28.55637,
@@ -506,7 +486,6 @@
                 "name": "marty",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822214,
                 28.556634,
@@ -528,7 +507,6 @@
                 "name": "mia",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822873,
                 28.557188,
@@ -550,7 +528,6 @@
                 "name": "tico",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822788,
                 28.557261,
@@ -572,7 +549,6 @@
                 "name": "acero",
                 "type": "nonAmbassador"
             },
-            "id": "acero",
             "bbox": [
                 -38.822945,
                 28.556793,
@@ -594,7 +570,6 @@
                 "name": "oliver",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822611,
                 28.557169,
@@ -616,7 +591,6 @@
                 "name": "fenn",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.820393,
                 28.556813,
@@ -659,7 +633,6 @@
                 "name": "pickles",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822084,
                 28.556695,
@@ -681,7 +654,6 @@
                 "name": "ducky",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.822023,
                 28.556681,
@@ -703,7 +675,6 @@
                 "name": "mctrain",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821981,
                 28.556649,
@@ -725,7 +696,6 @@
                 "name": "patchy",
                 "type": "ambassador"
             },
-            "id": "coconut",
             "bbox": [
                 -38.821958,
                 28.556606,
@@ -1345,7 +1315,6 @@
                     28.556883
                 ]
             },
-            "id": "pasture",
             "bbox": [
                 -38.823425,
                 28.556883,
