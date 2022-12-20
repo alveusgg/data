@@ -6,8 +6,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821969,
-                    28.556602
+                    -38.821968,
+                    28.556568
                 ]
             },
             "properties": {
@@ -17,10 +17,10 @@
             },
             "id": "coconut",
             "bbox": [
-                -38.821969,
-                28.556602,
-                -38.821969,
-                28.556602
+                -38.821968,
+                28.556568,
+                -38.821968,
+                28.556568
             ]
         },
         {
@@ -28,21 +28,21 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821969,
-                    28.556602
+                    -38.822182,
+                    28.556591
                 ]
             },
             "properties": {
-                "id": "georgie",
-                "name": "georgie",
+                "id": "noodle",
+                "name": "noodle",
                 "type": "ambassador"
             },
             "id": "coconut",
             "bbox": [
-                -38.821969,
-                28.556602,
-                -38.821969,
-                28.556602
+                -38.822182,
+                28.556591,
+                -38.822182,
+                28.556591
             ]
         },
         {
@@ -50,21 +50,21 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.821969,
-                    28.556602
+                    -38.822202,
+                    28.556683
                 ]
             },
             "properties": {
-                "id": "georgie",
-                "name": "georgie",
+                "id": "barbara_baked-bean",
+                "name": "barbara_baked-bean",
                 "type": "ambassador"
             },
             "id": "coconut",
             "bbox": [
-                -38.821969,
-                28.556602,
-                -38.821969,
-                28.556602
+                -38.822202,
+                28.556683,
+                -38.822202,
+                28.556683
             ]
         },
         {
@@ -74,43 +74,740 @@
                 "coordinates": [
                     [
                         [
-                            -38.822035,
-                            28.556571
+                            -38.819722,
+                            28.556265
                         ],
                         [
-                            -38.822015,
-                            28.556624
+                            -38.81963,
+                            28.55732
                         ],
                         [
-                            -38.82214,
-                            28.556658
+                            -38.824131,
+                            28.55728
                         ],
                         [
-                            -38.822159,
-                            28.556605
+                            -38.824182,
+                            28.556757
                         ],
                         [
-                            -38.822035,
-                            28.556571
+                            -38.822193,
+                            28.556283
+                        ],
+                        [
+                            -38.819722,
+                            28.556265
                         ]
                     ]
                 ]
             },
             "properties": {
-                "id": "studio"
+                "id": "perimeter",
+                "fill": "#555555",
+                "name": "perimeter",
+                "type": "perimeter",
+                "stroke": "#555555",
+                "z-index": -100,
+                "fill-opacity": 0.5,
+                "stroke-width": 2,
+                "stroke-opacity": 1
+            },
+            "id": "perimeter",
+            "bbox": [
+                -38.824182,
+                28.556265,
+                -38.81963,
+                28.55732
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821909,
+                    28.556418
+                ]
+            },
+            "properties": {
+                "id": "cips-ahoy",
+                "name": "cips-ahoy",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.821909,
+                28.556418,
+                -38.821909,
+                28.556418
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.82214,
+                    28.556701
+                ]
+            },
+            "properties": {
+                "id": "bb",
+                "name": "bb",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.82214,
+                28.556701,
+                -38.82214,
+                28.556701
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822662,
+                    28.557214
+                ]
+            },
+            "properties": {
+                "id": "henrique",
+                "name": "henrique",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822662,
+                28.557214,
+                -38.822662,
+                28.557214
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822874,
+                    28.557253
+                ]
+            },
+            "properties": {
+                "id": "miley",
+                "name": "miley",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822874,
+                28.557253,
+                -38.822874,
+                28.557253
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.823217,
+                    28.556843
+                ]
+            },
+            "properties": {
+                "id": "jalapeno",
+                "name": "jalapeno",
+                "type": "ambassador"
+            },
+            "id": "jalapeno",
+            "bbox": [
+                -38.823217,
+                28.556843,
+                -38.823217,
+                28.556843
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821116,
+                    28.556605
+                ]
+            },
+            "properties": {
+                "id": "abbott",
+                "name": "abbot",
+                "type": "ambassador"
+            },
+            "id": "abbott",
+            "bbox": [
+                -38.821116,
+                28.556605,
+                -38.821116,
+                28.556605
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822031,
+                    28.55633
+                ]
+            },
+            "properties": {
+                "id": "snork",
+                "name": "snork",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822031,
+                28.55633,
+                -38.822031,
+                28.55633
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.82302,
+                    28.55668
+                ]
+            },
+            "properties": {
+                "id": "winnie",
+                "name": "winnie",
+                "type": "ambassador"
+            },
+            "id": "winnie",
+            "bbox": [
+                -38.82302,
+                28.55668,
+                -38.82302,
+                28.55668
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.823161,
+                    28.556696
+                ]
+            },
+            "properties": {
+                "id": "serrano",
+                "name": "serrano",
+                "type": "ambassador"
+            },
+            "id": "serrano",
+            "bbox": [
+                -38.823161,
+                28.556696,
+                -38.823161,
+                28.556696
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.820617,
+                    28.556809
+                ]
+            },
+            "properties": {
+                "id": "reed",
+                "name": "reed",
+                "type": "ambassador"
+            },
+            "id": "reed",
+            "bbox": [
+                -38.820617,
+                28.556809,
+                -38.820617,
+                28.556809
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822785,
+                    28.557194
+                ]
+            },
+            "properties": {
+                "id": "siren",
+                "name": "siren",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822785,
+                28.557194,
+                -38.822785,
+                28.557194
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822608,
+                    28.557258
+                ]
+            },
+            "properties": {
+                "id": "henrietta",
+                "name": "henrietta",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822608,
+                28.557258,
+                -38.822608,
+                28.557258
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822556,
+                    28.557215
+                ]
+            },
+            "properties": {
+                "id": "nugget",
+                "name": "nugget",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822556,
+                28.557215,
+                -38.822556,
+                28.557215
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822117,
+                    28.556326
+                ]
+            },
+            "properties": {
+                "id": "moomin",
+                "name": "moomin",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822117,
+                28.556326,
+                -38.822117,
+                28.556326
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821432,
+                    28.556628
+                ]
+            },
+            "properties": {
+                "id": "coconut",
+                "name": "coconut",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.821432,
+                28.556628,
+                -38.821432,
+                28.556628
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821963,
+                    28.55637
+                ]
+            },
+            "properties": {
+                "id": "nilla",
+                "name": "nilla",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.821963,
+                28.55637,
+                -38.821963,
+                28.55637
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822966,
+                    28.556983
+                ]
+            },
+            "properties": {
+                "id": "stompy",
+                "name": "stompy",
+                "type": "ambassador"
             },
             "bbox": [
-                -38.822159,
-                28.556571,
-                -38.822015,
-                28.556658
+                -38.822966,
+                28.556983,
+                -38.822966,
+                28.556983
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822214,
+                    28.556634
+                ]
+            },
+            "properties": {
+                "id": "marty",
+                "name": "marty",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822214,
+                28.556634,
+                -38.822214,
+                28.556634
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822873,
+                    28.557188
+                ]
+            },
+            "properties": {
+                "id": "mia",
+                "name": "mia",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822873,
+                28.557188,
+                -38.822873,
+                28.557188
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822788,
+                    28.557261
+                ]
+            },
+            "properties": {
+                "id": "tico",
+                "name": "tico",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822788,
+                28.557261,
+                -38.822788,
+                28.557261
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822945,
+                    28.556793
+                ]
+            },
+            "properties": {
+                "id": "acero",
+                "name": "acero",
+                "type": "nonAmbassador"
+            },
+            "id": "acero",
+            "bbox": [
+                -38.822945,
+                28.556793,
+                -38.822945,
+                28.556793
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822611,
+                    28.557169
+                ]
+            },
+            "properties": {
+                "id": "oliver",
+                "name": "oliver",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822611,
+                28.557169,
+                -38.822611,
+                28.557169
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.820393,
+                    28.556813
+                ]
+            },
+            "properties": {
+                "id": "fenn",
+                "name": "fenn",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.820393,
+                28.556813,
+                -38.820393,
+                28.556813
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822085,
+                    28.556617
+                ]
+            },
+            "properties": {
+                "id": "facility-studio",
+                "name": "studio",
+                "type": "facility"
+            },
+            "bbox": [
+                -38.822085,
+                28.556617,
+                -38.822085,
+                28.556617
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822084,
+                    28.556695
+                ]
+            },
+            "properties": {
+                "id": "pickles",
+                "name": "pickles",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822084,
+                28.556695,
+                -38.822084,
+                28.556695
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822023,
+                    28.556681
+                ]
+            },
+            "properties": {
+                "id": "ducky",
+                "name": "ducky",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.822023,
+                28.556681,
+                -38.822023,
+                28.556681
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821981,
+                    28.556649
+                ]
+            },
+            "properties": {
+                "id": "mctrain",
+                "name": "mctrain",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.821981,
+                28.556649,
+                -38.821981,
+                28.556649
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.821958,
+                    28.556606
+                ]
+            },
+            "properties": {
+                "id": "patchy",
+                "name": "patchy",
+                "type": "ambassador"
+            },
+            "id": "coconut",
+            "bbox": [
+                -38.821958,
+                28.556606,
+                -38.821958,
+                28.556606
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -38.822967,
+                            28.556488
+                        ],
+                        [
+                            -38.822716,
+                            28.55697
+                        ],
+                        [
+                            -38.822924,
+                            28.557093
+                        ],
+                        [
+                            -38.82357,
+                            28.55706
+                        ],
+                        [
+                            -38.823847,
+                            28.556969
+                        ],
+                        [
+                            -38.823995,
+                            28.556751
+                        ],
+                        [
+                            -38.822967,
+                            28.556488
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "id": "pasture-bg",
+                "name": "pasture-bg",
+                "type": "background"
+            },
+            "bbox": [
+                -38.823995,
+                28.556488,
+                -38.822716,
+                28.557093
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.822045,
+                    28.556434
+                ]
+            },
+            "properties": {
+                "id": "facility-nuthouse",
+                "name": "nuthouse",
+                "type": "facility"
+            },
+            "bbox": [
+                -38.822045,
+                28.556434,
+                -38.822045,
+                28.556434
             ]
         },
         {
             "type": "Feature",
             "properties": {
-                "id": "shed",
-                "name": "shed",
+                "id": "tools-shed-bg",
+                "name": "tools-shed-bg",
                 "type": "background"
             },
             "geometry": {
@@ -153,91 +850,123 @@
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -38.819722,
-                            28.556265
-                        ],
-                        [
-                            -38.81963,
-                            28.55732
-                        ],
-                        [
-                            -38.824131,
-                            28.55728
-                        ],
-                        [
-                            -38.824182,
-                            28.556757
-                        ],
-                        [
-                            -38.822193,
-                            28.556283
-                        ],
-                        [
-                            -38.819722,
-                            28.556265
-                        ]
-                    ]
-                ]
-            },
             "properties": {
-                "id": "perimeter",
-                "fill": "#555555",
-                "name": "perimeter",
+                "id": "court-bg",
                 "type": "background",
-                "stroke": "#555555",
-                "z-index": -100,
-                "fill-opacity": 0.5,
-                "stroke-width": 2,
-                "stroke-opacity": 1
+                "name": "court-bg"
             },
-            "id": "perimeter",
-            "bbox": [
-                -38.824182,
-                28.556265,
-                -38.81963,
-                28.55732
-            ]
-        },
-        {
-            "type": "Feature",
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            -38.822079,
-                            28.556367
+                            -38.82198,
+                            28.556396
                         ],
                         [
-                            -38.821964,
-                            28.55644
+                            -38.821937,
+                            28.556434
                         ],
                         [
-                            -38.822006,
-                            28.556491
+                            -38.821891,
+                            28.55648
                         ],
                         [
-                            -38.822119,
-                            28.556426
+                            -38.82188,
+                            28.556532
                         ],
                         [
-                            -38.822079,
-                            28.556367
+                            -38.821893,
+                            28.556611
+                        ],
+                        [
+                            -38.821984,
+                            28.556663
+                        ],
+                        [
+                            -38.822035,
+                            28.556686
+                        ],
+                        [
+                            -38.82215,
+                            28.5567
+                        ],
+                        [
+                            -38.822222,
+                            28.556706
+                        ],
+                        [
+                            -38.822276,
+                            28.556697
+                        ],
+                        [
+                            -38.822332,
+                            28.556673
+                        ],
+                        [
+                            -38.822369,
+                            28.556629
+                        ],
+                        [
+                            -38.822369,
+                            28.55658
+                        ],
+                        [
+                            -38.822354,
+                            28.556529
+                        ],
+                        [
+                            -38.82233,
+                            28.556496
+                        ],
+                        [
+                            -38.82231,
+                            28.556466
+                        ],
+                        [
+                            -38.822271,
+                            28.556438
+                        ],
+                        [
+                            -38.82222,
+                            28.556402
+                        ],
+                        [
+                            -38.822178,
+                            28.556386
+                        ],
+                        [
+                            -38.822149,
+                            28.556383
+                        ],
+                        [
+                            -38.82206,
+                            28.556374
+                        ],
+                        [
+                            -38.822025,
+                            28.556376
+                        ],
+                        [
+                            -38.822001,
+                            28.556384
+                        ],
+                        [
+                            -38.822001,
+                            28.556384
+                        ],
+                        [
+                            -38.82198,
+                            28.556396
                         ]
                     ]
                 ]
             },
-            "properties": {},
             "bbox": [
-                -38.822119,
-                28.556367,
-                -38.821964,
-                28.556491
+                -38.822369,
+                28.556374,
+                -38.82188,
+                28.556706
             ]
         },
         {
@@ -247,46 +976,38 @@
                 "coordinates": [
                     [
                         [
-                            -38.822967,
-                            28.556488
+                            -38.822965,
+                            28.556499
                         ],
                         [
-                            -38.822716,
-                            28.55697
+                            -38.822906,
+                            28.556618
                         ],
                         [
-                            -38.822924,
-                            28.557093
+                            -38.822992,
+                            28.556651
                         ],
                         [
-                            -38.82357,
-                            28.55706
+                            -38.823055,
+                            28.556527
                         ],
                         [
-                            -38.823847,
-                            28.556969
-                        ],
-                        [
-                            -38.823995,
-                            28.556751
-                        ],
-                        [
-                            -38.822967,
-                            28.556488
+                            -38.822965,
+                            28.556499
                         ]
                     ]
                 ]
             },
             "properties": {
-                "id": "pasture-bg",
-                "name": "pasture",
+                "id": "pasture-shed-bg",
+                "name": "pasture-shed-bg",
                 "type": "background"
             },
             "bbox": [
-                -38.823995,
-                28.556488,
-                -38.822716,
-                28.557093
+                -38.823055,
+                28.556499,
+                -38.822906,
+                28.556651
             ]
         },
         {
@@ -313,43 +1034,207 @@
         {
             "type": "Feature",
             "geometry": {
-                "type": "Point",
+                "type": "Polygon",
                 "coordinates": [
-                    -38.822074,
-                    28.55661
+                    [
+                        [
+                            -38.822078,
+                            28.556372
+                        ],
+                        [
+                            -38.821964,
+                            28.55644
+                        ],
+                        [
+                            -38.822006,
+                            28.556491
+                        ],
+                        [
+                            -38.822119,
+                            28.556426
+                        ],
+                        [
+                            -38.822078,
+                            28.556372
+                        ]
+                    ]
                 ]
             },
             "properties": {
-                "id": "facility-studio",
-                "name": "studio",
-                "type": "facility"
+                "id": "nuthouse-bg",
+                "name": "nuthouse-bg",
+                "type": "background"
             },
             "bbox": [
-                -38.822074,
-                28.55661,
-                -38.822074,
-                28.55661
+                -38.822119,
+                28.556372,
+                -38.821964,
+                28.556491
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "training-center-bg",
+                "name": "training-center-bg",
+                "type": "background"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -38.822642,
+                            28.556467
+                        ],
+                        [
+                            -38.822585,
+                            28.556555
+                        ],
+                        [
+                            -38.822686,
+                            28.556601
+                        ],
+                        [
+                            -38.822743,
+                            28.556509
+                        ],
+                        [
+                            -38.822642,
+                            28.556467
+                        ]
+                    ]
+                ]
+            },
+            "bbox": [
+                -38.822743,
+                28.556467,
+                -38.822585,
+                28.556601
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "pasture-shed",
+                "name": "pasture-shed",
+                "type": "facility"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.823001,
+                    28.556582
+                ]
+            },
+            "bbox": [
+                -38.823001,
+                28.556582,
+                -38.823001,
+                28.556582
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "house-bg",
+                "type": "background",
+                "name": "house-bg"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -38.822349,
+                            28.556584
+                        ],
+                        [
+                            -38.822371,
+                            28.556469
+                        ],
+                        [
+                            -38.822267,
+                            28.556456
+                        ],
+                        [
+                            -38.82224,
+                            28.556571
+                        ],
+                        [
+                            -38.822349,
+                            28.556584
+                        ]
+                    ]
+                ]
+            },
+            "bbox": [
+                -38.822371,
+                28.556456,
+                -38.82224,
+                28.556584
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "purple-martin-nests",
+                "name": "purple-martin-nests",
+                "type": "facility"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.82281,
+                    28.556595
+                ]
+            },
+            "bbox": [
+                -38.82281,
+                28.556595,
+                -38.82281,
+                28.556595
             ]
         },
         {
             "type": "Feature",
             "geometry": {
-                "type": "Point",
+                "type": "Polygon",
                 "coordinates": [
-                    -38.822044,
-                    28.556425
+                    [
+                        [
+                            -38.822035,
+                            28.556571
+                        ],
+                        [
+                            -38.822015,
+                            28.556624
+                        ],
+                        [
+                            -38.82214,
+                            28.556658
+                        ],
+                        [
+                            -38.822159,
+                            28.556605
+                        ],
+                        [
+                            -38.822035,
+                            28.556571
+                        ]
+                    ]
                 ]
             },
             "properties": {
-                "id": "facility-nuthouse",
-                "name": "nuthouse",
-                "type": "facility"
+                "id": "studio-bg",
+                "name": "studio-bg",
+                "type": "background"
             },
             "bbox": [
-                -38.822044,
-                28.556425,
-                -38.822044,
-                28.556425
+                -38.822159,
+                28.556571,
+                -38.822015,
+                28.556658
             ]
         },
         {
@@ -358,23 +1243,29 @@
                 "type": "LineString",
                 "coordinates": [
                     [
-                        -38.822499,
-                        28.5568
+                        -38.821941,
+                        28.556293
                     ],
                     [
-                        -38.822303,
-                        28.556689
+                        -38.821438,
+                        28.556731
+                    ],
+                    [
+                        -38.821367,
+                        28.557298
                     ]
                 ]
             },
             "properties": {
-                "type": "path"
+                "id": "dividing-fence",
+                "type": "background",
+                "name": "dividing-fence"
             },
             "bbox": [
-                -38.822499,
-                28.556689,
-                -38.822303,
-                28.5568
+                -38.821941,
+                28.556293,
+                -38.821367,
+                28.557298
             ]
         },
         {
@@ -424,6 +1315,49 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -38.820957,
+                    28.556817
+                ]
+            },
+            "properties": {
+                "id": "enclosure-new-crow-enclosure",
+                "name": "new-crow-enclosure",
+                "type": "enclosure"
+            },
+            "bbox": [
+                -38.820957,
+                28.556817,
+                -38.820957,
+                28.556817
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "pasture",
+                "name": "pasture",
+                "type": "enclosure"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -38.823425,
+                    28.556883
+                ]
+            },
+            "id": "pasture",
+            "bbox": [
+                -38.823425,
+                28.556883,
+                -38.823425,
+                28.556883
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -38.821273,
                     28.556682
                 ]
@@ -445,27 +1379,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -38.820957,
-                    28.556817
-                ]
-            },
-            "properties": {
-                "id": "enclosure-new-crow-enclosure",
-                "name": "new-crow-enclosure",
-                "type": "enclosure"
-            },
-            "bbox": [
-                -38.820957,
-                28.556817,
-                -38.820957,
-                28.556817
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     -38.820501,
                     28.556781
                 ]
@@ -480,36 +1393,6 @@
                 28.556781,
                 -38.820501,
                 28.556781
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -38.821941,
-                        28.556293
-                    ],
-                    [
-                        -38.821438,
-                        28.556731
-                    ],
-                    [
-                        -38.821367,
-                        28.557298
-                    ]
-                ]
-            },
-            "properties": {
-                "id": "fence",
-                "type": "background"
-            },
-            "bbox": [
-                -38.821941,
-                28.556293,
-                -38.821367,
-                28.557298
             ]
         },
         {
@@ -660,7 +1543,9 @@
                 ]
             },
             "properties": {
-                "type": "path"
+                "type": "path",
+                "id": "path1",
+                "name": "path1"
             },
             "bbox": [
                 -38.824091,
@@ -672,824 +1557,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "court",
-                "type": "background"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -38.82198,
-                            28.556396
-                        ],
-                        [
-                            -38.821937,
-                            28.556434
-                        ],
-                        [
-                            -38.821891,
-                            28.55648
-                        ],
-                        [
-                            -38.82188,
-                            28.556532
-                        ],
-                        [
-                            -38.821893,
-                            28.556611
-                        ],
-                        [
-                            -38.821984,
-                            28.556663
-                        ],
-                        [
-                            -38.822035,
-                            28.556686
-                        ],
-                        [
-                            -38.82215,
-                            28.5567
-                        ],
-                        [
-                            -38.822222,
-                            28.556706
-                        ],
-                        [
-                            -38.822276,
-                            28.556697
-                        ],
-                        [
-                            -38.822332,
-                            28.556673
-                        ],
-                        [
-                            -38.822369,
-                            28.556629
-                        ],
-                        [
-                            -38.822369,
-                            28.55658
-                        ],
-                        [
-                            -38.822354,
-                            28.556529
-                        ],
-                        [
-                            -38.82233,
-                            28.556496
-                        ],
-                        [
-                            -38.82231,
-                            28.556466
-                        ],
-                        [
-                            -38.822271,
-                            28.556438
-                        ],
-                        [
-                            -38.82222,
-                            28.556402
-                        ],
-                        [
-                            -38.822178,
-                            28.556386
-                        ],
-                        [
-                            -38.822149,
-                            28.556383
-                        ],
-                        [
-                            -38.82206,
-                            28.556374
-                        ],
-                        [
-                            -38.822025,
-                            28.556376
-                        ],
-                        [
-                            -38.822001,
-                            28.556384
-                        ],
-                        [
-                            -38.822001,
-                            28.556384
-                        ],
-                        [
-                            -38.82198,
-                            28.556396
-                        ]
-                    ]
-                ]
-            },
-            "bbox": [
-                -38.822369,
-                28.556374,
-                -38.82188,
-                28.556706
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -38.822981,
-                            28.556513
-                        ],
-                        [
-                            -38.822918,
-                            28.556628
-                        ],
-                        [
-                            -38.823016,
-                            28.556661
-                        ],
-                        [
-                            -38.823088,
-                            28.556542
-                        ],
-                        [
-                            -38.822981,
-                            28.556513
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "id": "stall-bg",
-                "name": "stall-bg",
-                "type": "background"
-            },
-            "bbox": [
-                -38.823088,
-                28.556513,
-                -38.822918,
-                28.556661
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "house",
-                "type": "background",
-                "name": "house"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -38.822349,
-                            28.556584
-                        ],
-                        [
-                            -38.822371,
-                            28.556469
-                        ],
-                        [
-                            -38.822267,
-                            28.556456
-                        ],
-                        [
-                            -38.82224,
-                            28.556571
-                        ],
-                        [
-                            -38.822349,
-                            28.556584
-                        ]
-                    ]
-                ]
-            },
-            "bbox": [
-                -38.822371,
-                28.556456,
-                -38.82224,
-                28.556584
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822966,
-                    28.556983
-                ]
-            },
-            "properties": {
-                "id": "stompy",
-                "name": "stompy",
-                "type": "ambassador"
-            },
-            "bbox": [
-                -38.822966,
-                28.556983,
-                -38.822966,
-                28.556983
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.82302,
-                    28.55668
-                ]
-            },
-            "properties": {
-                "id": "winnie",
-                "name": "winnie",
-                "type": "ambassador"
-            },
-            "id": "winnie",
-            "bbox": [
-                -38.82302,
-                28.55668,
-                -38.82302,
-                28.55668
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.820617,
-                    28.556809
-                ]
-            },
-            "properties": {
-                "id": "reed",
-                "name": "reed",
-                "type": "ambassador"
-            },
-            "id": "reed",
-            "bbox": [
-                -38.820617,
-                28.556809,
-                -38.820617,
-                28.556809
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.823161,
-                    28.556696
-                ]
-            },
-            "properties": {
-                "id": "serrano",
-                "name": "serrano",
-                "type": "ambassador"
-            },
-            "id": "serrano",
-            "bbox": [
-                -38.823161,
-                28.556696,
-                -38.823161,
-                28.556696
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.823217,
-                    28.556843
-                ]
-            },
-            "properties": {
-                "id": "jalapeno",
-                "name": "jalapeno",
-                "type": "ambassador"
-            },
-            "id": "jalapeno",
-            "bbox": [
-                -38.823217,
-                28.556843,
-                -38.823217,
-                28.556843
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821116,
-                    28.556605
-                ]
-            },
-            "properties": {
-                "id": "abbott",
-                "name": "abbot",
-                "type": "ambassador"
-            },
-            "id": "abbott",
-            "bbox": [
-                -38.821116,
-                28.556605,
-                -38.821116,
-                28.556605
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821432,
-                    28.556628
-                ]
-            },
-            "properties": {
-                "id": "coconut",
-                "name": "coconut",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.821432,
-                28.556628,
-                -38.821432,
-                28.556628
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822117,
-                    28.556326
-                ]
-            },
-            "properties": {
-                "id": "moomin",
-                "name": "moomin",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822117,
-                28.556326,
-                -38.822117,
-                28.556326
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822556,
-                    28.557215
-                ]
-            },
-            "properties": {
-                "id": "nugget",
-                "name": "nugget",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822556,
-                28.557215,
-                -38.822556,
-                28.557215
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822785,
-                    28.557194
-                ]
-            },
-            "properties": {
-                "id": "siren",
-                "name": "siren",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822785,
-                28.557194,
-                -38.822785,
-                28.557194
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822608,
-                    28.557258
-                ]
-            },
-            "properties": {
-                "id": "herietta",
-                "name": "herietta",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822608,
-                28.557258,
-                -38.822608,
-                28.557258
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822788,
-                    28.557261
-                ]
-            },
-            "properties": {
-                "id": "tico",
-                "name": "tico",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822788,
-                28.557261,
-                -38.822788,
-                28.557261
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822873,
-                    28.557188
-                ]
-            },
-            "properties": {
-                "id": "mia",
-                "name": "mia",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822873,
-                28.557188,
-                -38.822873,
-                28.557188
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822874,
-                    28.557253
-                ]
-            },
-            "properties": {
-                "id": "miley",
-                "name": "miley",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822874,
-                28.557253,
-                -38.822874,
-                28.557253
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822611,
-                    28.557169
-                ]
-            },
-            "properties": {
-                "id": "oliver",
-                "name": "oliver",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822611,
-                28.557169,
-                -38.822611,
-                28.557169
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.820393,
-                    28.556813
-                ]
-            },
-            "properties": {
-                "id": "fenn",
-                "name": "fenn",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.820393,
-                28.556813,
-                -38.820393,
-                28.556813
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821963,
-                    28.55637
-                ]
-            },
-            "properties": {
-                "id": "nilla",
-                "name": "nilla",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.821963,
-                28.55637,
-                -38.821963,
-                28.55637
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821919,
-                    28.556445
-                ]
-            },
-            "properties": {
-                "id": "cips-ahoy",
-                "name": "cips-ahoy",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.821919,
-                28.556445,
-                -38.821919,
-                28.556445
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821969,
-                    28.556602
-                ]
-            },
-            "properties": {
-                "id": "georgie",
-                "name": "georgie",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.821969,
-                28.556602,
-                -38.821969,
-                28.556602
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822031,
-                    28.55633
-                ]
-            },
-            "properties": {
-                "id": "snork",
-                "name": "snork",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822031,
-                28.55633,
-                -38.822031,
-                28.55633
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822662,
-                    28.557214
-                ]
-            },
-            "properties": {
-                "id": "henrique",
-                "name": "henrique",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.822662,
-                28.557214,
-                -38.822662,
-                28.557214
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.822945,
-                    28.556793
-                ]
-            },
-            "properties": {
-                "id": "acero",
-                "name": "acero",
-                "type": "nonAmbassador"
-            },
-            "id": "acero",
-            "bbox": [
-                -38.822945,
-                28.556793,
-                -38.822945,
-                28.556793
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "path"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -38.821767,
-                        28.556704
-                    ],
-                    [
-                        -38.821886,
-                        28.556569
-                    ]
-                ]
-            },
-            "bbox": [
-                -38.821886,
-                28.556569,
-                -38.821767,
-                28.556704
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "stall",
-                "name": "stall",
-                "type": "facility"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.823001,
-                    28.556582
-                ]
-            },
-            "bbox": [
-                -38.823001,
-                28.556582,
-                -38.823001,
-                28.556582
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "pasture",
-                "name": "pasture",
-                "type": "enclosure"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.823493,
-                    28.556797
-                ]
-            },
-            "id": "pasture",
-            "bbox": [
-                -38.823493,
-                28.556797,
-                -38.823493,
-                28.556797
-            ]
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -38.821969,
-                    28.556602
-                ]
-            },
-            "properties": {
-                "id": "pickles",
-                "name": "pickles",
-                "type": "ambassador"
-            },
-            "id": "coconut",
-            "bbox": [
-                -38.821969,
-                28.556602,
-                -38.821969,
-                28.556602
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "id": "training-center-bg",
-                "name": "training-center-bg",
-                "type": "background"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -38.822642,
-                            28.556467
-                        ],
-                        [
-                            -38.822585,
-                            28.556555
-                        ],
-                        [
-                            -38.822686,
-                            28.556601
-                        ],
-                        [
-                            -38.822743,
-                            28.556509
-                        ],
-                        [
-                            -38.822642,
-                            28.556467
-                        ]
-                    ]
-                ]
-            },
-            "bbox": [
-                -38.822743,
-                28.556467,
-                -38.822585,
-                28.556601
-            ]
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "id": "path3",
-                "type": "path"
+                "type": "path",
+                "name": "path3"
             },
             "geometry": {
                 "type": "LineString",
@@ -1541,23 +1611,56 @@
         },
         {
             "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -38.822499,
+                        28.5568
+                    ],
+                    [
+                        -38.822303,
+                        28.556689
+                    ]
+                ]
+            },
             "properties": {
-                "id": "purple-martin-nests",
-                "name": "purple-martin-nests",
-                "type": "facility"
+                "type": "path",
+                "id": "path2",
+                "name": "path2"
+            },
+            "bbox": [
+                -38.822499,
+                28.556689,
+                -38.822303,
+                28.5568
+            ]
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "path",
+                "id": "path4",
+                "name": "path4"
             },
             "geometry": {
-                "type": "Point",
+                "type": "LineString",
                 "coordinates": [
-                    -38.82281,
-                    28.556595
+                    [
+                        -38.821767,
+                        28.556704
+                    ],
+                    [
+                        -38.821886,
+                        28.556569
+                    ]
                 ]
             },
             "bbox": [
-                -38.82281,
-                28.556595,
-                -38.82281,
-                28.556595
+                -38.821886,
+                28.556569,
+                -38.821767,
+                28.556704
             ]
         }
     ]
