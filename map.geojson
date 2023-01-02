@@ -188,8 +188,8 @@
       },
       "properties": {
         "type": "enclosure",
-        "name": "new-crow-enclosure",
-        "id": "enclosure-new-crow-enclosure"
+        "name": "new-bird-enclosure",
+        "id": "enclosure-new-bird-enclosure"
       }
     },
     {

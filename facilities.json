@@ -1,11 +1,50 @@
 {
   "nuthouse": {
-    "label": "Nutrition House"
+    "label": "Nutrition House",
+    "links": {
+      "introVideo": "https://youtu.be/_PRVsl9Nxok?t=299"
+    },
+    "description": "The nutrition house (or nut house) is one of the three houses on the court yard. This is where all the diet and enrichment prep is done every day. The nut house is also home to the rat and chinchilla ambassadors. It also provides storage and features a medical station.",
+    "images": [
+      {
+        "url": "https://alveusgg.github.io/data/images/nuthouse-000.jpg",
+        "alt": "",
+        "label": "Nutrition House (Copyright: station3media.net)"
+      }
+    ]
   },
   "studio": {
-    "label": "Studio"
+    "label": "Studio",
+    "links": {
+      "introVideo": "https://youtu.be/_PRVsl9Nxok?t=156"
+    },
+    "description": "The studio is one of the three houses on the court yard. It is used for streams and is used as the office space. The studio is also home of the frog ambassador Georgie, has a separate room attached for the reptile and amphibian ambassadors as well as the insect and arachnid room.",
+    "images": [
+      {
+        "url": "https://alveusgg.github.io/data/images/studio-000.jpg",
+        "alt": "",
+        "label": "Studio (Copyright: station3media.net)"
+      },
+      {
+        "url": "https://alveusgg.github.io/data/images/studio-001.jpg",
+        "alt": "",
+        "label": "Studio (Copyright: station3media.net)"
+      }
+    ]
   },
   "training-center": {
-    "label": "Training Center"
+    "label": "Training Center",
+    "links": {
+      "introVideo": "https://youtu.be/_PRVsl9Nxok?t=33"
+    },
+    "costToBuild": "135,000 USD",
+    "description": "Central place for events and animal training. No animals live here permanently. Ambassadors are brought to the training center. It features a big gras area, perches and holding pens for the ambassadors. It is completely sealed so birds like the crows and parrots can be safely handled.",
+    "images": [
+      {
+        "url": "https://alveusgg.github.io/data/images/training-center-000.jpg",
+        "alt": "",
+        "label": "Training Center (Copyright: station3media.net)"
+      }
+    ]
   }
 }
