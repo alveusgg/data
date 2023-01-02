@@ -54,6 +54,13 @@
     "label": "Tools Shed"
   },
   "purple-martin-nests": {
-    "label": "Purple Martin Nests"
+    "label": "Purple Martin Nests",
+    "images": [
+      {
+        "url": "https://alveusgg.github.io/data/images/purple-martin-nests-000.jpg",
+        "alt": "",
+        "label": "Purple Martin Nests (Copyright: station3media.net)"
+      }
+    ]
   }
 }
