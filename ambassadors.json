@@ -333,10 +333,36 @@
   "georgie": {
     "name": "Georgie",
     "species": "African Bullfrog",
-    "img": {
-      "src": "animal-images/georgie.png",
-      "altText": "Georgie"
+    "links": {
+      "website": "https://www.alveussanctuary.org/ambassadors/georgie/"
     },
+    "images": [
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/DSC09502-2048x1638.jpg.webp",
+        "alt": "",
+        "label": "Georgie"
+      },
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/174684111_1031049054095697_931633796975373524_n-150x150.jpg",
+        "alt": "",
+        "label": "Georgie"
+      },
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-4-150x150.jpg",
+        "alt": "",
+        "label": "Georgie"
+      },
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/09/Georgie-150x150.png",
+        "alt": "",
+        "label": "Georgie"
+      },
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/DSC01519-150x150.jpg",
+        "alt": "",
+        "label": "Georgie"
+      }
+    ],
     "scientificName": "Pyxicephalus adspersus",
     "sex": "Male",
     "dateOfBirth": "",
@@ -760,10 +786,16 @@
   "toaster-strudel": {
     "name": "Toaster Strudel",
     "species": "Blue tongued Skink Lizard",
-    "img": {
-      "src": "animal-images/toasterstrudel.jpg",
-      "altText": "Toaster Strudel"
+    "links": {
+      "website": "https://www.alveussanctuary.org/ambassadors/toaster-strudel/"
     },
+    "images": [
+      {
+        "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/Toaster_Strudel_small.jpg",
+        "alt": "",
+        "label": "Toaster Strudel"
+      }
+    ],
     "scientificName": "Tiliqua scincoides intermedia",
     "sex": "Male",
     "dateOfBirth": "2022-04-07",

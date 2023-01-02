@@ -46,5 +46,14 @@
         "label": "Training Center (Copyright: station3media.net)"
       }
     ]
+  },
+  "pasture-shed": {
+    "label": "Pasture Shed"
+  },
+  "tools-shed": {
+    "label": "Tools Shed"
+  },
+  "purple-martin-nests": {
+    "label": "Purple Martin Nests"
   }
 }
