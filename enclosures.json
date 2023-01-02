@@ -104,13 +104,6 @@
       }
     ]
   },
-  "new-crow-enclosure": {
-    "label": "New crow enclosure",
-    "cams": [],
-    "facilities": [],
-    "ambassadors": [],
-    "nonAmbassadors": []
-  },
   "foxes": {
     "label": "Fox enclosure",
     "cams": [],
