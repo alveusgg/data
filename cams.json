@@ -1,72 +1,72 @@
 {
   "nuthousecam": {
-    "command": "!nuthousecam",
     "label": "Nutrition House Cam",
+    "command": "!nuthousecam",
+    "facilities": ["nuthouse"],
     "ambassadors": [],
-    "enclosures": [],
-    "facilities": ["nuthouse"]
+    "enclosures": []
   },
   "parrotcam": {
-    "command": "!parrotcam",
     "label": "Parrot Cam",
+    "command": "!parrotcam",
+    "facilities": [],
     "ambassadors": ["tico", "miley", "siren", "mia"],
-    "enclosures": ["parrot-aviary"],
-    "facilities": []
+    "enclosures": ["parrot-aviary"]
   },
   "pasturecam": {
-    "command": "!pasturecam",
     "label": "Pasture Cam",
+    "command": "!pasturecam",
+    "facilities": [],
     "ambassadors": ["stompy", "serrano", "jalapeno", "winnie"],
     "nonAmbassadors": ["acero"],
-    "enclosures": ["pasture"],
-    "facilities": []
+    "enclosures": ["pasture"]
   },
   "roachcam": {
-    "command": "!roachcam",
     "label": "Roach cam",
+    "command": "!roachcam",
+    "facilities": ["studio"],
     "ambassadors": ["stompy", "serrano", "jalapeno", "winnie"],
     "nonAmbassadors": ["acero"],
-    "enclosures": [],
-    "facilities": ["studio"]
+    "enclosures": []
   },
   "goatcam": {
-    "command": "!goatcam",
     "label": "Goat cam",
+    "command": "!goatcam",
+    "facilities": [],
     "ambassadors": [],
     "nonAmbassadors": ["kylie"],
-    "enclosures": [],
-    "facilities": []
+    "enclosures": []
   },
   "georgiecam": {
-    "command": "!georgiecam",
     "label": "Georgie cam",
+    "command": "!georgiecam",
+    "facilities": ["studio"],
     "ambassadors": ["georgie"],
     "nonAmbassadors": [],
-    "enclosures": [],
-    "facilities": ["studio"]
+    "enclosures": []
   },
   "noodlecam": {
-    "command": "!noodlecam",
     "label": "Noodle cam",
+    "command": "!noodlecam",
+    "facilities": ["studio"],
     "ambassadors": ["noodle"],
     "nonAmbassadors": [],
-    "enclosures": [],
-    "facilities": ["studio"]
+    "enclosures": []
   },
   "crowcam": {
-    "command": "!crowcam",
     "label": "Crow cam",
+    "command": "!crowcam",
+    "facilities": [],
     "ambassadors": ["abbot", "coconut"],
     "nonAmbassadors": [],
-    "enclosures": ["crow-aviary"],
-    "facilities": []
+    "enclosures": ["crow-aviary"]
   },
   "foxcam": {
-    "command": "!foxcam",
     "label": "Fox cam",
+    "command": "!foxcam",
+    "facilities": [],
     "ambassadors": ["fenn", "reed"],
     "nonAmbassadors": [],
-    "enclosures": ["foxes"],
-    "facilities": []
+    "enclosures": ["foxes"]
   }
 }

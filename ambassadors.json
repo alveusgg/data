@@ -2,6 +2,12 @@
   "mia": {
     "name": "Mia",
     "species": "African Grey",
+    "scientificName": "Psittacus erithacus",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Endangered with decreasing population trend",
+    "story": "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/mia/"
     },
@@ -9,30 +15,36 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/09/Mia-1536x1152.jpg",
         "alt": "",
-        "label": "Mia"
+        "label": "Mia",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-5-scaled.jpg",
         "alt": "",
-        "label": "Mia"
+        "label": "Mia",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-1-scaled.jpg",
         "alt": "",
-        "label": "Mia"
+        "label": "Mia",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image2-3-scaled.jpg",
         "alt": "",
-        "label": "Mia"
+        "label": "Mia",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Psittacus erithacus",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Endangered with decreasing population trend",
-    "story": "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
-    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "cams": ["parrotcam"],
     "enclosure": "parrot-aviary",
     "facility": null
@@ -40,6 +52,12 @@
   "siren": {
     "name": "Siren",
     "species": "Blue-frontend Amazon",
+    "scientificName": "Amazona aestiva",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/siren/"
     },
@@ -47,35 +65,44 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-1-1536x1152.jpg",
         "alt": "",
-        "label": "Siren"
+        "label": "Siren",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image3-scaled.jpg",
         "alt": "",
-        "label": "Siren"
+        "label": "Siren",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-5-scaled.jpg",
         "alt": "",
-        "label": "Siren"
+        "label": "Siren",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-1-scaled.jpg",
         "alt": "",
-        "label": "Siren"
+        "label": "Siren",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image2-1-scaled.jpg",
         "alt": "",
-        "label": "Siren"
+        "label": "Siren",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Amazona aestiva",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
-    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "cams": ["parrotcam"],
     "enclosure": "parrot-aviary",
     "facility": null
@@ -83,6 +110,12 @@
   "miley": {
     "name": "Miley",
     "species": "Catalina Macaw",
+    "scientificName": "Ara ararauna × Ara macao",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/miley/"
     },
@@ -90,30 +123,36 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-2-1536x1152.jpg",
         "alt": "",
-        "label": "Miley"
+        "label": "Miley",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image2-2-scaled.jpg",
         "alt": "",
-        "label": "Miley"
+        "label": "Miley",
+        "width": 1920,
+        "height": 2560,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-6-scaled.jpg",
         "alt": "",
-        "label": "Miley"
+        "label": "Miley",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-2-scaled.jpg",
         "alt": "",
-        "label": "Miley"
+        "label": "Miley",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Ara ararauna × Ara macao",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
-    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "cams": ["parrotcam"],
     "enclosure": "parrot-aviary",
     "facility": null
@@ -121,6 +160,12 @@
   "tico": {
     "name": "Tico",
     "species": "Blue and Gold Macaw",
+    "scientificName": "Ara ararauna",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Least concern with decreasing population trend",
+    "story": "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring",
+    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/tico/"
     },
@@ -128,25 +173,28 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/176612397_473769293742578_2038293079703048960_n-1.jpg",
         "alt": "",
-        "label": "Tico"
+        "label": "Tico",
+        "width": 1080,
+        "height": 1080,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-4-scaled.jpg",
         "alt": "",
-        "label": "Tico"
+        "label": "Tico",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/176612397_473769293742578_2038293079703048960_n-1.jpg",
         "alt": "",
-        "label": "Tico"
+        "label": "Tico",
+        "width": 1080,
+        "height": 1080,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Ara ararauna",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Least concern with decreasing population trend",
-    "story": "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring",
-    "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "cams": ["parrotcam"],
     "enclosure": "parrot-aviary",
     "facility": null
@@ -154,6 +202,12 @@
   "moomin": {
     "name": "Moomin",
     "species": "Chinchilla",
+    "scientificName": "Chinchilla lanigera",
+    "sex": "Male",
+    "dateOfBirth": "2021-05-13",
+    "iucnStatus": "Endangered with decreasing population trend",
+    "story": "Rehomed from a local pet owner.",
+    "conservationMission": "He is an ambassador for the exploitation of wildlife in the fur trade.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/moomin/"
     },
@@ -161,15 +215,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/175275071_287373672984606_8638143907924943219_n.jpg",
         "alt": "",
-        "label": "Moomin"
+        "label": "Moomin",
+        "width": 1080,
+        "height": 1080,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Chinchilla lanigera",
-    "sex": "Male",
-    "dateOfBirth": "2021-05-13",
-    "iucnStatus": "Endangered with decreasing population trend",
-    "story": "Rehomed from a local pet owner.",
-    "conservationMission": "He is an ambassador for the exploitation of wildlife in the fur trade.",
     "cams": [],
     "enclosure": "chincillas",
     "facility": "nuthouse"
@@ -177,6 +228,12 @@
   "snork": {
     "name": "Snork",
     "species": "Chinchilla",
+    "scientificName": "Chinchilla lanigera",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Endangered with decreasing population trend",
+    "story": "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
+    "conservationMission": "She is an ambassador for the exploitation of wildlife in the fur trade.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/snork/"
     },
@@ -184,15 +241,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-3-1536x1152.jpg",
         "alt": "",
-        "label": "Snork"
+        "label": "Snork",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Chinchilla lanigera",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Endangered with decreasing population trend",
-    "story": "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
-    "conservationMission": "She is an ambassador for the exploitation of wildlife in the fur trade.",
     "cams": [],
     "enclosure": "chincillas",
     "facility": "nuthouse"
@@ -200,6 +254,12 @@
   "jalapeno": {
     "name": "Jalapeño",
     "species": "Domestic Donkey",
+    "scientificName": "Equus Africanus Asinus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Rehomed to Alveus from a local equine rescue.",
+    "conservationMission": "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/jalapeno/"
     },
@@ -207,20 +267,20 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/E2GFNOnVkAA4kxZ-1536x2048.jpg",
         "alt": "",
-        "label": "Jalapeño"
+        "label": "Jalapeño",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/E2GFFncVkAIOs7K-scaled.jpg",
         "alt": "",
-        "label": "Serrano and Jalapeño"
+        "label": "Serrano and Jalapeño",
+        "width": 2560,
+        "height": 2560,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Equus Africanus Asinus",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Rehomed to Alveus from a local equine rescue.",
-    "conservationMission": "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     "cams": ["pasturecam"],
     "enclosure": "pasture",
     "facility": null
@@ -228,6 +288,12 @@
   "serrano": {
     "name": "Serrano",
     "species": "Domestic Donkey",
+    "scientificName": "Equus Africanus Asinus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Rehomed to Alveus from a local equine rescue.",
+    "conservationMission": "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/serrano/"
     },
@@ -235,20 +301,20 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/E2GFIvwVIAMMNyk-1536x2048.jpg",
         "alt": "",
-        "label": "Serrano"
+        "label": "Serrano",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/E2GFFncVkAIOs7K-scaled.jpg",
         "alt": "",
-        "label": "Serrano and Jalapeño"
+        "label": "Serrano and Jalapeño",
+        "width": 2560,
+        "height": 2560,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Equus Africanus Asinus",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Rehomed to Alveus from a local equine rescue.",
-    "conservationMission": "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     "cams": ["pasturecam"],
     "enclosure": "pasture",
     "facility": null
@@ -256,6 +322,12 @@
   "stompy": {
     "name": "Stompy",
     "species": "Emu",
+    "scientificName": "Dromaius novaehollandiae",
+    "sex": "Male",
+    "dateOfBirth": "2021-02-14",
+    "iucnStatus": "",
+    "story": "Stompy was hatched in captivity and Maya hand was raised to be the first Alveus ambassador.",
+    "conservationMission": "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/stompy/",
       "introVideo": "https://www.youtube.com/watch?v=EdNiW_VvVtI"
@@ -264,30 +336,36 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/Stomp-1536x1152.png",
         "alt": "",
-        "label": "Stompy"
+        "label": "Stompy",
+        "width": 1536,
+        "height": 1152,
+        "type": "png"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/05/image1-7-scaled.jpg",
         "alt": "",
-        "label": "Stompy"
+        "label": "Stompy",
+        "width": 1920,
+        "height": 2560,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/05/image0-9-scaled.jpg",
         "alt": "",
-        "label": "Stompy"
+        "label": "Stompy",
+        "width": 1920,
+        "height": 2560,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/image0-1-scaled.jpg",
         "alt": "",
-        "label": "Stompy"
+        "label": "Stompy",
+        "width": 1920,
+        "height": 2560,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Dromaius novaehollandiae",
-    "sex": "Male",
-    "dateOfBirth": "2021-02-14",
-    "iucnStatus": "",
-    "story": "Stompy was hatched in captivity and Maya hand was raised to be the first Alveus ambassador.",
-    "conservationMission": "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     "cams": ["pasturecam"],
     "enclosure": "pasture",
     "facility": null
@@ -295,6 +373,12 @@
   "winnie": {
     "name": "Winnie (the Moo)",
     "species": "Red Angus Beef Cow",
+    "scientificName": "Bos (primigenius) taurus",
+    "sex": "Female",
+    "dateOfBirth": "2022-03-22",
+    "iucnStatus": "Not evaluated",
+    "story": "Winnie came from a cattle operation in Oklahoma. ",
+    "conservationMission": "She is an ambassador for the beef industry and how people can use their consumer choice to impact the environment in a positive way.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/winnie-the-moo/"
     },
@@ -302,30 +386,36 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00100-2-1536x1024.jpg",
         "alt": "",
-        "label": "Winnie"
+        "label": "Winnie",
+        "width": 1536,
+        "height": 1024,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00325-scaled.jpg",
         "alt": "",
-        "label": "Winnie"
+        "label": "Winnie",
+        "width": 2560,
+        "height": 2048,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00222-scaled.jpg",
         "alt": "",
-        "label": "Winnie"
+        "label": "Winnie",
+        "width": 2560,
+        "height": 2048,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/unknown_295871354_2896007090702168_6513935527060695958_n.jpg",
         "alt": "",
-        "label": "Winnie"
+        "label": "Winnie",
+        "width": 1080,
+        "height": 864,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Bos (primigenius) taurus",
-    "sex": "Female",
-    "dateOfBirth": "2022-03-22",
-    "iucnStatus": "Not evaluated",
-    "story": "Winnie came from a cattle operation in Oklahoma. ",
-    "conservationMission": "She is an ambassador for the beef industry and how people can use their consumer choice to impact the environment in a positive way.",
     "cams": ["pasturecam"],
     "enclosure": "pasture",
     "facility": null
@@ -333,6 +423,12 @@
   "georgie": {
     "name": "Georgie",
     "species": "African Bullfrog",
+    "scientificName": "Pyxicephalus adspersus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least concern with decreasing population trend",
+    "story": "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
+    "conservationMission": "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/georgie/"
     },
@@ -340,35 +436,44 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/DSC09502-2048x1638.jpg.webp",
         "alt": "",
-        "label": "Georgie"
+        "label": "Georgie",
+        "width": 2048,
+        "height": 1638,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/174684111_1031049054095697_931633796975373524_n-150x150.jpg",
         "alt": "",
-        "label": "Georgie"
+        "label": "Georgie",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-4-150x150.jpg",
         "alt": "",
-        "label": "Georgie"
+        "label": "Georgie",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/09/Georgie-150x150.png",
         "alt": "",
-        "label": "Georgie"
+        "label": "Georgie",
+        "width": 150,
+        "height": 150,
+        "type": "png"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/DSC01519-150x150.jpg",
         "alt": "",
-        "label": "Georgie"
+        "label": "Georgie",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Pyxicephalus adspersus",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least concern with decreasing population trend",
-    "story": "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
-    "conservationMission": "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
     "cams": ["georgiecam"],
     "enclosure": null,
     "facility": "studio"
@@ -376,6 +481,12 @@
   "noodle": {
     "name": "Noodle",
     "species": "Carpet Python",
+    "scientificName": "M. spilota mcdowelli",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Least concern with decreasing population trend",
+    "story": "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
+    "conservationMission": "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/noodle/"
     },
@@ -383,25 +494,28 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-1536x1152.jpg",
         "alt": "",
-        "label": "Noodle"
+        "label": "Noodle",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image2-4-scaled.jpg",
         "alt": "",
-        "label": "Noodle"
+        "label": "Noodle",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-7-scaled.jpg",
         "alt": "",
-        "label": "Noodle"
+        "label": "Noodle",
+        "width": 2560,
+        "height": 1920,
+        "type": "jpg"
       }
     ],
-    "scientificName": "M. spilota mcdowelli",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Least concern with decreasing population trend",
-    "story": "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
-    "conservationMission": "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
     "cams": ["noodlecam"],
     "enclosure": null,
     "facility": "studio"
@@ -409,6 +523,12 @@
   "patchy": {
     "name": "Patchy",
     "species": "Ball Python",
+    "scientificName": "Python Regius",
+    "sex": "Male",
+    "dateOfBirth": "2021-15-08",
+    "iucnStatus": "Near threatened with decreasing population",
+    "story": "Patchy was rehomed to Alveus from a local breeder after it was discovered that he had a genetic defect and was missing an eye.",
+    "conservationMission": "He is an ambassador for how the pet trade and habitat loss has affected his and many other reptile species worldwide.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/patchy/"
     },
@@ -416,15 +536,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/11/PATCHYYYYY-2-1536x2048.jpg.webp",
         "alt": "",
-        "label": "Patchy"
+        "label": "Patchy",
+        "width": 1536,
+        "height": 2048,
+        "type": "webp"
       }
     ],
-    "scientificName": "Python Regius",
-    "sex": "Male",
-    "dateOfBirth": "2021-15-08",
-    "iucnStatus": "Near threatened with decreasing population",
-    "story": "Patchy was rehomed to Alveus from a local breeder after it was discovered that he had a genetic defect and was missing an eye.",
-    "conservationMission": "He is an ambassador for how the pet trade and habitat loss has affected his and many other reptile species worldwide.",
     "cams": ["noodlecam"],
     "enclosure": null,
     "facility": "studio"
@@ -432,6 +549,12 @@
   "abbot": {
     "name": "Abbott",
     "species": "American Crow",
+    "scientificName": "Corvus Brachyrhynchos",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
+    "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/abbott/"
     },
@@ -439,15 +562,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/08/image0-1536x2048.jpg",
         "alt": "",
-        "label": "Abbott"
+        "label": "Abbott",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Corvus Brachyrhynchos",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
-    "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "cams": ["crowcam"],
     "enclosure": "crow-aviary",
     "facility": null
@@ -455,6 +575,12 @@
   "coconut": {
     "name": "Coconut",
     "species": "American Crow",
+    "scientificName": "Corvus Brachyrhynchos",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Coconut was brought into a willdife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
+    "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/coconut/"
     },
@@ -462,15 +588,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/08/image1-1536x2048.jpg",
         "alt": "",
-        "label": "Coconut"
+        "label": "Coconut",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Corvus Brachyrhynchos",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Coconut was brought into a willdife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
-    "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "cams": ["crowcam"],
     "enclosure": "crow-aviary",
     "facility": null
@@ -478,6 +601,12 @@
   "baked-bean": {
     "name": "Baked Bean",
     "species": "Madagascar Hissing Cockroach",
+    "scientificName": "Gromphadorhina portentosa",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
+    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/madagascar-hissing-cockroach/"
     },
@@ -485,25 +614,28 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00771-1536x1024.jpg.webp",
         "alt": "",
-        "label": "Madagascar Hissing Cockroaches"
+        "label": "Madagascar Hissing Cockroaches",
+        "width": 1536,
+        "height": 1024,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC09748-scaled.jpg",
         "alt": "",
-        "label": "Madagascar Hissing Cockroach"
+        "label": "Madagascar Hissing Cockroach",
+        "width": 2560,
+        "height": 1707,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00584-scaled.jpg",
         "alt": "",
-        "label": "Madagascar Hissing Cockroach"
+        "label": "Madagascar Hissing Cockroach",
+        "width": 2560,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gromphadorhina portentosa",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
-    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "cams": ["roachcam"],
     "enclosure": null,
     "relatedAmbassadors": ["barbara"],
@@ -512,6 +644,12 @@
   "barbara": {
     "name": "Barbara",
     "species": "Madagascar Hissing Cockroach",
+    "scientificName": "Gromphadorhina portentosa",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
+    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/madagascar-hissing-cockroach/"
     },
@@ -519,25 +657,28 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00771-1536x1024.jpg.webp",
         "alt": "",
-        "label": "Madagascar Hissing Cockroaches"
+        "label": "Madagascar Hissing Cockroaches",
+        "width": 1536,
+        "height": 1024,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC09748-scaled.jpg",
         "alt": "",
-        "label": "Madagascar Hissing Cockroach"
+        "label": "Madagascar Hissing Cockroach",
+        "width": 2560,
+        "height": 1707,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00584-scaled.jpg",
         "alt": "",
-        "label": "Madagascar Hissing Cockroach"
+        "label": "Madagascar Hissing Cockroach",
+        "width": 2560,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gromphadorhina portentosa",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
-    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "cams": ["roachcam"],
     "enclosure": null,
     "relatedAmbassadors": ["baked-bean"],
@@ -546,6 +687,12 @@
   "bb": {
     "name": "BB",
     "species": "Powder Orange Isopods",
+    "scientificName": "Porcellionides pruinosus",
+    "sex": "Unknown",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Our powder orange isopods were born in captivity and ethically sourced. ",
+    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/spanish-orange-isopods/"
     },
@@ -553,20 +700,20 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC09873-1536x1229.jpg.webp",
         "alt": "",
-        "label": "Spanish Orange Isopod"
+        "label": "Spanish Orange Isopod",
+        "width": 1536,
+        "height": 1229,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC00622-scaled.jpg",
         "alt": "",
-        "label": "Spanish Orange Isopod"
+        "label": "Spanish Orange Isopod",
+        "width": 2560,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Porcellionides pruinosus",
-    "sex": "Unknown",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Our powder orange isopods were born in captivity and ethically sourced. ",
-    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "relatedAmbassadors": ["ducky", "marty"],
@@ -575,6 +722,12 @@
   "ducky": {
     "name": "Ducky",
     "species": "Rubber Ducky Isopods",
+    "scientificName": "Cubaris sp.",
+    "sex": "Unknown",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Our rubber ducky isopods were born in captivity and ethically sourced. ",
+    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/rubber-ducky-isopods/"
     },
@@ -582,15 +735,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/rubberduckyisopods-1536x1229.jpg",
         "alt": "",
-        "label": "Rubber Ducky Isopods"
+        "label": "Rubber Ducky Isopods",
+        "width": 1536,
+        "height": 1229,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Cubaris sp.",
-    "sex": "Unknown",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Our rubber ducky isopods were born in captivity and ethically sourced. ",
-    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "relatedAmbassadors": ["marty", "bb"],
@@ -599,6 +749,12 @@
   "marty": {
     "name": "Marty",
     "species": "Zebra Isopods",
+    "scientificName": "Armadillidium Maculatum",
+    "sex": "Unknown",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Our zebra isopods were born in captivity and ethically sourced. ",
+    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/zebra-isopods/"
     },
@@ -606,15 +762,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/zebraisopods-1536x1024.jpg",
         "alt": "",
-        "label": "Zebra Isopods"
+        "label": "Zebra Isopods",
+        "width": 1536,
+        "height": 1024,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Armadillidium Maculatum",
-    "sex": "Unknown",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Our zebra isopods were born in captivity and ethically sourced. ",
-    "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "relatedAmbassadors": ["ducky", "bb"],
@@ -623,6 +776,12 @@
   "mctrain": {
     "name": "Mr. McTrain",
     "species": "Smokey Ghost Millipede",
+    "scientificName": "Narceus gordanus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Our smokey ghost millipede was born in captivity and ethically sourced. ",
+    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/smokey-oak-millipede/"
     },
@@ -630,20 +789,20 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/unknown_292220469_160375699863325_5984217751954044858_n.jpg.webp",
         "alt": "",
-        "label": "Mr. McTrain"
+        "label": "Mr. McTrain",
+        "width": 720,
+        "height": 566,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/DSC09751-150x150.jpg.webp",
         "alt": "",
-        "label": "Mr. McTrain"
+        "label": "Mr. McTrain",
+        "width": 150,
+        "height": 150,
+        "type": "webp"
       }
     ],
-    "scientificName": "Narceus gordanus",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Our smokey ghost millipede was born in captivity and ethically sourced. ",
-    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "facility": "studio"
@@ -651,6 +810,12 @@
   "pickles": {
     "name": "Pickles",
     "species": "Vinegaroon",
+    "scientificName": "Mastigoproctus tohono",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Our vinegaroon was born in captivity and ethically sourced.",
+    "conservationMission": "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/pickles/"
     },
@@ -658,30 +823,36 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/DSC00613-1536x1024.jpg.webp",
         "alt": "",
-        "label": "Pickles"
+        "label": "Pickles",
+        "width": 1536,
+        "height": 1024,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/pickles-150x150.jpg",
         "alt": "",
-        "label": "Pickles"
+        "label": "Pickles",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/DSC09674-150x150.jpg.webp",
         "alt": "",
-        "label": "Pickles"
+        "label": "Pickles",
+        "width": 150,
+        "height": 150,
+        "type": "webp"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/01/DSC09692-150x150.jpg.webp",
         "alt": "",
-        "label": "Pickles"
+        "label": "Pickles",
+        "width": 150,
+        "height": 150,
+        "type": "webp"
       }
     ],
-    "scientificName": "Mastigoproctus tohono",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Our vinegaroon was born in captivity and ethically sourced.",
-    "conservationMission": "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "facility": "studio"
@@ -689,6 +860,12 @@
   "nugget": {
     "name": "Nugget",
     "species": "Ameraucana Chicken",
+    "scientificName": "Gallus gallus domesticus",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
+    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/nugget/"
     },
@@ -696,20 +873,20 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image1-6-1536x1152.jpg",
         "alt": "",
-        "label": "Nugget"
+        "label": "Nugget",
+        "width": 1536,
+        "height": 1152,
+        "type": "jpg"
       },
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/04/image0-8-150x150.jpg",
         "alt": "",
-        "label": "Nugget"
+        "label": "Nugget",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gallus gallus domesticus",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
-    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "cams": [],
     "enclosure": "chickens",
     "facility": "studio"
@@ -717,6 +894,12 @@
   "oliver": {
     "name": "Oliver",
     "species": "Olive Egger Chicken",
+    "scientificName": "Gallus gallus domesticus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Oliver was put in the reject/return cage at a local feed store.",
+    "conservationMission": "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/oliver/"
     },
@@ -724,15 +907,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2021/06/image0-1536x2048.jpg",
         "alt": "",
-        "label": "Oliver"
+        "label": "Oliver",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gallus gallus domesticus",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Oliver was put in the reject/return cage at a local feed store.",
-    "conservationMission": "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "cams": [],
     "enclosure": "chickens",
     "facility": "studio"
@@ -740,6 +920,12 @@
   "henrietta": {
     "name": "Henrietta",
     "species": "Jersey Giant Chicken",
+    "scientificName": "Gallus gallus domesticus",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Henrietta was rehomed from a local farm.",
+    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/henrietta/"
     },
@@ -747,15 +933,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/Henrietta.jpg",
         "alt": "",
-        "label": "Henrietta"
+        "label": "Henrietta",
+        "width": 894,
+        "height": 1405,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gallus gallus domesticus",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Henrietta was rehomed from a local farm.",
-    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "cams": [],
     "enclosure": "chickens",
     "facility": "studio"
@@ -763,6 +946,12 @@
   "henrique": {
     "name": "Henrique",
     "species": "Half Dark Brahma, Half Saipan Chicken",
+    "scientificName": "Gallus gallus domesticus",
+    "sex": "Female",
+    "dateOfBirth": "",
+    "iucnStatus": "Not evaluated",
+    "story": "Henrique was rehomed from a local farm.",
+    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/henrique/"
     },
@@ -770,15 +959,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/09/IMG_7786-150x150.jpg",
         "alt": "",
-        "label": "Henrietta"
+        "label": "Henrietta",
+        "width": 150,
+        "height": 150,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Gallus gallus domesticus",
-    "sex": "Female",
-    "dateOfBirth": "",
-    "iucnStatus": "Not evaluated",
-    "story": "Henrique was rehomed from a local farm.",
-    "conservationMission": "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     "cams": [],
     "enclosure": "chickens",
     "facility": "studio"
@@ -786,6 +972,12 @@
   "toaster-strudel": {
     "name": "Toaster Strudel",
     "species": "Blue tongued Skink Lizard",
+    "scientificName": "Tiliqua scincoides intermedia",
+    "sex": "Male",
+    "dateOfBirth": "2022-04-07",
+    "iucnStatus": "Least Concern",
+    "story": "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    "conservationMission": "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/toaster-strudel/"
     },
@@ -793,15 +985,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/Toaster_Strudel_small.jpg",
         "alt": "",
-        "label": "Toaster Strudel"
+        "label": "Toaster Strudel",
+        "width": 1440,
+        "height": 1080,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Tiliqua scincoides intermedia",
-    "sex": "Male",
-    "dateOfBirth": "2022-04-07",
-    "iucnStatus": "Least Concern",
-    "story": "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    "conservationMission": "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
     "cams": [],
     "enclosure": null,
     "facility": "studio"
@@ -809,6 +998,12 @@
   "puppy": {
     "name": "Puppy",
     "species": "Emperor Scorpion",
+    "scientificName": "Pandinus imperator",
+    "sex": "Male",
+    "dateOfBirth": "2022-01-10",
+    "iucnStatus": "Not evaluated",
+    "story": "Our emperor scorpions were born in captivity and ethically sourced.",
+    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/puppy/"
     },
@@ -816,15 +1011,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/puppy.png",
         "alt": "",
-        "label": "Puppy"
+        "label": "Puppy",
+        "width": 228,
+        "height": 241,
+        "type": "png"
       }
     ],
-    "scientificName": "Pandinus imperator",
-    "sex": "Male",
-    "dateOfBirth": "2022-01-10",
-    "iucnStatus": "Not evaluated",
-    "story": "Our emperor scorpions were born in captivity and ethically sourced.",
-    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "relatedAmbassadors": ["tortellini"],
@@ -833,6 +1025,12 @@
   "tortellini": {
     "name": "Tortellini",
     "species": "Emperor Scorpion",
+    "scientificName": "Pandinus imperator",
+    "sex": "Male",
+    "dateOfBirth": "2022-01-10",
+    "iucnStatus": "Not evaluated",
+    "story": "Our emperor scorpions were born in captivity and ethically sourced. ",
+    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/tortellini/"
     },
@@ -840,15 +1038,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/tortellini2-1536x2048.jpg",
         "alt": "",
-        "label": "Tortellini"
+        "label": "Tortellini",
+        "width": 1536,
+        "height": 2048,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Pandinus imperator",
-    "sex": "Male",
-    "dateOfBirth": "2022-01-10",
-    "iucnStatus": "Not evaluated",
-    "story": "Our emperor scorpions were born in captivity and ethically sourced. ",
-    "conservationMission": "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     "cams": [],
     "enclosure": null,
     "relatedAmbassadors": ["puppy"],
@@ -857,6 +1052,12 @@
   "fenn": {
     "name": "Fenn",
     "species": "European Red Fox",
+    "scientificName": "Vulpes vulpes",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
+    "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/fenn/"
     },
@@ -864,15 +1065,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/fenn_small.jpg",
         "alt": "",
-        "label": "Fenn"
+        "label": "Fenn",
+        "width": 1280,
+        "height": 1920,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Vulpes vulpes",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
-    "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "cams": ["foxcam"],
     "enclosure": "foxes",
     "facility": null
@@ -880,6 +1078,12 @@
   "reed": {
     "name": "Reed",
     "species": "European Red Fox",
+    "scientificName": "Vulpes vulpes",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
+    "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/reed/"
     },
@@ -887,15 +1091,12 @@
       {
         "url": "https://www.alveussanctuary.org/wp-content/uploads/2022/11/reed2_smaller.jpg",
         "alt": "",
-        "label": "Reed"
+        "label": "Reed",
+        "width": 696,
+        "height": 1080,
+        "type": "jpg"
       }
     ],
-    "scientificName": "Vulpes vulpes",
-    "sex": "Male",
-    "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
-    "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "cams": ["foxcam"],
     "enclosure": "foxes",
     "facility": null
@@ -903,14 +1104,14 @@
   "nilla": {
     "name": "Nilla",
     "species": "Rat",
-    "links": {},
-    "images": [],
     "scientificName": "Rattus",
     "sex": "Female",
     "dateOfBirth": "",
     "iucnStatus": "Least Concern",
     "story": "Lorem ipsum dolor sit amet.",
     "conservationMission": "Lorem ipsum dolor sit amet.",
+    "links": {},
+    "images": [],
     "cams": [],
     "enclosure": "rats",
     "facility": "nuthouse"
@@ -918,14 +1119,14 @@
   "chips-ahoy": {
     "name": "Chips Ahoy!",
     "species": "Rat",
-    "links": {},
-    "images": [],
     "scientificName": "Rattus",
     "sex": "Female",
     "dateOfBirth": "",
     "iucnStatus": "Least Concern",
     "story": "Lorem ipsum dolor sit amet.",
     "conservationMission": "Lorem ipsum dolor sit amet.",
+    "links": {},
+    "images": [],
     "cams": [],
     "enclosure": "rats",
     "facility": "nuthouse"
