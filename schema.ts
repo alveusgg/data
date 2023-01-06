@@ -32,6 +32,8 @@ export const ambassadorSchema = z
     conservationMission: z.string(),
     links: linksSchema.optional(),
     images: imagesSchema.optional(),
+    facility: z.string().nullable().optional(),
+    enclosure: z.string().nullable().optional(),
   })
   .passthrough();
 

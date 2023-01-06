@@ -1,7 +1,7 @@
 {
   "mia": {
     "name": "Mia",
-    "species": "African Grey",
+    "species": "African Grey parrot",
     "scientificName": "Psittacus erithacus",
     "sex": "Female",
     "dateOfBirth": "",
@@ -9,7 +9,8 @@
     "story": "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/mia/"
+      "website": "https://www.alveussanctuary.org/ambassadors/mia/",
+      "iucn": "https://www.iucnredlist.org/species/22724813/154428817"
     },
     "images": [
       {
@@ -45,9 +46,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["parrotcam"],
+    "facility": null,
     "enclosure": "parrot-aviary",
-    "facility": null
+    "cams": ["parrotcam"]
   },
   "siren": {
     "name": "Siren",
@@ -59,7 +60,8 @@
     "story": "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/siren/"
+      "website": "https://www.alveussanctuary.org/ambassadors/siren/",
+      "iucn": "https://www.iucnredlist.org/species/22686332/154573813"
     },
     "images": [
       {
@@ -103,9 +105,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["parrotcam"],
+    "facility": null,
     "enclosure": "parrot-aviary",
-    "facility": null
+    "cams": ["parrotcam"]
   },
   "miley": {
     "name": "Miley",
@@ -153,9 +155,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["parrotcam"],
+    "facility": null,
     "enclosure": "parrot-aviary",
-    "facility": null
+    "cams": ["parrotcam"]
   },
   "tico": {
     "name": "Tico",
@@ -167,7 +169,8 @@
     "story": "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring",
     "conservationMission": "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/tico/"
+      "website": "https://www.alveussanctuary.org/ambassadors/tico/",
+      "iucn": "https://www.iucnredlist.org/species/22685539/131917270"
     },
     "images": [
       {
@@ -195,9 +198,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["parrotcam"],
+    "facility": null,
     "enclosure": "parrot-aviary",
-    "facility": null
+    "cams": ["parrotcam"]
   },
   "moomin": {
     "name": "Moomin",
@@ -209,7 +212,8 @@
     "story": "Rehomed from a local pet owner.",
     "conservationMission": "He is an ambassador for the exploitation of wildlife in the fur trade.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/moomin/"
+      "website": "https://www.alveussanctuary.org/ambassadors/moomin/",
+      "iucn": "https://www.iucnredlist.org/species/4652/117975205"
     },
     "images": [
       {
@@ -221,9 +225,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "nuthouse",
     "enclosure": "chincillas",
-    "facility": "nuthouse"
+    "cams": []
   },
   "snork": {
     "name": "Snork",
@@ -235,7 +239,8 @@
     "story": "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
     "conservationMission": "She is an ambassador for the exploitation of wildlife in the fur trade.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/snork/"
+      "website": "https://www.alveussanctuary.org/ambassadors/snork/",
+      "iucn": "https://www.iucnredlist.org/species/4652/117975205"
     },
     "images": [
       {
@@ -247,9 +252,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "nuthouse",
     "enclosure": "chincillas",
-    "facility": "nuthouse"
+    "cams": []
   },
   "jalapeno": {
     "name": "Jalapeño",
@@ -281,9 +286,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["pasturecam"],
+    "facility": null,
     "enclosure": "pasture",
-    "facility": null
+    "cams": ["pasturecam"]
   },
   "serrano": {
     "name": "Serrano",
@@ -315,9 +320,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["pasturecam"],
+    "facility": null,
     "enclosure": "pasture",
-    "facility": null
+    "cams": ["pasturecam"]
   },
   "stompy": {
     "name": "Stompy",
@@ -325,12 +330,13 @@
     "scientificName": "Dromaius novaehollandiae",
     "sex": "Male",
     "dateOfBirth": "2021-02-14",
-    "iucnStatus": "",
+    "iucnStatus": "Least Concern",
     "story": "Stompy was hatched in captivity and Maya hand was raised to be the first Alveus ambassador.",
     "conservationMission": "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     "links": {
       "website": "https://www.alveussanctuary.org/ambassadors/stompy/",
-      "introVideo": "https://www.youtube.com/watch?v=EdNiW_VvVtI"
+      "introVideo": "https://www.youtube.com/watch?v=EdNiW_VvVtI",
+      "iucn": "https://www.iucnredlist.org/species/22678117/131902466"
     },
     "images": [
       {
@@ -366,9 +372,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["pasturecam"],
+    "facility": null,
     "enclosure": "pasture",
-    "facility": null
+    "cams": ["pasturecam"]
   },
   "winnie": {
     "name": "Winnie (the Moo)",
@@ -416,9 +422,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["pasturecam"],
+    "facility": null,
     "enclosure": "pasture",
-    "facility": null
+    "cams": ["pasturecam"]
   },
   "georgie": {
     "name": "Georgie",
@@ -430,7 +436,8 @@
     "story": "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
     "conservationMission": "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/georgie/"
+      "website": "https://www.alveussanctuary.org/ambassadors/georgie/",
+      "iucn": "https://www.iucnredlist.org/species/58535/3070700"
     },
     "images": [
       {
@@ -474,9 +481,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["georgiecam"],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": ["georgiecam"]
   },
   "noodle": {
     "name": "Noodle",
@@ -488,7 +495,8 @@
     "story": "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
     "conservationMission": "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/noodle/"
+      "website": "https://www.alveussanctuary.org/ambassadors/noodle/",
+      "iucn": "https://www.iucnredlist.org/species/62232/21649539"
     },
     "images": [
       {
@@ -516,9 +524,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["noodlecam"],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": ["noodlecam"]
   },
   "patchy": {
     "name": "Patchy",
@@ -530,7 +538,8 @@
     "story": "Patchy was rehomed to Alveus from a local breeder after it was discovered that he had a genetic defect and was missing an eye.",
     "conservationMission": "He is an ambassador for how the pet trade and habitat loss has affected his and many other reptile species worldwide.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/patchy/"
+      "website": "https://www.alveussanctuary.org/ambassadors/patchy/",
+      "iucn": "https://www.iucnredlist.org/species/177562/220378972"
     },
     "images": [
       {
@@ -542,9 +551,9 @@
         "type": "webp"
       }
     ],
-    "cams": ["noodlecam"],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": ["noodlecam"]
   },
   "abbot": {
     "name": "Abbott",
@@ -556,7 +565,8 @@
     "story": "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/abbott/"
+      "website": "https://www.alveussanctuary.org/ambassadors/abbott/",
+      "iucn": "https://www.iucnredlist.org/species/22705990/131945410"
     },
     "images": [
       {
@@ -568,9 +578,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["crowcam"],
+    "facility": null,
     "enclosure": "crow-aviary",
-    "facility": null
+    "cams": ["crowcam"]
   },
   "coconut": {
     "name": "Coconut",
@@ -582,7 +592,8 @@
     "story": "Coconut was brought into a willdife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     "conservationMission": "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/coconut/"
+      "website": "https://www.alveussanctuary.org/ambassadors/coconut/",
+      "iucn": "https://www.iucnredlist.org/species/22705990/131945410"
     },
     "images": [
       {
@@ -594,9 +605,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["crowcam"],
+    "facility": null,
     "enclosure": "crow-aviary",
-    "facility": null
+    "cams": ["crowcam"]
   },
   "baked-bean": {
     "name": "Baked Bean",
@@ -604,7 +615,7 @@
     "scientificName": "Gromphadorhina portentosa",
     "sex": "Male",
     "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
+    "iucnStatus": "Not evaluated",
     "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
     "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
@@ -636,10 +647,10 @@
         "type": "jpg"
       }
     ],
-    "cams": ["roachcam"],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["barbara"],
-    "facility": "studio"
+    "cams": ["roachcam"],
+    "relatedAmbassadors": ["barbara"]
   },
   "barbara": {
     "name": "Barbara",
@@ -647,7 +658,7 @@
     "scientificName": "Gromphadorhina portentosa",
     "sex": "Female",
     "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
+    "iucnStatus": "Not evaluated",
     "story": "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
     "conservationMission": "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     "links": {
@@ -679,10 +690,10 @@
         "type": "jpg"
       }
     ],
-    "cams": ["roachcam"],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["baked-bean"],
-    "facility": "studio"
+    "cams": ["roachcam"],
+    "relatedAmbassadors": ["baked-bean"]
   },
   "bb": {
     "name": "BB",
@@ -714,10 +725,10 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["ducky", "marty"],
-    "facility": "studio"
+    "cams": [],
+    "relatedAmbassadors": ["ducky", "marty"]
   },
   "ducky": {
     "name": "Ducky",
@@ -741,10 +752,10 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["marty", "bb"],
-    "facility": "studio"
+    "cams": [],
+    "relatedAmbassadors": ["marty", "bb"]
   },
   "marty": {
     "name": "Marty",
@@ -768,10 +779,10 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["ducky", "bb"],
-    "facility": "studio"
+    "cams": [],
+    "relatedAmbassadors": ["ducky", "bb"]
   },
   "mctrain": {
     "name": "Mr. McTrain",
@@ -803,9 +814,9 @@
         "type": "webp"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": []
   },
   "pickles": {
     "name": "Pickles",
@@ -853,9 +864,9 @@
         "type": "webp"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": []
   },
   "nugget": {
     "name": "Nugget",
@@ -887,9 +898,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": "chickens",
-    "facility": "studio"
+    "cams": []
   },
   "oliver": {
     "name": "Oliver",
@@ -913,9 +924,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": "chickens",
-    "facility": "studio"
+    "cams": []
   },
   "henrietta": {
     "name": "Henrietta",
@@ -939,9 +950,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": "chickens",
-    "facility": "studio"
+    "cams": []
   },
   "henrique": {
     "name": "Henrique",
@@ -965,9 +976,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": "chickens",
-    "facility": "studio"
+    "cams": []
   },
   "toaster-strudel": {
     "name": "Toaster Strudel",
@@ -979,7 +990,8 @@
     "story": "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     "conservationMission": "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/toaster-strudel/"
+      "website": "https://www.alveussanctuary.org/ambassadors/toaster-strudel/",
+      "iucn": "https://www.iucnredlist.org/species/109481538/109481555"
     },
     "images": [
       {
@@ -991,9 +1003,9 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "facility": "studio"
+    "cams": []
   },
   "puppy": {
     "name": "Puppy",
@@ -1017,10 +1029,10 @@
         "type": "png"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["tortellini"],
-    "facility": "studio"
+    "cams": [],
+    "relatedAmbassadors": ["tortellini"]
   },
   "tortellini": {
     "name": "Tortellini",
@@ -1044,10 +1056,10 @@
         "type": "jpg"
       }
     ],
-    "cams": [],
+    "facility": "studio",
     "enclosure": null,
-    "relatedAmbassadors": ["puppy"],
-    "facility": "studio"
+    "cams": [],
+    "relatedAmbassadors": ["puppy"]
   },
   "fenn": {
     "name": "Fenn",
@@ -1059,7 +1071,8 @@
     "story": "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
     "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/fenn/"
+      "website": "https://www.alveussanctuary.org/ambassadors/fenn/",
+      "iucn": "https://www.iucnredlist.org/species/23062/193903628"
     },
     "images": [
       {
@@ -1071,9 +1084,9 @@
         "type": "jpg"
       }
     ],
-    "cams": ["foxcam"],
+    "facility": null,
     "enclosure": "foxes",
-    "facility": null
+    "cams": ["foxcam"]
   },
   "reed": {
     "name": "Reed",
@@ -1085,7 +1098,8 @@
     "story": "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
     "conservationMission": "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     "links": {
-      "website": "https://www.alveussanctuary.org/ambassadors/reed/"
+      "website": "https://www.alveussanctuary.org/ambassadors/reed/",
+      "iucn": "https://www.iucnredlist.org/species/23062/193903628"
     },
     "images": [
       {
@@ -1097,38 +1111,90 @@
         "type": "jpg"
       }
     ],
-    "cams": ["foxcam"],
+    "facility": null,
     "enclosure": "foxes",
-    "facility": null
+    "cams": ["foxcam"]
   },
   "nilla": {
-    "name": "Nilla",
-    "species": "Rat",
-    "scientificName": "Rattus",
+    "name": "Nilla Wafer",
+    "species": "Domestic Rat",
+    "scientificName": "Rattus norvegicus f. domestica",
     "sex": "Female",
     "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Lorem ipsum dolor sit amet.",
-    "conservationMission": "Lorem ipsum dolor sit amet.",
+    "iucnStatus": "Not evaluated",
+    "story": "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
+    "conservationMission": "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     "links": {},
-    "images": [],
-    "cams": [],
+    "images": [
+      {
+        "url": "https://raw.githubusercontent.com/abdullahmorrison/AlveusAmbassadors/main/public/animal-images/nillawafer.jpg",
+        "alt": "",
+        "label": "Nilla Wafer",
+        "type": "png",
+        "width": 550,
+        "height": 250
+      }
+    ],
+    "facility": "nuthouse",
     "enclosure": "rats",
-    "facility": "nuthouse"
+    "cams": []
   },
   "chips-ahoy": {
     "name": "Chips Ahoy!",
-    "species": "Rat",
-    "scientificName": "Rattus",
+    "species": "Domestic Rat",
+    "scientificName": "Rattus norvegicus f. domestica",
     "sex": "Female",
     "dateOfBirth": "",
-    "iucnStatus": "Least Concern",
-    "story": "Lorem ipsum dolor sit amet.",
-    "conservationMission": "Lorem ipsum dolor sit amet.",
+    "iucnStatus": "Not evaluated",
+    "story": "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
+    "conservationMission": "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     "links": {},
-    "images": [],
-    "cams": [],
+    "images": [
+      {
+        "url": "https://raw.githubusercontent.com/abdullahmorrison/AlveusAmbassadors/main/public/animal-images/chipsahoy.jpg",
+        "alt": "",
+        "label": "Chips Ahoy!",
+        "type": "png",
+        "width": 550,
+        "height": 250
+      }
+    ],
+    "facility": "nuthouse",
     "enclosure": "rats",
-    "facility": "nuthouse"
+    "cams": []
+  },
+  "momo": {
+    "name": "Momo",
+    "species": "Black-pencilled Marmoset",
+    "scientificName": "Callithrix penicillata",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "",
+    "conservationMission": "",
+    "links": {
+      "iucn": "https://www.iucnredlist.org/species/41518/191705043"
+    },
+    "images": [],
+    "facility": null,
+    "enclosure": null,
+    "cams": []
+  },
+  "Appa": {
+    "name": "Appa",
+    "species": "Common Marmoset",
+    "scientificName": "Callithrix jacchus",
+    "sex": "Male",
+    "dateOfBirth": "",
+    "iucnStatus": "Least Concern",
+    "story": "",
+    "conservationMission": "",
+    "links": {
+      "iucn": "https://www.iucnredlist.org/species/41519/191705321"
+    },
+    "images": [],
+    "facility": null,
+    "enclosure": null,
+    "cams": []
   }
 }
