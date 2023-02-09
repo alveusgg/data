@@ -555,7 +555,7 @@
     "enclosure": null,
     "cams": ["noodlecam"]
   },
-  "abbot": {
+  "abbott": {
     "name": "Abbott",
     "species": "American Crow",
     "scientificName": "Corvus Brachyrhynchos",
