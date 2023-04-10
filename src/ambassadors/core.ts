@@ -708,6 +708,11 @@ const ambassadors = {
 
 export const ambassadorKeys = Object.keys(ambassadors) as AmbassadorKey[];
 
+export const ambassadorEntries = Object.entries(ambassadors) as [
+  AmbassadorKey,
+  Ambassador
+][];
+
 export const isAmbassadorKey = (str: string): str is AmbassadorKey =>
   ambassadorKeys.includes(str as AmbassadorKey);
 

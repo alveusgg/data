@@ -1,4 +1,4 @@
-import { isAmbassadorKey, type AmbassadorKey } from "./core";
+import ambassadors, { isAmbassadorKey, type AmbassadorKey } from "./core";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
 import stompyImage2 from "../../assets/ambassadors/stompy/02.jpg";
@@ -137,15 +137,13 @@ import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 
-type Image = { src: typeof stompyImage1; alt: string };
+export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
 
-type Images = [Image, ...Image[]];
+export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
-type AmbassadorImages = {
-  [key in AmbassadorKey]: Images;
-};
-
-const ambassadorImages: AmbassadorImages = {
+const ambassadorImages: {
+  [key in AmbassadorKey]: AmbassadorImages;
+} = {
   stompy: [
     { src: stompyImage1, alt: "Stompy the Emu" },
     { src: stompyImage2, alt: "Stompy the Emu" },
@@ -324,16 +322,16 @@ const ambassadorImages: AmbassadorImages = {
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
 };
 
-export const getAmbassadorImages = (
-  ambassador: AmbassadorKey | string
-): Images | undefined => {
+export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
   return ambassadorImages[ambassador];
-};
+}) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
+  ((ambassador: string) => AmbassadorImages | undefined);
 
+// TODO: Can we derive this from ambassadors[].plush?
 type AmbassadorMerch = Partial<{
-  [key in AmbassadorKey]: Image;
+  [key in AmbassadorKey]: AmbassadorImage;
 }>;
 
 const ambassadorMerchImages: AmbassadorMerch = {
@@ -344,7 +342,7 @@ const ambassadorMerchImages: AmbassadorMerch = {
 
 export const getAmbassadorMerchImage = (
   ambassador: AmbassadorKey | string
-): Image | undefined => {
+): AmbassadorImage | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
   return ambassadorMerchImages[ambassador];
