@@ -4,10 +4,10 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alveusgg/alveusgg.git"
+    "url": "git+https://github.com/alveusgg/data.git"
   },
   "bugs": {
-    "url": "https://github.com/alveusgg/alveusgg/issues"
+    "url": "https://github.com/alveusgg/data/issues"
   },
   "scripts": {
     "lint": "eslint src --ext .ts",
