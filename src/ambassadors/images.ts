@@ -376,10 +376,11 @@ export const isAmbassadorWithPlushKey = (
 ): str is AmbassadorWithPlushKey =>
   ambassadorsWithPlushKeys.includes(str as AmbassadorWithPlushKey);
 
-export const getAmbassadorMerchImage = (
+export const getAmbassadorMerchImage = ((
   ambassador: AmbassadorWithPlushKey | string
-): AmbassadorImage | undefined => {
+) => {
   if (!isAmbassadorWithPlushKey(ambassador)) return undefined;
 
   return ambassadorMerchImages[ambassador];
-};
+}) as ((ambassador: AmbassadorWithPlushKey) => AmbassadorImage) &
+  ((ambassador: string) => AmbassadorImage | undefined);
