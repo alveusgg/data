@@ -1,4 +1,4 @@
-import ambassadors, { isAmbassadorKey, type AmbassadorKey } from "./core";
+import { isAmbassadorKey, type AmbassadorKey } from "./core";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
 import stompyImage2 from "../../assets/ambassadors/stompy/02.jpg";
@@ -6,14 +6,14 @@ import stompyImage3 from "../../assets/ambassadors/stompy/03.jpg";
 import stompyImage4 from "../../assets/ambassadors/stompy/04.jpg";
 import stompyImage5 from "../../assets/ambassadors/stompy/05.jpg";
 import stompyImage6 from "../../assets/ambassadors/stompy/06.jpg";
-import stompyImageMerch from "../../../../assets/merch/stompy-plush.jpg";
+import stompyImageMerch from "../../assets/ambassadors/stompy/merch.jpg";
 
 import georgieImage1 from "../../assets/ambassadors/georgie/01.jpg";
 import georgieImage2 from "../../assets/ambassadors/georgie/02.jpg";
 import georgieImage3 from "../../assets/ambassadors/georgie/03.jpg";
 import georgieImage4 from "../../assets/ambassadors/georgie/04.png";
 import georgieImage5 from "../../assets/ambassadors/georgie/05.jpg";
-import georgieImageMerch from "../../../../assets/merch/georgie-plush.jpg";
+import georgieImageMerch from "../../assets/ambassadors/georgie/merch.jpg";
 
 import ticoImage1 from "../../assets/ambassadors/tico/01.jpg";
 import ticoImage2 from "../../assets/ambassadors/tico/02.jpg";
@@ -63,7 +63,7 @@ import winnieImage4 from "../../assets/ambassadors/winnie/04.jpg";
 import winnieImage5 from "../../assets/ambassadors/winnie/05.jpg";
 import winnieImage6 from "../../assets/ambassadors/winnie/06.jpg";
 import winnieImage7 from "../../assets/ambassadors/winnie/07.jpg";
-import winnieImageMerch from "../../../../assets/merch/winnie-plush.png";
+import winnieImageMerch from "../../assets/ambassadors/winnie/merch.png";
 
 import noodleImage1 from "../../assets/ambassadors/noodle/01.jpg";
 import noodleImage2 from "../../assets/ambassadors/noodle/02.jpg";
