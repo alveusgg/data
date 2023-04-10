@@ -1,4 +1,10 @@
-import { isAmbassadorKey, type AmbassadorKey } from "./core";
+import ambassadors, {
+  isAmbassadorKey,
+  type AmbassadorKey,
+  Ambassador,
+  AmbassadorsData,
+  ambassadorKeys,
+} from "./core";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
 import stompyImage2 from "../../assets/ambassadors/stompy/02.jpg";
@@ -136,6 +142,17 @@ import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
+
+type AmbassadorPlushData = Exclude<AmbassadorsData[string]["plush"], null>;
+type Ambassadors = typeof ambassadors;
+
+type AmbassadorWithPlushKey = {
+  [K in keyof Ambassadors]: Ambassadors[K] extends {
+    plush: AmbassadorPlushData;
+  }
+    ? K
+    : never;
+}[keyof Ambassadors];
 
 export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
 
@@ -329,10 +346,9 @@ export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
 }) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
   ((ambassador: string) => AmbassadorImages | undefined);
 
-// TODO: Can we derive this from ambassadors[].plush?
-type AmbassadorMerch = Partial<{
-  [key in AmbassadorKey]: AmbassadorImage;
-}>;
+type AmbassadorMerch = {
+  [key in AmbassadorWithPlushKey]: AmbassadorImage;
+};
 
 const ambassadorMerchImages: AmbassadorMerch = {
   stompy: { src: stompyImageMerch, alt: "" },
@@ -340,10 +356,15 @@ const ambassadorMerchImages: AmbassadorMerch = {
   winnieTheMoo: { src: winnieImageMerch, alt: "" },
 };
 
+export const isAmbassadorWithPlushKey = (
+  str: string
+): str is AmbassadorWithPlushKey =>
+  ambassadorKeys.includes(str as AmbassadorKey);
+
 export const getAmbassadorMerchImage = (
-  ambassador: AmbassadorKey | string
+  ambassador: AmbassadorWithPlushKey | string
 ): AmbassadorImage | undefined => {
-  if (!isAmbassadorKey(ambassador)) return undefined;
+  if (!isAmbassadorWithPlushKey(ambassador)) return undefined;
 
   return ambassadorMerchImages[ambassador];
 };
