@@ -3,7 +3,6 @@ import ambassadors, {
   type AmbassadorKey,
   Ambassador,
   AmbassadorsData,
-  ambassadorKeys,
 } from "./core";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
@@ -153,6 +152,22 @@ type AmbassadorWithPlushKey = {
     ? K
     : never;
 }[keyof Ambassadors];
+
+type AmbassadorsWithPlush = {
+  [K in AmbassadorWithPlushKey]: Ambassadors[K] extends {
+    plush: AmbassadorPlushData;
+  }
+    ? Ambassador & { plush: AmbassadorPlushData }
+    : never;
+};
+
+const ambassadorsWithPlush = Object.fromEntries(
+  Object.entries(ambassadors).filter(([, value]) => value.plush !== null)
+) as Partial<AmbassadorsData> as AmbassadorsWithPlush;
+
+const ambassadorsWithPlushKeys = Object.keys(
+  ambassadorsWithPlush
+) as AmbassadorWithPlushKey[];
 
 export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
 
@@ -359,7 +374,7 @@ const ambassadorMerchImages: AmbassadorMerch = {
 export const isAmbassadorWithPlushKey = (
   str: string
 ): str is AmbassadorWithPlushKey =>
-  ambassadorKeys.includes(str as AmbassadorKey);
+  ambassadorsWithPlushKeys.includes(str as AmbassadorWithPlushKey);
 
 export const getAmbassadorMerchImage = (
   ambassador: AmbassadorWithPlushKey | string
