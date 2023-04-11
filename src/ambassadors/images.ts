@@ -142,32 +142,21 @@ import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 
-type AmbassadorPlushData = Exclude<AmbassadorsData[string]["plush"], null>;
 type Ambassadors = typeof ambassadors;
 
+export type AmbassadorWithPlush = Ambassador & { plush: Exclude<Ambassador["plush"], null> };
+
 export type AmbassadorWithPlushKey = {
-  [K in keyof Ambassadors]: Ambassadors[K] extends {
-    plush: AmbassadorPlushData;
-  }
+  [K in keyof Ambassadors]: Ambassadors[K] extends AmbassadorWithPlush
     ? K
     : never;
 }[keyof Ambassadors];
 
 export type AmbassadorsWithPlush = {
-  [K in AmbassadorWithPlushKey]: Ambassadors[K] extends {
-    plush: AmbassadorPlushData;
-  }
-    ? Ambassador & { plush: AmbassadorPlushData }
+  [K in AmbassadorWithPlushKey]: Ambassadors[K] extends AmbassadorWithPlush
+    ? AmbassadorWithPlush
     : never;
 };
-
-export const ambassadorsWithPlush = Object.fromEntries(
-  Object.entries(ambassadors).filter(([, value]) => value.plush !== null)
-) as Partial<AmbassadorsData> as AmbassadorsWithPlush;
-
-export const ambassadorsWithPlushKeys = Object.keys(
-  ambassadorsWithPlush
-) as AmbassadorWithPlushKey[];
 
 export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
@@ -353,7 +342,7 @@ const ambassadorImages: {
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
 };
 
-const ambassadorMerchImages: {
+export const ambassadorMerchImages: {
   [key in AmbassadorWithPlushKey]: AmbassadorImage;
 } = {
   stompy: { src: stompyImageMerch, alt: "" },
@@ -367,6 +356,14 @@ export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
   return ambassadorImages[ambassador];
 }) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
   ((ambassador: string) => AmbassadorImages | undefined);
+
+const ambassadorsWithPlush = Object.fromEntries(
+  Object.entries(ambassadors).filter(([, value]) => value.plush !== null)
+) as Partial<AmbassadorsData> as AmbassadorsWithPlush;
+
+const ambassadorsWithPlushKeys = Object.keys(
+  ambassadorsWithPlush
+) as AmbassadorWithPlushKey[];
 
 export const isAmbassadorWithPlushKey = (
   str: string
