@@ -1,8 +1,8 @@
 import ambassadors, {
   isAmbassadorKey,
   type AmbassadorKey,
-  Ambassador,
-  AmbassadorsData,
+  type Ambassador,
+  type AmbassadorsData,
 } from "./core";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
@@ -145,7 +145,7 @@ import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 type AmbassadorPlushData = Exclude<AmbassadorsData[string]["plush"], null>;
 type Ambassadors = typeof ambassadors;
 
-type AmbassadorWithPlushKey = {
+export type AmbassadorWithPlushKey = {
   [K in keyof Ambassadors]: Ambassadors[K] extends {
     plush: AmbassadorPlushData;
   }
@@ -153,7 +153,7 @@ type AmbassadorWithPlushKey = {
     : never;
 }[keyof Ambassadors];
 
-type AmbassadorsWithPlush = {
+export type AmbassadorsWithPlush = {
   [K in AmbassadorWithPlushKey]: Ambassadors[K] extends {
     plush: AmbassadorPlushData;
   }
@@ -161,16 +161,15 @@ type AmbassadorsWithPlush = {
     : never;
 };
 
-const ambassadorsWithPlush = Object.fromEntries(
+export const ambassadorsWithPlush = Object.fromEntries(
   Object.entries(ambassadors).filter(([, value]) => value.plush !== null)
 ) as Partial<AmbassadorsData> as AmbassadorsWithPlush;
 
-const ambassadorsWithPlushKeys = Object.keys(
+export const ambassadorsWithPlushKeys = Object.keys(
   ambassadorsWithPlush
 ) as AmbassadorWithPlushKey[];
 
 export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
-
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
 const ambassadorImages: {
@@ -354,22 +353,20 @@ const ambassadorImages: {
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
 };
 
+const ambassadorMerchImages: {
+  [key in AmbassadorWithPlushKey]: AmbassadorImage;
+} = {
+  stompy: { src: stompyImageMerch, alt: "" },
+  georgie: { src: georgieImageMerch, alt: "" },
+  winnieTheMoo: { src: winnieImageMerch, alt: "" },
+};
+
 export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
   return ambassadorImages[ambassador];
 }) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
   ((ambassador: string) => AmbassadorImages | undefined);
-
-type AmbassadorMerch = {
-  [key in AmbassadorWithPlushKey]: AmbassadorImage;
-};
-
-const ambassadorMerchImages: AmbassadorMerch = {
-  stompy: { src: stompyImageMerch, alt: "" },
-  georgie: { src: georgieImageMerch, alt: "" },
-  winnieTheMoo: { src: winnieImageMerch, alt: "" },
-};
 
 export const isAmbassadorWithPlushKey = (
   str: string
