@@ -709,7 +709,7 @@ const ambassadors = {
       id: 41519,
       status: "LC/decreasing",
     },
-    enclosure: "nutrition",
+    enclosure: "marmosets",
     story:
       "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
@@ -729,7 +729,7 @@ const ambassadors = {
       id: 41518,
       status: "LC/decreasing",
     },
-    enclosure: "nutrition",
+    enclosure: "marmosets",
     story:
       "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
