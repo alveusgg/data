@@ -1,4 +1,5 @@
 import type { IUCNStatus } from "../iucn";
+import type { EnclosureKey } from "../enclosures";
 
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
@@ -27,6 +28,7 @@ export type Ambassador = {
     id: Nullable<number>;
     status: IUCNStatus;
   };
+  enclosure: EnclosureKey;
   story: string;
   mission: string;
   clips: Readonly<{ id: string; caption: string }[]>;
@@ -46,6 +48,7 @@ const ambassadors = {
       id: 22678117,
       status: "LC",
     },
+    enclosure: "pasture",
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
@@ -84,6 +87,7 @@ const ambassadors = {
       id: 58535,
       status: "LC/decreasing",
     },
+    enclosure: "reptiles",
     story:
       "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
@@ -115,6 +119,7 @@ const ambassadors = {
       id: 22685539,
       status: "LC/decreasing",
     },
+    enclosure: "parrots",
     story:
       "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring,",
     mission:
@@ -134,6 +139,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "parrots",
     story:
       "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
@@ -153,6 +159,7 @@ const ambassadors = {
       id: 22724813,
       status: "EN/decreasing",
     },
+    enclosure: "parrots",
     story:
       "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
@@ -176,6 +183,7 @@ const ambassadors = {
       id: 22686332,
       status: "NT/decreasing",
     },
+    enclosure: "parrots",
     story:
       "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
@@ -200,6 +208,7 @@ const ambassadors = {
       id: 22705990,
       status: "LC/increasing",
     },
+    enclosure: "crows",
     story:
       "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     mission:
@@ -221,6 +230,7 @@ const ambassadors = {
       id: 22705990,
       status: "LC/increasing",
     },
+    enclosure: "crows",
     story:
       "Coconut was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     mission:
@@ -240,6 +250,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "chickens",
     story: "Oliver was put in the reject/return cage at a local feed store.",
     mission:
       "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
@@ -258,6 +269,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "chickens",
     story:
       "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
     mission:
@@ -277,6 +289,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "chickens",
     story: "Henrique was rehomed from a local farm.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
@@ -295,6 +308,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "pasture",
     story: "Winnie came from a cattle operation in Oklahoma.",
     mission:
       "She is an ambassador for the beef industry and how people can use their consumer choice to impact the environment in a positive way.",
@@ -318,6 +332,7 @@ const ambassadors = {
       id: 62232,
       status: "LC/decreasing",
     },
+    enclosure: "reptiles",
     story:
       "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
@@ -343,6 +358,7 @@ const ambassadors = {
       id: 177562,
       status: "NT/decreasing",
     },
+    enclosure: "reptiles",
     story:
       "Patchy was rehomed to Alveus from a local breeder after it was discovered that he had a genetic defect and was missing an eye.",
     mission:
@@ -362,6 +378,7 @@ const ambassadors = {
       id: 23062,
       status: "LC",
     },
+    enclosure: "foxes",
     story:
       "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
     mission:
@@ -383,6 +400,7 @@ const ambassadors = {
       id: 23062,
       status: "LC",
     },
+    enclosure: "foxes",
     story:
       "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
     mission:
@@ -404,6 +422,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "pasture",
     story: "Rehomed to Alveus from a local equine rescue.",
     mission:
       "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
@@ -424,6 +443,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "pasture",
     story: "Rehomed to Alveus from a local equine rescue.",
     mission:
       "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
@@ -444,6 +464,7 @@ const ambassadors = {
       id: 4652,
       status: "EN/decreasing",
     },
+    enclosure: "nutrition",
     story:
       "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
@@ -463,6 +484,7 @@ const ambassadors = {
       id: 4652,
       status: "EN/decreasing",
     },
+    enclosure: "nutrition",
     story: "Rehomed from a local pet owner.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the fur trade.",
@@ -485,6 +507,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our smokey ghost millipede was born in captivity and ethically sourced.",
     mission:
@@ -507,6 +530,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
     mission:
@@ -526,6 +550,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story: "Our zebra isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
@@ -544,6 +569,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our rubber ducky isopods were born in captivity and ethically sourced.",
     mission:
@@ -563,6 +589,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our spanish orange isopods were born in captivity and ethically sourced.",
     mission:
@@ -582,6 +609,7 @@ const ambassadors = {
       id: 109481538,
       status: "LC",
     },
+    enclosure: "reptiles",
     story:
       "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
@@ -601,6 +629,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
@@ -620,6 +649,7 @@ const ambassadors = {
       id: null,
       status: "NE",
     },
+    enclosure: "critters",
     story:
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
@@ -639,6 +669,7 @@ const ambassadors = {
       id: 19353,
       status: "LC",
     },
+    enclosure: "nutrition",
     story:
       "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
@@ -658,6 +689,7 @@ const ambassadors = {
       id: 19353,
       status: "LC",
     },
+    enclosure: "nutrition",
     story:
       "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
@@ -677,6 +709,7 @@ const ambassadors = {
       id: 41519,
       status: "LC/decreasing",
     },
+    enclosure: "nutrition",
     story:
       "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
@@ -696,6 +729,7 @@ const ambassadors = {
       id: 41518,
       status: "LC/decreasing",
     },
+    enclosure: "nutrition",
     story:
       "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
