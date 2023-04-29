@@ -66,6 +66,10 @@ const ambassadors = {
         id: "8UVfWxKvIc8",
         caption: "Stompy Running In The Pasture",
       },
+      {
+        id: "UtgQd-R4bZc",
+        caption: "Callback: Baby Stompy",
+      },
     ],
     homepage: {
       title: "Stompy!",
@@ -124,7 +128,10 @@ const ambassadors = {
       "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring,",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    clips: [{ id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" }],
+    clips: [
+      { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
+      { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
+    ],
     homepage: null,
     plush: null,
   },
@@ -144,7 +151,7 @@ const ambassadors = {
       "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    clips: [],
+    clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
     homepage: null,
     plush: null,
   },
@@ -167,6 +174,8 @@ const ambassadors = {
     clips: [
       { id: "nIw-qTRT5Nc", caption: "Mia Dances With Connor" },
       { id: "KRJy_nR1u5k", caption: "Mia Walks Around The Aviary" },
+      { id: "E5mEGGIv5jA", caption: "Mia Shows Of Her Many Talents" },
+      { id: "bj0YavBUAsc", caption: "Bomb Explodes At Alveus" },
       { id: "5ETmZ7oafo4", caption: "Mia Makes A Car Alarm Sound" },
     ],
     homepage: null,
@@ -191,6 +200,8 @@ const ambassadors = {
     clips: [
       { id: "ociryM83xIo", caption: "Siren Is Given Enrichment" }, // This is a Maya clip
       { id: "ynv06rC9aHM", caption: "Siren Talks, Sings, And More" },
+      { id: "n8OFY1UN3S0", caption: "Sea Shanty Duet With Kayla & Siren" },
+      { id: "si3puzE6ypE", caption: "Siren Zooming To Her Enrichment" },
       { id: "LqpK1DhBH-E", caption: "Siren Sings A Song" },
       { id: "0foatCEQ5vk", caption: "Siren Has A Conversation" },
     ],
@@ -274,7 +285,7 @@ const ambassadors = {
       "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    clips: [],
+    clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
     homepage: null,
     plush: null,
   },
@@ -385,6 +396,12 @@ const ambassadors = {
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     clips: [
       { id: "670RYU2Xw98", caption: "Fenn Digs Up A Friend In The Enclosure" },
+      { id: "awX8PnOfhQA", caption: "Fenn Finds A Well Hidden Treasure" },
+      { id: "ScccoAPYPB0", caption: "Fenn The Fox ASMR" },
+      {
+        id: "9HbrUaQzhXI",
+        caption: "The Foxes Are Excited To Be Reunited",
+      },
     ],
     homepage: null,
     plush: null,
@@ -407,6 +424,11 @@ const ambassadors = {
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     clips: [
       { id: "ClWtgsoWta0", caption: "Reed Gets Weighed With Target Training" },
+      { id: "4HZMQJoEkVA", caption: "Reed Is The Best Boy" },
+      {
+        id: "9HbrUaQzhXI",
+        caption: "The Foxes Are Excited To Be Reunited",
+      },
     ],
     homepage: null,
     plush: null,
@@ -427,7 +449,10 @@ const ambassadors = {
     mission:
       "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     clips: [
+      { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
+      { id: "P_bDfL4pCTc", caption: "Serrano Wants Food. NOW" },
+      { id: "YWNRdnNleXw", caption: "Serrano Enjoying A Popsicle" },
     ],
     homepage: null,
     plush: null,
@@ -448,6 +473,7 @@ const ambassadors = {
     mission:
       "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     clips: [
+      { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
     ],
     homepage: null,
@@ -714,7 +740,9 @@ const ambassadors = {
       "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
       "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    clips: [],
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
     homepage: null,
     plush: null,
   },
@@ -734,7 +762,9 @@ const ambassadors = {
       "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
       "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    clips: [],
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
     homepage: null,
     plush: null,
   },
