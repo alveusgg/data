@@ -12,12 +12,12 @@ To test changes locally, update the version in this repository using
 `npm version --no-git-tag-version preminor` (use `premajor` instead if the change is breaking), and
 install this repository as a file-based dependency:
 
-- Website: `cd apps/website && pnpm add file:../../../data && pnpm update @alveusgg/data`
+- Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add file:../../../data`
 - Extension: `npm install file:../data`
 
 Alternatively, push the pre-release branch to GitHub and install it as a GitHub-based dependency:
 
-- Website: `cd apps/website && pnpm add github:alveusgg/data#<branch name> && pnpm update @alveusgg/data`
+- Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add github:alveusgg/data#<branch name>`
 - Extension: `npm install github:alveusgg/data#<branch name>`
 
 When the change is ready to release, update the version in this repository using
@@ -26,5 +26,5 @@ pull request.
 
 Once the pull request is merged, update the GitHub-based dependency in the website and extension:
 
-- Website: `cd apps/website && pnpm add github:alveusgg/data && pnpm update @alveusgg/data`
+- Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add github:alveusgg/data`
 - Extension: `npm install github:alveusgg/data`
