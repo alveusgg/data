@@ -92,6 +92,12 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-03-28"),
     ambassadors: ["barbaraBakedBean"],
   },
+  {
+    link: "https://www.twitch.tv/videos/1806823442?t=00h15m35s",
+    edition: "Cow Edition",
+    broadcast: new Date("2023-04-29"),
+    ambassadors: ["winnieTheMoo"],
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
