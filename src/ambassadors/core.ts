@@ -10,6 +10,7 @@ type DateStringMonth = `0${OneToNine}` | `1${0 | 1 | 2}`;
 type DateStringYearMonth = `${DateStringYear}-${DateStringMonth}`;
 type DateStringDay = `${0}${OneToNine}` | `${1 | 2}${ZeroToNine}` | `3${0 | 1}`;
 type DateString = `${DateStringYearMonth}-${DateStringDay}`;
+type PartialDateString = DateStringYear | DateStringYearMonth | DateString;
 
 type Nullable<T> = T | null;
 
@@ -23,8 +24,9 @@ export type Ambassador = {
   species: string;
   scientific: string;
   sex: Nullable<"Male" | "Female">;
-  birth: Nullable<DateStringYear | DateStringYearMonth | DateString>;
-  arrival: Nullable<DateStringYear | DateStringYearMonth | DateString>;
+  birth: Nullable<PartialDateString>;
+  arrival: Nullable<PartialDateString>;
+  retired: Nullable<PartialDateString>;
   iucn: {
     id: Nullable<number>;
     status: IUCNStatus;
@@ -46,6 +48,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021-02-14",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22678117,
       status: "LC",
@@ -90,6 +93,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 58535,
       status: "LC/decreasing",
@@ -123,6 +127,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22685539,
       status: "LC/decreasing",
@@ -147,6 +152,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -168,6 +174,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22724813,
       status: "EN/decreasing",
@@ -195,6 +202,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22686332,
       status: "NT/decreasing",
@@ -223,6 +231,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2020-05",
     arrival: "2021-08",
+    retired: null,
     iucn: {
       id: 22705990,
       status: "LC/increasing",
@@ -246,6 +255,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-08",
+    retired: null,
     iucn: {
       id: 22705990,
       status: "LC/increasing",
@@ -267,6 +277,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-06",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -287,6 +298,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2019",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -308,6 +320,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2020",
     arrival: null,
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -328,6 +341,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2022-03-22",
     arrival: "2022-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -353,6 +367,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 62232,
       status: "LC/decreasing",
@@ -380,6 +395,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021-08-15",
     arrival: "2021-10",
+    retired: null,
     iucn: {
       id: 177562,
       status: "NT/decreasing",
@@ -401,6 +417,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2020",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 23062,
       status: "LC",
@@ -430,6 +447,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2019",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 23062,
       status: "LC",
@@ -458,6 +476,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2021-05",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -483,6 +502,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2021-05",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -506,6 +526,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2021",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 4652,
       status: "EN/decreasing",
@@ -527,6 +548,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2017",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 4652,
       status: "EN/decreasing",
@@ -551,6 +573,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -575,6 +598,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -596,6 +620,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -616,6 +641,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -637,6 +663,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -658,6 +685,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-07-04",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 109481538,
       status: "LC",
@@ -679,6 +707,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -700,6 +729,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -721,6 +751,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 19353,
       status: "LC",
@@ -742,6 +773,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 19353,
       status: "LC",
@@ -763,6 +795,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 41519,
       status: "LC/decreasing",
@@ -786,6 +819,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 41518,
       status: "LC/decreasing",
