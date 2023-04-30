@@ -40,6 +40,7 @@ export type Ambassador = {
 };
 
 const ambassadors = {
+  // Active ambassadors
   stompy: {
     name: "Stompy",
     alternate: [],
@@ -319,7 +320,7 @@ const ambassadors = {
     scientific: "Gallus gallus domesticus",
     sex: "Female",
     birth: "2020",
-    arrival: null,
+    arrival: "2022-08",
     retired: null,
     iucn: {
       id: null,
@@ -832,6 +833,96 @@ const ambassadors = {
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
+    homepage: null,
+    plush: null,
+  },
+
+  // Retired ambassadors
+  orion: {
+    name: "Orion",
+    alternate: [],
+    species: "Prairie/Peregrine Falcon",
+    scientific: "Falco mexicanus x Falco peregrinus",
+    sex: "Male",
+    birth: "2021-05-13",
+    arrival: "2021-12",
+    retired: "2022-06-14",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "falcon",
+    story:
+      "Orion was originally owned by Maya before becoming an ambassador at Alveus.\n\nOrion sadly passed away in June 2022 after an unfortunate accident in his enclosure.",
+    mission:
+      "He is an ambassador for showing how pest control affects wildlife globally and how to conserve major keystone species.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  pickles: {
+    name: "Pickles",
+    alternate: [],
+    species: "Vinegaroon",
+    scientific: "Mastigoproctus tohono",
+    sex: "Female",
+    birth: "2022",
+    arrival: "2022-01",
+    retired: "2023-02-09",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "critters",
+    story:
+      "Our vinegaroon was born in captivity and ethically sourced.\n\nSadly, Pickles passed away in February 2023 because she was unable to make it through her first molt.",
+    mission:
+      "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  henrietta: {
+    name: "Henrietta",
+    alternate: [],
+    species: "Jersey Giant Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: "2019",
+    arrival: "2022-08",
+    retired: "2023-03",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "chickens",
+    story:
+      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023 and now lives in a chicken coop at Maya's Tiny House with her rabbit and other chicken.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  polly: {
+    name: "Polly",
+    alternate: [],
+    species: "Silkie Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: null,
+    arrival: "2022-08",
+    retired: "2022-11",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "chickens",
+    story:
+      "Polly was rehomed from another owner.\n\nWe had hoped that Polly would grow to be larger so she could join our other chickens, but unfortunately she did not and so was retired from being an ambassador in November 2022 and now lives at Maya's Tiny House.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
     homepage: null,
     plush: null,
   },
