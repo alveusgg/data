@@ -686,8 +686,8 @@ const ambassadors = {
   },
   chipsAhoy: {
     name: "Chips Ahoy",
-    species: "Rat",
-    scientific: "Rattus norvegicus",
+    species: "Domestic Rat",
+    scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
     birth: null,
     arrival: "2022-12",
@@ -706,8 +706,8 @@ const ambassadors = {
   },
   nillaWafer: {
     name: "Nilla Wafer",
-    species: "Rat",
-    scientific: "Rattus norvegicus",
+    species: "Domestic Rat",
+    scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
     birth: null,
     arrival: "2022-12",
