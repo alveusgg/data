@@ -144,7 +144,9 @@ import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 
 type Ambassadors = typeof ambassadors;
 
-export type AmbassadorWithPlush = Ambassador & { plush: Exclude<Ambassador["plush"], null> };
+export type AmbassadorWithPlush = Ambassador & {
+  plush: Exclude<Ambassador["plush"], null>;
+};
 
 export type AmbassadorWithPlushKey = {
   [K in keyof Ambassadors]: Ambassadors[K] extends AmbassadorWithPlush
