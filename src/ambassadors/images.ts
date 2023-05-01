@@ -140,7 +140,16 @@ import nillaImage1 from "../../assets/ambassadors/nilla/01.jpg";
 import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
+
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
+
+import orionImage1 from "../../assets/ambassadors/orion/01.jpg";
+
+import picklesImage1 from "../../assets/ambassadors/pickles/01.jpg";
+
+import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
+
+import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 
 type Ambassadors = typeof ambassadors;
 
@@ -166,6 +175,7 @@ export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 const ambassadorImages: {
   [key in AmbassadorKey]: AmbassadorImages;
 } = {
+  // Active ambassadors
   stompy: [
     { src: stompyImage1, alt: "Stompy the Emu" },
     { src: stompyImage2, alt: "Stompy the Emu" },
@@ -342,6 +352,14 @@ const ambassadorImages: {
   ],
   momo: [{ src: momoImage1, alt: "Momo the Black Tufted Marmoset" }],
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
+
+  // Retired ambassadors
+  orion: [{ src: orionImage1, alt: "Orion the Prairie/Peregrine Falcon" }],
+  pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
+  henrietta: [
+    { src: henriettaImage1, alt: "Henrietta the Jersey Giant Chicken" },
+  ],
+  polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
 };
 
 export const ambassadorMerchImages: {
