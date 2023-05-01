@@ -19,6 +19,7 @@ export type AmbassadorKey = keyof typeof ambassadors;
 
 export type Ambassador = {
   name: string;
+  alternate: Readonly<string[]>;
   species: string;
   scientific: string;
   sex: Nullable<"Male" | "Female">;
@@ -39,6 +40,7 @@ export type Ambassador = {
 const ambassadors = {
   stompy: {
     name: "Stompy",
+    alternate: [],
     species: "Emu",
     scientific: "Dromaius novaehollandiae",
     sex: "Male",
@@ -82,6 +84,7 @@ const ambassadors = {
   },
   georgie: {
     name: "Georgie",
+    alternate: [],
     species: "African Bullfrog",
     scientific: "Pyxicephalus adspersus",
     sex: "Male",
@@ -114,6 +117,7 @@ const ambassadors = {
   },
   tico: {
     name: "Tico",
+    alternate: [],
     species: "Blue and Gold Macaw",
     scientific: "Ara ararauna",
     sex: "Female",
@@ -137,6 +141,7 @@ const ambassadors = {
   },
   miley: {
     name: "Miley",
+    alternate: ["Miele"],
     species: "Catalina Macaw",
     scientific: "Ara ararauna x Ara macao",
     sex: "Female",
@@ -157,6 +162,7 @@ const ambassadors = {
   },
   mia: {
     name: "Mia",
+    alternate: [],
     species: "African Grey",
     scientific: "Psittacus erithacus",
     sex: "Female",
@@ -183,6 +189,7 @@ const ambassadors = {
   },
   siren: {
     name: "Siren",
+    alternate: [],
     species: "Blue-fronted Amazon",
     scientific: "Amazona aestiva",
     sex: "Female",
@@ -210,6 +217,7 @@ const ambassadors = {
   },
   abbott: {
     name: "Abbott",
+    alternate: [],
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
     sex: "Male",
@@ -232,6 +240,7 @@ const ambassadors = {
   },
   coconut: {
     name: "Coconut",
+    alternate: [],
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
     sex: "Male",
@@ -252,6 +261,7 @@ const ambassadors = {
   },
   oliver: {
     name: "Oliver",
+    alternate: [],
     species: "Olive Egger Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Male",
@@ -271,6 +281,7 @@ const ambassadors = {
   },
   nugget: {
     name: "Nugget",
+    alternate: [],
     species: "Ameraucana Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
@@ -291,6 +302,7 @@ const ambassadors = {
   },
   henrique: {
     name: "Henrique",
+    alternate: [],
     species: "Half Dark Brahma, Half Saipan Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
@@ -310,6 +322,7 @@ const ambassadors = {
   },
   winnieTheMoo: {
     name: "Winnie (The Moo)",
+    alternate: [],
     species: "Red Angus Beef Cow",
     scientific: "Bos (primigenius) taurus",
     sex: "Female",
@@ -334,6 +347,7 @@ const ambassadors = {
   },
   noodle: {
     name: "Noodle",
+    alternate: [],
     species: "Carpet Python",
     scientific: "Morelia spilota mcdowelli",
     sex: "Female",
@@ -360,6 +374,7 @@ const ambassadors = {
   },
   patchy: {
     name: "Patchy",
+    alternate: [],
     species: "Ball Python",
     scientific: "Python regius",
     sex: "Male",
@@ -380,6 +395,7 @@ const ambassadors = {
   },
   fenn: {
     name: "Fenn",
+    alternate: [],
     species: "European Red Fox",
     scientific: "Vulpes vulpes",
     sex: "Male",
@@ -408,6 +424,7 @@ const ambassadors = {
   },
   reed: {
     name: "Reed",
+    alternate: [],
     species: "European Red Fox",
     scientific: "Vulpes vulpes",
     sex: "Male",
@@ -435,6 +452,7 @@ const ambassadors = {
   },
   serrano: {
     name: "Serrano",
+    alternate: [],
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
     sex: "Male",
@@ -459,6 +477,7 @@ const ambassadors = {
   },
   jalapeno: {
     name: "Jalapeño",
+    alternate: [],
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
     sex: "Male",
@@ -481,6 +500,7 @@ const ambassadors = {
   },
   snork: {
     name: "Snork",
+    alternate: [],
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
     sex: "Female",
@@ -501,6 +521,7 @@ const ambassadors = {
   },
   moomin: {
     name: "Moomin",
+    alternate: [],
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
     sex: "Male",
@@ -523,7 +544,8 @@ const ambassadors = {
     plush: null,
   },
   hankMrMctrain: {
-    name: "Hank (The Tank) Mr. McTrain",
+    name: "Hank Mr. McTrain",
+    alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
     species: "Smokey Ghost Millipede",
     scientific: "Narceus gordanus",
     sex: "Male",
@@ -547,6 +569,7 @@ const ambassadors = {
   },
   barbaraBakedBean: {
     name: "Barbara / Baked Bean",
+    alternate: [],
     species: "Madagascar Hissing Cockroaches",
     scientific: "Gromphadorhina portentosa",
     sex: null,
@@ -567,6 +590,7 @@ const ambassadors = {
   },
   marty: {
     name: "Marty",
+    alternate: [],
     species: "Zebra Isopods",
     scientific: "Armadillidium maculatum",
     sex: null,
@@ -586,6 +610,7 @@ const ambassadors = {
   },
   ducky: {
     name: "Ducky",
+    alternate: [],
     species: "Rubber Ducky Isopods",
     scientific: "Cubaris sp.",
     sex: null,
@@ -606,6 +631,7 @@ const ambassadors = {
   },
   bb: {
     name: "BB",
+    alternate: ["Bonus Bug"],
     species: "Spanish Orange Isopods",
     scientific: "Porcellio scaber",
     sex: null,
@@ -626,6 +652,7 @@ const ambassadors = {
   },
   toasterStrudel: {
     name: "Toaster Strudel",
+    alternate: [],
     species: "Blue-tounged Skink",
     scientific: "Tiliqua scincoides intermedia",
     sex: "Male",
@@ -646,6 +673,7 @@ const ambassadors = {
   },
   tortellini: {
     name: "Tortellini",
+    alternate: [],
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
     sex: "Male",
@@ -666,6 +694,7 @@ const ambassadors = {
   },
   puppy: {
     name: "Puppy",
+    alternate: [],
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
     sex: "Male",
@@ -686,6 +715,7 @@ const ambassadors = {
   },
   chipsAhoy: {
     name: "Chips Ahoy",
+    alternate: [],
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
@@ -706,6 +736,7 @@ const ambassadors = {
   },
   nillaWafer: {
     name: "Nilla Wafer",
+    alternate: [],
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
@@ -726,6 +757,7 @@ const ambassadors = {
   },
   momo: {
     name: "Momo",
+    alternate: [],
     species: "Black Tufted Marmoset",
     scientific: "Callithrix penicillata",
     sex: "Male",
@@ -748,6 +780,7 @@ const ambassadors = {
   },
   appa: {
     name: "Appa",
+    alternate: [],
     species: "Common Marmoset",
     scientific: "Callithrix jacchus",
     sex: "Male",
