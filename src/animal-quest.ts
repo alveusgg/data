@@ -42,7 +42,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     link: "https://www.twitch.tv/videos/1421096536?t=00h03m29s",
     edition: "Falcon Edition",
     broadcast: new Date("2022-03-07"),
-    ambassadors: [],
+    ambassadors: ["orion"],
   },
   {
     link: "https://www.twitch.tv/videos/1456976498?t=00h00m22s",
