@@ -14,7 +14,7 @@ export type AmbassadorWithPlushKey<
   [K in keyof Items]: Items[K] extends AmbassadorWithPlush<Items[K]>
     ? K
     : never;
-}[keyof Items];
+}[Extract<keyof Items, string>];
 
 export type AmbassadorsWithPlush<
   Items extends AmbassadorsData = typeof ambassadors
@@ -29,7 +29,7 @@ export type AmbassadorsWithPlush<
 export const isAmbassadorWithPlushKey = <
   Items extends AmbassadorsData = typeof ambassadors
 >(
-  key: string | number | symbol
+  key: string
 ): key is AmbassadorWithPlushKey<Items> =>
   ambassadors[key as keyof typeof ambassadors].plush !== null;
 
@@ -43,7 +43,7 @@ export const isAmbassadorWithPlush = <
 export const isAmbassadorWithPlushEntry = <
   Items extends AmbassadorsData = typeof ambassadors
 >(
-  entry: [string | number | symbol, Items[keyof Items]]
+  entry: [string, Items[keyof Items]]
 ): entry is [
   AmbassadorWithPlushKey<Items>,
   AmbassadorWithPlush<Items[keyof Items]>
@@ -61,7 +61,7 @@ export type ActiveAmbassadorKey<
   Items extends AmbassadorsData = typeof ambassadors
 > = {
   [K in keyof Items]: Items[K] extends ActiveAmbassador<Items[K]> ? K : never;
-}[keyof Items];
+}[Extract<keyof Items, string>];
 
 export type ActiveAmbassadors<
   Items extends AmbassadorsData = typeof ambassadors
@@ -74,7 +74,7 @@ export type ActiveAmbassadors<
 export const isActiveAmbassadorKey = <
   Items extends AmbassadorsData = typeof ambassadors
 >(
-  key: string | number | symbol
+  key: string
 ): key is ActiveAmbassadorKey<Items> =>
   ambassadors[key as keyof typeof ambassadors].retired === null;
 
@@ -88,7 +88,7 @@ export const isActiveAmbassador = <
 export const isActiveAmbassadorEntry = <
   Items extends AmbassadorsData = typeof ambassadors
 >(
-  entry: [string | number | symbol, Items[keyof Items]]
+  entry: [string, Items[keyof Items]]
 ): entry is [
   ActiveAmbassadorKey<Items>,
   ActiveAmbassador<Items[keyof Items]>
