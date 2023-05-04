@@ -14,9 +14,9 @@ type PartialDateString = DateStringYear | DateStringYearMonth | DateString;
 
 type Nullable<T> = T | null;
 
-export type AmbassadorsData = Record<string, Ambassador>;
+export type Ambassadors = typeof ambassadors;
 
-export type AmbassadorKey = keyof typeof ambassadors;
+export type AmbassadorKey = keyof Ambassadors;
 
 export type Ambassador = {
   name: string;
@@ -926,7 +926,7 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-} as const satisfies AmbassadorsData;
+} as const satisfies Record<string, Ambassador>;
 
 const ambassadorKeys = Object.keys(ambassadors) as AmbassadorKey[];
 
