@@ -32,6 +32,9 @@ const enclosures = {
   marmosets: {
     name: "Marmoset Enclosure",
   },
+  falcon: {
+    name: "Falcon Aviary",
+  },
 } as const satisfies Record<string, Enclosure>;
 
 const enclosureKeys = Object.keys(enclosures) as EnclosureKey[];

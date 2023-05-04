@@ -1,6 +1,6 @@
 {
   "name": "@alveusgg/data",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": true,
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
@@ -13,8 +13,8 @@
   "scripts": {
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
-    "format": "prettier --write src/**/*.ts",
-    "format:check": "prettier --check src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
     "test": "tsc --noEmit"
   },
   "type": "module",

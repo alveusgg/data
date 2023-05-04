@@ -1,9 +1,8 @@
-import ambassadors, {
-  isAmbassadorKey,
-  type AmbassadorKey,
-  type Ambassador,
-  type AmbassadorsData,
-} from "./core";
+import { isAmbassadorKey, type Ambassadors, type AmbassadorKey } from "./core";
+import {
+  isAmbassadorWithPlushKey,
+  type AmbassadorWithPlushKey,
+} from "./filters";
 
 import stompyImage1 from "../../assets/ambassadors/stompy/01.jpg";
 import stompyImage2 from "../../assets/ambassadors/stompy/02.jpg";
@@ -140,25 +139,16 @@ import nillaImage1 from "../../assets/ambassadors/nilla/01.jpg";
 import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
+
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 
-type Ambassadors = typeof ambassadors;
+import orionImage1 from "../../assets/ambassadors/orion/01.jpg";
 
-export type AmbassadorWithPlush = Ambassador & {
-  plush: Exclude<Ambassador["plush"], null>;
-};
+import picklesImage1 from "../../assets/ambassadors/pickles/01.jpg";
 
-export type AmbassadorWithPlushKey = {
-  [K in keyof Ambassadors]: Ambassadors[K] extends AmbassadorWithPlush
-    ? K
-    : never;
-}[keyof Ambassadors];
+import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
 
-export type AmbassadorsWithPlush = {
-  [K in AmbassadorWithPlushKey]: Ambassadors[K] extends AmbassadorWithPlush
-    ? AmbassadorWithPlush
-    : never;
-};
+import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 
 export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
@@ -166,6 +156,7 @@ export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 const ambassadorImages: {
   [key in AmbassadorKey]: AmbassadorImages;
 } = {
+  // Active ambassadors
   stompy: [
     { src: stompyImage1, alt: "Stompy the Emu" },
     { src: stompyImage2, alt: "Stompy the Emu" },
@@ -342,10 +333,18 @@ const ambassadorImages: {
   ],
   momo: [{ src: momoImage1, alt: "Momo the Black Tufted Marmoset" }],
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
+
+  // Retired ambassadors
+  orion: [{ src: orionImage1, alt: "Orion the Prairie/Peregrine Falcon" }],
+  pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
+  henrietta: [
+    { src: henriettaImage1, alt: "Henrietta the Jersey Giant Chicken" },
+  ],
+  polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
 };
 
 export const ambassadorMerchImages: {
-  [key in AmbassadorWithPlushKey]: AmbassadorImage;
+  [key in AmbassadorWithPlushKey<Ambassadors>]: AmbassadorImage;
 } = {
   stompy: { src: stompyImageMerch, alt: "" },
   georgie: { src: georgieImageMerch, alt: "" },
@@ -359,24 +358,11 @@ export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
 }) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
   ((ambassador: string) => AmbassadorImages | undefined);
 
-const ambassadorsWithPlush = Object.fromEntries(
-  Object.entries(ambassadors).filter(([, value]) => value.plush !== null)
-) as Partial<AmbassadorsData> as AmbassadorsWithPlush;
-
-const ambassadorsWithPlushKeys = Object.keys(
-  ambassadorsWithPlush
-) as AmbassadorWithPlushKey[];
-
-export const isAmbassadorWithPlushKey = (
-  str: string
-): str is AmbassadorWithPlushKey =>
-  ambassadorsWithPlushKeys.includes(str as AmbassadorWithPlushKey);
-
 export const getAmbassadorMerchImage = ((
-  ambassador: AmbassadorWithPlushKey | string
+  ambassador: AmbassadorWithPlushKey<Ambassadors> | string
 ) => {
-  if (!isAmbassadorWithPlushKey(ambassador)) return undefined;
+  if (!isAmbassadorWithPlushKey<Ambassadors>(ambassador)) return undefined;
 
   return ambassadorMerchImages[ambassador];
-}) as ((ambassador: AmbassadorWithPlushKey) => AmbassadorImage) &
+}) as ((ambassador: AmbassadorWithPlushKey<Ambassadors>) => AmbassadorImage) &
   ((ambassador: string) => AmbassadorImage | undefined);

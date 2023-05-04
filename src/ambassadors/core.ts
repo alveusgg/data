@@ -10,12 +10,13 @@ type DateStringMonth = `0${OneToNine}` | `1${0 | 1 | 2}`;
 type DateStringYearMonth = `${DateStringYear}-${DateStringMonth}`;
 type DateStringDay = `${0}${OneToNine}` | `${1 | 2}${ZeroToNine}` | `3${0 | 1}`;
 type DateString = `${DateStringYearMonth}-${DateStringDay}`;
+type PartialDateString = DateStringYear | DateStringYearMonth | DateString;
 
 type Nullable<T> = T | null;
 
-export type AmbassadorsData = Record<string, Ambassador>;
+export type Ambassadors = typeof ambassadors;
 
-export type AmbassadorKey = keyof typeof ambassadors;
+export type AmbassadorKey = keyof Ambassadors;
 
 export type Ambassador = {
   name: string;
@@ -23,8 +24,9 @@ export type Ambassador = {
   species: string;
   scientific: string;
   sex: Nullable<"Male" | "Female">;
-  birth: Nullable<DateStringYear | DateStringYearMonth | DateString>;
-  arrival: Nullable<DateStringYear | DateStringYearMonth | DateString>;
+  birth: Nullable<PartialDateString>;
+  arrival: Nullable<PartialDateString>;
+  retired: Nullable<PartialDateString>;
   iucn: {
     id: Nullable<number>;
     status: IUCNStatus;
@@ -38,6 +40,7 @@ export type Ambassador = {
 };
 
 const ambassadors = {
+  // Active ambassadors
   stompy: {
     name: "Stompy",
     alternate: [],
@@ -46,6 +49,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021-02-14",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22678117,
       status: "LC",
@@ -90,6 +94,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 58535,
       status: "LC/decreasing",
@@ -123,6 +128,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22685539,
       status: "LC/decreasing",
@@ -147,6 +153,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -168,6 +175,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22724813,
       status: "EN/decreasing",
@@ -195,6 +203,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 22686332,
       status: "NT/decreasing",
@@ -223,6 +232,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2020-05",
     arrival: "2021-08",
+    retired: null,
     iucn: {
       id: 22705990,
       status: "LC/increasing",
@@ -246,6 +256,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-08",
+    retired: null,
     iucn: {
       id: 22705990,
       status: "LC/increasing",
@@ -267,6 +278,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021",
     arrival: "2021-06",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -287,6 +299,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2019",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -307,7 +320,8 @@ const ambassadors = {
     scientific: "Gallus gallus domesticus",
     sex: "Female",
     birth: "2020",
-    arrival: null,
+    arrival: "2022-08",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -328,6 +342,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2022-03-22",
     arrival: "2022-04",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -353,6 +368,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 62232,
       status: "LC/decreasing",
@@ -380,6 +396,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2021-08-15",
     arrival: "2021-10",
+    retired: null,
     iucn: {
       id: 177562,
       status: "NT/decreasing",
@@ -401,6 +418,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2020",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 23062,
       status: "LC",
@@ -430,6 +448,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2019",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 23062,
       status: "LC",
@@ -458,6 +477,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2021-05",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -483,6 +503,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2021-05",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -506,6 +527,7 @@ const ambassadors = {
     sex: "Female",
     birth: "2021",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 4652,
       status: "EN/decreasing",
@@ -527,6 +549,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2017",
     arrival: "2021-04",
+    retired: null,
     iucn: {
       id: 4652,
       status: "EN/decreasing",
@@ -551,6 +574,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -575,6 +599,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -596,6 +621,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -616,6 +642,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -637,6 +664,7 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -658,6 +686,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-07-04",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: 109481538,
       status: "LC",
@@ -679,6 +708,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -700,6 +730,7 @@ const ambassadors = {
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
+    retired: null,
     iucn: {
       id: null,
       status: "NE",
@@ -721,6 +752,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 19353,
       status: "LC",
@@ -742,6 +774,7 @@ const ambassadors = {
     sex: "Female",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 19353,
       status: "LC",
@@ -763,6 +796,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 41519,
       status: "LC/decreasing",
@@ -786,6 +820,7 @@ const ambassadors = {
     sex: "Male",
     birth: null,
     arrival: "2022-12",
+    retired: null,
     iucn: {
       id: 41518,
       status: "LC/decreasing",
@@ -801,7 +836,97 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-} as const satisfies AmbassadorsData;
+
+  // Retired ambassadors
+  orion: {
+    name: "Orion",
+    alternate: [],
+    species: "Prairie/Peregrine Falcon",
+    scientific: "Falco mexicanus x Falco peregrinus",
+    sex: "Male",
+    birth: "2021-05-13",
+    arrival: "2021-12",
+    retired: "2022-06-14",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "falcon",
+    story:
+      "Orion was originally owned by Maya before becoming an ambassador at Alveus.\n\nOrion sadly passed away in June 2022 after an unfortunate accident in his enclosure.",
+    mission:
+      "He is an ambassador for showing how pest control affects wildlife globally and how to conserve major keystone species.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  pickles: {
+    name: "Pickles",
+    alternate: [],
+    species: "Vinegaroon",
+    scientific: "Mastigoproctus tohono",
+    sex: "Female",
+    birth: "2022",
+    arrival: "2022-01",
+    retired: "2023-02-09",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "critters",
+    story:
+      "Our vinegaroon was born in captivity and ethically sourced.\n\nSadly, Pickles passed away in February 2023 because she was unable to make it through her first molt.",
+    mission:
+      "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  henrietta: {
+    name: "Henrietta",
+    alternate: [],
+    species: "Jersey Giant Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: "2019",
+    arrival: "2022-08",
+    retired: "2023-03",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "chickens",
+    story:
+      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023 and now lives in a chicken coop at Maya's Tiny House with her rabbit and other chicken.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  polly: {
+    name: "Polly",
+    alternate: [],
+    species: "Silkie Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: null,
+    arrival: "2022-08",
+    retired: "2022-11",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "chickens",
+    story:
+      "Polly was rehomed from another owner.\n\nWe had hoped that Polly would grow to be larger so she could join our other chickens, but unfortunately she did not and so was retired from being an ambassador in November 2022 and now lives at Maya's Tiny House.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+} as const satisfies Record<string, Ambassador>;
 
 const ambassadorKeys = Object.keys(ambassadors) as AmbassadorKey[];
 
