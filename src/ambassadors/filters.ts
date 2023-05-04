@@ -40,6 +40,17 @@ export const isAmbassadorWithPlush = <
 ): ambassador is AmbassadorWithPlush<Items[keyof Items]> =>
   ambassador.plush !== null;
 
+export const isAmbassadorWithPlushEntry = <
+  Items extends AmbassadorsData = typeof ambassadors
+>(
+  entry: [string | number | symbol, Items[keyof Items]]
+): entry is [
+  AmbassadorWithPlushKey<Items>,
+  AmbassadorWithPlush<Items[keyof Items]>
+] =>
+  isAmbassadorWithPlushKey<Items>(entry[0]) &&
+  isAmbassadorWithPlush<Items>(entry[1]);
+
 // Active
 
 export type ActiveAmbassador<Base extends Ambassador = Ambassador> = Base & {
@@ -73,3 +84,13 @@ export const isActiveAmbassador = <
   ambassador: Items[keyof Items]
 ): ambassador is ActiveAmbassador<Items[keyof Items]> =>
   ambassador.retired === null;
+
+export const isActiveAmbassadorEntry = <
+  Items extends AmbassadorsData = typeof ambassadors
+>(
+  entry: [string | number | symbol, Items[keyof Items]]
+): entry is [
+  ActiveAmbassadorKey<Items>,
+  ActiveAmbassador<Items[keyof Items]>
+] =>
+  isActiveAmbassadorKey<Items>(entry[0]) && isActiveAmbassador<Items>(entry[1]);
