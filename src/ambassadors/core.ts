@@ -683,7 +683,7 @@ const ambassadors = {
     alternate: [],
     species: "Blue-tounged Skink",
     scientific: "Tiliqua scincoides intermedia",
-    sex: "Male",
+    sex: null,
     birth: "2022-07-04",
     arrival: "2022-11",
     retired: null,
