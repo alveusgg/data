@@ -240,7 +240,7 @@ const ambassadorImages: {
     {
       src: oliverImage1,
       alt: "Oliver the Olive Egger Chicken",
-      position: "25% 0%",
+      position: "75% 50%",
     },
     {
       src: oliverImage2,
@@ -250,7 +250,7 @@ const ambassadorImages: {
     {
       src: oliverImage3,
       alt: "Oliver the Olive Egger Chicken",
-      position: "75% 50%",
+      position: "25% 0%",
     },
   ],
   nugget: [
