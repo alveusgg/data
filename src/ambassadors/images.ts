@@ -265,12 +265,12 @@ const ambassadorImages: {
   henrique: [
     {
       src: henriqueImage1,
-      alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "50% 20%",
     },
     {
       src: henriqueImage2,
-      alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "100% 25%",
     },
   ],
