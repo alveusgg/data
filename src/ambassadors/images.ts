@@ -240,7 +240,7 @@ const ambassadorImages: {
     {
       src: oliverImage1,
       alt: "Oliver the Olive Egger Chicken",
-      position: "75% 50%",
+      position: "75% 0%",
     },
     {
       src: oliverImage2,
