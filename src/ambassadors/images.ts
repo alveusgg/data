@@ -240,7 +240,7 @@ const ambassadorImages: {
     {
       src: oliverImage1,
       alt: "Oliver the Olive Egger Chicken",
-      position: "75% 50%",
+      position: "75% 0%",
     },
     {
       src: oliverImage2,
@@ -265,12 +265,12 @@ const ambassadorImages: {
   henrique: [
     {
       src: henriqueImage1,
-      alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "50% 20%",
     },
     {
       src: henriqueImage2,
-      alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "100% 25%",
     },
   ],
