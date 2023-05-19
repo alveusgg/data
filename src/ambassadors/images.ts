@@ -150,7 +150,15 @@ import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
 
 import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 
-export type AmbassadorImage = { src: typeof stompyImage1; alt: string };
+type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+type Percentage = `${OneToNine}${ZeroToNine}%` | `${ZeroToNine}%` | "100%";
+
+export type AmbassadorImage = {
+  src: typeof stompyImage1;
+  alt: string;
+  position?: `${Percentage} ${Percentage}`;
+};
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
 const ambassadorImages: {
@@ -158,10 +166,10 @@ const ambassadorImages: {
 } = {
   // Active ambassadors
   stompy: [
-    { src: stompyImage1, alt: "Stompy the Emu" },
+    { src: stompyImage1, alt: "Stompy the Emu", position: "50% 30%" },
     { src: stompyImage2, alt: "Stompy the Emu" },
     { src: stompyImage3, alt: "Stompy the Emu" },
-    { src: stompyImage4, alt: "Stompy the Emu" },
+    { src: stompyImage4, alt: "Stompy the Emu", position: "25% 0%" },
     { src: stompyImage5, alt: "Stompy the Emu" },
     { src: stompyImage6, alt: "Stompy the Emu" },
   ],
@@ -173,27 +181,43 @@ const ambassadorImages: {
     { src: georgieImage5, alt: "Georgie the African Bullfrog" },
   ],
   tico: [
-    { src: ticoImage1, alt: "Tico the Blue and Gold Macaw" },
-    { src: ticoImage2, alt: "Tico the Blue and Gold Macaw" },
+    {
+      src: ticoImage1,
+      alt: "Tico the Blue and Gold Macaw",
+      position: "50% 0%",
+    },
+    { src: ticoImage2, alt: "Tico the Blue and Gold Macaw", position: "0% 0%" },
     { src: ticoImage3, alt: "Tico the Blue and Gold Macaw" },
   ],
   miley: [
-    { src: mileyImage1, alt: "Miley the Catalina Macaw" },
-    { src: mileyImage2, alt: "Miley the Catalina Macaw" },
-    { src: mileyImage3, alt: "Miley the Catalina Macaw" },
-    { src: mileyImage4, alt: "Miley the Catalina Macaw" },
+    { src: mileyImage1, alt: "Miley the Catalina Macaw", position: "50% 0%" },
+    { src: mileyImage2, alt: "Miley the Catalina Macaw", position: "50% 0%" },
+    { src: mileyImage3, alt: "Miley the Catalina Macaw", position: "0% 0%" },
+    { src: mileyImage4, alt: "Miley the Catalina Macaw", position: "0% 50%" },
   ],
   mia: [
-    { src: miaImage1, alt: "Mia the African Grey" },
+    { src: miaImage1, alt: "Mia the African Grey", position: "50% 10%" },
     { src: miaImage2, alt: "Mia the African Grey" },
     { src: miaImage3, alt: "Mia the African Grey" },
-    { src: miaImage4, alt: "Mia the African Grey" },
-    { src: miaImage5, alt: "Mia the African Grey" },
+    { src: miaImage4, alt: "Mia the African Grey", position: "0% 50%" },
+    { src: miaImage5, alt: "Mia the African Grey", position: "0% 50%" },
   ],
   siren: [
-    { src: sirenImage1, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage2, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage3, alt: "Siren the Blue-fronted Amazon" },
+    {
+      src: sirenImage1,
+      alt: "Siren the Blue-fronted Amazon",
+      position: "100% 50%",
+    },
+    {
+      src: sirenImage2,
+      alt: "Siren the Blue-fronted Amazon",
+      position: "50% 0%",
+    },
+    {
+      src: sirenImage3,
+      alt: "Siren the Blue-fronted Amazon",
+      position: "0% 50%",
+    },
     { src: sirenImage4, alt: "Siren the Blue-fronted Amazon" },
     { src: sirenImage5, alt: "Siren the Blue-fronted Amazon" },
     { src: sirenImage6, alt: "Siren the Blue-fronted Amazon" },
@@ -202,19 +226,39 @@ const ambassadorImages: {
   abbott: [
     { src: abbottImage1, alt: "Abbott the American Crow" },
     { src: abbottImage2, alt: "Abbott the American Crow" },
-    { src: abbottImage3, alt: "Abbott the American Crow" },
+    { src: abbottImage3, alt: "Abbott the American Crow", position: "0% 0%" },
   ],
   coconut: [
-    { src: coconutImage1, alt: "Coconut the American Crow" },
+    {
+      src: coconutImage1,
+      alt: "Coconut the American Crow",
+      position: "50% 30%",
+    },
     { src: coconutImage2, alt: "Coconut the American Crow" },
   ],
   oliver: [
-    { src: oliverImage1, alt: "Oliver the Olive Egger Chicken" },
-    { src: oliverImage2, alt: "Oliver the Olive Egger Chicken" },
-    { src: oliverImage3, alt: "Oliver the Olive Egger Chicken" },
+    {
+      src: oliverImage1,
+      alt: "Oliver the Olive Egger Chicken",
+      position: "75% 50%",
+    },
+    {
+      src: oliverImage2,
+      alt: "Oliver the Olive Egger Chicken",
+      position: "0% 0%",
+    },
+    {
+      src: oliverImage3,
+      alt: "Oliver the Olive Egger Chicken",
+      position: "25% 0%",
+    },
   ],
   nugget: [
-    { src: nuggetImage1, alt: "Nugget the Ameraucana Chicken" },
+    {
+      src: nuggetImage1,
+      alt: "Nugget the Ameraucana Chicken",
+      position: "100% 0%",
+    },
     { src: nuggetImage2, alt: "Nugget the Ameraucana Chicken" },
     { src: nuggetImage3, alt: "Nugget the Ameraucana Chicken" },
   ],
@@ -222,33 +266,47 @@ const ambassadorImages: {
     {
       src: henriqueImage1,
       alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      position: "50% 20%",
     },
     {
       src: henriqueImage2,
       alt: "Henrique the Half Drak Brahma, Half Saipan Chicken",
+      position: "100% 25%",
     },
   ],
   winnieTheMoo: [
     { src: winnieImage1, alt: "Winnie the Red Angus Beef Cow" },
     { src: winnieImage2, alt: "Winnie the Red Angus Beef Cow" },
-    { src: winnieImage3, alt: "Winnie the Red Angus Beef Cow" },
+    {
+      src: winnieImage3,
+      alt: "Winnie the Red Angus Beef Cow",
+      position: "50% 100%",
+    },
     { src: winnieImage4, alt: "Winnie the Red Angus Beef Cow" },
     { src: winnieImage5, alt: "Winnie the Red Angus Beef Cow" },
-    { src: winnieImage6, alt: "Winnie the Red Angus Beef Cow" },
-    { src: winnieImage7, alt: "Winnie the Red Angus Beef Cow" },
+    {
+      src: winnieImage6,
+      alt: "Winnie the Red Angus Beef Cow",
+      position: "100% 0%",
+    },
+    {
+      src: winnieImage7,
+      alt: "Winnie the Red Angus Beef Cow",
+      position: "75% 0%",
+    },
   ],
   noodle: [
     { src: noodleImage1, alt: "Noodle the Carpet Python" },
     { src: noodleImage2, alt: "Noodle the Carpet Python" },
-    { src: noodleImage3, alt: "Noodle the Carpet Python" },
-    { src: noodleImage4, alt: "Noodle the Carpet Python" },
+    { src: noodleImage3, alt: "Noodle the Carpet Python", position: "75% 50%" },
+    { src: noodleImage4, alt: "Noodle the Carpet Python", position: "0% 100%" },
   ],
   patchy: [
-    { src: patchyImage1, alt: "Patchy the Ball Python" },
+    { src: patchyImage1, alt: "Patchy the Ball Python", position: "50% 100%" },
     { src: patchyImage2, alt: "Patchy the Ball Python" },
   ],
   fenn: [
-    { src: fennImage1, alt: "Fenn the European Red Fox" },
+    { src: fennImage1, alt: "Fenn the European Red Fox", position: "50% 35%" },
     { src: fennImage2, alt: "Fenn the European Red Fox" },
     { src: fennImage3, alt: "Fenn the European Red Fox" },
     { src: fennImage4, alt: "Fenn the European Red Fox" },
@@ -274,8 +332,8 @@ const ambassadorImages: {
     { src: jalapenoImage5, alt: "Jalapeño the Domestic Donkey" },
   ],
   snork: [
-    { src: snorkImage1, alt: "Snork the Chinchilla" },
-    { src: snorkImage2, alt: "Snork the Chinchilla" },
+    { src: snorkImage1, alt: "Snork the Chinchilla", position: "0% 50%" },
+    { src: snorkImage2, alt: "Snork the Chinchilla", position: "50% 0%" },
   ],
   moomin: [
     { src: moominImage1, alt: "Moomin the Chinchilla" },
@@ -284,7 +342,11 @@ const ambassadorImages: {
   hankMrMctrain: [
     { src: hankImage1, alt: "Hank the Smokey Ghost Millipede" },
     { src: hankImage2, alt: "Hank the Smokey Ghost Millipede" },
-    { src: hankImage3, alt: "Hank the Smokey Ghost Millipede" },
+    {
+      src: hankImage3,
+      alt: "Hank the Smokey Ghost Millipede",
+      position: "50% 0%",
+    },
   ],
   barbaraBakedBean: [
     {
@@ -301,7 +363,7 @@ const ambassadorImages: {
     },
   ],
   marty: [
-    { src: martyImage1, alt: "Marty the Zebra Isopods" },
+    { src: martyImage1, alt: "Marty the Zebra Isopods", position: "50% 100%" },
     { src: martyImage2, alt: "Marty the Zebra Isopods" },
     { src: martyImage3, alt: "Marty the Zebra Isopods" },
   ],
@@ -331,7 +393,13 @@ const ambassadorImages: {
     { src: nillaImage1, alt: "Nilla Wafer the Rat" },
     { src: nillaImage2, alt: "Nilla Wafer the Rat" },
   ],
-  momo: [{ src: momoImage1, alt: "Momo the Black Tufted Marmoset" }],
+  momo: [
+    {
+      src: momoImage1,
+      alt: "Momo the Black Tufted Marmoset",
+      position: "0% 0%",
+    },
+  ],
   appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
 
   // Retired ambassadors
