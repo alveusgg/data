@@ -168,9 +168,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1732218911,
       start: "00h15m24s",
     },
-    description: "",
+    description:
+      "Get to know Toast, Alveus' Blue-tounged Skink, and learn about the history of the species. Learn about deimatic display in skinks and ovoviviparous birth. We'll also investigate the dangers they face in the wild, such as bioaccumlation and biomagnification, as well as the pet trade globally.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 17 * 60 + 13, // 00:15:24 - 01:32:27
     edition: "Blue-tounged Skink Edition",
     broadcast: new Date("2023-01-31"),
     ambassadors: ["toasterStrudel"],
@@ -180,9 +181,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1778305921,
       start: "00h01m44s",
     },
-    description: "",
+    description:
+      "Meet Alveus' Madagascar Hissing Cockroach colony, Barbara and Baked Bean. Understand why cockroaches and other invertebrates are so important to our ecosystem, why we find detritivores in dirty places, and how they're actually here to help us.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 26 * 60 + 22, // 00:01:44 - 01:28:06
     edition: "Madagascar Hissing Cockroach Edition",
     broadcast: new Date("2023-03-28"),
     ambassadors: ["barbaraBakedBean"],
@@ -192,9 +194,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1806823442,
       start: "00h15m35s",
     },
-    description: "",
+    description:
+      "Learn about Winnie, Alveus' Red Angus Beef Cow, the beef industry and commercial agriculture. Discover the impacts it has on our plant and recommendations for how we can all make a difference.",
     host: "Maya Higa",
-    length: 0,
+    length: 2 * 60 * 60 + 26 * 60 + 36, // 00:15:35 - 02:42:10
     edition: "Cow Edition",
     broadcast: new Date("2023-04-29"),
     ambassadors: ["winnieTheMoo"],

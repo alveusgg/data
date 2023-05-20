@@ -9,8 +9,8 @@ Shared data repository for Alveus.gg projects, installed as a GitHub-based depen
 To work with this repository locally, install the dependencies with `npm ci`.
 
 To test changes locally, update the version in this repository using
-`npm version --no-git-tag-version preminor` (use `premajor` instead if the change is breaking), and
-install this repository as a file-based dependency:
+`npm version --no-git-tag-version preminor` (use `premajor` instead if the change is breaking, or
+`prerelease` for repeat testing), and install this repository as a file-based dependency:
 
 - Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add file:../../../data`
 - Extension: `npm install file:../data`
