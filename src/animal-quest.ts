@@ -1,7 +1,18 @@
 import { isAmbassadorKey, type AmbassadorKey } from "./ambassadors/core";
 
+type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+type Seconds = `${0 | 1 | 2 | 3 | 4 | 5}${ZeroToNine}s`;
+type Minutes = `${0 | 1 | 2 | 3 | 4 | 5}${ZeroToNine}m`;
+type Hours = `${`${0 | 1}${ZeroToNine}` | `2${0 | 1 | 2 | 3}`}h`;
+
 export type AnimalQuest = {
-  link: string;
+  video: {
+    id: number;
+    start?: `${Hours}${Minutes}${Seconds}`;
+  };
+  description: string;
+  host: string;
+  length: number;
   edition: string;
   broadcast: Date;
   ambassadors: Readonly<AmbassadorKey[]>;
@@ -9,91 +20,181 @@ export type AnimalQuest = {
 
 const animalQuest: Readonly<AnimalQuest[]> = [
   {
-    link: "https://www.twitch.tv/videos/1122488911?t=00h02m03s",
+    video: {
+      id: 1122488911,
+      start: "00h02m03s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Chicken Edition",
     broadcast: new Date("2021-08-16"),
     ambassadors: ["oliver", "nugget", "henrique"],
   },
   {
-    link: "https://www.twitch.tv/videos/1180894968?t=00h00m27s",
+    video: {
+      id: 1180894968,
+      start: "00h00m27s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Emu Edition",
     broadcast: new Date("2021-10-18"),
     ambassadors: ["stompy"],
   },
   {
-    link: "https://www.twitch.tv/videos/1226537529?t=00h00m21s",
+    video: {
+      id: 1226537529,
+      start: "00h00m21s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Snake Edition",
     broadcast: new Date("2021-12-06"),
     ambassadors: ["noodle", "patchy"],
   },
   {
-    link: "https://www.twitch.tv/videos/1252271923?t=00h00m59s",
+    video: {
+      id: 1252271923,
+      start: "00h00m59s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "African Bullfrog Edition",
     broadcast: new Date("2022-01-03"),
     ambassadors: ["georgie"],
   },
   {
-    link: "https://www.twitch.tv/videos/1290623454?t=00h03m48s",
+    video: {
+      id: 1290623454,
+      start: "00h03m48s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Donkey Edition",
     broadcast: new Date("2022-02-07"),
     ambassadors: ["serrano", "jalapeno"],
   },
   {
-    link: "https://www.twitch.tv/videos/1421096536?t=00h03m29s",
+    video: {
+      id: 1421096536,
+      start: "00h03m29s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Falcon Edition",
     broadcast: new Date("2022-03-07"),
     ambassadors: ["orion"],
   },
   {
-    link: "https://www.twitch.tv/videos/1456976498?t=00h00m22s",
+    video: {
+      id: 1456976498,
+      start: "00h00m22s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Blue-fronted Amazon Edition",
     broadcast: new Date("2022-04-15"),
     ambassadors: ["siren"],
   },
   {
-    link: "https://www.twitch.tv/videos/1311168738?t=00h04m48s",
+    video: {
+      id: 1311168738,
+      start: "00h04m48s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "African Grey Edition",
     broadcast: new Date("2022-05-27"),
     ambassadors: ["mia"],
   },
   {
-    link: "https://www.twitch.tv/videos/1517729157?t=00h04m26s",
+    video: {
+      id: 1517729157,
+      start: "00h04m26s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Blue and Gold Macaw Edition",
     broadcast: new Date("2022-06-29"),
     ambassadors: ["tico"],
   },
   {
-    link: "https://www.twitch.tv/videos/1551847402?t=00h04m50s",
+    video: {
+      id: 1551847402,
+      start: "00h04m50s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Catalina Macaw Edition",
     broadcast: new Date("2022-07-29"),
     ambassadors: ["miley"],
   },
   {
-    link: "https://www.twitch.tv/videos/1579522727?t=00h06m10s",
+    video: {
+      id: 1579522727,
+      start: "00h06m10s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Chinchilla Edition",
     broadcast: new Date("2022-08-31"),
     ambassadors: ["snork", "moomin"],
   },
   {
-    link: "https://www.twitch.tv/videos/1699499673?t=00h16m41s",
+    video: {
+      id: 1699499673,
+      start: "00h16m41s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Crow Edition",
     broadcast: new Date("2023-01-04"),
     ambassadors: ["abbott", "coconut"],
   },
   {
-    link: "https://www.twitch.tv/videos/1732218911?t=00h15m24s",
+    video: {
+      id: 1732218911,
+      start: "00h15m24s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Blue-tounged Skink Edition",
     broadcast: new Date("2023-01-31"),
     ambassadors: ["toasterStrudel"],
   },
   {
-    link: "https://www.twitch.tv/videos/1778305921?t=00h01m44s",
+    video: {
+      id: 1778305921,
+      start: "00h01m44s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Madagascar Hissing Cockroach Edition",
     broadcast: new Date("2023-03-28"),
     ambassadors: ["barbaraBakedBean"],
   },
   {
-    link: "https://www.twitch.tv/videos/1806823442?t=00h15m35s",
+    video: {
+      id: 1806823442,
+      start: "00h15m35s",
+    },
+    description: "",
+    host: "Maya Higa",
+    length: 0,
     edition: "Cow Edition",
     broadcast: new Date("2023-04-29"),
     ambassadors: ["winnieTheMoo"],
