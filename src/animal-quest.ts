@@ -96,9 +96,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1456976498,
       start: "00h00m22s",
     },
-    description: "",
+    description:
+      "Get to know Siren, Alveus' Blue-fronted Amazon. Learn about all the different Amazon parrot species and their different colors, why deforestation of the Amazon rainforest is such a threat to them, how the pet trade operates and why a parrot might not be a good pet for you.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 56 * 60 + 18, // 00:00:22 - 01:56:40
     edition: "Blue-fronted Amazon Edition",
     broadcast: new Date("2022-04-15"),
     ambassadors: ["siren"],
@@ -108,9 +109,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1311168738,
       start: "00h04m48s",
     },
-    description: "",
+    description:
+      "Meet Mia, Alveus' African Grey ambassador, and learn about what they are like in the wild. We'll explore their feathers and how they fly, why they're endangered as a species, the intelligence of parrots, and why they might not be a great pet to get.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 43 * 60 + 31, // 00:04:48 - 01:48:19
     edition: "African Grey Edition",
     broadcast: new Date("2022-05-27"),
     ambassadors: ["mia"],
@@ -120,9 +122,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1517729157,
       start: "00h04m26s",
     },
-    description: "",
+    description:
+      "Learn about Tico, Alveus' Blue and Gold Macaw, the species as a whole and where they are found in the wild. We'll discuss the danger that deforestation poses to them and so many other species, how palm oil production is a major cause of deforestation and what we can do to reduce our impact.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 45 * 60 + 11, // 00:04:26 - 01:49:37
     edition: "Blue and Gold Macaw Edition",
     broadcast: new Date("2022-06-29"),
     ambassadors: ["tico"],
@@ -132,9 +135,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1551847402,
       start: "00h04m50s",
     },
-    description: "",
+    description:
+      "Get to know Miley, Alveus' Catalina Macaw ambassador. Learn about the natural history of macaws, their conservation status and the substantial dangers they face from poachers, as well as what hybridization is and what it means for the species.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 45 * 60 + 48, // 00:04:50 - 01:50:38
     edition: "Catalina Macaw Edition",
     broadcast: new Date("2022-07-29"),
     ambassadors: ["miley"],
@@ -144,9 +148,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1579522727,
       start: "00h06m10s",
     },
-    description: "",
+    description:
+      "Meet Moomin and Snork, Alveus' Chinchillas, and learn about the history of chinchillas in the US. We'll explore issues with the pet trade, how the fur trade has made them an endangered species, and what we can do to help.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 5 * 60 + 50, // 00:06:10 - 01:12:00
     edition: "Chinchilla Edition",
     broadcast: new Date("2022-08-31"),
     ambassadors: ["snork", "moomin"],
@@ -156,9 +161,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1699499673,
       start: "00h16m41s",
     },
-    description: "",
+    description:
+      "Learn about Abbott and Coconut, Alveus' Crow ambassadors, how crows can become imprinted on humans, and the problems it can cause if they are, as well as the impressive intelligence and social awareness of corvids.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 42 * 60 + 54, // 00:16:41 - 01:59:35
     edition: "Crow Edition",
     broadcast: new Date("2023-01-04"),
     ambassadors: ["abbott", "coconut"],
