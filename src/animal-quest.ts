@@ -24,9 +24,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1122488911,
       start: "00h02m03s",
     },
-    description: "",
+    description:
+      "Get to know Oliver and Nugget, Alveus' chickens. We'll learn about egg laying, what food labels mean and which ones to look for, the impact the agriculture industry has on the environment, and what you can do to help.",
     host: "Maya Higa",
-    length: 0,
+    length: 2 * 60 * 60 + 26 * 60 + 46, // 00:02:03 - 02:28:49
     edition: "Chicken Edition",
     broadcast: new Date("2021-08-16"),
     ambassadors: ["oliver", "nugget", "henrique"],
@@ -36,9 +37,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1180894968,
       start: "00h00m27s",
     },
-    description: "",
+    description:
+      "Meet Stompy, Alveus' Emu, and learn about the threats that his species faces in the wild including the exotic meat trade and production of emu products such as emu oil. We'll also discuss the great emu war of 1932 and the natural history of emus.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 54 * 60 + 49, // 00:00:27 - 01:55:16
     edition: "Emu Edition",
     broadcast: new Date("2021-10-18"),
     ambassadors: ["stompy"],
@@ -48,9 +50,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1226537529,
       start: "00h00m21s",
     },
-    description: "",
+    description:
+      "Learn about the snake ambassadors at Alveus, Noodle and Patchy, their conversation status and interactions with humans. We'll also discuss the pet trade and morph breeding, the negative impacts it has on their species, and what you can do to reduce that impact.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 29 * 60 + 17, // 00:00:21 - 01:29:38
     edition: "Snake Edition",
     broadcast: new Date("2021-12-06"),
     ambassadors: ["noodle", "patchy"],
@@ -60,9 +63,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1252271923,
       start: "00h00m59s",
     },
-    description: "",
+    description:
+      "Get to know Georgie, Alveus' African Bullfrog ambassador, and learn about the threats amphibians face in the wild, such as the wildlife trade, habitat loss due to climate change, absorbing pollutants through their skin, and chytrid fungus.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 11 * 60 + 53, // 00:00:59 - 01:12:42
     edition: "African Bullfrog Edition",
     broadcast: new Date("2022-01-03"),
     ambassadors: ["georgie"],
@@ -72,9 +76,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1290623454,
       start: "00h03m48s",
     },
-    description: "",
+    description:
+      "Meet the donkeys at Alveus, Serrano and Jalapeño, learn about the history of donkeys and their interaction with humans over time. We'll also discuss the production of ejiao and using wildlife for medicine, how they both impact donkeys, and recommendations to help their species.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 40 * 60 + 21, // 00:03:48 - 01:44:09
     edition: "Donkey Edition",
     broadcast: new Date("2022-02-07"),
     ambassadors: ["serrano", "jalapeno"],
@@ -84,9 +89,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1421096536,
       start: "00h03m29s",
     },
-    description: "",
+    description:
+      "Learn about Orion, Alveus' Prairie/Peregrine Falcon, the species as a whole, and the dangers they face in the wild, including bioaccumulation of DDT. We'll also look at falconry, it's origins and current state, and have a live demonstration with Orion.",
     host: "Maya Higa",
-    length: 0,
+    length: 60 * 60 + 39 * 60 + 1, // 00:03:29 - 01:42:30
     edition: "Falcon Edition",
     broadcast: new Date("2022-03-07"),
     ambassadors: ["orion"],
