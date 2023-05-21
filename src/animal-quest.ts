@@ -61,7 +61,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     },
     edition: "Snake Edition",
     description:
-      "Learn about the snake ambassadors at Alveus, Noodle and Patchy, their conversation status and interactions with humans. We'll also discuss the pet trade and morph breeding, the negative impacts it has on their species, and what you can do to reduce that impact.",
+      "Learn about the snake ambassadors at Alveus, Noodle and Patchy, their conversation status, and interactions with humans. We'll also discuss the pet trade and morph breeding, the negative impacts it has on their species, and what you can do to reduce that impact.",
     broadcast: new Date("2021-12-06"),
     host: "Maya Higa",
     length: 60 * 60 + 29 * 60 + 17, // 00:00:21 - 01:29:38
@@ -253,7 +253,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     },
     edition: "Cow Edition",
     description:
-      "Learn about Winnie, Alveus' Red Angus Beef Cow, the beef industry and commercial agriculture. Discover the impacts it has on our plant and recommendations for how we can all make a difference.",
+      "Learn about Winnie, Alveus' Red Angus Beef Cow, the beef industry and commercial agriculture. Discover the impacts it has on our planet and recommendations for how we can all make a difference.",
     broadcast: new Date("2023-04-29"),
     host: "Maya Higa",
     length: 2 * 60 * 60 + 26 * 60 + 36, // 00:15:35 - 02:42:10
