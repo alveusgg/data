@@ -15,7 +15,10 @@ export type AnimalQuest = {
   broadcast: Date;
   host: string;
   length: number;
-  ambassadors: Readonly<AmbassadorKey[]>;
+  ambassadors: {
+    featured: Readonly<AmbassadorKey[]>;
+    related: Readonly<AmbassadorKey[]>;
+  };
 };
 
 const animalQuest: Readonly<AnimalQuest[]> = [
@@ -30,7 +33,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-08-16"),
     host: "Maya Higa",
     length: 2 * 60 * 60 + 26 * 60 + 46, // 00:02:03 - 02:28:49
-    ambassadors: ["oliver", "nugget", "henrique"],
+    ambassadors: {
+      featured: ["oliver", "nugget"],
+      related: ["henrique", "henrietta", "polly"],
+    },
   },
   {
     video: {
@@ -43,7 +49,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-10-18"),
     host: "Maya Higa",
     length: 60 * 60 + 54 * 60 + 49, // 00:00:27 - 01:55:16
-    ambassadors: ["stompy"],
+    ambassadors: {
+      featured: ["stompy"],
+      related: [],
+    },
   },
   {
     video: {
@@ -56,7 +65,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-12-06"),
     host: "Maya Higa",
     length: 60 * 60 + 29 * 60 + 17, // 00:00:21 - 01:29:38
-    ambassadors: ["noodle", "patchy"],
+    ambassadors: {
+      featured: ["noodle", "patchy"],
+      related: [],
+    },
   },
   {
     video: {
@@ -69,7 +81,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-01-03"),
     host: "Maya Higa",
     length: 60 * 60 + 11 * 60 + 53, // 00:00:59 - 01:12:42
-    ambassadors: ["georgie"],
+    ambassadors: {
+      featured: ["georgie"],
+      related: [],
+    },
   },
   {
     video: {
@@ -82,7 +97,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-02-07"),
     host: "Maya Higa",
     length: 60 * 60 + 40 * 60 + 21, // 00:03:48 - 01:44:09
-    ambassadors: ["serrano", "jalapeno"],
+    ambassadors: {
+      featured: ["serrano", "jalapeno"],
+      related: [],
+    },
   },
   {
     video: {
@@ -95,7 +113,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-03-07"),
     host: "Maya Higa",
     length: 60 * 60 + 39 * 60 + 1, // 00:03:29 - 01:42:30
-    ambassadors: ["orion"],
+    ambassadors: {
+      featured: ["orion"],
+      related: [],
+    },
   },
   {
     video: {
@@ -108,7 +129,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-04-15"),
     host: "Maya Higa",
     length: 60 * 60 + 56 * 60 + 18, // 00:00:22 - 01:56:40
-    ambassadors: ["siren"],
+    ambassadors: {
+      featured: ["siren"],
+      related: [],
+    },
   },
   {
     video: {
@@ -121,7 +145,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-05-27"),
     host: "Maya Higa",
     length: 60 * 60 + 43 * 60 + 31, // 00:04:48 - 01:48:19
-    ambassadors: ["mia"],
+    ambassadors: {
+      featured: ["mia"],
+      related: [],
+    },
   },
   {
     video: {
@@ -134,7 +161,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-06-29"),
     host: "Maya Higa",
     length: 60 * 60 + 45 * 60 + 11, // 00:04:26 - 01:49:37
-    ambassadors: ["tico"],
+    ambassadors: {
+      featured: ["tico"],
+      related: [],
+    },
   },
   {
     video: {
@@ -147,7 +177,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-07-29"),
     host: "Maya Higa",
     length: 60 * 60 + 45 * 60 + 48, // 00:04:50 - 01:50:38
-    ambassadors: ["miley"],
+    ambassadors: {
+      featured: ["miley"],
+      related: [],
+    },
   },
   {
     video: {
@@ -160,7 +193,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-08-31"),
     host: "Maya Higa",
     length: 60 * 60 + 5 * 60 + 50, // 00:06:10 - 01:12:00
-    ambassadors: ["snork", "moomin"],
+    ambassadors: {
+      featured: ["snork", "moomin"],
+      related: [],
+    },
   },
   {
     video: {
@@ -173,7 +209,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-01-04"),
     host: "Maya Higa",
     length: 60 * 60 + 42 * 60 + 54, // 00:16:41 - 01:59:35
-    ambassadors: ["abbott", "coconut"],
+    ambassadors: {
+      featured: ["abbott", "coconut"],
+      related: [],
+    },
   },
   {
     video: {
@@ -186,7 +225,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-01-31"),
     host: "Maya Higa",
     length: 60 * 60 + 17 * 60 + 13, // 00:15:24 - 01:32:27
-    ambassadors: ["toasterStrudel"],
+    ambassadors: {
+      featured: ["toasterStrudel"],
+      related: [],
+    },
   },
   {
     video: {
@@ -199,7 +241,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-03-28"),
     host: "Maya Higa",
     length: 60 * 60 + 26 * 60 + 22, // 00:01:44 - 01:28:06
-    ambassadors: ["barbaraBakedBean"],
+    ambassadors: {
+      featured: ["barbaraBakedBean"],
+      related: [],
+    },
   },
   {
     video: {
@@ -212,7 +257,10 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-04-29"),
     host: "Maya Higa",
     length: 2 * 60 * 60 + 26 * 60 + 36, // 00:15:35 - 02:42:10
-    ambassadors: ["winnieTheMoo"],
+    ambassadors: {
+      featured: ["winnieTheMoo"],
+      related: [],
+    },
   },
 ] as const;
 
@@ -220,16 +268,41 @@ export type AnimalQuestWithEpisode = AnimalQuest & {
   episode: number;
 };
 
+export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
+  relation: "featured" | "related";
+};
+
 export const getAmbassadorEpisode = (
-  ambassador: AmbassadorKey | string
-): AnimalQuestWithEpisode | undefined => {
+  ambassador: AmbassadorKey | string,
+  type?: "featured" | "related"
+): AnimalQuestWithRelation | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
+  let related: AnimalQuestWithRelation | undefined;
   for (const [index, quest] of animalQuest.entries()) {
-    if (quest.ambassadors.includes(ambassador)) {
-      return { ...quest, episode: index + 1 };
+    // If we're looking for the featured type, or any type, and find a featured, return it
+    if (
+      (!type || type === "featured") &&
+      quest.ambassadors.featured.includes(ambassador)
+    ) {
+      return { ...quest, episode: index + 1, relation: "featured" };
+    }
+
+    // If we're looking for the related type, and find a related, return it
+    // If we're looking for any type, and find a related, store it for if we find no featured
+    if (
+      (!type || type === "related") &&
+      quest.ambassadors.related.includes(ambassador)
+    ) {
+      if (type === "related")
+        return { ...quest, episode: index + 1, relation: "related" };
+      if (!related)
+        related = { ...quest, episode: index + 1, relation: "related" };
     }
   }
+
+  // If we were looking for any type, but didn't find a featured, return the related if there is one
+  if (!type && related) return related;
 };
 
 export default animalQuest;
