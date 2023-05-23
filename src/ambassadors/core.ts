@@ -393,7 +393,7 @@ const ambassadors = {
     alternate: [],
     species: "Ball Python",
     scientific: "Python regius",
-    sex: "Male",
+    sex: "Female",
     birth: "2021-08-15",
     arrival: "2021-10",
     retired: null,
@@ -403,9 +403,9 @@ const ambassadors = {
     },
     enclosure: "reptiles",
     story:
-      "Patchy was rehomed to Alveus from a local breeder after it was discovered that he had a genetic defect and was missing an eye.",
+      "Patchy was rehomed to Alveus from a local breeder after it was discovered that she had a genetic defect and was missing an eye.",
     mission:
-      "He is an ambassador for how the pet trade and habitat loss has affected his and many other reptile species worldwide.",
+      "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
     clips: [],
     homepage: null,
     plush: null,
