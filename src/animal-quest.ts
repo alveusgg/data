@@ -15,6 +15,7 @@ export type AnimalQuest = {
   broadcast: Date;
   host: string;
   length: number;
+  prezi: string;
   ambassadors: {
     featured: Readonly<AmbassadorKey[]>;
     related: Readonly<AmbassadorKey[]>;
@@ -33,6 +34,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-08-16"),
     host: "Maya Higa",
     length: 2 * 60 * 60 + 26 * 60 + 46, // 00:02:03 - 02:28:49
+    prezi: "YRnYHgjrgcC4EmnnTq8w",
     ambassadors: {
       featured: ["oliver", "nugget"],
       related: ["henrique", "henrietta", "polly"],
@@ -49,6 +51,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-10-18"),
     host: "Maya Higa",
     length: 60 * 60 + 54 * 60 + 49, // 00:00:27 - 01:55:16
+    prezi: "hMjOOn7uaCwWxXGOJbju",
     ambassadors: {
       featured: ["stompy"],
       related: [],
@@ -65,6 +68,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2021-12-06"),
     host: "Maya Higa",
     length: 60 * 60 + 29 * 60 + 17, // 00:00:21 - 01:29:38
+    prezi: "7tt98qyUgXTmnIrZqXZa",
     ambassadors: {
       featured: ["noodle", "patchy"],
       related: [],
@@ -81,6 +85,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-01-03"),
     host: "Maya Higa",
     length: 60 * 60 + 11 * 60 + 53, // 00:00:59 - 01:12:42
+    prezi: "Ke6vGrrEBdsbIO5gDY01",
     ambassadors: {
       featured: ["georgie"],
       related: [],
@@ -97,6 +102,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-02-07"),
     host: "Maya Higa",
     length: 60 * 60 + 40 * 60 + 21, // 00:03:48 - 01:44:09
+    prezi: "WOndDV58mqM8V3JoVL2k",
     ambassadors: {
       featured: ["serrano", "jalapeno"],
       related: [],
@@ -113,6 +119,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-03-07"),
     host: "Maya Higa",
     length: 60 * 60 + 39 * 60 + 1, // 00:03:29 - 01:42:30
+    prezi: "9IF7H3kPK898Pu2OOmzi",
     ambassadors: {
       featured: ["orion"],
       related: [],
@@ -129,6 +136,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-04-15"),
     host: "Maya Higa",
     length: 60 * 60 + 56 * 60 + 18, // 00:00:22 - 01:56:40
+    prezi: "5B1wjoAf05UIy6Lgx4Cy",
     ambassadors: {
       featured: ["siren"],
       related: [],
@@ -145,6 +153,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-05-27"),
     host: "Maya Higa",
     length: 60 * 60 + 43 * 60 + 31, // 00:04:48 - 01:48:19
+    prezi: "sXfJmJqLTcsqgWc5vaaV",
     ambassadors: {
       featured: ["mia"],
       related: [],
@@ -161,6 +170,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-06-29"),
     host: "Maya Higa",
     length: 60 * 60 + 45 * 60 + 11, // 00:04:26 - 01:49:37
+    prezi: "yudWPqp2FgUNKGtrdZm6",
     ambassadors: {
       featured: ["tico"],
       related: [],
@@ -177,6 +187,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-07-29"),
     host: "Maya Higa",
     length: 60 * 60 + 45 * 60 + 48, // 00:04:50 - 01:50:38
+    prezi: "2wyIlDVZGx3840kmhxR0",
     ambassadors: {
       featured: ["miley"],
       related: [],
@@ -193,6 +204,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2022-08-31"),
     host: "Maya Higa",
     length: 60 * 60 + 5 * 60 + 50, // 00:06:10 - 01:12:00
+    prezi: "pMz2Rl8G6NXZyTMzhkaX",
     ambassadors: {
       featured: ["snork", "moomin"],
       related: [],
@@ -209,6 +221,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-01-04"),
     host: "Maya Higa",
     length: 60 * 60 + 42 * 60 + 54, // 00:16:41 - 01:59:35
+    prezi: "bwIk8qV3E1o0uKQCplTJ",
     ambassadors: {
       featured: ["abbott", "coconut"],
       related: [],
@@ -225,6 +238,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-01-31"),
     host: "Maya Higa",
     length: 60 * 60 + 17 * 60 + 13, // 00:15:24 - 01:32:27
+    prezi: "ytbpv1gYlAm86DgRpE7H",
     ambassadors: {
       featured: ["toasterStrudel"],
       related: [],
@@ -241,6 +255,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-03-28"),
     host: "Maya Higa",
     length: 60 * 60 + 26 * 60 + 22, // 00:01:44 - 01:28:06
+    prezi: "EXmO2KVcE0EbfeitwUAT",
     ambassadors: {
       featured: ["barbaraBakedBean"],
       related: [],
@@ -257,6 +272,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     broadcast: new Date("2023-04-29"),
     host: "Maya Higa",
     length: 2 * 60 * 60 + 26 * 60 + 36, // 00:15:35 - 02:42:10
+    prezi: "6EXog4MmHNHLx09ttdbe",
     ambassadors: {
       featured: ["winnieTheMoo"],
       related: [],
