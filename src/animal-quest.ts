@@ -278,6 +278,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 1834295838,
+      start: "00h00m06s",
+    },
+    edition: "Millipede Edition",
+    description:
+      "Get to know Hank (the tank), Alveus' Smokey Ghost Millipede. Learn why bugs are so important for our planet, how many feet a millipede actually has, the difference between millipedes and centipedes, and what we can do to make sure we're caring for our bug friends.",
+    broadcast: new Date("2023-05-31"),
+    host: "Maya Higa",
+    length: 60 * 60 + 26 * 60 + 50, // 00:00:06 - 01:26:56
+    prezi: "e14dmFY6klcJE0r25EQy",
+    ambassadors: {
+      featured: ["hankMrMctrain"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
