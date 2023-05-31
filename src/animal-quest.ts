@@ -263,18 +263,35 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 1806823442,
-      start: "00h15m35s",
+      id: 1808632737,
+      start: "00h03m15s",
     },
     edition: "Cow Edition",
     description:
       "Learn about Winnie, Alveus' Red Angus Beef Cow, the beef industry and commercial agriculture. Discover the impacts it has on our planet, the concerns for animal welfare in the industry, and recommendations for how we can all make a difference.",
     broadcast: new Date("2023-04-29"),
     host: "Maya Higa",
-    length: 2 * 60 * 60 + 26 * 60 + 36, // 00:15:35 - 02:42:10
+    length: 2 * 60 * 60 + 26 * 60 + 30, // 00:03:15 - 02:29:45
     prezi: "6EXog4MmHNHLx09ttdbe",
     ambassadors: {
       featured: ["winnieTheMoo"],
+      related: [],
+    },
+  },
+  {
+    video: {
+      id: 1834295838,
+      start: "00h00m06s",
+    },
+    edition: "Millipede Edition",
+    description:
+      "Get to know Hank (the tank), Alveus' Smokey Ghost Millipede. Learn why bugs are so important for our planet, how many feet a millipede actually has, the difference between millipedes and centipedes, and what we can do to make sure we're caring for our bug friends.",
+    broadcast: new Date("2023-05-31"),
+    host: "Maya Higa",
+    length: 60 * 60 + 26 * 60 + 50, // 00:00:06 - 01:26:56
+    prezi: "e14dmFY6klcJE0r25EQy",
+    ambassadors: {
+      featured: ["hankMrMctrain"],
       related: [],
     },
   },
