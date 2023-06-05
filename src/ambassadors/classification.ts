@@ -13,7 +13,7 @@ const classificationOrder = ["Mammals", "Birds", "Reptiles & Amphibians", "Inver
 
 export type Classification = (typeof classificationOrder)[number];
 
-export function getClassification(c: Class): Classification {
+export const getClassification = (c: Class): Classification => {
   switch (c) {
     case Class.Mammalia: return "Mammals";
     case Class.Aves: return "Birds";
@@ -26,7 +26,6 @@ export function getClassification(c: Class): Classification {
   }
 }
 
-export function sortAmbassadorClassification(a: Class, b: Class): number {
+export const sortAmbassadorClassification = (a: Class, b: Class): number => {
   return classificationOrder.indexOf(getClassification(a)) - classificationOrder.indexOf(getClassification(b));
 }
-
