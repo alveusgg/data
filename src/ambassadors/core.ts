@@ -1,5 +1,6 @@
 import type { IUCNStatus } from "../iucn";
 import type { EnclosureKey } from "../enclosures";
+import { Class } from "./classification";
 
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
@@ -21,6 +22,7 @@ export type AmbassadorKey = keyof Ambassadors;
 export type Ambassador = {
   name: string;
   alternate: Readonly<string[]>;
+  class: Class;
   species: string;
   scientific: string;
   sex: Nullable<"Male" | "Female">;
@@ -44,6 +46,7 @@ const ambassadors = {
   stompy: {
     name: "Stompy",
     alternate: [],
+    class: Class.Aves,
     species: "Emu",
     scientific: "Dromaius novaehollandiae",
     sex: "Male",
@@ -89,6 +92,7 @@ const ambassadors = {
   georgie: {
     name: "Georgie",
     alternate: [],
+    class: Class.Amphibia,
     species: "African Bullfrog",
     scientific: "Pyxicephalus adspersus",
     sex: "Male",
@@ -123,6 +127,7 @@ const ambassadors = {
   tico: {
     name: "Tico",
     alternate: [],
+    class: Class.Aves,
     species: "Blue and Gold Macaw",
     scientific: "Ara ararauna",
     sex: "Female",
@@ -148,6 +153,7 @@ const ambassadors = {
   miley: {
     name: "Miley",
     alternate: ["Miele"],
+    class: Class.Aves,
     species: "Catalina Macaw",
     scientific: "Ara ararauna x Ara macao",
     sex: "Female",
@@ -170,6 +176,7 @@ const ambassadors = {
   mia: {
     name: "Mia",
     alternate: [],
+    class: Class.Aves,
     species: "African Grey",
     scientific: "Psittacus erithacus",
     sex: "Female",
@@ -198,6 +205,7 @@ const ambassadors = {
   siren: {
     name: "Siren",
     alternate: [],
+    class: Class.Aves,
     species: "Blue-fronted Amazon",
     scientific: "Amazona aestiva",
     sex: "Female",
@@ -227,6 +235,7 @@ const ambassadors = {
   abbott: {
     name: "Abbott",
     alternate: [],
+    class: Class.Aves,
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
     sex: "Male",
@@ -251,6 +260,7 @@ const ambassadors = {
   coconut: {
     name: "Coconut",
     alternate: [],
+    class: Class.Aves,
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
     sex: "Male",
@@ -273,6 +283,7 @@ const ambassadors = {
   oliver: {
     name: "Oliver",
     alternate: [],
+    class: Class.Aves,
     species: "Olive Egger Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Male",
@@ -294,6 +305,7 @@ const ambassadors = {
   nugget: {
     name: "Nugget",
     alternate: [],
+    class: Class.Aves,
     species: "Ameraucana Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
@@ -316,6 +328,7 @@ const ambassadors = {
   henrique: {
     name: "Henrique",
     alternate: [],
+    class: Class.Aves,
     species: "Half Dark Brahma, Half Saipan Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
@@ -337,6 +350,7 @@ const ambassadors = {
   winnieTheMoo: {
     name: "Winnie (The Moo)",
     alternate: [],
+    class: Class.Mammalia,
     species: "Red Angus Beef Cow",
     scientific: "Bos (primigenius) taurus",
     sex: "Female",
@@ -363,6 +377,7 @@ const ambassadors = {
   noodle: {
     name: "Noodle",
     alternate: [],
+    class: Class.Reptilia,
     species: "Carpet Python",
     scientific: "Morelia spilota mcdowelli",
     sex: "Female",
@@ -391,6 +406,7 @@ const ambassadors = {
   patchy: {
     name: "Patchy",
     alternate: [],
+    class: Class.Reptilia,
     species: "Ball Python",
     scientific: "Python regius",
     sex: "Female",
@@ -413,6 +429,7 @@ const ambassadors = {
   fenn: {
     name: "Fenn",
     alternate: [],
+    class: Class.Mammalia,
     species: "European Red Fox",
     scientific: "Vulpes vulpes",
     sex: "Male",
@@ -443,6 +460,7 @@ const ambassadors = {
   reed: {
     name: "Reed",
     alternate: [],
+    class: Class.Mammalia,
     species: "European Red Fox",
     scientific: "Vulpes vulpes",
     sex: "Male",
@@ -472,6 +490,7 @@ const ambassadors = {
   serrano: {
     name: "Serrano",
     alternate: [],
+    class: Class.Mammalia,
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
     sex: "Male",
@@ -498,6 +517,7 @@ const ambassadors = {
   jalapeno: {
     name: "Jalapeño",
     alternate: [],
+    class: Class.Mammalia,
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
     sex: "Male",
@@ -522,6 +542,7 @@ const ambassadors = {
   snork: {
     name: "Snork",
     alternate: [],
+    class: Class.Mammalia,
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
     sex: "Female",
@@ -544,6 +565,7 @@ const ambassadors = {
   moomin: {
     name: "Moomin",
     alternate: [],
+    class: Class.Mammalia,
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
     sex: "Male",
@@ -569,6 +591,7 @@ const ambassadors = {
   hankMrMctrain: {
     name: "Hank Mr. McTrain",
     alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
+    class: Class.Diplopoda,
     species: "Smokey Ghost Millipede",
     scientific: "Narceus gordanus",
     sex: "Male",
@@ -594,6 +617,7 @@ const ambassadors = {
   barbaraBakedBean: {
     name: "Barbara / Baked Bean",
     alternate: [],
+    class: Class.Insecta,
     species: "Madagascar Hissing Cockroaches",
     scientific: "Gromphadorhina portentosa",
     sex: null,
@@ -616,6 +640,7 @@ const ambassadors = {
   marty: {
     name: "Marty",
     alternate: [],
+    class: Class.Malacostraca,
     species: "Zebra Isopods",
     scientific: "Armadillidium maculatum",
     sex: null,
@@ -637,6 +662,7 @@ const ambassadors = {
   ducky: {
     name: "Ducky",
     alternate: [],
+    class: Class.Malacostraca,
     species: "Rubber Ducky Isopods",
     scientific: "Cubaris sp.",
     sex: null,
@@ -659,6 +685,7 @@ const ambassadors = {
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
+    class: Class.Malacostraca,
     species: "Spanish Orange Isopods",
     scientific: "Porcellio scaber",
     sex: null,
@@ -681,6 +708,7 @@ const ambassadors = {
   toasterStrudel: {
     name: "Toaster Strudel",
     alternate: [],
+    class: Class.Reptilia,
     species: "Blue-tounged Skink",
     scientific: "Tiliqua scincoides intermedia",
     sex: "Male",
@@ -703,6 +731,7 @@ const ambassadors = {
   tortellini: {
     name: "Tortellini",
     alternate: [],
+    class: Class.Arachnida,
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
     sex: "Male",
@@ -725,6 +754,7 @@ const ambassadors = {
   puppy: {
     name: "Puppy",
     alternate: [],
+    class: Class.Arachnida,
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
     sex: "Male",
@@ -747,6 +777,7 @@ const ambassadors = {
   chipsAhoy: {
     name: "Chips Ahoy",
     alternate: [],
+    class: Class.Mammalia,
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
@@ -769,6 +800,7 @@ const ambassadors = {
   nillaWafer: {
     name: "Nilla Wafer",
     alternate: [],
+    class: Class.Mammalia,
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
     sex: "Female",
@@ -791,6 +823,7 @@ const ambassadors = {
   momo: {
     name: "Momo",
     alternate: [],
+    class: Class.Mammalia,
     species: "Black Tufted Marmoset",
     scientific: "Callithrix penicillata",
     sex: "Male",
@@ -815,6 +848,7 @@ const ambassadors = {
   appa: {
     name: "Appa",
     alternate: [],
+    class: Class.Mammalia,
     species: "Common Marmoset",
     scientific: "Callithrix jacchus",
     sex: "Male",
@@ -841,6 +875,7 @@ const ambassadors = {
   orion: {
     name: "Orion",
     alternate: [],
+    class: Class.Aves,
     species: "Prairie/Peregrine Falcon",
     scientific: "Falco mexicanus x Falco peregrinus",
     sex: "Male",
@@ -863,6 +898,7 @@ const ambassadors = {
   pickles: {
     name: "Pickles",
     alternate: [],
+    class: Class.Arachnida,
     species: "Vinegaroon",
     scientific: "Mastigoproctus tohono",
     sex: "Female",
@@ -885,6 +921,7 @@ const ambassadors = {
   henrietta: {
     name: "Henrietta",
     alternate: [],
+    class: Class.Aves,
     species: "Jersey Giant Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
@@ -907,6 +944,7 @@ const ambassadors = {
   polly: {
     name: "Polly",
     alternate: [],
+    class: Class.Aves,
     species: "Silkie Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
