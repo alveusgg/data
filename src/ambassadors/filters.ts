@@ -31,6 +31,7 @@ export const isAmbassadorWithPlushKey = <
 >(
   key: string
 ): key is AmbassadorWithPlushKey<Items> =>
+  key in ambassadors &&
   ambassadors[key as keyof typeof ambassadors].plush !== null;
 
 export const isAmbassadorWithPlush = <
@@ -76,6 +77,7 @@ export const isActiveAmbassadorKey = <
 >(
   key: string
 ): key is ActiveAmbassadorKey<Items> =>
+  key in ambassadors &&
   ambassadors[key as keyof typeof ambassadors].retired === null;
 
 export const isActiveAmbassador = <
