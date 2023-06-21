@@ -68,7 +68,7 @@ const ambassadors = {
       "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     native: {
       text: "Australia (savannah woodlands and sclerophyll forests)",
-      source: "https://en.wikipedia.org/wiki/Emu"
+      source: "https://en.wikipedia.org/wiki/Emu",
     },
     clips: [
       {
@@ -215,7 +215,7 @@ const ambassadors = {
     native: {
       text: "Equatorial Africa (dense forests)",
       source: "https://en.wikipedia.org/wiki/African_grey_parrot",
-  },
+    },
     clips: [
       { id: "nIw-qTRT5Nc", caption: "Mia Dances With Connor" },
       { id: "KRJy_nR1u5k", caption: "Mia Walks Around The Aviary" },
@@ -280,7 +280,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     native: {
-      text: "North America (forests)", 
+      text: "North America (forests)",
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
     clips: [
@@ -309,7 +309,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     native: {
-      text: "North America (forests)", 
+      text: "North America (forests)",
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
     clips: [],
@@ -575,7 +575,7 @@ const ambassadors = {
       "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     native: {
       text: "Worldwide (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Donkey"
+      source: "https://en.wikipedia.org/wiki/Donkey",
     },
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
@@ -606,7 +606,7 @@ const ambassadors = {
       "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
     native: {
       text: "Worldwide (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Donkey"
+      source: "https://en.wikipedia.org/wiki/Donkey",
     },
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
@@ -857,7 +857,7 @@ const ambassadors = {
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
     native: {
       text: "Africa (rainforests, savannas)",
-      source: "https://en.wikipedia.org/wiki/Pandinus_imperator"
+      source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
     },
     clips: [],
     homepage: null,
