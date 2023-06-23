@@ -910,8 +910,8 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
-      text: "Asia",
-      source: "https://en.wikipedia.org/wiki/Rat",
+      text: "Worldwide",
+      source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
@@ -937,8 +937,9 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
-      text: "Asia",
-      source: "https://en.wikipedia.org/wiki/Rat",
+      text: "Worldwide",
+      source:
+        "https://en.wikipedia.org/wiki/Fancy_rathttps://en.wikipedia.org/wiki/Fancy_rat",
     },
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
