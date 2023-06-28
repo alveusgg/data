@@ -682,29 +682,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    class: Class.Reptilia,
-    species: "Blue-tounged Skink",
-    scientific: "Tiliqua scincoides intermedia",
-    sex: "Male",
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    iucn: {
-      id: 109481538,
-      status: "LC",
-    },
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   tortellini: {
     name: "Tortellini",
     alternate: [],
@@ -794,6 +771,29 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
+    homepage: null,
+    plush: null,
+  },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    class: Class.Reptilia,
+    species: "Blue-tounged Skink",
+    scientific: "Tiliqua scincoides intermedia",
+    sex: "Male",
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    iucn: {
+      id: 109481538,
+      status: "LC",
+    },
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    clips: [],
     homepage: null,
     plush: null,
   },
