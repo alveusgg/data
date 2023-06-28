@@ -659,29 +659,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  ducky: {
-    name: "Ducky",
-    alternate: [],
-    class: Class.Malacostraca,
-    species: "Rubber Ducky Isopods",
-    scientific: "Cubaris sp.",
-    sex: null,
-    birth: "2022",
-    arrival: "2022-01",
-    retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
-    enclosure: "critters",
-    story:
-      "Our rubber ducky isopods were born in captivity and ethically sourced.",
-    mission:
-      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
@@ -960,6 +937,29 @@ const ambassadors = {
       "Polly was rehomed from another owner.\n\nWe had hoped that Polly would grow to be larger so she could join our other chickens, but unfortunately she did not and so was retired from being an ambassador in November 2022 and now lives at Maya's Tiny House.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  ducky: {
+    name: "Ducky",
+    alternate: [],
+    class: Class.Malacostraca,
+    species: "Rubber Ducky Isopods",
+    scientific: "Cubaris sp.",
+    sex: null,
+    birth: "2022",
+    arrival: "2022-01",
+    retired: "2023-06",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "critters",
+    story:
+      "Our rubber ducky isopods were born in captivity and ethically sourced.\n\nUnfortunately, our colony of isopods didn't breed enough to sustain themselves, with the final few passing away in June 2023.",
+    mission:
+      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
     homepage: null,
     plush: null,
