@@ -295,6 +295,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 1858155117,
+      start: "00h00m04s",
+    },
+    edition: "Rat Edition",
+    description:
+      "Meet Alveus' rats, Chips and Nilla, in this episode. Learn about the differences between rats and mice, many common misconceptions associated with rats, how rodenticides can lead to bioaccumulation and biomagnification, risks outdoor cats pose to rats, and what we can do to help.",
+    broadcast: new Date("2023-06-28"),
+    host: "Maya Higa",
+    length: 60 * 60 + 23 * 60 + 22, // 00:00:04 - 01:23:26
+    prezi: "wzMSLtk4pzS10lxN8lAn",
+    ambassadors: {
+      featured: ["chipsAhoy", "nillaWafer"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
