@@ -659,29 +659,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  ducky: {
-    name: "Ducky",
-    alternate: [],
-    class: Class.Malacostraca,
-    species: "Rubber Ducky Isopods",
-    scientific: "Cubaris sp.",
-    sex: null,
-    birth: "2022",
-    arrival: "2022-01",
-    retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
-    enclosure: "critters",
-    story:
-      "Our rubber ducky isopods were born in captivity and ethically sourced.",
-    mission:
-      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
@@ -701,29 +678,6 @@ const ambassadors = {
       "Our spanish orange isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    class: Class.Reptilia,
-    species: "Blue-tounged Skink",
-    scientific: "Tiliqua scincoides intermedia",
-    sex: "Male",
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    iucn: {
-      id: 109481538,
-      status: "LC",
-    },
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
     clips: [],
     homepage: null,
     plush: null,
@@ -817,6 +771,29 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
+    homepage: null,
+    plush: null,
+  },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    class: Class.Reptilia,
+    species: "Blue-tounged Skink",
+    scientific: "Tiliqua scincoides intermedia",
+    sex: "Male",
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    iucn: {
+      id: 109481538,
+      status: "LC",
+    },
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    clips: [],
     homepage: null,
     plush: null,
   },
@@ -960,6 +937,29 @@ const ambassadors = {
       "Polly was rehomed from another owner.\n\nWe had hoped that Polly would grow to be larger so she could join our other chickens, but unfortunately she did not and so was retired from being an ambassador in November 2022 and now lives at Maya's Tiny House.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  ducky: {
+    name: "Ducky",
+    alternate: [],
+    class: Class.Malacostraca,
+    species: "Rubber Ducky Isopods",
+    scientific: "Cubaris sp.",
+    sex: null,
+    birth: "2022",
+    arrival: "2022-01",
+    retired: "2023-06",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "critters",
+    story:
+      "Our rubber ducky isopods were born in captivity and ethically sourced.\n\nUnfortunately, our colony of isopods didn't breed enough to sustain themselves, with the final few passing away in June 2023.",
+    mission:
+      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
     homepage: null,
     plush: null,
