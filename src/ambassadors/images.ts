@@ -143,6 +143,8 @@ import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
 
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
+import appaImage2 from "../../assets/ambassadors/appa/02.jpg";
+import appaImage3 from "../../assets/ambassadors/appa/03.jpg";
 
 import orionImage1 from "../../assets/ambassadors/orion/01.jpg";
 
@@ -408,7 +410,11 @@ const ambassadorImages: {
       position: "0% 0%",
     },
   ],
-  appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
+  appa: [
+    { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
+    { src: appaImage2, alt: "Appa the Common Marmoset", position: "50% 0%" },
+    { src: appaImage3, alt: "Appa the Common Marmoset" },
+  ],
 
   // Retired ambassadors
   orion: [{ src: orionImage1, alt: "Orion the Prairie/Peregrine Falcon" }],
