@@ -126,6 +126,8 @@ import bbImage2 from "../../assets/ambassadors/bb/02.jpg";
 import toasterImage1 from "../../assets/ambassadors/toaster/01.jpg";
 import toasterImage2 from "../../assets/ambassadors/toaster/02.jpg";
 import toasterImage3 from "../../assets/ambassadors/toaster/03.jpg";
+import toasterImage4 from "../../assets/ambassadors/toaster/04.jpg";
+import toasterImage5 from "../../assets/ambassadors/toaster/05.jpg";
 
 import tortelliniImage1 from "../../assets/ambassadors/tortellini/01.jpg";
 import tortelliniImage2 from "../../assets/ambassadors/tortellini/02.jpg";
@@ -376,9 +378,15 @@ const ambassadorImages: {
     { src: bbImage2, alt: "BB the Spanish Orange Isopods" },
   ],
   toasterStrudel: [
-    { src: toasterImage1, alt: "Toaster Strudel the Blue-tounged Skink" },
+    {
+      src: toasterImage1,
+      alt: "Toaster Strudel the Blue-tounged Skink",
+      position: "25% 50%",
+    },
     { src: toasterImage2, alt: "Toaster Strudel the Blue-tounged Skink" },
     { src: toasterImage3, alt: "Toaster Strudel the Blue-tounged Skink" },
+    { src: toasterImage4, alt: "Toaster Strudel the Blue-tounged Skink" },
+    { src: toasterImage5, alt: "Toaster Strudel the Blue-tounged Skink" },
   ],
   tortellini: [
     { src: tortelliniImage1, alt: "Tortellini the Emperor Scorpion" },
