@@ -92,6 +92,7 @@ import reedImage5 from "../../assets/ambassadors/reed/05.jpg";
 import serranoImage1 from "../../assets/ambassadors/serrano/01.jpg";
 import serranoImage2 from "../../assets/ambassadors/serrano/02.jpg";
 import serranoImage3 from "../../assets/ambassadors/serrano/03.jpg";
+import serranoImage4 from "../../assets/ambassadors/serrano/04.jpg";
 
 import jalapenoImage1 from "../../assets/ambassadors/jalapeno/01.jpg";
 import jalapenoImage2 from "../../assets/ambassadors/jalapeno/02.jpg";
@@ -326,7 +327,12 @@ const ambassadorImages: {
   serrano: [
     { src: serranoImage1, alt: "Serrano the Domestic Donkey" },
     { src: serranoImage2, alt: "Serrano the Domestic Donkey" },
-    { src: serranoImage3, alt: "Serrano the Domestic Donkey" },
+    {
+      src: serranoImage3,
+      alt: "Serrano the Domestic Donkey",
+      position: "50% 25%",
+    },
+    { src: serranoImage4, alt: "Serrano the Domestic Donkey" },
   ],
   jalapeno: [
     { src: jalapenoImage1, alt: "Jalapeño the Domestic Donkey" },
