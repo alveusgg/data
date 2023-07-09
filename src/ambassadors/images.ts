@@ -59,6 +59,7 @@ import nuggetImage3 from "../../assets/ambassadors/nugget/03.jpg";
 
 import henriqueImage1 from "../../assets/ambassadors/henrique/01.jpg";
 import henriqueImage2 from "../../assets/ambassadors/henrique/02.jpg";
+import henriqueImage3 from "../../assets/ambassadors/henrique/03.jpg";
 
 import winnieImage1 from "../../assets/ambassadors/winnie/01.jpg";
 import winnieImage2 from "../../assets/ambassadors/winnie/02.jpg";
@@ -92,6 +93,7 @@ import reedImage5 from "../../assets/ambassadors/reed/05.jpg";
 import serranoImage1 from "../../assets/ambassadors/serrano/01.jpg";
 import serranoImage2 from "../../assets/ambassadors/serrano/02.jpg";
 import serranoImage3 from "../../assets/ambassadors/serrano/03.jpg";
+import serranoImage4 from "../../assets/ambassadors/serrano/04.jpg";
 
 import jalapenoImage1 from "../../assets/ambassadors/jalapeno/01.jpg";
 import jalapenoImage2 from "../../assets/ambassadors/jalapeno/02.jpg";
@@ -126,6 +128,8 @@ import bbImage2 from "../../assets/ambassadors/bb/02.jpg";
 import toasterImage1 from "../../assets/ambassadors/toaster/01.jpg";
 import toasterImage2 from "../../assets/ambassadors/toaster/02.jpg";
 import toasterImage3 from "../../assets/ambassadors/toaster/03.jpg";
+import toasterImage4 from "../../assets/ambassadors/toaster/04.jpg";
+import toasterImage5 from "../../assets/ambassadors/toaster/05.jpg";
 
 import tortelliniImage1 from "../../assets/ambassadors/tortellini/01.jpg";
 import tortelliniImage2 from "../../assets/ambassadors/tortellini/02.jpg";
@@ -141,6 +145,8 @@ import nillaImage2 from "../../assets/ambassadors/nilla/02.jpg";
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
 
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
+import appaImage2 from "../../assets/ambassadors/appa/02.jpg";
+import appaImage3 from "../../assets/ambassadors/appa/03.jpg";
 
 import orionImage1 from "../../assets/ambassadors/orion/01.jpg";
 
@@ -271,6 +277,10 @@ const ambassadorImages: {
     {
       src: henriqueImage2,
       alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
+    },
+    {
+      src: henriqueImage3,
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "100% 25%",
     },
   ],
@@ -322,7 +332,12 @@ const ambassadorImages: {
   serrano: [
     { src: serranoImage1, alt: "Serrano the Domestic Donkey" },
     { src: serranoImage2, alt: "Serrano the Domestic Donkey" },
-    { src: serranoImage3, alt: "Serrano the Domestic Donkey" },
+    {
+      src: serranoImage3,
+      alt: "Serrano the Domestic Donkey",
+      position: "50% 25%",
+    },
+    { src: serranoImage4, alt: "Serrano the Domestic Donkey" },
   ],
   jalapeno: [
     { src: jalapenoImage1, alt: "Jalapeño the Domestic Donkey" },
@@ -376,9 +391,15 @@ const ambassadorImages: {
     { src: bbImage2, alt: "BB the Spanish Orange Isopods" },
   ],
   toasterStrudel: [
-    { src: toasterImage1, alt: "Toaster Strudel the Blue-tounged Skink" },
+    {
+      src: toasterImage1,
+      alt: "Toaster Strudel the Blue-tounged Skink",
+      position: "25% 50%",
+    },
     { src: toasterImage2, alt: "Toaster Strudel the Blue-tounged Skink" },
     { src: toasterImage3, alt: "Toaster Strudel the Blue-tounged Skink" },
+    { src: toasterImage4, alt: "Toaster Strudel the Blue-tounged Skink" },
+    { src: toasterImage5, alt: "Toaster Strudel the Blue-tounged Skink" },
   ],
   tortellini: [
     { src: tortelliniImage1, alt: "Tortellini the Emperor Scorpion" },
@@ -400,7 +421,11 @@ const ambassadorImages: {
       position: "0% 0%",
     },
   ],
-  appa: [{ src: appaImage1, alt: "Appa the Common Marmoset" }],
+  appa: [
+    { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
+    { src: appaImage2, alt: "Appa the Common Marmoset", position: "50% 0%" },
+    { src: appaImage3, alt: "Appa the Common Marmoset" },
+  ],
 
   // Retired ambassadors
   orion: [{ src: orionImage1, alt: "Orion the Prairie/Peregrine Falcon" }],
