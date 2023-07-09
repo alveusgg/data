@@ -59,6 +59,7 @@ import nuggetImage3 from "../../assets/ambassadors/nugget/03.jpg";
 
 import henriqueImage1 from "../../assets/ambassadors/henrique/01.jpg";
 import henriqueImage2 from "../../assets/ambassadors/henrique/02.jpg";
+import henriqueImage3 from "../../assets/ambassadors/henrique/03.jpg";
 
 import winnieImage1 from "../../assets/ambassadors/winnie/01.jpg";
 import winnieImage2 from "../../assets/ambassadors/winnie/02.jpg";
@@ -275,6 +276,10 @@ const ambassadorImages: {
     },
     {
       src: henriqueImage2,
+      alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
+    },
+    {
+      src: henriqueImage3,
       alt: "Henrique the Half Dark Brahma, Half Saipan Chicken",
       position: "100% 25%",
     },
