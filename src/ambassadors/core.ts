@@ -755,33 +755,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  ducky: {
-    name: "Ducky",
-    alternate: [],
-    class: Class.Malacostraca,
-    species: "Rubber Ducky Isopods",
-    scientific: "Cubaris sp.",
-    sex: null,
-    birth: "2022",
-    arrival: "2022-01",
-    retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
-    enclosure: "critters",
-    story:
-      "Our rubber ducky isopods were born in captivity and ethically sourced.",
-    mission:
-      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Asia",
-      source: "https://en.wikipedia.org/wiki/Cubaris",
-    },
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
@@ -809,33 +782,7 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    class: Class.Reptilia,
-    species: "Blue-tounged Skink",
-    scientific: "Tiliqua scincoides intermedia",
-    sex: "Male",
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    iucn: {
-      id: 109481538,
-      status: "LC",
-    },
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    native: {
-      text: "Australia",
-      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
-    },
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
+
   tortellini: {
     name: "Tortellini",
     alternate: [],
@@ -941,6 +888,33 @@ const ambassadors = {
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
+    homepage: null,
+    plush: null,
+  },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    class: Class.Reptilia,
+    species: "Blue-tounged Skink",
+    scientific: "Tiliqua scincoides intermedia",
+    sex: "Male",
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    iucn: {
+      id: 109481538,
+      status: "LC",
+    },
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    native: {
+      text: "Australia",
+      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
+    },
+    clips: [],
     homepage: null,
     plush: null,
   },
@@ -1107,6 +1081,34 @@ const ambassadors = {
     native: {
       text: "China",
       source: "https://en.wikipedia.org/wiki/Silkie",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+
+  ducky: {
+    name: "Ducky",
+    alternate: [],
+    class: Class.Malacostraca,
+    species: "Rubber Ducky Isopods",
+    scientific: "Cubaris sp.",
+    sex: null,
+    birth: "2022",
+    arrival: "2022-01",
+    retired: null,
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "critters",
+    story:
+      "Our rubber ducky isopods were born in captivity and ethically sourced.",
+    mission:
+      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
+    native: {
+      text: "Asia",
+      source: "https://en.wikipedia.org/wiki/Cubaris",
     },
     clips: [],
     homepage: null,
