@@ -635,7 +635,7 @@ const ambassadors = {
     mission:
       "She is an ambassador for the exploitation of wildlife in the fur trade.",
     native: {
-      text: "Andes Mountains (South America)",
+      text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
@@ -661,7 +661,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for the exploitation of wildlife in the fur trade.",
     native: {
-      text: "Andes Mountains (South America)",
+      text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
@@ -857,7 +857,7 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
-      text: "Worldwide",
+      text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
@@ -884,7 +884,7 @@ const ambassadors = {
     mission:
       "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
-      text: "Worldwide",
+      text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
@@ -1052,7 +1052,7 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     native: {
-      text: "United States",
+      text: "United States (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Jersey_Giant",
     },
     clips: [],
@@ -1079,7 +1079,7 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     native: {
-      text: "China",
+      text: "China (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Silkie",
     },
     clips: [],
