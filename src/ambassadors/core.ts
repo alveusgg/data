@@ -1096,14 +1096,14 @@ const ambassadors = {
     sex: null,
     birth: "2022",
     arrival: "2022-01",
-    retired: null,
+    retired: "2023-06",
     iucn: {
       id: null,
       status: "NE",
     },
     enclosure: "critters",
     story:
-      "Our rubber ducky isopods were born in captivity and ethically sourced.",
+      "Our rubber ducky isopods were born in captivity and ethically sourced.\n\nUnfortunately, our colony of isopods didn't breed enough to sustain themselves, with the final few passing away in June 2023.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     native: {
