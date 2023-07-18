@@ -1086,7 +1086,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-
   ducky: {
     name: "Ducky",
     alternate: [],
