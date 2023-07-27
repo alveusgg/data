@@ -895,7 +895,7 @@ const ambassadors = {
     name: "Toaster Strudel",
     alternate: [],
     class: Class.Reptilia,
-    species: "Blue-tounged Skink",
+    species: "Blue-tongued Skink",
     scientific: "Tiliqua scincoides intermedia",
     sex: "Male",
     birth: "2022-07-04",
