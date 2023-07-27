@@ -452,7 +452,7 @@ export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
   ((ambassador: string) => AmbassadorImages | undefined);
 
 export const getAmbassadorMerchImage = ((
-  ambassador: AmbassadorWithPlushKey<Ambassadors> | string
+  ambassador: AmbassadorWithPlushKey<Ambassadors> | string,
 ) => {
   if (!isAmbassadorWithPlushKey<Ambassadors>(ambassador)) return undefined;
 
