@@ -490,8 +490,8 @@ const ambassadors = {
     name: "Fenn",
     alternate: [],
     class: Class.Mammalia,
-    species: "European Red Fox",
-    scientific: "Vulpes vulpes",
+    species: "American Red Fox",
+    scientific: "Vulpes vulpes fulva",
     sex: "Male",
     birth: "2020",
     arrival: "2022-11",
@@ -506,8 +506,8 @@ const ambassadors = {
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     native: {
-      text: "North America, Europe, Asia, North Africa (forests, grasslands, mountains)",
-      source: "https://en.wikipedia.org/wiki/Red_fox",
+      text: "North America",
+      source: "https://en.wikipedia.org/wiki/American_red_fox",
     },
     clips: [
       { id: "670RYU2Xw98", caption: "Fenn Digs Up A Friend In The Enclosure" },
@@ -525,8 +525,8 @@ const ambassadors = {
     name: "Reed",
     alternate: [],
     class: Class.Mammalia,
-    species: "European Red Fox",
-    scientific: "Vulpes vulpes",
+    species: "American Red Fox",
+    scientific: "Vulpes vulpes fulva",
     sex: "Male",
     birth: "2019",
     arrival: "2022-11",
@@ -541,8 +541,8 @@ const ambassadors = {
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
     native: {
-      text: "North America, Europe, Asia, North Africa (forests, grasslands, mountains)",
-      source: "https://en.wikipedia.org/wiki/Red_fox",
+      text: "North America",
+      source: "https://en.wikipedia.org/wiki/American_red_fox",
     },
     clips: [
       { id: "ClWtgsoWta0", caption: "Reed Gets Weighed With Target Training" },
