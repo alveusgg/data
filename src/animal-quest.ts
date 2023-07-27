@@ -312,6 +312,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 1883241541,
+      start: "00h00m00s",
+    },
+    edition: "Fox Edition",
+    description:
+      "Learn about Fenn and Reed, Alveus' European Red Foxes, the differences between European and American Red Foxes, how they hunt for prey using magnetic fields, the impact the fur and exotic pet trades have on foxes, and what we can do to help.",
+    broadcast: new Date("2023-07-28"),
+    host: "Maya Higa",
+    length: 60 * 60 + 51 * 60 + 10, // 00:00:00 - 01:51:10
+    prezi: "YadZc7hkUA2KI4cGfCV4",
+    ambassadors: {
+      featured: ["fenn", "reed"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
