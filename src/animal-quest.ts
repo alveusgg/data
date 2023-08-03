@@ -14,8 +14,8 @@ export const hosts = {
   maya: {
     name: "Maya Higa", 
     link: "https://www.alveussanctuary.org/about/maya"
-  };
-};
+  },
+} satisfies Record<string, Host>;
 
 export type AnimalQuest = {
   video: {
