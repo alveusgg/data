@@ -6,14 +6,14 @@ type Minutes = `${0 | 1 | 2 | 3 | 4 | 5}${ZeroToNine}m`;
 type Hours = `${`${0 | 1}${ZeroToNine}` | `2${0 | 1 | 2 | 3}`}h`;
 
 export type Host = {
- name: string;
- link?: string;
-}
+  name: string;
+  link?: string;
+};
 
 export const hosts = {
   maya: {
-    name: "Maya Higa", 
-    link: "https://www.alveussanctuary.org/about/maya"
+    name: "Maya Higa",
+    link: "https://www.alveussanctuary.org/about/maya",
   },
 } satisfies Record<string, Host>;
 
@@ -353,7 +353,7 @@ export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
 
 export const getAmbassadorEpisode = (
   ambassador: AmbassadorKey | string,
-  type?: "featured" | "related",
+  type?: "featured" | "related"
 ): AnimalQuestWithRelation | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
