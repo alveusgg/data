@@ -5,20 +5,15 @@ type Seconds = `${0 | 1 | 2 | 3 | 4 | 5}${ZeroToNine}s`;
 type Minutes = `${0 | 1 | 2 | 3 | 4 | 5}${ZeroToNine}m`;
 type Hours = `${`${0 | 1}${ZeroToNine}` | `2${0 | 1 | 2 | 3}`}h`;
 
-const hostNames = {
-  maya: "Maya Higa",
-} as const;
+type Host = { name: string; link?: string };
+type HostName = (typeof hosts)[keyof typeof hosts]["name"];
 
-type Host = { name: HostName; link?: string };
-type HostKey = keyof typeof hostNames;
-type HostName = (typeof hostNames)[HostKey];
-
-export const hosts: Record<HostKey, Host> = {
+const hosts = {
   maya: {
     name: "Maya Higa",
     link: "https://www.alveussanctuary.org/about/maya",
   },
-};
+} as const satisfies Record<string, Host>;
 
 export type AnimalQuest = {
   video: {
