@@ -770,7 +770,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-
   tortellini: {
     name: "Tortellini",
     alternate: [],
