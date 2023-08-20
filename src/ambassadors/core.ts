@@ -53,7 +53,7 @@ const ambassadors = {
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
-      "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
+      "He is an ambassador for stopping the exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     native: {
       text: "Australia (savannah woodlands and sclerophyll forests)",
       source: "https://en.wikipedia.org/wiki/Emu",
@@ -770,7 +770,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-
   tortellini: {
     name: "Tortellini",
     alternate: [],
@@ -843,7 +842,7 @@ const ambassadors = {
     story:
       "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
-      "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
+      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
@@ -870,7 +869,7 @@ const ambassadors = {
     story:
       "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
-      "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
+      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
