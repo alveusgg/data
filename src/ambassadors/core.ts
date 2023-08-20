@@ -53,7 +53,7 @@ const ambassadors = {
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
-      "Stopping exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
+      "He is an ambassador for stopping the exotic meat trade, traditional medicine, and over exploitation of animal products in cosmetics.",
     native: {
       text: "Australia (savannah woodlands and sclerophyll forests)",
       source: "https://en.wikipedia.org/wiki/Emu",
