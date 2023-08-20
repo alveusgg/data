@@ -843,7 +843,7 @@ const ambassadors = {
     story:
       "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
-      "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
+      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
@@ -870,7 +870,7 @@ const ambassadors = {
     story:
       "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
-      "She is an ambassadors for how rodenticide use and outdoor cats affect all levels of wildlife.",
+      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
