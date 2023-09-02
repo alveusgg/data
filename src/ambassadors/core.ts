@@ -418,7 +418,7 @@ const ambassadors = {
     name: "Noodle",
     alternate: [],
     class: Class.Reptilia,
-    species: "Carpet Python",
+    species: "Coastal Carpet Python",
     scientific: "Morelia spilota mcdowelli",
     sex: "Female",
     birth: null,
