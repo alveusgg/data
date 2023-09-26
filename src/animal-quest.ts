@@ -356,6 +356,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 1935840442,
+      start: "00h00m00s",
+    },
+    edition: "Marmoset Edition",
+    description:
+      "Meet the marmosets at Alveus, Momo and Appa, in this Animal Quest episode. Learn about the history and diet of marmosets, why deforestation is such a threat to them and our planet, the dangers of palm oil production and the exotic pet trade.",
+    broadcast: new Date("2023-09-26"),
+    host: "maya",
+    length: 2 * 60 * 60 + 25 * 60 + 31, // 00:00:00 - 02:25:31
+    prezi: "MiQTpWL5gCQJpei9Yosz",
+    ambassadors: {
+      featured: ["momo", "appa"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
