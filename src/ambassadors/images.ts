@@ -41,6 +41,7 @@ import sirenImage4 from "../../assets/ambassadors/siren/04.jpg";
 import sirenImage5 from "../../assets/ambassadors/siren/05.jpg";
 import sirenImage6 from "../../assets/ambassadors/siren/06.jpg";
 import sirenImage7 from "../../assets/ambassadors/siren/07.jpg";
+import sirenImageMerch from "../../assets/ambassadors/siren/merch.png";
 
 import abbottImage1 from "../../assets/ambassadors/abbott/01.jpg";
 import abbottImage2 from "../../assets/ambassadors/abbott/02.jpg";
@@ -441,6 +442,7 @@ export const ambassadorMerchImages: {
 } = {
   stompy: { src: stompyImageMerch, alt: "" },
   georgie: { src: georgieImageMerch, alt: "" },
+  siren: { src: sirenImageMerch, alt: "" },
   winnieTheMoo: { src: winnieImageMerch, alt: "" },
 };
 

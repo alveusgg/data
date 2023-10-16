@@ -246,7 +246,9 @@ const ambassadors = {
       { id: "0foatCEQ5vk", caption: "Siren Has A Conversation" },
     ],
     homepage: null,
-    plush: null,
+    plush: {
+      soon: "October 28th",
+    },
   },
   abbott: {
     name: "Abbott",
