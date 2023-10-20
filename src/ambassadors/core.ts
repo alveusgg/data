@@ -247,7 +247,7 @@ const ambassadors = {
     ],
     homepage: null,
     plush: {
-      soon: "October 28th",
+      link: "https://youtooz.com/products/siren-plush-9-inch",
     },
   },
   abbott: {
