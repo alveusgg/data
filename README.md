@@ -26,5 +26,5 @@ pull request.
 
 Once the pull request is merged, update the GitHub-based dependency in the website and extension:
 
-- Website: `cd apps/website && pnpm add github:alveusgg/data#<version>`
+- Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add github:alveusgg/data#<version>`
 - Extension: `npm install github:alveusgg/data#<version>`
