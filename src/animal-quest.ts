@@ -373,6 +373,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 1964315303,
+      start: "00h00m00s",
+    },
+    edition: "Scorpion Edition",
+    description:
+      "Learn about Puppy and Tortellini, Alveus' Emperor scorpions, the natural history of scorpions including their venom, the biodiversity of scorpions, how they've adapted to their environment, and what we can do to help all invertebrates.",
+    broadcast: new Date("2023-10-30"),
+    host: "maya",
+    length: 60 * 60 + 25 * 60 + 50, // 00:00:00 - 01:25:50
+    prezi: "1fJkJdqGVN2mk4Ph46kZ",
+    ambassadors: {
+      featured: ["puppy", "tortellini"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
