@@ -402,7 +402,7 @@ export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
 
 export const getAmbassadorEpisode = (
   ambassador: AmbassadorKey | string,
-  type?: "featured" | "related"
+  type?: "featured" | "related",
 ): AnimalQuestWithRelation | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
