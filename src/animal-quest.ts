@@ -276,7 +276,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1808632737,
       start: "00h03m15s",
     },
-    edition: "Cow Edition",
+    edition: "Beef Edition",
     description:
       "Learn about Winnie, Alveus' Red Angus Beef Cow, the beef industry and commercial agriculture. Discover the impacts it has on our planet, the concerns for animal welfare in the industry, and recommendations for how we can all make a difference.",
     broadcast: new Date("2023-04-29"),
@@ -402,7 +402,7 @@ export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
 
 export const getAmbassadorEpisode = (
   ambassador: AmbassadorKey | string,
-  type?: "featured" | "related",
+  type?: "featured" | "related"
 ): AnimalQuestWithRelation | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
