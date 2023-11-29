@@ -745,6 +745,32 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  polly: {
+    name: "Polly",
+    alternate: [],
+    class: Class.Aves,
+    species: "Silkie Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: null,
+    arrival: "2022-08",
+    retired: null,
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "nutrition",
+    story: "Polly was rehomed from another owner.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    native: {
+      text: "China (Domesticated)",
+      source: "https://en.wikipedia.org/wiki/Silkie",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
@@ -1043,33 +1069,6 @@ const ambassadors = {
     native: {
       text: "United States (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Jersey_Giant",
-    },
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  polly: {
-    name: "Polly",
-    alternate: [],
-    class: Class.Aves,
-    species: "Silkie Chicken",
-    scientific: "Gallus gallus domesticus",
-    sex: "Female",
-    birth: null,
-    arrival: "2022-08",
-    retired: "2022-11",
-    iucn: {
-      id: null,
-      status: "NE",
-    },
-    enclosure: "chickens",
-    story:
-      "Polly was rehomed from another owner.\n\nWe had hoped that Polly would grow to be larger so she could join our other chickens, but unfortunately she did not and so was retired from being an ambassador in November 2022 and now lives at Maya's Tiny House.",
-    mission:
-      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "China (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Silkie",
     },
     clips: [],
     homepage: null,
