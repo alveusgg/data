@@ -390,6 +390,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 0,
+      start: "00h00m00s",
+    },
+    edition: "Dairy Edition",
+    description:
+      "Get to know Winnie, Alveus' Red Angus Beef Cow. Learn about the dairy industry and how they operate, from the life of a dairy cow to the production of dairy products. We'll also explore the impact the dairy industry has on our planet, and what we can do to help.",
+    broadcast: new Date("2023-11-30"),
+    host: "maya",
+    length: 60 * 60 + 25 * 60 + 50, // 00:00:00 - 01:25:50
+    prezi: "AM31kV6Mv82syKsoQhud",
+    ambassadors: {
+      featured: ["winnieTheMoo"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
