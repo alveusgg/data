@@ -417,37 +417,29 @@ export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
   relation: "featured" | "related";
 };
 
-export const getAmbassadorEpisode = (
+export const getAmbassadorEpisodes = (
   ambassador: AmbassadorKey | string,
   type?: "featured" | "related",
-): AnimalQuestWithRelation | undefined => {
+): [AnimalQuestWithRelation, ...AnimalQuestWithRelation[]] | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
 
-  let related: AnimalQuestWithRelation | undefined;
+  // Find all the episodes that have the ambassador featured or related
+  const featured: AnimalQuestWithRelation[] = [];
+  const related: AnimalQuestWithRelation[] = [];
   for (const [index, quest] of animalQuest.entries()) {
-    // If we're looking for the featured type, or any type, and find a featured, return it
-    if (
-      (!type || type === "featured") &&
-      quest.ambassadors.featured.includes(ambassador)
-    ) {
-      return { ...quest, episode: index + 1, relation: "featured" };
-    }
-
-    // If we're looking for the related type, and find a related, return it
-    // If we're looking for any type, and find a related, store it for if we find no featured
-    if (
-      (!type || type === "related") &&
-      quest.ambassadors.related.includes(ambassador)
-    ) {
-      if (type === "related")
-        return { ...quest, episode: index + 1, relation: "related" };
-      if (!related)
-        related = { ...quest, episode: index + 1, relation: "related" };
-    }
+    if (quest.ambassadors.featured.includes(ambassador))
+      featured.push({ ...quest, episode: index + 1, relation: "featured" });
+    if (quest.ambassadors.related.includes(ambassador))
+      related.push({ ...quest, episode: index + 1, relation: "related" });
   }
 
-  // If we were looking for any type, but didn't find a featured, return the related if there is one
-  if (!type && related) return related;
+  // If we're looking for a specific type, and we found it, return it
+  // or, if we weren't looking for a type, return the first type we found
+  // [arr[0], ...arr.slice(1)] is a hack to ensure the array is not empty for TS
+  if ((!type || type === "featured") && featured[0])
+    return [featured[0], ...featured.slice(1)];
+  if ((!type || type === "related") && related[0])
+    return [related[0], ...related.slice(1)];
 };
 
 export default animalQuest;
