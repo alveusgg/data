@@ -341,15 +341,15 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 1913457644,
-      start: "00h10m30s",
+      id: 1913532698,
+      start: "00h00m05s",
     },
     edition: "Isopod Edition",
     description:
       "Get to know all the isopods at Alveus, Marty our Zebra isopods and BB our Spanish Orange isopods. Learn about what isopods are, as well as why invertebrate conservation is so important for us and why we should care about them.",
     broadcast: new Date("2023-08-31"),
     host: "maya",
-    length: 60 * 60 + 10 * 60 + 50, // 00:10:30 - 01:21:20
+    length: 60 * 60 + 10 * 60 + 50, // 00:00:05 - 01:10:55
     prezi: "8bVarKy0mKSvgdl9objv",
     ambassadors: {
       featured: ["marty", "bb"],
