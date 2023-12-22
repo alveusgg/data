@@ -27,7 +27,7 @@ export type AnimalQuest = {
   length: number;
   prezi: string;
   ambassadors: {
-    featured: Readonly<AmbassadorKey[]>;
+    featured: Readonly<[AmbassadorKey, ...AmbassadorKey[]]>;
     related: Readonly<AmbassadorKey[]>;
   };
 };
