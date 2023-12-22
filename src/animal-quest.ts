@@ -35,19 +35,19 @@ export type AnimalQuest = {
 const animalQuest: Readonly<AnimalQuest[]> = [
   {
     video: {
-      id: 1122488911,
-      start: "00h02m03s",
+      id: 2010271362, // Original: 1122488911
+      start: "00h00m00s",
     },
     edition: "Chicken Edition",
     description:
-      "Get to know Oliver and Nugget, Alveus' chickens. We'll learn about egg laying, what food labels mean and which ones to look for, the impact the agriculture industry has on the environment, and what you can do to help.",
-    broadcast: new Date("2021-08-16"),
+      "Get to know Polly and Alveus' other chickens. We'll learn about egg laying, what food labels mean and which ones to look for, the impact the agriculture industry has on the environment, and what you can do to help.",
+    broadcast: new Date("2023-12-21"),
     host: "maya",
-    length: 2 * 60 * 60 + 26 * 60 + 46, // 00:02:03 - 02:28:49
+    length: 60 * 60 + 9 * 60 + 7, // 00:00:00 - 01:09:07
     prezi: "YRnYHgjrgcC4EmnnTq8w",
     ambassadors: {
-      featured: ["oliver", "nugget"],
-      related: ["henrique", "henrietta", "polly"],
+      featured: ["polly"],
+      related: ["oliver", "nugget", "henrique", "henrietta"],
     },
   },
   {
