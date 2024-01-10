@@ -884,7 +884,7 @@ const ambassadors = {
     name: "Polly",
     alternate: [],
     class: Class.Aves,
-    species: "Silkie Chicken",
+    species: "Bantam Silkie Chicken",
     scientific: "Gallus gallus domesticus",
     sex: "Female",
     birth: null,
