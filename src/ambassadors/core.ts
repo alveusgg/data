@@ -888,7 +888,7 @@ const ambassadors = {
     scientific: "Gallus gallus domesticus",
     sex: "Female",
     birth: null,
-    arrival: "2022-08",
+    arrival: "2023-11", // Previously 2022-08 to 2022-11
     retired: null,
     iucn: {
       id: null,
