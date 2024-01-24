@@ -52,15 +52,15 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 1180894968,
-      start: "00h00m27s",
+      id: 2041730968, // Original: 1180894968
+      start: "00h03m56s",
     },
     edition: "Emu Edition",
     description:
       "Meet Stompy, Alveus' Emu, and learn about the threats that his species faces in the wild including the exotic meat trade and production of emu products such as emu oil. We'll also discuss the great emu war of 1932 and the natural history of emus.",
-    broadcast: new Date("2021-10-18"),
+    broadcast: new Date("2024-01-23"),
     host: "maya",
-    length: 60 * 60 + 54 * 60 + 49, // 00:00:27 - 01:55:16
+    length: 60 * 60 + 17 * 60 + 26, // 00:03:56 - 01:21:22
     prezi: "hMjOOn7uaCwWxXGOJbju",
     ambassadors: {
       featured: ["stompy"],
