@@ -880,27 +880,28 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  polly: {
-    name: "Polly",
-    alternate: [],
-    class: Class.Aves,
-    species: "Bantam Silkie Chicken",
-    scientific: "Gallus gallus domesticus",
-    sex: "Female",
-    birth: null,
-    arrival: "2023-11", // Previously 2022-08 to 2022-11
+  pushPop: {
+    name: "Push Pop",
+    alternate: ["Poppy"],
+    class: Class.Reptilia,
+    species: "Sulcata Tortoise",
+    scientific: "Centrochelys sulcata",
+    sex: null, // Unknown, assumed female
+    birth: "2019",
+    arrival: "2024-02",
     retired: null,
     iucn: {
-      id: null,
-      status: "NE",
+      id: 163423,
+      status: "EN/decreasing",
     },
-    enclosure: "nutrition",
-    story: "Polly was rehomed from another owner.",
+    enclosure: "tortoise",
+    story:
+      "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
     mission:
-      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+      "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
     native: {
-      text: "China (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Silkie",
+      text: "Sahara Desert and the Sahel (shrubland, grassland)",
+      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
     },
     clips: [],
     homepage: null,
@@ -988,6 +989,32 @@ const ambassadors = {
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
+    homepage: null,
+    plush: null,
+  },
+  polly: {
+    name: "Polly",
+    alternate: [],
+    class: Class.Aves,
+    species: "Bantam Silkie Chicken",
+    scientific: "Gallus gallus domesticus",
+    sex: "Female",
+    birth: null,
+    arrival: "2023-11", // Previously 2022-08 to 2022-11
+    retired: null,
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    enclosure: "nutrition",
+    story: "Polly was rehomed from another owner.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    native: {
+      text: "China (Domesticated)",
+      source: "https://en.wikipedia.org/wiki/Silkie",
+    },
+    clips: [],
     homepage: null,
     plush: null,
   },

@@ -157,6 +157,9 @@ import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
 
 import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 
+import pushPopImage1 from "../../assets/ambassadors/pushpop/01.jpg";
+import pushPopImage2 from "../../assets/ambassadors/pushpop/02.jpg";
+
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type Percentage = `${OneToNine}${ZeroToNine}%` | `${ZeroToNine}%` | "100%";
@@ -435,6 +438,10 @@ const ambassadorImages: {
     { src: henriettaImage1, alt: "Henrietta the Jersey Giant Chicken" },
   ],
   polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
+  pushPop: [
+    { src: pushPopImage1, alt: "Push Pop the Sulcata Tortoise" },
+    { src: pushPopImage2, alt: "Push Pop the Sulcata Tortoise" },
+  ],
 };
 
 export const ambassadorMerchImages: {
