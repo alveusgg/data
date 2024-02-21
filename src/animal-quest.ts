@@ -69,15 +69,15 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 1226537529,
-      start: "00h00m21s",
+      id: 2068671661, // Original: 1226537529
+      start: "00h08m40s",
     },
     edition: "Snake Edition",
     description:
       "Learn about the snake ambassadors at Alveus, Noodle and Patchy, their conversation status, and interactions with humans. We'll also discuss the pet trade and morph breeding, the negative impacts it has on their species, and what you can do to reduce that impact.",
-    broadcast: new Date("2021-12-06"),
+    broadcast: new Date("2024-02-20"),
     host: "maya",
-    length: 60 * 60 + 29 * 60 + 17, // 00:00:21 - 01:29:38
+    length: 60 * 60 + 14 * 60 + 50, // 00:08:40 - 01:23:30
     prezi: "7tt98qyUgXTmnIrZqXZa",
     ambassadors: {
       featured: ["noodle", "patchy"],
