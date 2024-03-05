@@ -903,7 +903,13 @@ const ambassadors = {
       text: "Sahara Desert and the Sahel (shrubland, grassland)",
       source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
     },
-    clips: [],
+    clips: [
+      { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
+      {
+        id: "0yqMN0X8Ruw",
+        caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
+      },
+    ],
     homepage: null,
     plush: null,
   },
