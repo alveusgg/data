@@ -86,7 +86,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 2104074430, // Original: 1252271923
+      id: 2104220666, // Original: 1252271923
       start: "00h23m00s",
     },
     edition: "African Bullfrog Edition",
@@ -94,7 +94,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       "Get to know Georgie, Alveus' African Bullfrog ambassador, and learn about the threats amphibians face in the wild, such as the wildlife trade, habitat loss due to climate change, absorbing pollutants through their skin, and chytrid fungus.",
     broadcast: new Date("2024-03-28"),
     host: "maya",
-    length: 52 * 60, // 00:23:00 - 01:15:00
+    length: 51 * 60 + 57, // 00:23:00 - 01:14:57
     prezi: "Ke6vGrrEBdsbIO5gDY01",
     ambassadors: {
       featured: ["georgie"],
