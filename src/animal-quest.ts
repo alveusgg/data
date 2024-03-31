@@ -87,14 +87,14 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   {
     video: {
       id: 2104220666, // Original: 1252271923
-      start: "00h23m00s",
+      start: "00h22m55s",
     },
     edition: "African Bullfrog Edition",
     description:
       "Get to know Georgie, Alveus' African Bullfrog ambassador, and learn about the threats amphibians face in the wild, such as the wildlife trade, habitat loss due to climate change, absorbing pollutants through their skin, and chytrid fungus.",
     broadcast: new Date("2024-03-28"),
     host: "maya",
-    length: 51 * 60 + 57, // 00:23:00 - 01:14:57
+    length: 52 * 60 + 2, // 00:22:55 - 01:14:57
     prezi: "Ke6vGrrEBdsbIO5gDY01",
     ambassadors: {
       featured: ["georgie"],
@@ -413,6 +413,13 @@ export type AnimalQuestWithEpisode = AnimalQuest & {
   episode: number;
 };
 
+const animalQuestEpisodes: Readonly<AnimalQuestWithEpisode[]> = animalQuest.map(
+  (quest, index) => ({
+    ...quest,
+    episode: index + 1,
+  }),
+);
+
 export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
   relation: "featured" | "related";
 };
@@ -426,11 +433,11 @@ export const getAmbassadorEpisodes = (
   // Find all the episodes that have the ambassador featured or related
   const featured: AnimalQuestWithRelation[] = [];
   const related: AnimalQuestWithRelation[] = [];
-  for (const [index, quest] of animalQuest.entries()) {
+  for (const quest of animalQuestEpisodes) {
     if (quest.ambassadors.featured.includes(ambassador))
-      featured.push({ ...quest, episode: index + 1, relation: "featured" });
+      featured.push({ ...quest, relation: "featured" });
     if (quest.ambassadors.related.includes(ambassador))
-      related.push({ ...quest, episode: index + 1, relation: "related" });
+      related.push({ ...quest, relation: "related" });
   }
 
   // If we're looking for a specific type, and we found it, return it
@@ -442,4 +449,4 @@ export const getAmbassadorEpisodes = (
     return [related[0], ...related.slice(1)];
 };
 
-export default animalQuest;
+export default animalQuestEpisodes;
