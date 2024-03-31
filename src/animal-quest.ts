@@ -413,6 +413,13 @@ export type AnimalQuestWithEpisode = AnimalQuest & {
   episode: number;
 };
 
+const animalQuestEpisodes: Readonly<AnimalQuestWithEpisode[]> = animalQuest.map(
+  (quest, index) => ({
+    ...quest,
+    episode: index + 1,
+  }),
+);
+
 export type AnimalQuestWithRelation = AnimalQuestWithEpisode & {
   relation: "featured" | "related";
 };
@@ -426,11 +433,11 @@ export const getAmbassadorEpisodes = (
   // Find all the episodes that have the ambassador featured or related
   const featured: AnimalQuestWithRelation[] = [];
   const related: AnimalQuestWithRelation[] = [];
-  for (const [index, quest] of animalQuest.entries()) {
+  for (const quest of animalQuestEpisodes) {
     if (quest.ambassadors.featured.includes(ambassador))
-      featured.push({ ...quest, episode: index + 1, relation: "featured" });
+      featured.push({ ...quest, relation: "featured" });
     if (quest.ambassadors.related.includes(ambassador))
-      related.push({ ...quest, episode: index + 1, relation: "related" });
+      related.push({ ...quest, relation: "related" });
   }
 
   // If we're looking for a specific type, and we found it, return it
@@ -442,4 +449,4 @@ export const getAmbassadorEpisodes = (
     return [related[0], ...related.slice(1)];
 };
 
-export default animalQuest;
+export default animalQuestEpisodes;
