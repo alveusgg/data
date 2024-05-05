@@ -446,7 +446,7 @@ const ambassadorImages: {
     { src: ticoImage3, alt: "Tico the Blue and Gold Macaw" },
   ],
   timber: [
-    { src: timberImage1, alt: "Timber the Wolfdog", position: "100% 0%" },
+    { src: timberImage1, alt: "Timber the Wolfdog", position: "100% 25%" },
   ],
   toasterStrudel: [
     {
