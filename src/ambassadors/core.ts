@@ -1024,6 +1024,70 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  awa: {
+    name: "Awa",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus",
+    sex: "Female",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolfdogs",
+    story:
+      "Awa was rehomed to Alveus from distant facility, that received number of USDA fines.",
+    mission:
+      "She is an ambassador for the exploitation of wildlife in the pet trade.",
+    native: {
+      text: "Eurasia and North America",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [
+      {
+        id: "BvTaGPrtnhw",
+        caption: "Placeholder for Release clip",
+      },
+    ],
+    homepage: null,
+    plush: null,
+  },
+  timber: {
+    name: "Timber",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus",
+    sex: "Male",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolfdogs",
+    story:
+      "Timber was rehomed to Alveus from distant facility, that received number of USDA fines.",
+    mission:
+      "He is an ambassador for the exploitation of wildlife in the pet trade.",
+    native: {
+      text: "Eurasia and North America",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [
+      {
+        id: "BvTaGPrtnhw",
+        caption: "Placeholder for Release clip",
+      },
+    ],
+    homepage: null,
+    plush: null,
+  },
 
   // Retired ambassadors
   orion: {

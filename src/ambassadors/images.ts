@@ -4,6 +4,8 @@ import {
   type AmbassadorWithPlushKey,
 } from "./filters";
 
+import awaImage1 from "../../assets/ambassadors/awa/01.jpg";
+
 import abbottImage1 from "../../assets/ambassadors/abbott/01.jpg";
 import abbottImage2 from "../../assets/ambassadors/abbott/02.jpg";
 import abbottImage3 from "../../assets/ambassadors/abbott/03.png";
@@ -176,6 +178,8 @@ import ticoImage2 from "../../assets/ambassadors/tico/02.jpg";
 import ticoImage3 from "../../assets/ambassadors/tico/03.jpg";
 import ticoImageIcon from "../../assets/ambassadors/tico/icon.png";
 
+import timberImage1 from "../../assets/ambassadors/timber/01.jpg";
+
 import toasterStrudelImage1 from "../../assets/ambassadors/toasterStrudel/01.jpg";
 import toasterStrudelImage2 from "../../assets/ambassadors/toasterStrudel/02.jpg";
 import toasterStrudelImage3 from "../../assets/ambassadors/toasterStrudel/03.jpg";
@@ -211,6 +215,7 @@ export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 const ambassadorImages: {
   [key in AmbassadorKey]: AmbassadorImages;
 } = {
+  awa: [{ src: awaImage1, alt: "Awa the wolfdog", position: "0% 0%" }],
   abbott: [
     { src: abbottImage1, alt: "Abbott the American Crow" },
     { src: abbottImage2, alt: "Abbott the American Crow" },
@@ -439,6 +444,9 @@ const ambassadorImages: {
     },
     { src: ticoImage2, alt: "Tico the Blue and Gold Macaw", position: "0% 0%" },
     { src: ticoImage3, alt: "Tico the Blue and Gold Macaw" },
+  ],
+  timber: [
+    { src: timberImage1, alt: "Timber the wolfdog", position: "100% 50%" },
   ],
   toasterStrudel: [
     {
