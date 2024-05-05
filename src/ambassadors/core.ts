@@ -772,6 +772,60 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  awa: {
+    name: "Awa",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus x Canis familiaris",
+    sex: "Female",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolves",
+    story:
+      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    native: {
+      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  timber: {
+    name: "Timber",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus x Canis familiaris",
+    sex: "Male",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolves",
+    story:
+      "Timber was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    native: {
+      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   momo: {
     name: "Momo",
     alternate: [],
