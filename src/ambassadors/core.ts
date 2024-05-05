@@ -772,6 +772,118 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  awa: {
+    name: "Awa",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus x Canis familiaris",
+    sex: "Female",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolves",
+    story:
+      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    native: {
+      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  timber: {
+    name: "Timber",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Wolfdog",
+    scientific: "Canis lupus x Canis familiaris",
+    sex: "Male",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolves",
+    story:
+      "Timber was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    native: {
+      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  momo: {
+    name: "Momo",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Black Tufted Marmoset",
+    scientific: "Callithrix penicillata",
+    sex: "Male",
+    birth: null,
+    arrival: "2022-12",
+    retired: null,
+    iucn: {
+      id: 41519,
+      status: "LC/decreasing",
+    },
+    enclosure: "marmosets",
+    story:
+      "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
+    native: {
+      text: "Brazil (Neo-tropical gallery forests)",
+      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
+    },
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
+    homepage: null,
+    plush: null,
+  },
+  appa: {
+    name: "Appa",
+    alternate: [],
+    class: Class.Mammalia,
+    species: "Common Marmoset",
+    scientific: "Callithrix jacchus",
+    sex: "Male",
+    birth: null,
+    arrival: "2022-12",
+    retired: null,
+    iucn: {
+      id: 41518,
+      status: "LC/decreasing",
+    },
+    enclosure: "marmosets",
+    story:
+      "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
+    native: {
+      text: "Brazil",
+      source: "https://en.wikipedia.org/wiki/Common_marmoset",
+    },
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
+    homepage: null,
+    plush: null,
+  },
   tortellini: {
     name: "Tortellini",
     alternate: [],
@@ -937,64 +1049,6 @@ const ambassadors = {
       source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
     },
     clips: [],
-    homepage: null,
-    plush: null,
-  },
-  momo: {
-    name: "Momo",
-    alternate: [],
-    class: Class.Mammalia,
-    species: "Black Tufted Marmoset",
-    scientific: "Callithrix penicillata",
-    sex: "Male",
-    birth: null,
-    arrival: "2022-12",
-    retired: null,
-    iucn: {
-      id: 41519,
-      status: "LC/decreasing",
-    },
-    enclosure: "marmosets",
-    story:
-      "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
-    mission:
-      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil (Neo-tropical gallery forests)",
-      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
-    },
-    clips: [
-      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
-    ],
-    homepage: null,
-    plush: null,
-  },
-  appa: {
-    name: "Appa",
-    alternate: [],
-    class: Class.Mammalia,
-    species: "Common Marmoset",
-    scientific: "Callithrix jacchus",
-    sex: "Male",
-    birth: null,
-    arrival: "2022-12",
-    retired: null,
-    iucn: {
-      id: 41518,
-      status: "LC/decreasing",
-    },
-    enclosure: "marmosets",
-    story:
-      "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
-    mission:
-      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil",
-      source: "https://en.wikipedia.org/wiki/Common_marmoset",
-    },
-    clips: [
-      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
-    ],
     homepage: null,
     plush: null,
   },
