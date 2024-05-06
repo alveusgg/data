@@ -12,6 +12,7 @@ import abbottImageIcon from "../../assets/ambassadors/abbott/icon.png";
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 import appaImage2 from "../../assets/ambassadors/appa/02.jpg";
 import appaImage3 from "../../assets/ambassadors/appa/03.jpg";
+import appaImage4 from "../../assets/ambassadors/appa/04.jpg";
 import appaImageIcon from "../../assets/ambassadors/appa/icon.png";
 
 import awaImage1 from "../../assets/ambassadors/awa/01.jpg";
@@ -92,6 +93,8 @@ import mileyImage4 from "../../assets/ambassadors/miley/04.jpg";
 import mileyImageIcon from "../../assets/ambassadors/miley/icon.png";
 
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
+import momoImage2 from "../../assets/ambassadors/momo/02.jpg";
+import momoImage3 from "../../assets/ambassadors/momo/03.jpg";
 import momoImageIcon from "../../assets/ambassadors/momo/icon.png";
 
 import moominImage1 from "../../assets/ambassadors/moomin/01.jpg";
@@ -230,6 +233,7 @@ const ambassadorImages: {
     { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
     { src: appaImage2, alt: "Appa the Common Marmoset", position: "50% 0%" },
     { src: appaImage3, alt: "Appa the Common Marmoset" },
+    { src: appaImage4, alt: "Appa the Common Marmoset" },
   ],
   awa: [{ src: awaImage1, alt: "Awa the Wolfdog", position: "0% 0%" }],
   barbaraBakedBean: [
@@ -338,6 +342,16 @@ const ambassadorImages: {
       src: momoImage1,
       alt: "Momo the Black Tufted Marmoset",
       position: "0% 0%",
+    },
+    {
+      src: momoImage2,
+      alt: "Momo the Black Tufted Marmoset",
+      position: "25% 50%",
+    },
+    {
+      src: momoImage3,
+      alt: "Momo the Black Tufted Marmoset",
+      position: "0% 50%",
     },
   ],
   moomin: [
