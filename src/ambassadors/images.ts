@@ -15,6 +15,7 @@ import appaImage3 from "../../assets/ambassadors/appa/03.jpg";
 import appaImageIcon from "../../assets/ambassadors/appa/icon.png";
 
 import awaImage1 from "../../assets/ambassadors/awa/01.jpg";
+import awaImageIcon from "../../assets/ambassadors/awa/icon.png";
 
 import barbaraBakedBeanImage1 from "../../assets/ambassadors/barbaraBakedBean/01.jpg";
 import barbaraBakedBeanImage2 from "../../assets/ambassadors/barbaraBakedBean/02.jpg";
@@ -179,6 +180,7 @@ import ticoImage3 from "../../assets/ambassadors/tico/03.jpg";
 import ticoImageIcon from "../../assets/ambassadors/tico/icon.png";
 
 import timberImage1 from "../../assets/ambassadors/timber/01.jpg";
+import timberImageIcon from "../../assets/ambassadors/timber/icon.png";
 
 import toasterStrudelImage1 from "../../assets/ambassadors/toasterStrudel/01.jpg";
 import toasterStrudelImage2 from "../../assets/ambassadors/toasterStrudel/02.jpg";
@@ -514,6 +516,7 @@ export const ambassadorIconImages: Partial<{
 }> = {
   abbott: { src: abbottImageIcon, alt: "" },
   appa: { src: appaImageIcon, alt: "" },
+  awa: { src: awaImageIcon, alt: "" },
   barbaraBakedBean: { src: barbaraBakedBeanImageIcon, alt: "" },
   bb: { src: bbImageIcon, alt: "" },
   chipsAhoy: { src: chipsImageIcon, alt: "" },
@@ -546,6 +549,7 @@ export const ambassadorIconImages: Partial<{
   snork: { src: snorkImageIcon, alt: "" },
   stompy: { src: stompyImageIcon, alt: "" },
   tico: { src: ticoImageIcon, alt: "" },
+  timber: { src: timberImageIcon, alt: "" },
   toasterStrudel: { src: toasterStrudelImageIcon, alt: "" },
   tortellini: { src: tortelliniImageIcon, alt: "" },
   winnieTheMoo: { src: winnieTheMooImageIcon, alt: "" },
