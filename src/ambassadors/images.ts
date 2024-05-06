@@ -132,6 +132,8 @@ import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 import pollyImageIcon from "../../assets/ambassadors/polly/icon.png";
 
 import puppyImage1 from "../../assets/ambassadors/puppy/01.jpg";
+import puppyImage2 from "../../assets/ambassadors/puppy/02.jpg";
+import puppyImage3 from "../../assets/ambassadors/puppy/03.jpg";
 import puppyImageIcon from "../../assets/ambassadors/puppy/icon.png";
 
 import pushPopImage1 from "../../assets/ambassadors/pushPop/01.jpg";
@@ -191,6 +193,8 @@ import toasterStrudelImageIcon from "../../assets/ambassadors/toasterStrudel/ico
 
 import tortelliniImage1 from "../../assets/ambassadors/tortellini/01.jpg";
 import tortelliniImage2 from "../../assets/ambassadors/tortellini/02.jpg";
+import tortelliniImage3 from "../../assets/ambassadors/tortellini/03.jpg";
+import tortelliniImage4 from "../../assets/ambassadors/tortellini/04.jpg";
 import tortelliniImageIcon from "../../assets/ambassadors/tortellini/icon.png";
 
 import winnieTheMooImage1 from "../../assets/ambassadors/winnieTheMoo/01.jpg";
@@ -383,7 +387,11 @@ const ambassadorImages: {
   ],
   pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
   polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
-  puppy: [{ src: puppyImage1, alt: "Puppy the Emperor Scorpion" }],
+  puppy: [
+    { src: puppyImage1, alt: "Puppy the Emperor Scorpion" },
+    { src: puppyImage2, alt: "Puppy the Emperor Scorpion" },
+    { src: puppyImage3, alt: "Puppy the Emperor Scorpion" },
+  ],
   pushPop: [
     { src: pushPopImage1, alt: "Push Pop the Sulcata Tortoise" },
     { src: pushPopImage2, alt: "Push Pop the Sulcata Tortoise" },
@@ -476,6 +484,8 @@ const ambassadorImages: {
   tortellini: [
     { src: tortelliniImage1, alt: "Tortellini the Emperor Scorpion" },
     { src: tortelliniImage2, alt: "Tortellini the Emperor Scorpion" },
+    { src: tortelliniImage3, alt: "Tortellini the Emperor Scorpion" },
+    { src: tortelliniImage4, alt: "Tortellini the Emperor Scorpion" },
   ],
   winnieTheMoo: [
     { src: winnieTheMooImage1, alt: "Winnie the Red Angus Beef Cow" },
