@@ -25,6 +25,8 @@ import barbaraBakedBeanImageIcon from "../../assets/ambassadors/barbaraBakedBean
 
 import bbImage1 from "../../assets/ambassadors/bb/01.jpg";
 import bbImage2 from "../../assets/ambassadors/bb/02.jpg";
+import bbImage3 from "../../assets/ambassadors/bb/03.jpg";
+import bbImage4 from "../../assets/ambassadors/bb/04.jpg";
 import bbImageIcon from "../../assets/ambassadors/bb/icon.png";
 
 import chipsAhoyImage1 from "../../assets/ambassadors/chipsAhoy/01.jpg";
@@ -57,6 +59,7 @@ import georgieImageIcon from "../../assets/ambassadors/georgie/icon.png";
 import hankMrMctrainImage1 from "../../assets/ambassadors/hankMrMctrain/01.jpg";
 import hankMrMctrainImage2 from "../../assets/ambassadors/hankMrMctrain/02.jpg";
 import hankMrMctrainImage3 from "../../assets/ambassadors/hankMrMctrain/03.jpg";
+import hankMrMctrainImage4 from "../../assets/ambassadors/hankMrMctrain/04.jpg";
 import hankMrMctrainImageIcon from "../../assets/ambassadors/hankMrMctrain/icon.png";
 
 import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
@@ -253,6 +256,8 @@ const ambassadorImages: {
   bb: [
     { src: bbImage1, alt: "BB the Spanish Orange Isopods" },
     { src: bbImage2, alt: "BB the Spanish Orange Isopods" },
+    { src: bbImage3, alt: "BB the Spanish Orange Isopods" },
+    { src: bbImage4, alt: "BB the Spanish Orange Isopods" },
   ],
   chipsAhoy: [
     { src: chipsAhoyImage1, alt: "Chips Ahoy the Rat" },
@@ -287,8 +292,9 @@ const ambassadorImages: {
   hankMrMctrain: [
     { src: hankMrMctrainImage1, alt: "Hank the Smokey Ghost Millipede" },
     { src: hankMrMctrainImage2, alt: "Hank the Smokey Ghost Millipede" },
+    { src: hankMrMctrainImage3, alt: "Hank the Smokey Ghost Millipede" },
     {
-      src: hankMrMctrainImage3,
+      src: hankMrMctrainImage4,
       alt: "Hank the Smokey Ghost Millipede",
       position: "50% 0%",
     },
