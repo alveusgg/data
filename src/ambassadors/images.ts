@@ -12,9 +12,11 @@ import abbottImageIcon from "../../assets/ambassadors/abbott/icon.png";
 import appaImage1 from "../../assets/ambassadors/appa/01.jpg";
 import appaImage2 from "../../assets/ambassadors/appa/02.jpg";
 import appaImage3 from "../../assets/ambassadors/appa/03.jpg";
+import appaImage4 from "../../assets/ambassadors/appa/04.jpg";
 import appaImageIcon from "../../assets/ambassadors/appa/icon.png";
 
 import awaImage1 from "../../assets/ambassadors/awa/01.jpg";
+import awaImageIcon from "../../assets/ambassadors/awa/icon.png";
 
 import barbaraBakedBeanImage1 from "../../assets/ambassadors/barbaraBakedBean/01.jpg";
 import barbaraBakedBeanImage2 from "../../assets/ambassadors/barbaraBakedBean/02.jpg";
@@ -23,6 +25,8 @@ import barbaraBakedBeanImageIcon from "../../assets/ambassadors/barbaraBakedBean
 
 import bbImage1 from "../../assets/ambassadors/bb/01.jpg";
 import bbImage2 from "../../assets/ambassadors/bb/02.jpg";
+import bbImage3 from "../../assets/ambassadors/bb/03.jpg";
+import bbImage4 from "../../assets/ambassadors/bb/04.jpg";
 import bbImageIcon from "../../assets/ambassadors/bb/icon.png";
 
 import chipsAhoyImage1 from "../../assets/ambassadors/chipsAhoy/01.jpg";
@@ -55,6 +59,7 @@ import georgieImageIcon from "../../assets/ambassadors/georgie/icon.png";
 import hankMrMctrainImage1 from "../../assets/ambassadors/hankMrMctrain/01.jpg";
 import hankMrMctrainImage2 from "../../assets/ambassadors/hankMrMctrain/02.jpg";
 import hankMrMctrainImage3 from "../../assets/ambassadors/hankMrMctrain/03.jpg";
+import hankMrMctrainImage4 from "../../assets/ambassadors/hankMrMctrain/04.jpg";
 import hankMrMctrainImageIcon from "../../assets/ambassadors/hankMrMctrain/icon.png";
 
 import henriettaImage1 from "../../assets/ambassadors/henrietta/01.jpg";
@@ -91,6 +96,8 @@ import mileyImage4 from "../../assets/ambassadors/miley/04.jpg";
 import mileyImageIcon from "../../assets/ambassadors/miley/icon.png";
 
 import momoImage1 from "../../assets/ambassadors/momo/01.jpg";
+import momoImage2 from "../../assets/ambassadors/momo/02.jpg";
+import momoImage3 from "../../assets/ambassadors/momo/03.jpg";
 import momoImageIcon from "../../assets/ambassadors/momo/icon.png";
 
 import moominImage1 from "../../assets/ambassadors/moomin/01.jpg";
@@ -131,10 +138,14 @@ import pollyImage1 from "../../assets/ambassadors/polly/01.jpg";
 import pollyImageIcon from "../../assets/ambassadors/polly/icon.png";
 
 import puppyImage1 from "../../assets/ambassadors/puppy/01.jpg";
+import puppyImage2 from "../../assets/ambassadors/puppy/02.jpg";
+import puppyImage3 from "../../assets/ambassadors/puppy/03.jpg";
 import puppyImageIcon from "../../assets/ambassadors/puppy/icon.png";
 
 import pushPopImage1 from "../../assets/ambassadors/pushPop/01.jpg";
 import pushPopImage2 from "../../assets/ambassadors/pushPop/02.jpg";
+import pushPopImage3 from "../../assets/ambassadors/pushPop/03.jpg";
+import pushPopImage4 from "../../assets/ambassadors/pushPop/04.jpg";
 import pushPopImageIcon from "../../assets/ambassadors/pushPop/icon.png";
 
 import reedImage1 from "../../assets/ambassadors/reed/01.jpg";
@@ -179,6 +190,7 @@ import ticoImage3 from "../../assets/ambassadors/tico/03.jpg";
 import ticoImageIcon from "../../assets/ambassadors/tico/icon.png";
 
 import timberImage1 from "../../assets/ambassadors/timber/01.jpg";
+import timberImageIcon from "../../assets/ambassadors/timber/icon.png";
 
 import toasterStrudelImage1 from "../../assets/ambassadors/toasterStrudel/01.jpg";
 import toasterStrudelImage2 from "../../assets/ambassadors/toasterStrudel/02.jpg";
@@ -189,6 +201,8 @@ import toasterStrudelImageIcon from "../../assets/ambassadors/toasterStrudel/ico
 
 import tortelliniImage1 from "../../assets/ambassadors/tortellini/01.jpg";
 import tortelliniImage2 from "../../assets/ambassadors/tortellini/02.jpg";
+import tortelliniImage3 from "../../assets/ambassadors/tortellini/03.jpg";
+import tortelliniImage4 from "../../assets/ambassadors/tortellini/04.jpg";
 import tortelliniImageIcon from "../../assets/ambassadors/tortellini/icon.png";
 
 import winnieTheMooImage1 from "../../assets/ambassadors/winnieTheMoo/01.jpg";
@@ -224,6 +238,7 @@ const ambassadorImages: {
     { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
     { src: appaImage2, alt: "Appa the Common Marmoset", position: "50% 0%" },
     { src: appaImage3, alt: "Appa the Common Marmoset" },
+    { src: appaImage4, alt: "Appa the Common Marmoset" },
   ],
   awa: [{ src: awaImage1, alt: "Awa the Wolfdog", position: "0% 0%" }],
   barbaraBakedBean: [
@@ -243,6 +258,8 @@ const ambassadorImages: {
   bb: [
     { src: bbImage1, alt: "BB the Spanish Orange Isopods" },
     { src: bbImage2, alt: "BB the Spanish Orange Isopods" },
+    { src: bbImage3, alt: "BB the Spanish Orange Isopods" },
+    { src: bbImage4, alt: "BB the Spanish Orange Isopods" },
   ],
   chipsAhoy: [
     { src: chipsAhoyImage1, alt: "Chips Ahoy the Rat" },
@@ -277,8 +294,9 @@ const ambassadorImages: {
   hankMrMctrain: [
     { src: hankMrMctrainImage1, alt: "Hank the Smokey Ghost Millipede" },
     { src: hankMrMctrainImage2, alt: "Hank the Smokey Ghost Millipede" },
+    { src: hankMrMctrainImage3, alt: "Hank the Smokey Ghost Millipede" },
     {
-      src: hankMrMctrainImage3,
+      src: hankMrMctrainImage4,
       alt: "Hank the Smokey Ghost Millipede",
       position: "50% 0%",
     },
@@ -333,6 +351,16 @@ const ambassadorImages: {
       alt: "Momo the Black Tufted Marmoset",
       position: "0% 0%",
     },
+    {
+      src: momoImage2,
+      alt: "Momo the Black Tufted Marmoset",
+      position: "25% 50%",
+    },
+    {
+      src: momoImage3,
+      alt: "Momo the Black Tufted Marmoset",
+      position: "0% 50%",
+    },
   ],
   moomin: [
     { src: moominImage1, alt: "Moomin the Chinchilla" },
@@ -381,10 +409,16 @@ const ambassadorImages: {
   ],
   pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
   polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
-  puppy: [{ src: puppyImage1, alt: "Puppy the Emperor Scorpion" }],
+  puppy: [
+    { src: puppyImage1, alt: "Puppy the Emperor Scorpion" },
+    { src: puppyImage2, alt: "Puppy the Emperor Scorpion" },
+    { src: puppyImage3, alt: "Puppy the Emperor Scorpion" },
+  ],
   pushPop: [
     { src: pushPopImage1, alt: "Push Pop the Sulcata Tortoise" },
     { src: pushPopImage2, alt: "Push Pop the Sulcata Tortoise" },
+    { src: pushPopImage3, alt: "Push Pop the Sulcata Tortoise" },
+    { src: pushPopImage4, alt: "Push Pop the Sulcata Tortoise" },
   ],
   reed: [
     { src: reedImage1, alt: "Reed the American Red Fox" },
@@ -474,6 +508,8 @@ const ambassadorImages: {
   tortellini: [
     { src: tortelliniImage1, alt: "Tortellini the Emperor Scorpion" },
     { src: tortelliniImage2, alt: "Tortellini the Emperor Scorpion" },
+    { src: tortelliniImage3, alt: "Tortellini the Emperor Scorpion" },
+    { src: tortelliniImage4, alt: "Tortellini the Emperor Scorpion" },
   ],
   winnieTheMoo: [
     { src: winnieTheMooImage1, alt: "Winnie the Red Angus Beef Cow" },
@@ -514,6 +550,7 @@ export const ambassadorIconImages: Partial<{
 }> = {
   abbott: { src: abbottImageIcon, alt: "" },
   appa: { src: appaImageIcon, alt: "" },
+  awa: { src: awaImageIcon, alt: "" },
   barbaraBakedBean: { src: barbaraBakedBeanImageIcon, alt: "" },
   bb: { src: bbImageIcon, alt: "" },
   chipsAhoy: { src: chipsImageIcon, alt: "" },
@@ -546,6 +583,7 @@ export const ambassadorIconImages: Partial<{
   snork: { src: snorkImageIcon, alt: "" },
   stompy: { src: stompyImageIcon, alt: "" },
   tico: { src: ticoImageIcon, alt: "" },
+  timber: { src: timberImageIcon, alt: "" },
   toasterStrudel: { src: toasterStrudelImageIcon, alt: "" },
   tortellini: { src: tortelliniImageIcon, alt: "" },
   winnieTheMoo: { src: winnieTheMooImageIcon, alt: "" },
