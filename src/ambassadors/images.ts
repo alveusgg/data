@@ -144,6 +144,8 @@ import puppyImageIcon from "../../assets/ambassadors/puppy/icon.png";
 
 import pushPopImage1 from "../../assets/ambassadors/pushPop/01.jpg";
 import pushPopImage2 from "../../assets/ambassadors/pushPop/02.jpg";
+import pushPopImage3 from "../../assets/ambassadors/pushPop/03.jpg";
+import pushPopImage4 from "../../assets/ambassadors/pushPop/04.jpg";
 import pushPopImageIcon from "../../assets/ambassadors/pushPop/icon.png";
 
 import reedImage1 from "../../assets/ambassadors/reed/01.jpg";
@@ -415,6 +417,8 @@ const ambassadorImages: {
   pushPop: [
     { src: pushPopImage1, alt: "Push Pop the Sulcata Tortoise" },
     { src: pushPopImage2, alt: "Push Pop the Sulcata Tortoise" },
+    { src: pushPopImage3, alt: "Push Pop the Sulcata Tortoise" },
+    { src: pushPopImage4, alt: "Push Pop the Sulcata Tortoise" },
   ],
   reed: [
     { src: reedImage1, alt: "Reed the American Red Fox" },
