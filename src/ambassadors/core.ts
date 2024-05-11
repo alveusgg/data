@@ -10,6 +10,7 @@ export type AmbassadorKey = keyof Ambassadors;
 export type Ambassador = {
   name: string;
   alternate: Readonly<string[]>;
+  commands: Readonly<string[]>;
   class: Class;
   species: string;
   scientific: string;
@@ -38,6 +39,7 @@ const ambassadors = {
   stompy: {
     name: "Stompy",
     alternate: [],
+    commands: ["stompy"],
     class: Class.Aves,
     species: "Emu",
     scientific: "Dromaius novaehollandiae",
@@ -88,6 +90,7 @@ const ambassadors = {
   georgie: {
     name: "Georgie",
     alternate: [],
+    commands: ["georgie"],
     class: Class.Amphibia,
     species: "African Bullfrog",
     scientific: "Pyxicephalus adspersus",
@@ -127,6 +130,7 @@ const ambassadors = {
   tico: {
     name: "Tico",
     alternate: [],
+    commands: ["tico"],
     class: Class.Aves,
     species: "Blue and Gold Macaw",
     scientific: "Ara ararauna",
@@ -157,6 +161,7 @@ const ambassadors = {
   miley: {
     name: "Miley",
     alternate: ["Miele"],
+    commands: ["miley", "miele"],
     class: Class.Aves,
     species: "Catalina Macaw",
     scientific: "Ara ararauna x Ara macao",
@@ -184,6 +189,7 @@ const ambassadors = {
   mia: {
     name: "Mia",
     alternate: [],
+    commands: ["mia"],
     class: Class.Aves,
     species: "African Grey",
     scientific: "Psittacus erithacus",
@@ -217,6 +223,7 @@ const ambassadors = {
   siren: {
     name: "Siren",
     alternate: [],
+    commands: ["siren"],
     class: Class.Aves,
     species: "Blue-fronted Amazon",
     scientific: "Amazona aestiva",
@@ -253,6 +260,7 @@ const ambassadors = {
   abbott: {
     name: "Abbott",
     alternate: [],
+    commands: ["abbott"],
     class: Class.Aves,
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
@@ -282,6 +290,7 @@ const ambassadors = {
   coconut: {
     name: "Coconut",
     alternate: [],
+    commands: ["coconut"],
     class: Class.Aves,
     species: "American Crow",
     scientific: "Corvus brachyrhynchos",
@@ -309,6 +318,7 @@ const ambassadors = {
   oliver: {
     name: "Oliver",
     alternate: [],
+    commands: ["oliver"],
     class: Class.Aves,
     species: "Olive Egger Chicken",
     scientific: "Gallus gallus domesticus",
@@ -335,6 +345,7 @@ const ambassadors = {
   nugget: {
     name: "Nugget",
     alternate: [],
+    commands: ["nugget"],
     class: Class.Aves,
     species: "Ameraucana Chicken",
     scientific: "Gallus gallus domesticus",
@@ -362,6 +373,7 @@ const ambassadors = {
   henrique: {
     name: "Henrique",
     alternate: [],
+    commands: ["henrique"],
     class: Class.Aves,
     species: "Half Dark Brahma, Half Saipan Chicken",
     scientific: "Gallus gallus domesticus",
@@ -388,6 +400,7 @@ const ambassadors = {
   winnieTheMoo: {
     name: "Winnie (The Moo)",
     alternate: [],
+    commands: ["winnie"],
     class: Class.Mammalia,
     species: "Red Angus Beef Cow",
     scientific: "Bos (primigenius) taurus",
@@ -419,6 +432,7 @@ const ambassadors = {
   noodle: {
     name: "Noodle",
     alternate: [],
+    commands: ["noodle"],
     class: Class.Reptilia,
     species: "Coastal Carpet Python",
     scientific: "Morelia spilota mcdowelli",
@@ -452,6 +466,7 @@ const ambassadors = {
   patchy: {
     name: "Patchy",
     alternate: [],
+    commands: ["patchy"],
     class: Class.Reptilia,
     species: "Ball Python",
     scientific: "Python regius",
@@ -479,6 +494,7 @@ const ambassadors = {
   fenn: {
     name: "Fenn",
     alternate: [],
+    commands: ["fenn"],
     class: Class.Mammalia,
     species: "American Red Fox",
     scientific: "Vulpes vulpes fulva",
@@ -514,6 +530,7 @@ const ambassadors = {
   reed: {
     name: "Reed",
     alternate: [],
+    commands: ["reed"],
     class: Class.Mammalia,
     species: "American Red Fox",
     scientific: "Vulpes vulpes fulva",
@@ -548,6 +565,7 @@ const ambassadors = {
   serrano: {
     name: "Serrano",
     alternate: [],
+    commands: ["serrano"],
     class: Class.Mammalia,
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
@@ -579,6 +597,7 @@ const ambassadors = {
   jalapeno: {
     name: "Jalapeño",
     alternate: [],
+    commands: ["jalapeno", "jalapeño"],
     class: Class.Mammalia,
     species: "Domestic Donkey",
     scientific: "Equus africanus asinus",
@@ -608,6 +627,7 @@ const ambassadors = {
   snork: {
     name: "Snork",
     alternate: [],
+    commands: ["snork"],
     class: Class.Mammalia,
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
@@ -635,6 +655,7 @@ const ambassadors = {
   moomin: {
     name: "Moomin",
     alternate: [],
+    commands: ["moomin"],
     class: Class.Mammalia,
     species: "Chinchilla",
     scientific: "Chinchilla lanigera",
@@ -665,6 +686,7 @@ const ambassadors = {
   hankMrMctrain: {
     name: "Hank Mr. McTrain",
     alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
+    commands: ["hank"],
     class: Class.Diplopoda,
     species: "Smokey Ghost Millipede",
     scientific: "Narceus gordanus",
@@ -695,6 +717,7 @@ const ambassadors = {
   barbaraBakedBean: {
     name: "Barbara / Baked Bean",
     alternate: [],
+    commands: ["barbara", "bakedbean"],
     class: Class.Insecta,
     species: "Madagascar Hissing Cockroaches",
     scientific: "Gromphadorhina portentosa",
@@ -722,6 +745,7 @@ const ambassadors = {
   marty: {
     name: "Marty",
     alternate: [],
+    commands: ["marty"],
     class: Class.Malacostraca,
     species: "Zebra Isopods",
     scientific: "Armadillidium maculatum",
@@ -748,6 +772,7 @@ const ambassadors = {
   bb: {
     name: "BB",
     alternate: ["Bonus Bug"],
+    commands: ["bb", "bonusbug"],
     class: Class.Malacostraca,
     species: "Spanish Orange Isopods",
     scientific: "Porcellio scaber",
@@ -775,6 +800,7 @@ const ambassadors = {
   awa: {
     name: "Awa",
     alternate: [],
+    commands: ["awa"],
     class: Class.Mammalia,
     species: "Wolfdog",
     scientific: "Canis lupus x Canis familiaris",
@@ -802,6 +828,7 @@ const ambassadors = {
   timber: {
     name: "Timber",
     alternate: [],
+    commands: ["timber"],
     class: Class.Mammalia,
     species: "Wolfdog",
     scientific: "Canis lupus x Canis familiaris",
@@ -829,6 +856,7 @@ const ambassadors = {
   momo: {
     name: "Momo",
     alternate: [],
+    commands: ["momo"],
     class: Class.Mammalia,
     species: "Black Tufted Marmoset",
     scientific: "Callithrix penicillata",
@@ -858,6 +886,7 @@ const ambassadors = {
   appa: {
     name: "Appa",
     alternate: [],
+    commands: ["appa"],
     class: Class.Mammalia,
     species: "Common Marmoset",
     scientific: "Callithrix jacchus",
@@ -887,6 +916,7 @@ const ambassadors = {
   tortellini: {
     name: "Tortellini",
     alternate: [],
+    commands: ["tortellini"],
     class: Class.Arachnida,
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
@@ -914,6 +944,7 @@ const ambassadors = {
   puppy: {
     name: "Puppy",
     alternate: [],
+    commands: ["puppy"],
     class: Class.Arachnida,
     species: "Emperor Scorpion",
     scientific: "Pandinus imperator",
@@ -941,6 +972,7 @@ const ambassadors = {
   chipsAhoy: {
     name: "Chips Ahoy",
     alternate: [],
+    commands: ["chips", "chipsahoy"],
     class: Class.Mammalia,
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
@@ -968,6 +1000,7 @@ const ambassadors = {
   nillaWafer: {
     name: "Nilla Wafer",
     alternate: [],
+    commands: ["nilla", "nillawafer"],
     class: Class.Mammalia,
     species: "Domestic Rat",
     scientific: "Rattus norvegicus f. domestica",
@@ -995,6 +1028,7 @@ const ambassadors = {
   pushPop: {
     name: "Push Pop",
     alternate: ["Poppy"],
+    commands: ["pushpop", "poppy"],
     class: Class.Reptilia,
     species: "Sulcata Tortoise",
     scientific: "Centrochelys sulcata",
@@ -1028,6 +1062,7 @@ const ambassadors = {
   toasterStrudel: {
     name: "Toaster Strudel",
     alternate: [],
+    commands: ["toast", "toaster"],
     class: Class.Reptilia,
     species: "Blue-tongued Skink",
     scientific: "Tiliqua scincoides intermedia",
@@ -1055,6 +1090,7 @@ const ambassadors = {
   polly: {
     name: "Polly",
     alternate: [],
+    commands: ["polly"],
     class: Class.Aves,
     species: "Bantam Silkie Chicken",
     scientific: "Gallus gallus domesticus",
@@ -1083,6 +1119,7 @@ const ambassadors = {
   orion: {
     name: "Orion",
     alternate: [],
+    commands: ["orion"],
     class: Class.Aves,
     species: "Prairie/Peregrine Falcon",
     scientific: "Falco mexicanus x Falco peregrinus",
@@ -1110,6 +1147,7 @@ const ambassadors = {
   pickles: {
     name: "Pickles",
     alternate: [],
+    commands: ["pickles"],
     class: Class.Arachnida,
     species: "Vinegaroon",
     scientific: "Mastigoproctus tohono",
@@ -1137,6 +1175,7 @@ const ambassadors = {
   henrietta: {
     name: "Henrietta",
     alternate: [],
+    commands: ["henrietta"],
     class: Class.Aves,
     species: "Jersey Giant Chicken",
     scientific: "Gallus gallus domesticus",
@@ -1164,6 +1203,7 @@ const ambassadors = {
   ducky: {
     name: "Ducky",
     alternate: [],
+    commands: ["ducky"],
     class: Class.Malacostraca,
     species: "Rubber Ducky Isopods",
     scientific: "Cubaris sp.",
