@@ -242,9 +242,9 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       id: 1732218911,
       start: "00h15m24s",
     },
-    edition: "Blue-tounged Skink Edition",
+    edition: "Blue-tongued Skink Edition",
     description:
-      "Get to know Toast, Alveus' Blue-tounged Skink, and learn about the history of the species, deimatic display in skinks, and ovoviviparous birth. We'll also investigate the dangers they face in the wild, such as bioaccumlation and biomagnification, as well as the pet trade globally.",
+      "Get to know Toast, Alveus' Blue-tongued Skink, and learn about the history of the species, deimatic display in skinks, and ovoviviparous birth. We'll also investigate the dangers they face in the wild, such as bioaccumlation and biomagnification, as well as the pet trade globally.",
     broadcast: new Date("2023-01-31"),
     host: "maya",
     length: 60 * 60 + 17 * 60 + 13, // 00:15:24 - 01:32:27

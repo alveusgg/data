@@ -485,24 +485,24 @@ const ambassadorImages: {
   toasterStrudel: [
     {
       src: toasterStrudelImage1,
-      alt: "Toaster Strudel the Blue-tounged Skink",
+      alt: "Toaster Strudel the Blue-tongued Skink",
       position: "25% 50%",
     },
     {
       src: toasterStrudelImage2,
-      alt: "Toaster Strudel the Blue-tounged Skink",
+      alt: "Toaster Strudel the Blue-tongued Skink",
     },
     {
       src: toasterStrudelImage3,
-      alt: "Toaster Strudel the Blue-tounged Skink",
+      alt: "Toaster Strudel the Blue-tongued Skink",
     },
     {
       src: toasterStrudelImage4,
-      alt: "Toaster Strudel the Blue-tounged Skink",
+      alt: "Toaster Strudel the Blue-tongued Skink",
     },
     {
       src: toasterStrudelImage5,
-      alt: "Toaster Strudel the Blue-tounged Skink",
+      alt: "Toaster Strudel the Blue-tongued Skink",
     },
   ],
   tortellini: [
