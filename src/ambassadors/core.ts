@@ -45,7 +45,7 @@ const ambassadors = {
     scientific: "Dromaius novaehollandiae",
     sex: "Male",
     birth: "2021-02-14",
-    arrival: "2021-06",
+    arrival: "2021-06-01",
     retired: null,
     iucn: {
       id: 22678117,
