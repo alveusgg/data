@@ -4,6 +4,11 @@ Shared data repository for Alveus.gg projects, installed as a GitHub-based depen
 [website](https://github.com/alveusgg/alveusgg) and
 [extension](https://github.com/alveusgg/extension) repositories.
 
+## Adding images
+
+New images should be optimized to reduce their file size.
+Run `npx tsx build/optimize.ts <paths...>` to optimize new JPEG and PNG images.
+
 ## Releasing changes
 
 To work with this repository locally, install the dependencies with `npm ci`.
