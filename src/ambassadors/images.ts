@@ -16,6 +16,7 @@ import appaImage4 from "../../assets/ambassadors/appa/04.jpg";
 import appaImageIcon from "../../assets/ambassadors/appa/icon.png";
 
 import awaImage1 from "../../assets/ambassadors/awa/01.jpg";
+import awaImage2 from "../../assets/ambassadors/awa/02.jpg";
 import awaImageIcon from "../../assets/ambassadors/awa/icon.png";
 
 import barbaraBakedBeanImage1 from "../../assets/ambassadors/barbaraBakedBean/01.jpg";
@@ -190,6 +191,8 @@ import ticoImage3 from "../../assets/ambassadors/tico/03.jpg";
 import ticoImageIcon from "../../assets/ambassadors/tico/icon.png";
 
 import timberImage1 from "../../assets/ambassadors/timber/01.jpg";
+import timberImage2 from "../../assets/ambassadors/timber/02.jpg";
+import timberImage3 from "../../assets/ambassadors/timber/03.jpg";
 import timberImageIcon from "../../assets/ambassadors/timber/icon.png";
 
 import toasterStrudelImage1 from "../../assets/ambassadors/toasterStrudel/01.jpg";
@@ -240,7 +243,10 @@ const ambassadorImages: {
     { src: appaImage3, alt: "Appa the Common Marmoset" },
     { src: appaImage4, alt: "Appa the Common Marmoset" },
   ],
-  awa: [{ src: awaImage1, alt: "Awa the Wolfdog", position: "0% 0%" }],
+  awa: [
+    { src: awaImage1, alt: "Awa the Wolfdog", position: "50% 25%" },
+    { src: awaImage2, alt: "Awa the Wolfdog", position: "0% 0%" },
+  ],
   barbaraBakedBean: [
     {
       src: barbaraBakedBeanImage1,
@@ -480,7 +486,9 @@ const ambassadorImages: {
     { src: ticoImage3, alt: "Tico the Blue and Gold Macaw" },
   ],
   timber: [
-    { src: timberImage1, alt: "Timber the Wolfdog", position: "100% 25%" },
+    { src: timberImage1, alt: "Timber the Wolfdog", position: "75% 25%" },
+    { src: timberImage2, alt: "Timber the Wolfdog", position: "50% 0%" },
+    { src: timberImage3, alt: "Timber the Wolfdog", position: "100% 25%" },
   ],
   toasterStrudel: [
     {
