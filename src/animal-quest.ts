@@ -407,6 +407,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
       related: [],
     },
   },
+  {
+    video: {
+      id: 2265046586,
+      start: "00h00m25s",
+    },
+    edition: "Tortoise Edition",
+    description:
+      "Meet Push Pop, Alveus' Sulcata Tortoise, in this episode. Learn about the history and endangerment of African Spurred Tortoises, the pet trade and how conservation efforts can help save them, and how we can all make a difference.",
+    broadcast: new Date("2024-10-01"),
+    host: "maya",
+    length: 60 * 60 + 5 * 60 + 25, // 00:00:25 - 01:05:50
+    prezi: "UxZPN3llGDZevXDS68rd",
+    ambassadors: {
+      featured: ["pushPop"],
+      related: [],
+    },
+  },
 ] as const;
 
 export type AnimalQuestWithEpisode = AnimalQuest & {
