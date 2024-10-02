@@ -20,18 +20,14 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/imagemin": "^9.0.0",
-    "@types/imagemin-mozjpeg": "^8.0.4",
     "@types/node": "^22.5.5",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "eslint": "^8.45.0",
     "husky": "^9.1.6",
-    "imagemin": "^9.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-pngquant": "^10.0.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.0.0",
+    "sharp": "^0.33.5",
     "tsx": "^4.19.1",
     "typescript": "^5.1.6"
   }

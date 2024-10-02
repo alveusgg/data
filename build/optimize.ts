@@ -2,11 +2,8 @@
 
 import { resolve, extname } from "node:path";
 import { writeFile, stat } from "node:fs/promises";
-import { type Stats } from "node:fs";
 
-import imagemin, { type Result } from "imagemin";
-import imageminMozjpeg from "imagemin-mozjpeg";
-import imageminPngquant from "imagemin-pngquant";
+import sharp from "sharp";
 
 const images = process.argv.slice(2).map((arg) => resolve(arg));
 if (!images.length) {
@@ -23,76 +20,62 @@ if (unsupported.length) {
   process.exit(1);
 }
 
-const png = async (image: string, info: Stats) => {
-  const file = await imagemin([image], {
-    plugins: [imageminPngquant({ speed: 1, quality: [0, 1] })],
-  }).then((files) => files[0]);
-  if (!file) {
-    console.warn(`Failed to optimize ${image}`);
+const shrink = async (path: string) => {
+  const info = await stat(path);
+
+  let img = await sharp(path);
+  const metadata = await img.metadata();
+  if (!metadata.width || !metadata.height || !metadata.format) {
+    console.warn(`Failed to read metadata for ${path}`);
     return;
   }
 
-  if (file.data.length >= info.size) {
-    console.log(
-      `Using original ${image}, optimized larger (${info.size / 1024} KB)`,
-    );
-    return;
+  let resized: sharp.Metadata | undefined;
+  if (metadata.width > 4096 || metadata.height > 4096) {
+    img = img.resize({ width: 4096, height: 4096, fit: "inside" });
+    resized = await img.toBuffer().then((buf) => sharp(buf).metadata());
   }
 
-  await writeFile(image, file.data);
-  console.log(
-    `Optimized ${image} (${info.size / 1024} -> ${file.data.length / 1024} KB)`,
-  );
-};
+  const opts =
+    metadata.format === "png"
+      ? { progressive: true, compressionLevel: 9, effort: 10 }
+      : { progressive: true, mozjpeg: true };
 
-const jpeg = async (image: string, info: Stats) => {
   const step = 5;
-  const min = 10;
-  let quality = 90;
-  let file: Result | undefined;
+  const min = 50;
+  let quality = 100;
+  let file: Buffer | undefined;
   while (quality >= min) {
-    file = await imagemin([image], {
-      plugins: [imageminMozjpeg({ quality })],
-    }).then((files) => files[0]);
-    if (!file) break;
-    if (file.data.length < 1024 * 1024) break;
+    file = await img.toFormat(metadata.format, { quality, ...opts }).toBuffer();
+    if (file.length <= 1024 * 1024 && file.length <= info.size) break;
     quality -= step;
   }
 
   if (!file) {
-    console.warn(`Failed to optimize ${image}`);
+    console.warn(`Failed to optimize ${path}`);
     return;
   }
 
-  if (file.data.length >= info.size) {
+  if (file.length > info.size) {
     console.log(
-      `Using original ${image}, optimized larger (${info.size / 1024} KB)`,
+      `Using original ${path}, optimized larger [ ${info.size / 1024} -> ${
+        file.length / 1024
+      } KB ]`,
     );
     return;
   }
 
-  await writeFile(image, file.data);
+  await writeFile(path, file);
   console.log(
-    `Optimized ${image} (${info.size / 1024} -> ${
-      file.data.length / 1024
-    } KB, quality ${quality} (${(90 - quality) / step + 1}))`,
+    `Optimized ${path}`,
+    "[",
+    `${info.size / 1024} -> ${file.length / 1024} KB,`,
+    resized
+      ? `resized (${metadata.width}x${metadata.height} -> ${resized.width}x${resized.height}),`
+      : `original (${metadata.width}x${metadata.height}),`,
+    `quality ${quality} (${(100 - quality) / step + 1}))`,
+    "]",
   );
 };
 
-for (const image of images) {
-  // If we're under 1MB, skip
-  const info = await stat(image);
-  if (info.size <= 1024 * 1024) {
-    console.log(`Skipping ${image} (${info.size / 1024} KB)`);
-    continue;
-  }
-
-  // If this is a PNG, single-shot optimize
-  if (image.endsWith(".png")) {
-    await png(image, info);
-    continue;
-  }
-
-  // If this is a JPEG, attempt to get it under 1MB
-  await jpeg(image, info);
-}
+for (const image of images) await shrink(image);
