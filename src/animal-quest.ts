@@ -103,7 +103,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 2265673020,
+      id: 2265673020, // Original: 1290623454
       start: "00h00m00s",
     },
     edition: "Donkey Edition",
