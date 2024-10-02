@@ -11,21 +11,24 @@
     "url": "https://github.com/alveusgg/data/issues"
   },
   "scripts": {
-    "lint": "eslint src --ext .ts",
-    "lint:fix": "eslint src --ext .ts --fix",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\"",
+    "lint": "eslint --ext .ts",
+    "lint:fix": "eslint --ext .ts --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --check \"**/*.ts\"",
     "test": "tsc --noEmit",
     "prepare": "husky"
   },
   "type": "module",
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "eslint": "^8.45.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.0.0",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.1",
     "typescript": "^5.1.6"
   }
 }
