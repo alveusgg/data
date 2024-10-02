@@ -103,15 +103,15 @@ const animalQuest: Readonly<AnimalQuest[]> = [
   },
   {
     video: {
-      id: 1290623454,
-      start: "00h03m48s",
+      id: 2265673020,
+      start: "00h00m00s",
     },
     edition: "Donkey Edition",
     description:
       "Meet the donkeys at Alveus, Serrano and Jalapeño, learn about the history of donkeys and their interaction with humans over time. We'll also discuss the production of ejiao and using wildlife for medicine, how they both impact donkeys, and recommendations to help their species.",
     broadcast: new Date("2022-02-07"),
     host: "maya",
-    length: 60 * 60 + 40 * 60 + 21, // 00:03:48 - 01:44:09
+    length: 60 * 60 + 4 * 60 + 49, // 00:00:00 - 01:04:49
     prezi: "WOndDV58mqM8V3JoVL2k",
     ambassadors: {
       featured: ["serrano", "jalapeno"],
