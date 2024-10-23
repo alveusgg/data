@@ -1,6 +1,6 @@
 {
   "name": "@alveusgg/data",
-  "version": "0.41.0",
+  "version": "0.42.0",
   "private": true,
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
@@ -26,6 +26,7 @@
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "prettier": "^3.0.0",
+    "tailwindcss": "^3.4.14",
     "typescript": "^5.1.6"
   }
 }
