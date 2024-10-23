@@ -122,6 +122,24 @@ const config = {
       highlight: "#FF9F1C",
     },
   },
+  extend: {
+    gridTemplateColumns: {
+      ...Object.fromEntries(
+        Array.from({ length: 12 }, (_, i) => [
+          `${i + 1}-auto`,
+          `repeat(${i + 1}, auto)`,
+        ]),
+      ),
+    },
+    gridTemplateRows: {
+      ...Object.fromEntries(
+        Array.from({ length: 12 }, (_, i) => [
+          `${i + 1}-auto`,
+          `repeat(${i + 1}, auto)`,
+        ]),
+      ),
+    },
+  },
 } satisfies PresetsConfig;
 
 export default config;
