@@ -119,6 +119,7 @@ const config = {
         800: "#28122F",
       },
       twitch: "#6441A5",
+      highlight: "#FF9F1C",
     },
   },
 } satisfies PresetsConfig;
