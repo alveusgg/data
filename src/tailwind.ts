@@ -1,5 +1,24 @@
 import type { PresetsConfig } from "tailwindcss/types/config";
 
+// Thanks https://stackoverflow.com/a/66252656
+type RemoveIndex<T> = {
+  [K in keyof T as string extends K
+    ? never
+    : number extends K
+    ? never
+    : symbol extends K
+    ? never
+    : K]: T[K];
+};
+
+type RefinedConfig = Omit<RemoveIndex<PresetsConfig>, "theme"> & {
+  theme?: Omit<RemoveIndex<NonNullable<PresetsConfig["theme"]>>, "extend"> & {
+    extend?: RemoveIndex<
+      NonNullable<NonNullable<PresetsConfig["theme"]>["extend"]>
+    >;
+  };
+};
+
 const config = {
   theme: {
     colors: {
@@ -121,25 +140,25 @@ const config = {
       twitch: "#6441A5",
       highlight: "#FF9F1C",
     },
-  },
-  extend: {
-    gridTemplateColumns: {
-      ...Object.fromEntries(
-        Array.from({ length: 12 }, (_, i) => [
-          `${i + 1}-auto`,
-          `repeat(${i + 1}, auto)`,
-        ]),
-      ),
+    extend: {
+      gridTemplateColumns: {
+        ...Object.fromEntries(
+          Array.from({ length: 12 }, (_, i) => [
+            `${i + 1}-auto`,
+            `repeat(${i + 1}, auto)`,
+          ]),
+        ),
+      },
+      gridTemplateRows: {
+        ...Object.fromEntries(
+          Array.from({ length: 12 }, (_, i) => [
+            `${i + 1}-auto`,
+            `repeat(${i + 1}, auto)`,
+          ]),
+        ),
+      },
     },
-    gridTemplateRows: {
-      ...Object.fromEntries(
-        Array.from({ length: 12 }, (_, i) => [
-          `${i + 1}-auto`,
-          `repeat(${i + 1}, auto)`,
-        ]),
-      ),
-    },
   },
-} satisfies PresetsConfig;
+} satisfies RefinedConfig;
 
 export default config;
