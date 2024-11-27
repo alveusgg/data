@@ -1,5 +1,24 @@
 import type { PresetsConfig } from "tailwindcss/types/config";
 
+// Thanks https://stackoverflow.com/a/66252656
+type RemoveIndex<T> = {
+  [K in keyof T as string extends K
+    ? never
+    : number extends K
+    ? never
+    : symbol extends K
+    ? never
+    : K]: T[K];
+};
+
+type RefinedConfig = Omit<RemoveIndex<PresetsConfig>, "theme"> & {
+  theme?: Omit<RemoveIndex<NonNullable<PresetsConfig["theme"]>>, "extend"> & {
+    extend?: RemoveIndex<
+      NonNullable<NonNullable<PresetsConfig["theme"]>["extend"]>
+    >;
+  };
+};
+
 const config = {
   theme: {
     colors: {
@@ -140,6 +159,6 @@ const config = {
       },
     },
   },
-} satisfies PresetsConfig;
+} satisfies RefinedConfig;
 
 export default config;
