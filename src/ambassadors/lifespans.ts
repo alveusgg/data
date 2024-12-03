@@ -17,23 +17,22 @@ const lifespans = {
   },
   blueAndGoldMacaw: {
     wild: 50,
-    captivity: 50,
+    captivity: 70,
     source:
       "https://animaldiversity.org/accounts/Ara_ararauna/#lifespan_longevity",
   },
   catalinaMacaw: {
-    wild: 33,
-    captivity: { min: 40, max: 50 },
+    captivity: 70,
     source:
       "https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity",
   },
   africanGrey: {
     wild: 23,
-    captivity: { min: 40, max: 60 },
+    captivity: 60,
     source: "https://en.wikipedia.org/wiki/African_grey_parrot",
   },
   blueFrontedAmazon: {
-    captivity: 70,
+    captivity: 60,
     source: "https://animaldiversity.org/accounts/Amazona_aestiva/",
   },
   americanCrow: {
@@ -67,11 +66,7 @@ const lifespans = {
     source: "https://en.wikipedia.org/wiki/Red_fox",
   },
   domesticDonkey: {
-    // There's some nuance here,
-    //  > "Working donkeys in the poorest countries have a life expectancy of
-    //  >  12 to 15 years; in more prosperous countries, they may have a
-    //  >  lifespan of 30 to 50 years."
-    captivity: { min: 12, max: 50 },
+    captivity: 40,
     source: "https://en.wikipedia.org/wiki/Donkey",
   },
   chinchilla: {
@@ -84,7 +79,7 @@ const lifespans = {
     source: "https://www.whatsthatbug.com/how-to-care-for-a-millipede/",
   },
   madagascarHissingCockroaches: {
-    captivity: 5,
+    captivity: 3,
     source: "https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach",
   },
   zebraIsopods: {
@@ -101,7 +96,7 @@ const lifespans = {
       "https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/",
   },
   blackTuftedMarmoset: {
-    wild: 15,
+    wild: 7,
     source: "https://animalia.bio/black-tufted-marmoset",
   },
   commonMarmoset: {
@@ -118,7 +113,7 @@ const lifespans = {
   },
   sulcataTortoise: {
     wild: 75,
-    captivity: 54,
+    captivity: 100,
     source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
   },
   blueTonguedSkink: {
