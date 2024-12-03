@@ -2,6 +2,7 @@ import type { IUCNStatus } from "../iucn";
 import type { EnclosureKey } from "../enclosures";
 import type { PartialDateString, Nullable } from "../types";
 import { Class } from "./classification";
+import lifespans, { type Lifespan } from "./lifespans";
 
 export type Ambassadors = typeof ambassadors;
 
@@ -29,6 +30,7 @@ export type Ambassador = {
     text: string;
     source: string;
   };
+  lifespan: Lifespan;
   clips: Readonly<{ id: string; caption: string }[]>;
   homepage: Nullable<{ title: string; description: string }>;
   plush: Nullable<{ link: string } | { soon: string }>;
@@ -60,6 +62,7 @@ const ambassadors = {
       text: "Australia (savannah woodlands and sclerophyll forests)",
       source: "https://en.wikipedia.org/wiki/Emu",
     },
+    lifespan: lifespans.emu,
     clips: [
       {
         id: "GsBRS13e8mY",
@@ -111,6 +114,7 @@ const ambassadors = {
       text: "Sub-Saharan Africa (dry savanna, freshwater lakes, marshes, etc.)",
       source: "https://en.wikipedia.org/wiki/African_bullfrog",
     },
+    lifespan: lifespans.africanBullfrog,
     clips: [
       { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
       { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
@@ -151,6 +155,7 @@ const ambassadors = {
       text: "South America (tropical rainforests)",
       source: "https://en.wikipedia.org/wiki/Blue-and-yellow_macaw",
     },
+    lifespan: lifespans.blueAndGoldMacaw,
     clips: [
       { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
       { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
@@ -182,6 +187,7 @@ const ambassadors = {
       text: "Usually bred in captivity",
       source: "https://en.wikipedia.org/wiki/Catalina_macaw",
     },
+    lifespan: lifespans.catalinaMacaw,
     clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
     homepage: null,
     plush: null,
@@ -210,6 +216,7 @@ const ambassadors = {
       text: "Equatorial Africa (dense forests)",
       source: "https://en.wikipedia.org/wiki/African_grey_parrot",
     },
+    lifespan: lifespans.africanGrey,
     clips: [
       { id: "nIw-qTRT5Nc", caption: "Mia Dances With Connor" },
       { id: "KRJy_nR1u5k", caption: "Mia Walks Around The Aviary" },
@@ -244,6 +251,7 @@ const ambassadors = {
       text: "South America (tropical rainforests)",
       source: "https://en.wikipedia.org/wiki/Blue-fronted_amazon",
     },
+    lifespan: lifespans.blueFrontedAmazon,
     clips: [
       { id: "ociryM83xIo", caption: "Siren Is Given Enrichment" }, // This is a Maya clip
       { id: "ynv06rC9aHM", caption: "Siren Talks, Sings, And More" },
@@ -281,6 +289,7 @@ const ambassadors = {
       text: "North America (forests)",
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
+    lifespan: lifespans.americanCrow,
     clips: [
       { id: "GqvK9m6yoBQ", caption: "Abbott Explores His New Enrichment" },
     ],
@@ -311,6 +320,7 @@ const ambassadors = {
       text: "North America (forests)",
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
+    lifespan: lifespans.americanCrow,
     clips: [],
     homepage: null,
     plush: null,
@@ -338,6 +348,7 @@ const ambassadors = {
       text: "North America (domesticated)",
       source: "https://en.wikipedia.org/wiki/Chicken",
     },
+    lifespan: lifespans.oliveEggerChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -366,6 +377,7 @@ const ambassadors = {
       text: "North America (domesticated)",
       source: "https://en.wikipedia.org/wiki/Chicken",
     },
+    lifespan: lifespans.oliveEggerChicken,
     clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
     homepage: null,
     plush: null,
@@ -393,6 +405,7 @@ const ambassadors = {
       text: "North America (domesticated)",
       source: "https://en.wikipedia.org/wiki/Chicken",
     },
+    lifespan: lifespans.brahmaChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -420,6 +433,7 @@ const ambassadors = {
       text: "Australia, United States (domesticated)",
       source: "https://en.wikipedia.org/wiki/Red_Angus",
     },
+    lifespan: lifespans.redAngusBeefCow,
     clips: [
       { id: "FKU7-u5-L24", caption: "Winnie Causes Chaos In The Grain Stall" },
       { id: "qWDd5nnWSuI", caption: "Winnie's First Day On Stream" },
@@ -453,6 +467,7 @@ const ambassadors = {
       text: "Australia (suburban area, rainforests, forests, etc.)",
       source: "https://en.wikipedia.org/wiki/Carpet_python",
     },
+    lifespan: lifespans.coastalCarpetPython,
     clips: [
       {
         id: "SU3b-ndBZ7M",
@@ -487,6 +502,7 @@ const ambassadors = {
       text: "West Sub Saharan Africa (grasslands, savannas, sparsely wooded areas)",
       source: "https://en.wikipedia.org/wiki/Ball_python",
     },
+    lifespan: lifespans.ballPython,
     clips: [],
     homepage: null,
     plush: null,
@@ -515,6 +531,7 @@ const ambassadors = {
       text: "North America",
       source: "https://en.wikipedia.org/wiki/American_red_fox",
     },
+    lifespan: lifespans.americanRedFox,
     clips: [
       { id: "670RYU2Xw98", caption: "Fenn Digs Up A Friend In The Enclosure" },
       { id: "awX8PnOfhQA", caption: "Fenn Finds A Well Hidden Treasure" },
@@ -551,6 +568,7 @@ const ambassadors = {
       text: "North America",
       source: "https://en.wikipedia.org/wiki/American_red_fox",
     },
+    lifespan: lifespans.americanRedFox,
     clips: [
       { id: "ClWtgsoWta0", caption: "Reed Gets Weighed With Target Training" },
       { id: "4HZMQJoEkVA", caption: "Reed Is The Best Boy" },
@@ -585,6 +603,7 @@ const ambassadors = {
       text: "Worldwide (domesticated)",
       source: "https://en.wikipedia.org/wiki/Donkey",
     },
+    lifespan: lifespans.domesticDonkey,
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
@@ -617,6 +636,7 @@ const ambassadors = {
       text: "Worldwide (domesticated)",
       source: "https://en.wikipedia.org/wiki/Donkey",
     },
+    lifespan: lifespans.domesticDonkey,
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
@@ -648,6 +668,7 @@ const ambassadors = {
       text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
+    lifespan: lifespans.chinchilla,
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: null,
     plush: null,
@@ -675,6 +696,7 @@ const ambassadors = {
       text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
+    lifespan: lifespans.chinchilla,
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: {
       title: "Moomin is Movin' In!",
@@ -707,6 +729,7 @@ const ambassadors = {
       text: "Eastern United States",
       source: "https://en.wikipedia.org/wiki/Narceus_gordanus",
     },
+    lifespan: lifespans.smokeyGhostMillipede,
     clips: [
       { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
       { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
@@ -738,6 +761,7 @@ const ambassadors = {
       text: "Madagascar",
       source: "https://en.wikipedia.org/wiki/Gromphadorhina_portentosa",
     },
+    lifespan: lifespans.madagascarHissingCockroaches,
     clips: [],
     homepage: null,
     plush: null,
@@ -765,6 +789,7 @@ const ambassadors = {
       text: "Southern France",
       source: "https://en.wikipedia.org/wiki/Armadillidium_maculatum",
     },
+    lifespan: lifespans.zebraIsopods,
     clips: [],
     homepage: null,
     plush: null,
@@ -793,6 +818,7 @@ const ambassadors = {
       text: "Europe",
       source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
     },
+    lifespan: lifespans.spanishOrangeIsopods,
     clips: [],
     homepage: null,
     plush: null,
@@ -821,6 +847,7 @@ const ambassadors = {
       text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
       source: "https://en.wikipedia.org/wiki/Wolf",
     },
+    lifespan: lifespans.wolfHybrid,
     clips: [],
     homepage: null,
     plush: null,
@@ -849,6 +876,7 @@ const ambassadors = {
       text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
       source: "https://en.wikipedia.org/wiki/Wolf",
     },
+    lifespan: lifespans.wolfHybrid,
     clips: [],
     homepage: null,
     plush: null,
@@ -877,6 +905,7 @@ const ambassadors = {
       text: "Brazil (Neo-tropical gallery forests)",
       source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
     },
+    lifespan: lifespans.blackTuftedMarmoset,
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
@@ -907,6 +936,7 @@ const ambassadors = {
       text: "Brazil",
       source: "https://en.wikipedia.org/wiki/Common_marmoset",
     },
+    lifespan: lifespans.commonMarmoset,
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
@@ -937,6 +967,7 @@ const ambassadors = {
       text: "Africa (rainforests, savannas)",
       source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
     },
+    lifespan: lifespans.emperorScorpion,
     clips: [],
     homepage: null,
     plush: null,
@@ -965,6 +996,7 @@ const ambassadors = {
       text: "Africa (rainforests, savannas)",
       source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
     },
+    lifespan: lifespans.emperorScorpion,
     clips: [],
     homepage: null,
     plush: null,
@@ -993,6 +1025,7 @@ const ambassadors = {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
+    lifespan: lifespans.domesticRat,
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
     plush: null,
@@ -1021,6 +1054,7 @@ const ambassadors = {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
+    lifespan: lifespans.domesticRat,
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
     plush: null,
@@ -1049,6 +1083,7 @@ const ambassadors = {
       text: "Sahara Desert and the Sahel (shrubland, grassland)",
       source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
     },
+    lifespan: lifespans.sulcataTortoise,
     clips: [
       { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
       {
@@ -1083,6 +1118,7 @@ const ambassadors = {
       text: "Australia",
       source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
     },
+    lifespan: lifespans.blueTonguedSkink,
     clips: [],
     homepage: null,
     plush: null,
@@ -1110,6 +1146,7 @@ const ambassadors = {
       text: "China (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Silkie",
     },
+    lifespan: lifespans.bantamSilkieChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -1140,6 +1177,7 @@ const ambassadors = {
       text: "Western North America",
       source: "https://en.wikipedia.org/wiki/Prairie_falcon",
     },
+    lifespan: lifespans.prairiePeregrineFalcon,
     clips: [],
     homepage: null,
     plush: null,
@@ -1168,6 +1206,7 @@ const ambassadors = {
       text: "Tropical and subtropical areas, excluding Europe and Australia",
       source: "https://en.wikipedia.org/wiki/Vinegaroon",
     },
+    lifespan: lifespans.vinegaroon,
     clips: [],
     homepage: null,
     plush: null,
@@ -1196,6 +1235,7 @@ const ambassadors = {
       text: "United States (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Jersey_Giant",
     },
+    lifespan: lifespans.jerseyGiantChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -1224,6 +1264,7 @@ const ambassadors = {
       text: "Asia",
       source: "https://en.wikipedia.org/wiki/Cubaris",
     },
+    lifespan: lifespans.rubberDuckyIsopods,
     clips: [],
     homepage: null,
     plush: null,
