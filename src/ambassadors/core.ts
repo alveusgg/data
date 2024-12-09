@@ -705,6 +705,132 @@ const ambassadors = {
     },
     plush: null,
   },
+  momo: {
+    name: "Momo",
+    alternate: [],
+    commands: ["momo"],
+    class: Class.Mammalia,
+    species: "Black Tufted Marmoset",
+    scientific: "Callithrix penicillata",
+    sex: "Male",
+    birth: null,
+    arrival: "2022-12",
+    retired: null,
+    iucn: {
+      id: 41519,
+      status: "LC/decreasing",
+    },
+    enclosure: "marmosets",
+    story:
+      "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
+    native: {
+      text: "Brazil (Neo-tropical gallery forests)",
+      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
+    },
+    lifespan: lifespans.blackTuftedMarmoset,
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
+    homepage: null,
+    plush: null,
+  },
+  appa: {
+    name: "Appa",
+    alternate: [],
+    commands: ["appa"],
+    class: Class.Mammalia,
+    species: "Common Marmoset",
+    scientific: "Callithrix jacchus",
+    sex: "Male",
+    birth: null,
+    arrival: "2022-12",
+    retired: null,
+    iucn: {
+      id: 41518,
+      status: "LC/decreasing",
+    },
+    enclosure: "marmosets",
+    story:
+      "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
+    native: {
+      text: "Brazil",
+      source: "https://en.wikipedia.org/wiki/Common_marmoset",
+    },
+    lifespan: lifespans.commonMarmoset,
+    clips: [
+      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
+    ],
+    homepage: null,
+    plush: null,
+  },
+  pushPop: {
+    name: "Push Pop",
+    alternate: ["Poppy"],
+    commands: ["pushpop", "poppy"],
+    class: Class.Reptilia,
+    species: "Sulcata Tortoise",
+    scientific: "Centrochelys sulcata",
+    sex: null, // Unknown, assumed female
+    birth: "2019",
+    arrival: "2024-02",
+    retired: null,
+    iucn: {
+      id: 163423,
+      status: "EN/decreasing",
+    },
+    enclosure: "tortoise",
+    story:
+      "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
+    mission:
+      "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
+    native: {
+      text: "Sahara Desert and the Sahel (shrubland, grassland)",
+      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
+    },
+    lifespan: lifespans.sulcataTortoise,
+    clips: [
+      { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
+      {
+        id: "0yqMN0X8Ruw",
+        caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
+      },
+    ],
+    homepage: null,
+    plush: null,
+  },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    commands: ["toast", "toaster"],
+    class: Class.Reptilia,
+    species: "Blue-tongued Skink",
+    scientific: "Tiliqua scincoides intermedia",
+    sex: "Male",
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    iucn: {
+      id: 109481538,
+      status: "LC",
+    },
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    native: {
+      text: "Australia",
+      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
+    },
+    lifespan: lifespans.blueTonguedSkink,
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   hankMrMctrain: {
     name: "Hank Mr. McTrain",
     alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
@@ -823,97 +949,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  awa: {
-    name: "Awa",
-    alternate: [],
-    commands: ["awa"],
-    class: Class.Mammalia,
-    species: "Wolf Hybrid",
-    scientific: "Canis lupus x Canis familiaris",
-    sex: "Female",
-    birth: "2014",
-    arrival: "2024-05-04",
-    retired: null,
-    iucn: {
-      id: 3746,
-      status: "LC",
-    },
-    enclosure: "wolves",
-    story:
-      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
-    mission:
-      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
-    native: {
-      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
-      source: "https://en.wikipedia.org/wiki/Wolf",
-    },
-    lifespan: lifespans.wolfHybrid,
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  momo: {
-    name: "Momo",
-    alternate: [],
-    commands: ["momo"],
-    class: Class.Mammalia,
-    species: "Black Tufted Marmoset",
-    scientific: "Callithrix penicillata",
-    sex: "Male",
-    birth: null,
-    arrival: "2022-12",
-    retired: null,
-    iucn: {
-      id: 41519,
-      status: "LC/decreasing",
-    },
-    enclosure: "marmosets",
-    story:
-      "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
-    mission:
-      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil (Neo-tropical gallery forests)",
-      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
-    },
-    lifespan: lifespans.blackTuftedMarmoset,
-    clips: [
-      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
-    ],
-    homepage: null,
-    plush: null,
-  },
-  appa: {
-    name: "Appa",
-    alternate: [],
-    commands: ["appa"],
-    class: Class.Mammalia,
-    species: "Common Marmoset",
-    scientific: "Callithrix jacchus",
-    sex: "Male",
-    birth: null,
-    arrival: "2022-12",
-    retired: null,
-    iucn: {
-      id: 41518,
-      status: "LC/decreasing",
-    },
-    enclosure: "marmosets",
-    story:
-      "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
-    mission:
-      "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil",
-      source: "https://en.wikipedia.org/wiki/Common_marmoset",
-    },
-    lifespan: lifespans.commonMarmoset,
-    clips: [
-      { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
-    ],
-    homepage: null,
-    plush: null,
-  },
   tortellini: {
     name: "Tortellini",
     alternate: [],
@@ -972,6 +1007,35 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  awa: {
+    name: "Awa",
+    alternate: [],
+    commands: ["awa"],
+    class: Class.Mammalia,
+    species: "Wolf Hybrid",
+    scientific: "Canis lupus x Canis familiaris",
+    sex: "Female",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    iucn: {
+      id: 3746,
+      status: "LC",
+    },
+    enclosure: "wolves",
+    story:
+      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    native: {
+      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+      source: "https://en.wikipedia.org/wiki/Wolf",
+    },
+    lifespan: lifespans.wolfHybrid,
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   chipsAhoy: {
     name: "Chips Ahoy",
     alternate: [],
@@ -998,70 +1062,6 @@ const ambassadors = {
     },
     lifespan: lifespans.domesticRat,
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
-    homepage: null,
-    plush: null,
-  },
-  pushPop: {
-    name: "Push Pop",
-    alternate: ["Poppy"],
-    commands: ["pushpop", "poppy"],
-    class: Class.Reptilia,
-    species: "Sulcata Tortoise",
-    scientific: "Centrochelys sulcata",
-    sex: null, // Unknown, assumed female
-    birth: "2019",
-    arrival: "2024-02",
-    retired: null,
-    iucn: {
-      id: 163423,
-      status: "EN/decreasing",
-    },
-    enclosure: "tortoise",
-    story:
-      "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
-    mission:
-      "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
-    native: {
-      text: "Sahara Desert and the Sahel (shrubland, grassland)",
-      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
-    },
-    lifespan: lifespans.sulcataTortoise,
-    clips: [
-      { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
-      {
-        id: "0yqMN0X8Ruw",
-        caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
-      },
-    ],
-    homepage: null,
-    plush: null,
-  },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    commands: ["toast", "toaster"],
-    class: Class.Reptilia,
-    species: "Blue-tongued Skink",
-    scientific: "Tiliqua scincoides intermedia",
-    sex: "Male",
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    iucn: {
-      id: 109481538,
-      status: "LC",
-    },
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    native: {
-      text: "Australia",
-      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
-    },
-    lifespan: lifespans.blueTonguedSkink,
-    clips: [],
     homepage: null,
     plush: null,
   },
