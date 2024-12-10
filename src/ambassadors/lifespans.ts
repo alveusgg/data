@@ -1,9 +1,16 @@
-export type Lifespan = {
-  // In years
-  wild?: number | { min: number; max: number };
-  captivity?: number | { min: number; max: number };
-  source: string;
-};
+import { z } from "zod";
+
+export const lifespanSchema = z.object({
+  wild: z
+    .union([z.number(), z.object({ min: z.number(), max: z.number() })])
+    .optional(),
+  captivity: z
+    .union([z.number(), z.object({ min: z.number(), max: z.number() })])
+    .optional(),
+  source: z.string(),
+});
+
+export type Lifespan = z.infer<typeof lifespanSchema>;
 
 const lifespans = {
   emu: {
