@@ -1,14 +1,3 @@
-export enum Class {
-  Mammalia,
-  Aves,
-  Reptilia,
-  Amphibia,
-  Arachnida,
-  Diplopoda,
-  Insecta,
-  Malacostraca,
-}
-
 const classificationOrder = [
   "Mammals",
   "Birds",
@@ -18,22 +7,23 @@ const classificationOrder = [
 
 export type Classification = (typeof classificationOrder)[number];
 
-export const getClassification = (c: Class): Classification => {
-  switch (c) {
-    case Class.Mammalia:
-      return "Mammals";
-    case Class.Aves:
-      return "Birds";
-    case Class.Reptilia:
-    case Class.Amphibia:
-      return "Reptiles & Amphibians";
-    case Class.Arachnida:
-    case Class.Diplopoda:
-    case Class.Insecta:
-    case Class.Malacostraca:
-      return "Invertebrates";
-  }
-};
+const classes = {
+  mammalia: "Mammals",
+  aves: "Birds",
+  reptilia: "Reptiles & Amphibians",
+  amphibia: "Reptiles & Amphibians",
+  arachnida: "Invertebrates",
+  diplopoda: "Invertebrates",
+  insecta: "Invertebrates",
+  malacostraca: "Invertebrates",
+} as const satisfies Record<string, Classification>;
+
+export type Class = keyof typeof classes;
+
+export const isClass = (str: string): str is Class =>
+  Object.keys(classes).includes(str);
+
+export const getClassification = (c: Class): Classification => classes[c];
 
 export const sortAmbassadorClassification = (a: Class, b: Class): number => {
   return (
