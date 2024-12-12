@@ -12,4 +12,15 @@ export type PartialDateString =
   | DateStringYearMonth
   | DateString;
 
+export const isPartialDateString = (
+  value: string,
+): value is PartialDateString => {
+  const year = "(19|20)\\d{2}";
+  const month = "(0[1-9]|1[0-2])";
+  const day = "(0[1-9]|[12][0-9]|3[01])";
+  return new RegExp(
+    `^(${year}|${year}-${month}|${year}-${month}-${day})$`,
+  ).test(value);
+};
+
 export type Nullable<T> = T | null;

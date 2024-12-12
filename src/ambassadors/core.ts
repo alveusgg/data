@@ -1,40 +1,61 @@
-import type { IUCNStatus } from "../iucn";
-import type { EnclosureKey } from "../enclosures";
-import type { PartialDateString, Nullable } from "../types";
-import type { Class } from "./classification";
-import lifespans, { type Lifespan } from "./lifespans";
+import { z } from "zod";
 
-export type Ambassadors = typeof ambassadors;
+import { isIUCNStatus } from "../iucn";
+import { isEnclosureKey } from "../enclosures";
+import { isPartialDateString } from "../types";
+import { isClass } from "./classification";
+import lifespans, { lifespanSchema } from "./lifespans";
 
-export type AmbassadorKey = keyof Ambassadors;
+export const ambassadorSchema = z.object({
+  name: z.string(),
+  alternate: z.array(z.string()).readonly(),
+  commands: z.array(z.string()).readonly(),
+  class: z.string().refine(isClass),
+  species: z.string(),
+  scientific: z.string(),
+  sex: z.enum(["Male", "Female"]).nullable(),
+  birth: z.string().refine(isPartialDateString).nullable(),
+  arrival: z.string().refine(isPartialDateString).nullable(),
+  retired: z.string().refine(isPartialDateString).nullable(),
+  iucn: z.object({
+    id: z.number().nullable(),
+    status: z.string().refine(isIUCNStatus),
+  }),
+  enclosure: z.string().refine(isEnclosureKey),
+  story: z.string(),
+  mission: z.string(),
+  native: z.object({
+    text: z.string(),
+    source: z.string(),
+  }),
+  lifespan: lifespanSchema,
+  clips: z
+    .array(
+      z.object({
+        id: z.string(),
+        caption: z.string(),
+      }),
+    )
+    .readonly(),
+  homepage: z
+    .object({
+      title: z.string(),
+      description: z.string(),
+    })
+    .nullable(),
+  plush: z
+    .union([
+      z.object({
+        link: z.string(),
+      }),
+      z.object({
+        soon: z.string(),
+      }),
+    ])
+    .nullable(),
+});
 
-export type Ambassador = {
-  name: string;
-  alternate: Readonly<string[]>;
-  commands: Readonly<string[]>;
-  class: Class;
-  species: string;
-  scientific: string;
-  sex: Nullable<"Male" | "Female">;
-  birth: Nullable<PartialDateString>;
-  arrival: Nullable<PartialDateString>;
-  retired: Nullable<PartialDateString>;
-  iucn: {
-    id: Nullable<number>;
-    status: IUCNStatus;
-  };
-  enclosure: EnclosureKey;
-  story: string;
-  mission: string;
-  native: {
-    text: string;
-    source: string;
-  };
-  lifespan: Lifespan;
-  clips: Readonly<{ id: string; caption: string }[]>;
-  homepage: Nullable<{ title: string; description: string }>;
-  plush: Nullable<{ link: string } | { soon: string }>;
-};
+export type Ambassador = z.infer<typeof ambassadorSchema>;
 
 const ambassadors = {
   // Active ambassadors
@@ -1270,6 +1291,10 @@ const ambassadors = {
     plush: null,
   },
 } as const satisfies Record<string, Ambassador>;
+
+export type Ambassadors = typeof ambassadors;
+
+export type AmbassadorKey = keyof Ambassadors;
 
 const ambassadorKeys = Object.keys(ambassadors) as AmbassadorKey[];
 

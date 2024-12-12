@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 import { isAmbassadorKey, type Ambassadors, type AmbassadorKey } from "./core";
 import {
   isAmbassadorWithPlushKey,
@@ -220,13 +222,30 @@ import winnieTheMooImageIcon from "../../assets/ambassadors/winnieTheMoo/icon.pn
 
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-type Percentage = `${OneToNine}${ZeroToNine}%` | `${ZeroToNine}%` | "100%";
+type Percentage = `${ZeroToNine}%` | `${OneToNine}${ZeroToNine}%` | "100%";
+type Position = `${Percentage} ${Percentage}`;
 
-export type AmbassadorImage = {
-  src: typeof stompyImage1;
-  alt: string;
-  position?: `${Percentage} ${Percentage}`;
+const isPercentage = (str: string): str is Percentage =>
+  /^(100|[1-9]?[0-9])%$/.test(str);
+const isPosition = (str: string): str is Position => {
+  const [x, y, ...rest] = str.split(" ");
+  return rest.length === 0 && !!x && !!y && isPercentage(x) && isPercentage(y);
 };
+
+export const ambassadorImageSchema = z.object({
+  // Use an always true refine to narrow down the type
+  // Ensure the image import type includes jpg + png
+  src: z
+    .unknown()
+    .refine(
+      (src: unknown): src is typeof abbottImage1 | typeof abbottImageIcon =>
+        true,
+    ),
+  alt: z.string(),
+  position: z.string().refine(isPosition).optional(),
+});
+
+export type AmbassadorImage = z.infer<typeof ambassadorImageSchema>;
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
 const ambassadorImages: {
