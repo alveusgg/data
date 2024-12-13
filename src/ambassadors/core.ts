@@ -1057,35 +1057,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  chipsAhoy: {
-    name: "Chips Ahoy",
-    alternate: [],
-    commands: ["chips", "chipsahoy"],
-    class: "mammalia",
-    species: "Domestic Rat",
-    scientific: "Rattus norvegicus f. domestica",
-    sex: "Female",
-    birth: null,
-    arrival: "2022-12",
-    retired: null,
-    iucn: {
-      id: 19353,
-      status: "LC",
-    },
-    enclosure: "nutrition",
-    story:
-      "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
-    mission:
-      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
-    native: {
-      text: "Worldwide (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Fancy_rat",
-    },
-    lifespan: lifespans.domesticRat,
-    clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
-    homepage: null,
-    plush: null,
-  },
   polly: {
     name: "Polly",
     alternate: [],
@@ -1250,6 +1221,35 @@ const ambassadors = {
     enclosure: "nutrition",
     story:
       "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
+    mission:
+      "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
+    native: {
+      text: "Worldwide (Domesticated)",
+      source: "https://en.wikipedia.org/wiki/Fancy_rat",
+    },
+    lifespan: lifespans.domesticRat,
+    clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
+    homepage: null,
+    plush: null,
+  },
+  chipsAhoy: {
+    name: "Chips Ahoy",
+    alternate: [],
+    commands: ["chips", "chipsahoy"],
+    class: "mammalia",
+    species: "Domestic Rat",
+    scientific: "Rattus norvegicus f. domestica",
+    sex: "Female",
+    birth: null,
+    arrival: "2022-12",
+    retired: "2024-12-13",
+    iucn: {
+      id: 19353,
+      status: "LC",
+    },
+    enclosure: "nutrition",
+    story:
+      "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
       "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     native: {
