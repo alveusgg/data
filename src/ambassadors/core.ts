@@ -410,7 +410,6 @@ const ambassadors = {
     commands: ["reed"],
     class: "mammalia",
     species: "americanRedFox",
-
     sex: "Male",
     birth: "2019",
     arrival: "2022-11",
@@ -460,7 +459,6 @@ const ambassadors = {
     commands: ["jalapeno", "jalapeño"],
     class: "mammalia",
     species: "domesticDonkey",
-
     sex: "Male",
     birth: null,
     arrival: "2021-05",
@@ -502,7 +500,6 @@ const ambassadors = {
     commands: ["moomin"],
     class: "mammalia",
     species: "chinchilla",
-
     sex: "Male",
     birth: "2017",
     arrival: "2021-04",
@@ -525,7 +522,6 @@ const ambassadors = {
     commands: ["momo"],
     class: "mammalia",
     species: "blackTuftedMarmoset",
-
     sex: "Male",
     birth: null,
     arrival: "2022-12",
@@ -547,7 +543,6 @@ const ambassadors = {
     commands: ["appa"],
     class: "mammalia",
     species: "commonMarmoset",
-
     sex: "Male",
     birth: null,
     arrival: "2022-12",
@@ -569,7 +564,6 @@ const ambassadors = {
     commands: ["pushpop", "poppy"],
     class: "reptilia",
     species: "sulcataTortoise",
-
     sex: null, // Unknown, assumed female
     birth: "2019",
     arrival: "2024-02",
@@ -595,7 +589,6 @@ const ambassadors = {
     commands: ["toast", "toaster"],
     class: "reptilia",
     species: "blueTonguedSkink",
-
     sex: "Male",
     birth: "2022-07-04",
     arrival: "2022-11",
@@ -615,7 +608,6 @@ const ambassadors = {
     commands: ["hank"],
     class: "diplopoda",
     species: "smokeyGhostMillipede",
-
     sex: "Male",
     birth: "2022",
     arrival: "2022-01",
@@ -638,7 +630,6 @@ const ambassadors = {
     commands: ["barbara", "bakedbean"],
     class: "insecta",
     species: "madagascarHissingCockroaches",
-
     sex: null,
     birth: "2022",
     arrival: "2022-01",
@@ -658,7 +649,6 @@ const ambassadors = {
     commands: ["marty"],
     class: "malacostraca",
     species: "zebraIsopods",
-
     sex: null,
     birth: "2022",
     arrival: "2022-01",
@@ -677,7 +667,6 @@ const ambassadors = {
     commands: ["bb", "bonusbug"],
     class: "malacostraca",
     species: "spanishOrangeIsopods",
-
     sex: null,
     birth: "2022",
     arrival: "2022-01",
@@ -697,7 +686,6 @@ const ambassadors = {
     commands: ["tortellini"],
     class: "arachnida",
     species: "emperorScorpion",
-
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
@@ -717,7 +705,6 @@ const ambassadors = {
     commands: ["puppy"],
     class: "arachnida",
     species: "emperorScorpion",
-
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
@@ -737,7 +724,6 @@ const ambassadors = {
     commands: ["awa"],
     class: "mammalia",
     species: "wolfHybrid",
-
     sex: "Female",
     birth: "2014",
     arrival: "2024-05-04",
@@ -757,7 +743,6 @@ const ambassadors = {
     commands: ["polly"],
     class: "aves",
     species: "bantamSilkieChicken",
-
     sex: "Female",
     birth: null,
     arrival: "2023-11", // Previously 2022-08 to 2022-11
@@ -778,7 +763,6 @@ const ambassadors = {
     commands: ["orion"],
     class: "aves",
     species: "prairiePeregrineFalcon",
-
     sex: "Male",
     birth: "2021-05-13",
     arrival: "2021-12",
@@ -798,7 +782,6 @@ const ambassadors = {
     commands: ["pickles"],
     class: "arachnida",
     species: "vinegaroon",
-
     sex: "Female",
     birth: "2022",
     arrival: "2022-01",
@@ -818,7 +801,6 @@ const ambassadors = {
     commands: ["henrietta"],
     class: "aves",
     species: "jerseyGiantChicken",
-
     sex: "Female",
     birth: "2019",
     arrival: "2022-08",
@@ -838,7 +820,6 @@ const ambassadors = {
     commands: ["ducky"],
     class: "malacostraca",
     species: "rubberDuckyIsopods",
-
     sex: null,
     birth: "2022",
     arrival: "2022-01",
@@ -858,7 +839,6 @@ const ambassadors = {
     commands: ["nilla", "nillawafer"],
     class: "mammalia",
     species: "domesticRat",
-
     sex: "Female",
     birth: null,
     arrival: "2022-12",
