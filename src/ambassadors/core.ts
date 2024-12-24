@@ -1,34 +1,23 @@
 import { z } from "zod";
 
-import { isIUCNStatus } from "../iucn";
 import { isEnclosureKey } from "../enclosures";
 import { isPartialDateString } from "../types";
 import { isClass } from "./classification";
-import lifespans, { lifespanSchema } from "./lifespans";
+import { isSpecies } from "./species";
 
 export const ambassadorSchema = z.object({
   name: z.string(),
   alternate: z.array(z.string()).readonly(),
   commands: z.array(z.string()).readonly(),
   class: z.string().refine(isClass),
-  species: z.string(),
-  scientific: z.string(),
+  species: z.string().refine(isSpecies),
   sex: z.enum(["Male", "Female"]).nullable(),
   birth: z.string().refine(isPartialDateString).nullable(),
   arrival: z.string().refine(isPartialDateString).nullable(),
   retired: z.string().refine(isPartialDateString).nullable(),
-  iucn: z.object({
-    id: z.number().nullable(),
-    status: z.string().refine(isIUCNStatus),
-  }),
   enclosure: z.string().refine(isEnclosureKey),
   story: z.string(),
   mission: z.string(),
-  native: z.object({
-    text: z.string(),
-    source: z.string(),
-  }),
-  lifespan: lifespanSchema,
   clips: z
     .array(
       z.object({
@@ -64,26 +53,16 @@ const ambassadors = {
     alternate: [],
     commands: ["stompy"],
     class: "aves",
-    species: "Emu",
-    scientific: "Dromaius novaehollandiae",
+    species: "emu",
     sex: "Male",
     birth: "2021-02-14",
     arrival: "2021-06-01",
     retired: null,
-    iucn: {
-      id: 22678117,
-      status: "LC",
-    },
     enclosure: "pasture",
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
       "He is an ambassador for teaching about the exotic meat trade, traditional medicine, and the use of animal products in cosmetics.",
-    native: {
-      text: "Australia (savannah woodlands and sclerophyll forests)",
-      source: "https://en.wikipedia.org/wiki/Emu",
-    },
-    lifespan: lifespans.emu,
     clips: [
       {
         id: "GsBRS13e8mY",
@@ -116,26 +95,16 @@ const ambassadors = {
     alternate: [],
     commands: ["georgie"],
     class: "amphibia",
-    species: "African Bullfrog",
-    scientific: "Pyxicephalus adspersus",
+    species: "africanBullfrog",
     sex: "Male",
     birth: "2021",
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 58535,
-      status: "LC/decreasing",
-    },
     enclosure: "reptiles",
     story:
       "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
-    native: {
-      text: "Sub-Saharan Africa (dry savanna, freshwater lakes, marshes, etc.)",
-      source: "https://en.wikipedia.org/wiki/African_bullfrog",
-    },
-    lifespan: lifespans.africanBullfrog,
     clips: [
       { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
       { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
@@ -157,26 +126,16 @@ const ambassadors = {
     alternate: [],
     commands: ["tico"],
     class: "aves",
-    species: "Blue and Gold Macaw",
-    scientific: "Ara ararauna",
+    species: "blueAndGoldMacaw",
     sex: "Female",
     birth: null,
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 22685539,
-      status: "LC/decreasing",
-    },
     enclosure: "parrots",
     story:
       "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring,",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    native: {
-      text: "South America (tropical rainforests)",
-      source: "https://en.wikipedia.org/wiki/Blue-and-yellow_macaw",
-    },
-    lifespan: lifespans.blueAndGoldMacaw,
     clips: [
       { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
       { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
@@ -189,26 +148,16 @@ const ambassadors = {
     alternate: ["Miele"],
     commands: ["miley", "miele"],
     class: "aves",
-    species: "Catalina Macaw",
-    scientific: "Ara ararauna x Ara macao",
+    species: "catalinaMacaw",
     sex: "Female",
     birth: null,
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "parrots",
     story:
       "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    native: {
-      text: "Usually bred in captivity",
-      source: "https://en.wikipedia.org/wiki/Catalina_macaw",
-    },
-    lifespan: lifespans.catalinaMacaw,
     clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
     homepage: null,
     plush: null,
@@ -218,26 +167,16 @@ const ambassadors = {
     alternate: [],
     commands: ["mia"],
     class: "aves",
-    species: "African Grey",
-    scientific: "Psittacus erithacus",
+    species: "africanGrey",
     sex: "Female",
     birth: null,
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 22724813,
-      status: "EN/decreasing",
-    },
     enclosure: "parrots",
     story:
       "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    native: {
-      text: "Equatorial Africa (dense forests)",
-      source: "https://en.wikipedia.org/wiki/African_grey_parrot",
-    },
-    lifespan: lifespans.africanGrey,
     clips: [
       { id: "nIw-qTRT5Nc", caption: "Mia Dances With Connor" },
       { id: "KRJy_nR1u5k", caption: "Mia Walks Around The Aviary" },
@@ -253,26 +192,16 @@ const ambassadors = {
     alternate: [],
     commands: ["siren"],
     class: "aves",
-    species: "Blue-fronted Amazon",
-    scientific: "Amazona aestiva",
+    species: "blueFrontedAmazon",
     sex: "Female",
     birth: null,
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 22686332,
-      status: "NT/decreasing",
-    },
     enclosure: "parrots",
     story:
       "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    native: {
-      text: "South America (tropical rainforests)",
-      source: "https://en.wikipedia.org/wiki/Blue-fronted_amazon",
-    },
-    lifespan: lifespans.blueFrontedAmazon,
     clips: [
       { id: "ociryM83xIo", caption: "Siren Is Given Enrichment" }, // This is a Maya clip
       { id: "ynv06rC9aHM", caption: "Siren Talks, Sings, And More" },
@@ -291,26 +220,16 @@ const ambassadors = {
     alternate: [],
     commands: ["abbott"],
     class: "aves",
-    species: "American Crow",
-    scientific: "Corvus brachyrhynchos",
+    species: "americanCrow",
     sex: "Male",
     birth: "2020-05",
     arrival: "2021-08",
     retired: null,
-    iucn: {
-      id: 22705990,
-      status: "LC/increasing",
-    },
     enclosure: "crows",
     story:
       "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
-    native: {
-      text: "North America (forests)",
-      source: "https://en.wikipedia.org/wiki/American_crow",
-    },
-    lifespan: lifespans.americanCrow,
     clips: [
       { id: "GqvK9m6yoBQ", caption: "Abbott Explores His New Enrichment" },
     ],
@@ -322,26 +241,16 @@ const ambassadors = {
     alternate: [],
     commands: ["coconut"],
     class: "aves",
-    species: "American Crow",
-    scientific: "Corvus brachyrhynchos",
+    species: "americanCrow",
     sex: "Male",
     birth: "2021",
     arrival: "2021-08",
     retired: null,
-    iucn: {
-      id: 22705990,
-      status: "LC/increasing",
-    },
     enclosure: "crows",
     story:
       "Coconut was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
-    native: {
-      text: "North America (forests)",
-      source: "https://en.wikipedia.org/wiki/American_crow",
-    },
-    lifespan: lifespans.americanCrow,
     clips: [],
     homepage: null,
     plush: null,
@@ -351,25 +260,15 @@ const ambassadors = {
     alternate: [],
     commands: ["oliver"],
     class: "aves",
-    species: "Olive Egger Chicken",
-    scientific: "Gallus gallus domesticus",
+    species: "oliveEggerChicken",
     sex: "Male",
     birth: "2021",
     arrival: "2021-06",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "chickens",
     story: "Oliver was put in the reject/return cage at a local feed store.",
     mission:
       "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
-    lifespan: lifespans.oliveEggerChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -379,26 +278,16 @@ const ambassadors = {
     alternate: [],
     commands: ["nugget"],
     class: "aves",
-    species: "Ameraucana Chicken",
-    scientific: "Gallus gallus domesticus",
+    species: "oliveEggerChicken",
     sex: "Female",
     birth: "2019",
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "chickens",
     story:
       "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
-    lifespan: lifespans.oliveEggerChicken,
     clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
     homepage: null,
     plush: null,
@@ -408,25 +297,15 @@ const ambassadors = {
     alternate: [],
     commands: ["henrique"],
     class: "aves",
-    species: "Half Dark Brahma, Half Saipan Chicken",
-    scientific: "Gallus gallus domesticus",
+    species: "halfBrahmaHalfSaipanChicken",
     sex: "Female",
     birth: "2020",
     arrival: "2022-08",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "chickens",
     story: "Henrique was rehomed from a local farm.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
-    lifespan: lifespans.brahmaChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -436,25 +315,15 @@ const ambassadors = {
     alternate: [],
     commands: ["winnie"],
     class: "mammalia",
-    species: "Red Angus Beef Cow",
-    scientific: "Bos (primigenius) taurus",
+    species: "redAngusBeefCow",
     sex: "Female",
     birth: "2022-03-22",
     arrival: "2022-04",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "pasture",
     story: "Winnie came from a cattle operation in Oklahoma.",
     mission:
       "She is an ambassador for the beef industry and how people can use their consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "Australia, United States (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Red_Angus",
-    },
-    lifespan: lifespans.redAngusBeefCow,
     clips: [
       { id: "FKU7-u5-L24", caption: "Winnie Causes Chaos In The Grain Stall" },
       { id: "qWDd5nnWSuI", caption: "Winnie's First Day On Stream" },
@@ -469,26 +338,16 @@ const ambassadors = {
     alternate: [],
     commands: ["noodle"],
     class: "reptilia",
-    species: "Coastal Carpet Python",
-    scientific: "Morelia spilota mcdowelli",
+    species: "coastalCarpetPython",
     sex: "Female",
     birth: null,
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 62232,
-      status: "LC/decreasing",
-    },
     enclosure: "reptiles",
     story:
       "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
-    native: {
-      text: "Australia (suburban area, rainforests, forests, etc.)",
-      source: "https://en.wikipedia.org/wiki/Carpet_python",
-    },
-    lifespan: lifespans.coastalCarpetPython,
     clips: [
       {
         id: "SU3b-ndBZ7M",
@@ -504,26 +363,16 @@ const ambassadors = {
     alternate: [],
     commands: ["patchy"],
     class: "reptilia",
-    species: "Ball Python",
-    scientific: "Python regius",
+    species: "ballPython",
     sex: "Female",
     birth: "2021-08-15",
     arrival: "2021-10",
     retired: null,
-    iucn: {
-      id: 177562,
-      status: "NT/decreasing",
-    },
     enclosure: "reptiles",
     story:
       "Patchy was rehomed to Alveus from a local breeder after it was discovered that she had a genetic defect and was missing an eye.",
     mission:
       "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
-    native: {
-      text: "West Sub Saharan Africa (grasslands, savannas, sparsely wooded areas)",
-      source: "https://en.wikipedia.org/wiki/Ball_python",
-    },
-    lifespan: lifespans.ballPython,
     clips: [],
     homepage: null,
     plush: null,
@@ -533,26 +382,16 @@ const ambassadors = {
     alternate: [],
     commands: ["fenn"],
     class: "mammalia",
-    species: "American Red Fox",
-    scientific: "Vulpes vulpes fulva",
+    species: "americanRedFox",
     sex: "Male",
     birth: "2020",
     arrival: "2022-11",
     retired: null,
-    iucn: {
-      id: 23062,
-      status: "LC",
-    },
     enclosure: "foxes",
     story:
       "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
-    native: {
-      text: "North America",
-      source: "https://en.wikipedia.org/wiki/American_red_fox",
-    },
-    lifespan: lifespans.americanRedFox,
     clips: [
       { id: "670RYU2Xw98", caption: "Fenn Digs Up A Friend In The Enclosure" },
       { id: "awX8PnOfhQA", caption: "Fenn Finds A Well Hidden Treasure" },
@@ -570,26 +409,17 @@ const ambassadors = {
     alternate: [],
     commands: ["reed"],
     class: "mammalia",
-    species: "American Red Fox",
-    scientific: "Vulpes vulpes fulva",
+    species: "americanRedFox",
+
     sex: "Male",
     birth: "2019",
     arrival: "2022-11",
     retired: null,
-    iucn: {
-      id: 23062,
-      status: "LC",
-    },
     enclosure: "foxes",
     story:
       "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
-    native: {
-      text: "North America",
-      source: "https://en.wikipedia.org/wiki/American_red_fox",
-    },
-    lifespan: lifespans.americanRedFox,
     clips: [
       { id: "ClWtgsoWta0", caption: "Reed Gets Weighed With Target Training" },
       { id: "4HZMQJoEkVA", caption: "Reed Is The Best Boy" },
@@ -606,25 +436,15 @@ const ambassadors = {
     alternate: [],
     commands: ["serrano"],
     class: "mammalia",
-    species: "Domestic Donkey",
-    scientific: "Equus africanus asinus",
+    species: "domesticDonkey",
     sex: "Male",
     birth: null,
     arrival: "2021-05",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "pasture",
     story: "Rehomed to Alveus from a local equine rescue.",
     mission:
       "Serrano is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
-    native: {
-      text: "Worldwide (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Donkey",
-    },
-    lifespan: lifespans.domesticDonkey,
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
@@ -639,25 +459,16 @@ const ambassadors = {
     alternate: [],
     commands: ["jalapeno", "jalapeño"],
     class: "mammalia",
-    species: "Domestic Donkey",
-    scientific: "Equus africanus asinus",
+    species: "domesticDonkey",
+
     sex: "Male",
     birth: null,
     arrival: "2021-05",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "pasture",
     story: "Rehomed to Alveus from a local equine rescue.",
     mission:
       "Jalapeño is an ambassador for the wildlife trade and use of wild animals in traditional medicine.",
-    native: {
-      text: "Worldwide (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Donkey",
-    },
-    lifespan: lifespans.domesticDonkey,
     clips: [
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
@@ -670,26 +481,17 @@ const ambassadors = {
     alternate: [],
     commands: ["snork"],
     class: "mammalia",
-    species: "Chinchilla",
-    scientific: "Chinchilla lanigera",
+    species: "chinchilla",
+
     sex: "Female",
     birth: "2021",
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 4652,
-      status: "EN/decreasing",
-    },
     enclosure: "nutrition",
     story:
       "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "She is an ambassador for the exploitation of wildlife in the fur trade.",
-    native: {
-      text: "Andes Mountains, South America (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chinchilla",
-    },
-    lifespan: lifespans.chinchilla,
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: null,
     plush: null,
@@ -699,25 +501,16 @@ const ambassadors = {
     alternate: [],
     commands: ["moomin"],
     class: "mammalia",
-    species: "Chinchilla",
-    scientific: "Chinchilla lanigera",
+    species: "chinchilla",
+
     sex: "Male",
     birth: "2017",
     arrival: "2021-04",
     retired: null,
-    iucn: {
-      id: 4652,
-      status: "EN/decreasing",
-    },
     enclosure: "nutrition",
     story: "Rehomed from a local pet owner.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the fur trade.",
-    native: {
-      text: "Andes Mountains, South America (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chinchilla",
-    },
-    lifespan: lifespans.chinchilla,
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: {
       title: "Moomin is Movin' In!",
@@ -731,26 +524,17 @@ const ambassadors = {
     alternate: [],
     commands: ["momo"],
     class: "mammalia",
-    species: "Black Tufted Marmoset",
-    scientific: "Callithrix penicillata",
+    species: "blackTuftedMarmoset",
+
     sex: "Male",
     birth: null,
     arrival: "2022-12",
     retired: null,
-    iucn: {
-      id: 41519,
-      status: "LC/decreasing",
-    },
     enclosure: "marmosets",
     story:
       "Momo was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
       "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil (Neo-tropical gallery forests)",
-      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
-    },
-    lifespan: lifespans.blackTuftedMarmoset,
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
@@ -762,26 +546,17 @@ const ambassadors = {
     alternate: [],
     commands: ["appa"],
     class: "mammalia",
-    species: "Common Marmoset",
-    scientific: "Callithrix jacchus",
+    species: "commonMarmoset",
+
     sex: "Male",
     birth: null,
     arrival: "2022-12",
     retired: null,
-    iucn: {
-      id: 41518,
-      status: "LC/decreasing",
-    },
     enclosure: "marmosets",
     story:
       "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
       "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
-    native: {
-      text: "Brazil",
-      source: "https://en.wikipedia.org/wiki/Common_marmoset",
-    },
-    lifespan: lifespans.commonMarmoset,
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
@@ -793,26 +568,17 @@ const ambassadors = {
     alternate: ["Poppy"],
     commands: ["pushpop", "poppy"],
     class: "reptilia",
-    species: "Sulcata Tortoise",
-    scientific: "Centrochelys sulcata",
+    species: "sulcataTortoise",
+
     sex: null, // Unknown, assumed female
     birth: "2019",
     arrival: "2024-02",
     retired: null,
-    iucn: {
-      id: 163423,
-      status: "EN/decreasing",
-    },
     enclosure: "tortoise",
     story:
       "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
     mission:
       "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
-    native: {
-      text: "Sahara Desert and the Sahel (shrubland, grassland)",
-      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
-    },
-    lifespan: lifespans.sulcataTortoise,
     clips: [
       { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
       {
@@ -828,26 +594,17 @@ const ambassadors = {
     alternate: [],
     commands: ["toast", "toaster"],
     class: "reptilia",
-    species: "Blue-tongued Skink",
-    scientific: "Tiliqua scincoides intermedia",
+    species: "blueTonguedSkink",
+
     sex: "Male",
     birth: "2022-07-04",
     arrival: "2022-11",
     retired: null,
-    iucn: {
-      id: 109481538,
-      status: "LC",
-    },
     enclosure: "reptiles",
     story:
       "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    native: {
-      text: "Australia",
-      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
-    },
-    lifespan: lifespans.blueTonguedSkink,
     clips: [],
     homepage: null,
     plush: null,
@@ -857,26 +614,17 @@ const ambassadors = {
     alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
     commands: ["hank"],
     class: "diplopoda",
-    species: "Smokey Ghost Millipede",
-    scientific: "Narceus gordanus",
+    species: "smokeyGhostMillipede",
+
     sex: "Male",
     birth: "2022",
     arrival: "2022-01",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our smokey ghost millipede was born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Eastern United States",
-      source: "https://en.wikipedia.org/wiki/Narceus_gordanus",
-    },
-    lifespan: lifespans.smokeyGhostMillipede,
     clips: [
       { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
       { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
@@ -889,26 +637,17 @@ const ambassadors = {
     alternate: [],
     commands: ["barbara", "bakedbean"],
     class: "insecta",
-    species: "Madagascar Hissing Cockroaches",
-    scientific: "Gromphadorhina portentosa",
+    species: "madagascarHissingCockroaches",
+
     sex: null,
     birth: "2022",
     arrival: "2022-01",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Madagascar",
-      source: "https://en.wikipedia.org/wiki/Gromphadorhina_portentosa",
-    },
-    lifespan: lifespans.madagascarHissingCockroaches,
     clips: [],
     homepage: null,
     plush: null,
@@ -918,25 +657,16 @@ const ambassadors = {
     alternate: [],
     commands: ["marty"],
     class: "malacostraca",
-    species: "Zebra Isopods",
-    scientific: "Armadillidium maculatum",
+    species: "zebraIsopods",
+
     sex: null,
     birth: "2022",
     arrival: "2022-01",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story: "Our zebra isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Southern France",
-      source: "https://en.wikipedia.org/wiki/Armadillidium_maculatum",
-    },
-    lifespan: lifespans.zebraIsopods,
     clips: [],
     homepage: null,
     plush: null,
@@ -946,26 +676,17 @@ const ambassadors = {
     alternate: ["Bonus Bug"],
     commands: ["bb", "bonusbug"],
     class: "malacostraca",
-    species: "Spanish Orange Isopods",
-    scientific: "Porcellio scaber",
+    species: "spanishOrangeIsopods",
+
     sex: null,
     birth: "2022",
     arrival: "2022-01",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our spanish orange isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Europe",
-      source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
-    },
-    lifespan: lifespans.spanishOrangeIsopods,
     clips: [],
     homepage: null,
     plush: null,
@@ -975,26 +696,17 @@ const ambassadors = {
     alternate: [],
     commands: ["tortellini"],
     class: "arachnida",
-    species: "Emperor Scorpion",
-    scientific: "Pandinus imperator",
+    species: "emperorScorpion",
+
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Africa (rainforests, savannas)",
-      source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
-    },
-    lifespan: lifespans.emperorScorpion,
     clips: [],
     homepage: null,
     plush: null,
@@ -1004,26 +716,17 @@ const ambassadors = {
     alternate: [],
     commands: ["puppy"],
     class: "arachnida",
-    species: "Emperor Scorpion",
-    scientific: "Pandinus imperator",
+    species: "emperorScorpion",
+
     sex: "Male",
     birth: "2022-10-01",
     arrival: "2022-11",
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Africa (rainforests, savannas)",
-      source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
-    },
-    lifespan: lifespans.emperorScorpion,
     clips: [],
     homepage: null,
     plush: null,
@@ -1033,26 +736,17 @@ const ambassadors = {
     alternate: [],
     commands: ["awa"],
     class: "mammalia",
-    species: "Wolf Hybrid",
-    scientific: "Canis lupus x Canis familiaris",
+    species: "wolfHybrid",
+
     sex: "Female",
     birth: "2014",
     arrival: "2024-05-04",
     retired: null,
-    iucn: {
-      id: 3746,
-      status: "LC",
-    },
     enclosure: "wolves",
     story:
       "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
     mission:
       "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
-    native: {
-      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
-      source: "https://en.wikipedia.org/wiki/Wolf",
-    },
-    lifespan: lifespans.wolfHybrid,
     clips: [],
     homepage: null,
     plush: null,
@@ -1062,25 +756,16 @@ const ambassadors = {
     alternate: [],
     commands: ["polly"],
     class: "aves",
-    species: "Bantam Silkie Chicken",
-    scientific: "Gallus gallus domesticus",
+    species: "bantamSilkieChicken",
+
     sex: "Female",
     birth: null,
     arrival: "2023-11", // Previously 2022-08 to 2022-11
     retired: null,
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "nutrition",
     story: "Polly was rehomed from another owner.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "China (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Silkie",
-    },
-    lifespan: lifespans.bantamSilkieChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -1092,26 +777,17 @@ const ambassadors = {
     alternate: [],
     commands: ["orion"],
     class: "aves",
-    species: "Prairie/Peregrine Falcon",
-    scientific: "Falco mexicanus x Falco peregrinus",
+    species: "prairiePeregrineFalcon",
+
     sex: "Male",
     birth: "2021-05-13",
     arrival: "2021-12",
     retired: "2022-06-14",
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "falcon",
     story:
       "Orion was originally owned by Maya before becoming an ambassador at Alveus.\n\nOrion sadly passed away in June 2022 after an unfortunate accident in his enclosure.",
     mission:
       "He is an ambassador for showing how pest control affects wildlife globally and how to conserve major keystone species.",
-    native: {
-      text: "Western North America",
-      source: "https://en.wikipedia.org/wiki/Prairie_falcon",
-    },
-    lifespan: lifespans.prairiePeregrineFalcon,
     clips: [],
     homepage: null,
     plush: null,
@@ -1121,26 +797,17 @@ const ambassadors = {
     alternate: [],
     commands: ["pickles"],
     class: "arachnida",
-    species: "Vinegaroon",
-    scientific: "Mastigoproctus tohono",
+    species: "vinegaroon",
+
     sex: "Female",
     birth: "2022",
     arrival: "2022-01",
     retired: "2023-02-09",
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our vinegaroon was born in captivity and ethically sourced.\n\nSadly, Pickles passed away in February 2023 because she was unable to make it through her first molt.",
     mission:
       "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Tropical and subtropical areas, excluding Europe and Australia",
-      source: "https://en.wikipedia.org/wiki/Vinegaroon",
-    },
-    lifespan: lifespans.vinegaroon,
     clips: [],
     homepage: null,
     plush: null,
@@ -1150,26 +817,17 @@ const ambassadors = {
     alternate: [],
     commands: ["henrietta"],
     class: "aves",
-    species: "Jersey Giant Chicken",
-    scientific: "Gallus gallus domesticus",
+    species: "jerseyGiantChicken",
+
     sex: "Female",
     birth: "2019",
     arrival: "2022-08",
     retired: "2023-03",
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "chickens",
     story:
       "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023 and now lives in a chicken coop at Maya's Tiny House with her rabbit and other chicken.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    native: {
-      text: "United States (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Jersey_Giant",
-    },
-    lifespan: lifespans.jerseyGiantChicken,
     clips: [],
     homepage: null,
     plush: null,
@@ -1179,26 +837,17 @@ const ambassadors = {
     alternate: [],
     commands: ["ducky"],
     class: "malacostraca",
-    species: "Rubber Ducky Isopods",
-    scientific: "Cubaris sp.",
+    species: "rubberDuckyIsopods",
+
     sex: null,
     birth: "2022",
     arrival: "2022-01",
     retired: "2023-06",
-    iucn: {
-      id: null,
-      status: "NE",
-    },
     enclosure: "critters",
     story:
       "Our rubber ducky isopods were born in captivity and ethically sourced.\n\nUnfortunately, our colony of isopods didn't breed enough to sustain themselves, with the final few passing away in June 2023.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
-    native: {
-      text: "Asia",
-      source: "https://en.wikipedia.org/wiki/Cubaris",
-    },
-    lifespan: lifespans.rubberDuckyIsopods,
     clips: [],
     homepage: null,
     plush: null,
@@ -1208,26 +857,17 @@ const ambassadors = {
     alternate: [],
     commands: ["nilla", "nillawafer"],
     class: "mammalia",
-    species: "Domestic Rat",
-    scientific: "Rattus norvegicus f. domestica",
+    species: "domesticRat",
+
     sex: "Female",
     birth: null,
     arrival: "2022-12",
     retired: "2024-12-05",
-    iucn: {
-      id: 19353,
-      status: "LC",
-    },
     enclosure: "nutrition",
     story:
       "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
       "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
-    native: {
-      text: "Worldwide (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Fancy_rat",
-    },
-    lifespan: lifespans.domesticRat,
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
     plush: null,
@@ -1237,26 +877,16 @@ const ambassadors = {
     alternate: [],
     commands: ["chips", "chipsahoy"],
     class: "mammalia",
-    species: "Domestic Rat",
-    scientific: "Rattus norvegicus f. domestica",
+    species: "domesticRat",
     sex: "Female",
     birth: null,
     arrival: "2022-12",
     retired: "2024-12-13",
-    iucn: {
-      id: 19353,
-      status: "LC",
-    },
     enclosure: "nutrition",
     story:
       "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
     mission:
       "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
-    native: {
-      text: "Worldwide (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Fancy_rat",
-    },
-    lifespan: lifespans.domesticRat,
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
     homepage: null,
     plush: null,
@@ -1266,26 +896,17 @@ const ambassadors = {
     alternate: [],
     commands: ["timber"],
     class: "mammalia",
-    species: "Wolf Hybrid",
-    scientific: "Canis lupus x Canis familiaris",
+    species: "wolfHybrid",
+
     sex: "Male",
     birth: "2014",
     arrival: "2024-05-04",
     retired: "2024-12-08",
-    iucn: {
-      id: 3746,
-      status: "LC",
-    },
     enclosure: "wolves",
     story:
       "Timber was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
     mission:
       "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
-    native: {
-      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
-      source: "https://en.wikipedia.org/wiki/Wolf",
-    },
-    lifespan: lifespans.wolfHybrid,
     clips: [],
     homepage: null,
     plush: null,
