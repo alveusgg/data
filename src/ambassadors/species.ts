@@ -447,6 +447,22 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
   },
+  winston: {
+    name: "Polar Bear",
+    scientificName: "Twitchus memeticus",
+    iucn: {
+      id: null,
+      status: "NE",
+    },
+    native: {
+      text: "Twitch chat (including the Animals, Aquariums, & Zoos category), miscellaneous emote services",
+      source:
+        "https://clips.twitch.tv/TangibleFurryTortoiseBCWarrior-izyQ3nOgq1pYe1rc", // https://clips.twitch.tv/CleverSecretiveAntChocolateRain--zjm5eRw6zxG75Up
+    },
+    lifespan: {
+      source: "",
+    },
+  },
 } as const satisfies Record<string, Species>;
 
 export type SpeciesKey = keyof typeof species;
@@ -454,4 +470,4 @@ export type SpeciesKey = keyof typeof species;
 export const isSpecies = (str: string): str is SpeciesKey =>
   Object.keys(species).includes(str);
 
-export default species;
+export const getSpecies = (key: SpeciesKey): Species => species[key];
