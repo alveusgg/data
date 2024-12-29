@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { isIUCNStatus } from "../iucn";
+import { isClass } from "./classification";
 
 export const speciesSchema = z.object({
   name: z.string(),
@@ -22,6 +23,7 @@ export const speciesSchema = z.object({
       .optional(),
     source: z.string(),
   }),
+  class: z.string().refine(isClass),
 });
 
 export type Species = z.infer<typeof speciesSchema>;
@@ -40,6 +42,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Emu",
     },
+    class: "aves",
   },
   africanBullfrog: {
     name: "African Bullfrog",
@@ -53,6 +56,7 @@ const species = {
       captivity: 35,
       source: "https://en.wikipedia.org/wiki/African_bullfrog",
     },
+    class: "amphibia",
   },
   blueAndGoldMacaw: {
     name: "Blue and Gold Macaw",
@@ -68,6 +72,7 @@ const species = {
       source:
         "https://animaldiversity.org/accounts/Ara_ararauna/#lifespan_longevity",
     },
+    class: "aves",
   },
   catalinaMacaw: {
     name: "Catalina Macaw",
@@ -82,6 +87,7 @@ const species = {
       source:
         "https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity",
     },
+    class: "aves",
   },
   africanGrey: {
     name: "African Grey",
@@ -96,6 +102,7 @@ const species = {
       captivity: 60,
       source: "https://en.wikipedia.org/wiki/African_grey_parrot",
     },
+    class: "aves",
   },
   blueFrontedAmazon: {
     name: "Blue-fronted Amazon",
@@ -109,6 +116,7 @@ const species = {
       captivity: 60,
       source: "https://animaldiversity.org/accounts/Amazona_aestiva/",
     },
+    class: "aves",
   },
   americanCrow: {
     name: "American Crow",
@@ -123,6 +131,7 @@ const species = {
       captivity: 30,
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
+    class: "aves",
   },
   oliveEggerChicken: {
     name: "Olive Egger Chicken",
@@ -136,6 +145,7 @@ const species = {
       captivity: 8,
       source: "https://animal-world.com/olive-egger-chickens/",
     },
+    class: "aves",
   },
   ameraucanaChicken: {
     name: "Ameraucana Chicken",
@@ -149,6 +159,7 @@ const species = {
       captivity: 8,
       source: "https://animal-world.com/olive-egger-chickens/",
     },
+    class: "aves",
   },
   halfBrahmaHalfSaipanChicken: {
     name: "Half Dark Brahma, Half Saipan Chicken",
@@ -162,6 +173,7 @@ const species = {
       captivity: { min: 5, max: 8 },
       source: "https://animal-world.com/brahma-chicken/",
     },
+    class: "aves",
   },
   redAngusBeefCow: {
     name: "Red Angus Beef Cow",
@@ -175,6 +187,7 @@ const species = {
       captivity: { min: 12, max: 25 },
       source: "https://animal-world.com/red-angus-cattle-breed/",
     },
+    class: "mammalia",
   },
   coastalCarpetPython: {
     name: "Coastal Carpet Python",
@@ -188,6 +201,7 @@ const species = {
       captivity: 30,
       source: "https://en.wikipedia.org/wiki/Morelia_spilota",
     },
+    class: "reptilia",
   },
   ballPython: {
     name: "Ball Python",
@@ -201,6 +215,7 @@ const species = {
       captivity: { min: 15, max: 30 },
       source: "https://en.wikipedia.org/wiki/Ball_python",
     },
+    class: "reptilia",
   },
   americanRedFox: {
     name: "American Red Fox",
@@ -215,6 +230,7 @@ const species = {
       captivity: 15,
       source: "https://en.wikipedia.org/wiki/Red_fox",
     },
+    class: "mammalia",
   },
   domesticDonkey: {
     name: "Domestic Donkey",
@@ -228,6 +244,7 @@ const species = {
       captivity: 40,
       source: "https://en.wikipedia.org/wiki/Donkey",
     },
+    class: "mammalia",
   },
   chinchilla: {
     name: "Chinchilla",
@@ -242,6 +259,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
+    class: "mammalia",
   },
   blackTuftedMarmoset: {
     name: "Black Tufted Marmoset",
@@ -255,6 +273,7 @@ const species = {
       wild: 7,
       source: "https://animalia.bio/black-tufted-marmoset",
     },
+    class: "mammalia",
   },
   commonMarmoset: {
     name: "Common Marmoset",
@@ -268,6 +287,7 @@ const species = {
       wild: { min: 5, max: 7 },
       source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775658/",
     },
+    class: "mammalia",
   },
   sulcataTortoise: {
     name: "Sulcata Tortoise",
@@ -282,6 +302,7 @@ const species = {
       captivity: 100,
       source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
     },
+    class: "reptilia",
   },
   blueTonguedSkink: {
     name: "Blue-tongued Skink",
@@ -295,6 +316,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
     },
+    class: "reptilia",
   },
   smokeyGhostMillipede: {
     name: "Smokey Ghost Millipede",
@@ -308,6 +330,7 @@ const species = {
       captivity: 11,
       source: "https://www.whatsthatbug.com/how-to-care-for-a-millipede/",
     },
+    class: "diplopoda",
   },
   madagascarHissingCockroaches: {
     name: "Madagascar Hissing Cockroaches",
@@ -321,6 +344,7 @@ const species = {
       captivity: 3,
       source: "https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach",
     },
+    class: "insecta",
   },
   zebraIsopods: {
     name: "Zebra Isopods",
@@ -334,6 +358,7 @@ const species = {
       captivity: { min: 1, max: 3 },
       source: "https://bantam.earth/zebra-isopods-armadillidium-maculatum/",
     },
+    class: "malacostraca",
   },
   spanishOrangeIsopods: {
     name: "Spanish Orange Isopods",
@@ -347,6 +372,7 @@ const species = {
       wild: 2,
       source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
     },
+    class: "malacostraca",
   },
   emperorScorpion: {
     name: "Emperor Scorpion",
@@ -360,6 +386,7 @@ const species = {
       wild: { min: 6, max: 8 },
       source: "https://en.wikipedia.org/wiki/Emperor_scorpion",
     },
+    class: "arachnida",
   },
   wolfHybrid: {
     name: "Wolf Hybrid",
@@ -374,6 +401,7 @@ const species = {
       source:
         "https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/",
     },
+    class: "mammalia",
   },
   bantamSilkieChicken: {
     name: "Bantam Silkie Chicken",
@@ -387,6 +415,7 @@ const species = {
       captivity: { min: 7, max: 9 },
       source: "https://animal-world.com/silkie-chicken/",
     },
+    class: "aves",
   },
   prairiePeregrineFalcon: {
     name: "Prairie/Peregrine Falcon",
@@ -400,6 +429,7 @@ const species = {
       wild: { min: 2, max: 5 },
       source: "https://www.ndow.org/species/prairie-falcon/",
     },
+    class: "aves",
   },
   vinegaroon: {
     name: "Vinegaroon",
@@ -410,6 +440,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Vinegaroon",
     },
     lifespan: { wild: 8, source: "https://en.wikipedia.org/wiki/Uropygi" },
+    class: "arachnida",
   },
   jerseyGiantChicken: {
     name: "Jersey Giant Chicken",
@@ -423,6 +454,7 @@ const species = {
       captivity: { min: 6, max: 7 },
       source: "https://animal-world.com/jersey-giant-chicken/",
     },
+    class: "aves",
   },
   rubberDuckyIsopods: {
     name: "Rubber Ducky Isopods",
@@ -433,6 +465,7 @@ const species = {
       captivity: { min: 2, max: 3 },
       source: "https://bantam.earth/cubaris-rubber-ducky-isopods/",
     },
+    class: "malacostraca",
   },
   domesticRat: {
     name: "Domestic Rat",
@@ -446,6 +479,7 @@ const species = {
       captivity: { min: 2, max: 3 },
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
+    class: "mammalia",
   },
   winston: {
     name: "Polar Bear",
@@ -462,6 +496,7 @@ const species = {
     lifespan: {
       source: "",
     },
+    class: "mammalia",
   },
 } as const satisfies Record<string, Species>;
 
