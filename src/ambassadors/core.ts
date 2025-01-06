@@ -128,7 +128,7 @@ const ambassadors = {
     retired: null,
     enclosure: "parrots",
     story:
-      "Tico was rehomed to Alveus as the previous sanctuary’s owner was retiring,",
+      "Tico was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     clips: [
@@ -149,7 +149,7 @@ const ambassadors = {
     retired: null,
     enclosure: "parrots",
     story:
-      "Miley was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+      "Miley was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
@@ -167,7 +167,7 @@ const ambassadors = {
     retired: null,
     enclosure: "parrots",
     story:
-      "Mia was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+      "Mia was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     clips: [
@@ -191,7 +191,7 @@ const ambassadors = {
     retired: null,
     enclosure: "parrots",
     story:
-      "Siren was rehomed to Alveus as the previous sanctuary’s owner was retiring.",
+      "Siren was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
     clips: [
@@ -482,7 +482,7 @@ const ambassadors = {
     arrival: "2021-04",
     retired: null,
     enclosure: "nutrition",
-    story: "Rehomed from a local pet owner.",
+    story: "Moomin was rehomed from a local pet owner.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the fur trade.",
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
