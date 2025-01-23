@@ -1,15 +1,7 @@
 /// <reference types="@types/node" />
 
-import { fileURLToPath } from "node:url";
 import { dirname, relative } from "node:path";
-import {
-  glob,
-  writeFile,
-  stat,
-  mkdir,
-  readFile,
-  unlink,
-} from "node:fs/promises";
+import { glob, writeFile, stat, mkdir, readFile } from "node:fs/promises";
 import { hash } from "node:crypto";
 
 import sharp from "sharp";
@@ -86,18 +78,14 @@ const shrink = async (source: string, dest: string) => {
   return hashed;
 };
 
-const source = fileURLToPath(new URL("../src/assets", import.meta.url));
-const dest = fileURLToPath(new URL("./assets", import.meta.url));
-
-const images = glob(`${source}/**/*.{jpg,jpeg,png}`);
-const optimized = new Set();
-for await (const image of images)
-  optimized.add(await shrink(image, image.replace(source, dest)));
-
-const cleanup = glob(`${dest}/**/*.{jpg,jpeg,png}`);
-for await (const file of cleanup) {
-  if (!optimized.has(file)) {
-    console.log(`Removing ${relative(process.cwd(), file)}`);
-    await unlink(file);
+const optimize = async (source: string, dest: string) => {
+  const assets = glob(`${source}/**/*.{jpg,jpeg,png}`);
+  const optimized = new Map<string, string>();
+  for await (const asset of assets) {
+    const path = await shrink(asset, asset.replace(source, dest));
+    if (path) optimized.set(asset, path);
   }
-}
+  return optimized;
+};
+
+export default optimize;
