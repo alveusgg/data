@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  version:
+  check:
     runs-on: ubuntu-latest
 
     outputs:
@@ -37,8 +37,8 @@ jobs:
       contents: write
 
     # We only tag on pushes to main, when the version has changed
-    needs: version
-    if: ${{ github.ref == 'refs/heads/main' && needs.version.outputs.version != '' }}
+    needs: check
+    if: ${{ github.ref == 'refs/heads/main' && needs.check.outputs.version != '' }}
 
     steps:
       - name: Checkout
@@ -49,8 +49,8 @@ jobs:
       - name: Tag version
         run: |
           set -e -o pipefail
-          git tag "${{ needs.version.outputs.version }}" "${{ github.event.after }}"
-          git push origin "${{ needs.version.outputs.version }}"
+          git tag "${{ needs.check.outputs.version }}" "${{ github.event.after }}"
+          git push origin "${{ needs.check.outputs.version }}"
 
   publish:
     runs-on: ubuntu-latest
@@ -59,8 +59,8 @@ jobs:
       packages: write
 
     # Version changes in any branch can be published
-    needs: version
-    if: ${{ needs.version.outputs.version != '' }}
+    needs: check
+    if: ${{ needs.check.outputs.version != '' }}
 
     steps:
       - name: Checkout commit
