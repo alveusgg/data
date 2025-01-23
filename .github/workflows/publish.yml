@@ -32,26 +32,26 @@ jobs:
             echo "version=$AFTER_VERSION" >> "$GITHUB_OUTPUT"
           fi
 
-  tag:
-    runs-on: ubuntu-latest
+  # tag:
+  #   runs-on: ubuntu-latest
   
-    permissions:
-      contents: write
+  #   permissions:
+  #     contents: write
 
-    needs: version
-    if: ${{ needs.version.outputs.version }}
+  #   needs: version
+  #   if: ${{ needs.version.outputs.version }}
   
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: package.json
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #       with:
+  #         sparse-checkout: package.json
   
-      - name: Tag version
-        run: |
-          set -e -o pipefail
-          git tag "${{ needs.version.outputs.version }}" "${{ github.event.after }}"
-          git push origin "${{ needs.version.outputs.version }}"
+  #     - name: Tag version
+  #       run: |
+  #         set -e -o pipefail
+  #         git tag "${{ needs.version.outputs.version }}" "${{ github.event.after }}"
+  #         git push origin "${{ needs.version.outputs.version }}"
 
   
   publish:
