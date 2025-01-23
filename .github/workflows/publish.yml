@@ -98,3 +98,19 @@ jobs:
         run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report summary
+        run: |
+          set -e -o pipefail
+          PACKAGE_NAME=$(jq -r .name package.json)
+          CURRENT_VERSION=$(jq -r .version package.json)
+          echo "::notice title=Version published::\`$PACKAGE_NAME@$CURRENT_VERSION\`"
+          echo "### Version published :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "npm install $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "pnpm add $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
