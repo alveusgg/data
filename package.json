@@ -1,7 +1,6 @@
 {
   "name": "@alveusgg/data",
   "version": "0.50.1",
-  "private": true,
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
@@ -16,9 +15,13 @@
     "format": "prettier --write \"**/*.ts\"",
     "format:check": "prettier --check \"**/*.ts\"",
     "test": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "tsx script/build.ts"
   },
   "type": "module",
+  "files": [
+    "build"
+  ],
   "devDependencies": {
     "@types/node": "^22.5.5",
     "eslint": "^9.18.0",
