@@ -2,14 +2,33 @@
 
 import { fileURLToPath } from "node:url";
 import { dirname, relative } from "node:path";
-import { glob, writeFile, stat, mkdir } from "node:fs/promises";
+import {
+  glob,
+  writeFile,
+  stat,
+  mkdir,
+  readFile,
+  unlink,
+} from "node:fs/promises";
+import { hash } from "node:crypto";
 
 import sharp from "sharp";
 
-const shrink = async (source: string, dest: string) => {
-  const info = await stat(source);
+const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
-  let img = await sharp(source);
+const shrink = async (source: string, dest: string) => {
+  const contents = await readFile(source);
+  const sha = hash("sha256", contents, "hex");
+  const hashed = dest.replace(/(\.[^.]*)?$/, `.${sha}$1`);
+
+  if (await stat(hashed).catch(() => null)) {
+    console.log(
+      `Skipping ${source} -> ${relative(process.cwd(), hashed)} (already optimized)`,
+    );
+    return hashed;
+  }
+
+  let img = await sharp(contents);
   const metadata = await img.metadata();
   if (!metadata.width || !metadata.height || !metadata.format) {
     console.warn(`Failed to read metadata for ${source}`);
@@ -33,7 +52,7 @@ const shrink = async (source: string, dest: string) => {
   let file: Buffer | undefined;
   while (quality >= min) {
     file = await img.toFormat(metadata.format, { quality, ...opts }).toBuffer();
-    if (file.length <= 1024 * 1024 && file.length <= info.size) break;
+    if (file.length <= 1024 * 1024 && file.length <= contents.length) break;
     quality -= step;
   }
 
@@ -42,31 +61,43 @@ const shrink = async (source: string, dest: string) => {
     return;
   }
 
-  if (file.length > info.size) {
+  if (file.length > contents.length) {
     console.log(
-      `Using original ${source}, optimized larger [ ${info.size / 1024} -> ${
-        file.length / 1024
-      } KB ]`,
+      `Using original ${source} -> ${relative(process.cwd(), hashed)}, optimized larger [ ${kb(contents.length)} -> ${kb(file.length)} ]`,
     );
-    return;
+    file = contents;
   }
 
-  await mkdir(dirname(dest), { recursive: true });
-  await writeFile(dest, file);
-  console.log(
-    `Optimized ${relative(process.cwd(), source)} -> ${relative(process.cwd(), dest)}:`,
-    "[",
-    `${info.size / 1024} -> ${file.length / 1024} KB,`,
-    resized
-      ? `resized (${metadata.width}x${metadata.height} -> ${resized.width}x${resized.height}),`
-      : `original (${metadata.width}x${metadata.height}),`,
-    `quality ${quality} (${(100 - quality) / step + 1}))`,
-    "]",
-  );
+  await mkdir(dirname(hashed), { recursive: true });
+  await writeFile(hashed, file);
+  if (file !== contents) {
+    console.log(
+      `Optimized ${relative(process.cwd(), source)} -> ${relative(process.cwd(), hashed)}:`,
+      "[",
+      `${kb(contents.length)} -> ${kb(file.length)},`,
+      resized
+        ? `resized (${metadata.width}x${metadata.height} -> ${resized.width}x${resized.height}),`
+        : `original (${metadata.width}x${metadata.height}),`,
+      `quality ${quality} (${(100 - quality) / step + 1}))`,
+      "]",
+    );
+  }
+
+  return hashed;
 };
 
 const source = fileURLToPath(new URL("../src/assets", import.meta.url));
 const dest = fileURLToPath(new URL("./assets", import.meta.url));
+
 const images = glob(`${source}/**/*.{jpg,jpeg,png}`);
+const optimized = new Set();
 for await (const image of images)
-  await shrink(image, image.replace(source, dest));
+  optimized.add(await shrink(image, image.replace(source, dest)));
+
+const cleanup = glob(`${dest}/**/*.{jpg,jpeg,png}`);
+for await (const file of cleanup) {
+  if (!optimized.has(file)) {
+    console.log(`Removing ${relative(process.cwd(), file)}`);
+    await unlink(file);
+  }
+}
