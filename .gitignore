@@ -3,3 +3,5 @@
 /.vscode/
 *.tsbuildinfo
 .DS_Store
+
+/build/assets/

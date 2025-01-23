@@ -1,32 +1,18 @@
 /// <reference types="@types/node" />
 
-import { resolve, extname } from "node:path";
-import { writeFile, stat } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import { dirname, relative } from "node:path";
+import { glob, writeFile, stat, mkdir } from "node:fs/promises";
 
 import sharp from "sharp";
 
-const images = process.argv.slice(2).map((arg) => resolve(arg));
-if (!images.length) {
-  console.log("No images to optimize");
-  process.exit(0);
-}
+const shrink = async (source: string, dest: string) => {
+  const info = await stat(source);
 
-const unsupported = images.filter((image) => {
-  const ext = extname(image);
-  return ![".jpg", ".jpeg", ".png"].includes(ext);
-});
-if (unsupported.length) {
-  console.error("Unsupported image formats:", unsupported.join(", "));
-  process.exit(1);
-}
-
-const shrink = async (path: string) => {
-  const info = await stat(path);
-
-  let img = await sharp(path);
+  let img = await sharp(source);
   const metadata = await img.metadata();
   if (!metadata.width || !metadata.height || !metadata.format) {
-    console.warn(`Failed to read metadata for ${path}`);
+    console.warn(`Failed to read metadata for ${source}`);
     return;
   }
 
@@ -52,22 +38,23 @@ const shrink = async (path: string) => {
   }
 
   if (!file) {
-    console.warn(`Failed to optimize ${path}`);
+    console.warn(`Failed to optimize ${source}`);
     return;
   }
 
   if (file.length > info.size) {
     console.log(
-      `Using original ${path}, optimized larger [ ${info.size / 1024} -> ${
+      `Using original ${source}, optimized larger [ ${info.size / 1024} -> ${
         file.length / 1024
       } KB ]`,
     );
     return;
   }
 
-  await writeFile(path, file);
+  await mkdir(dirname(dest), { recursive: true });
+  await writeFile(dest, file);
   console.log(
-    `Optimized ${path}`,
+    `Optimized ${relative(process.cwd(), source)} -> ${relative(process.cwd(), dest)}:`,
     "[",
     `${info.size / 1024} -> ${file.length / 1024} KB,`,
     resized
@@ -78,4 +65,8 @@ const shrink = async (path: string) => {
   );
 };
 
-for (const image of images) await shrink(image);
+const source = fileURLToPath(new URL("../src/assets", import.meta.url));
+const dest = fileURLToPath(new URL("./assets", import.meta.url));
+const images = glob(`${source}/**/*.{jpg,jpeg,png}`);
+for await (const image of images)
+  await shrink(image, image.replace(source, dest));
