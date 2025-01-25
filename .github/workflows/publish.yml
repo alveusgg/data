@@ -1,0 +1,116 @@
+name: Publish
+
+on:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    outputs:
+      description: "New version identifier (if changed)"
+      version: ${{ steps.version.outputs.version }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout: package.json
+
+      - name: Check version
+        id: version
+        run: |
+          set -e -o pipefail
+          BEFORE_VERSION=$(git show "${{ github.event.before }}:package.json" | jq -r .version)
+          AFTER_VERSION=$(git show "${{ github.event.after }}:package.json" | jq -r .version)
+      
+          if [ "$BEFORE_VERSION" != "$AFTER_VERSION" ]; then
+            echo "Version changed from $BEFORE_VERSION to $AFTER_VERSION"
+            echo "version=$AFTER_VERSION" >> "$GITHUB_OUTPUT"
+          fi
+
+  tag:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    # We only tag on pushes to main, when the version has changed
+    needs: check
+    if: ${{ github.ref == 'refs/heads/main' && needs.check.outputs.version != '' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: package.json
+
+      - name: Tag version
+        run: |
+          set -e -o pipefail
+          git tag "${{ needs.check.outputs.version }}" "${{ github.event.after }}"
+          git push origin "${{ needs.check.outputs.version }}"
+
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      packages: write
+
+    # Version changes in any branch can be published
+    needs: check
+    if: ${{ needs.check.outputs.version != '' }}
+
+    steps:
+      - name: Checkout commit
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          registry-url: https://npm.pkg.github.com
+          scope: '@alveusgg'
+
+      - name: Cache optimized assets
+        uses: actions/cache@v4
+        with:
+          path: build/assets
+          key: optimized-assets-${{ hashFiles('src/assets/**') }}
+          restore-keys: |
+            optimized-assets-
+
+      - name: Install dependencies
+        run: npm ci
+
+      # If this push wasn't to main, add the commit hash to the version
+      - name: Update version
+        if: ${{ github.ref != 'refs/heads/main' }}
+        run: |
+          set -e -o pipefail
+          CURRENT_VERSION=$(jq -r .version package.json)
+          NEW_VERSION="$CURRENT_VERSION-pre.${{ github.event.after }}"
+          npm version --no-git-tag-version "$NEW_VERSION"
+
+      - name: Publish package
+        run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Report summary
+        run: |
+          set -e -o pipefail
+          PACKAGE_NAME=$(jq -r .name package.json)
+          CURRENT_VERSION=$(jq -r .version package.json)
+          echo "::notice title=Version published::\`$PACKAGE_NAME@$CURRENT_VERSION\`"
+          echo "### Version published :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "npm install $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "pnpm add $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY

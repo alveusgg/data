@@ -1,7 +1,6 @@
 {
   "name": "@alveusgg/data",
-  "version": "0.50.1",
-  "private": true,
+  "version": "0.51.0",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
@@ -11,20 +10,27 @@
     "url": "https://github.com/alveusgg/data/issues"
   },
   "scripts": {
-    "lint": "eslint 'src/**/*.ts'",
-    "lint:fix": "eslint 'src/**/*.ts' --fix",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\"",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:fix": "eslint \"**/*.ts\" --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --check \"**/*.ts\"",
     "test": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "tsx script/build.ts"
   },
   "type": "module",
+  "files": [
+    "build"
+  ],
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "eslint": "^9.18.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.1",
     "prettier": "^3.4.2",
     "tailwindcss": "^3.4.17",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.1",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.21.0",
     "zod": "^3.24.1"
