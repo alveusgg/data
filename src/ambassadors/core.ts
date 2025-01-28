@@ -454,6 +454,42 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  awa: {
+    name: "Awa",
+    alternate: [],
+    commands: ["awa"],
+    species: "wolfHybrid",
+    sex: "Female",
+    birth: "2014",
+    arrival: "2024-05-04",
+    retired: null,
+    enclosure: "wolves",
+    story:
+      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  akela: {
+    name: "Akela",
+    alternate: [],
+    commands: ["akela", "akila"],
+    species: "wolfHybrid",
+    sex: "Male",
+    birth: "2018-01-26",
+    arrival: "2025-01-27",
+    retired: null,
+    enclosure: "wolves",
+    story:
+      "Akela was originally purchased for breeding by a private owner. For several years, he was left to live entirely on his own before being rehomed to Alveus.",
+    mission:
+      "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   snork: {
     name: "Snork",
     alternate: [],
@@ -681,24 +717,6 @@ const ambassadors = {
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  awa: {
-    name: "Awa",
-    alternate: [],
-    commands: ["awa"],
-    species: "wolfHybrid",
-    sex: "Female",
-    birth: "2014",
-    arrival: "2024-05-04",
-    retired: null,
-    enclosure: "wolves",
-    story:
-      "Awa was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
-    mission:
-      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
     clips: [],
     homepage: null,
     plush: null,
