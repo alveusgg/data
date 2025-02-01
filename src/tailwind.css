@@ -116,6 +116,23 @@
   --color-highlight: oklch(from #ff9f1c l c h);
 }
 
+@layer base {
+  details > summary {
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  button,
+  [role="button"] {
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+}
+
 @utility grid-cols-auto-* {
   grid-template-columns: repeat(--value(integer, [integer]), auto);
 }
