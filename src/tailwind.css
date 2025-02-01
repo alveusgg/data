@@ -35,3 +35,11 @@
 
   --color-highlight: oklch(from #ff9f1c l c h);
 }
+
+@utility grid-cols-auto-* {
+  grid-template-columns: repeat(--value(integer, [integer]), auto);
+}
+
+@utility grid-rows-auto-* {
+  grid-template-rows: repeat(--value(integer, [integer]), auto);
+}
