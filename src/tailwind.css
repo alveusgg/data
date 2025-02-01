@@ -1,6 +1,86 @@
 @import "tailwindcss";
 
 @theme {
+  --color-*: initial;
+
+  --color-inherit: inherit;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-black: oklch(0 0 0);
+  --color-white: oklch(1 0 0);
+
+  --color-gray: oklch(from #44403c l c h);
+  --color-gray-50: oklch(from #fafaf9 l c h);
+  --color-gray-100: oklch(from #f5f5f4 l c h);
+  --color-gray-200: oklch(from #e7e5e4 l c h);
+  --color-gray-300: oklch(from #d6d3d1 l c h);
+  --color-gray-400: oklch(from #a8a29e l c h);
+  --color-gray-500: oklch(from #78716c l c h);
+  --color-gray-600: oklch(from #57534e l c h);
+  --color-gray-700: oklch(from #44403c l c h);
+  --color-gray-800: oklch(from #292524 l c h);
+  --color-gray-900: oklch(from #1c1917 l c h);
+
+  --color-red: oklch(from #8f3b3b l c h);
+  --color-red-50: oklch(from #f3e1e1 l c h);
+  --color-red-100: oklch(from #edd2d2 l c h);
+  --color-red-200: oklch(from #e1b5b5 l c h);
+  --color-red-300: oklch(from #d59898 l c h);
+  --color-red-400: oklch(from #c97b7b l c h);
+  --color-red-500: oklch(from #bd5e5e l c h);
+  --color-red-600: oklch(from #ac4646 l c h);
+  --color-red-700: oklch(from #8f3b3b l c h);
+  --color-red-800: oklch(from #682a2a l c h);
+  --color-red-900: oklch(from #401a1a l c h);
+
+  --color-yellow: oklch(from #c1a033 l c h);
+  --color-yellow-50: oklch(from #ffffff l c h);
+  --color-yellow-100: oklch(from #fbf8ef l c h);
+  --color-yellow-200: oklch(from #f2eacf l c h);
+  --color-yellow-300: oklch(from #eadcae l c h);
+  --color-yellow-400: oklch(from #e1ce8e l c h);
+  --color-yellow-500: oklch(from #d8c06e l c h);
+  --color-yellow-600: oklch(from #d0b24e l c h);
+  --color-yellow-700: oklch(from #c1a033 l c h);
+  --color-yellow-800: oklch(from #957c28 l c h);
+  --color-yellow-900: oklch(from #69571c l c h);
+
+  --color-green: oklch(from #578f3b l c h);
+  --color-green-50: oklch(from #e7f3e1 l c h);
+  --color-green-100: oklch(from #dbedd2 l c h);
+  --color-green-200: oklch(from #c4e1b5 l c h);
+  --color-green-300: oklch(from #acd598 l c h);
+  --color-green-400: oklch(from #95c97b l c h);
+  --color-green-500: oklch(from #7ebd5e l c h);
+  --color-green-600: oklch(from #68ac46 l c h);
+  --color-green-700: oklch(from #578f3b l c h);
+  --color-green-800: oklch(from #3f682a l c h);
+  --color-green-900: oklch(from #27401a l c h);
+
+  --color-blue: oklch(from #3b5a8f l c h);
+  --color-blue-50: oklch(from #e1e7f3 l c h);
+  --color-blue-100: oklch(from #d2dced l c h);
+  --color-blue-200: oklch(from #b5c5e1 l c h);
+  --color-blue-300: oklch(from #98aed5 l c h);
+  --color-blue-400: oklch(from #7b98c9 l c h);
+  --color-blue-500: oklch(from #5e81bd l c h);
+  --color-blue-600: oklch(from #466cac l c h);
+  --color-blue-700: oklch(from #3b5a8f l c h);
+  --color-blue-800: oklch(from #2a4168 l c h);
+  --color-blue-900: oklch(from #1a2840 l c h);
+
+  --color-pink: oklch(from #ec4899 l c h);
+  --color-pink-50: oklch(from #fdeef6 l c h);
+  --color-pink-100: oklch(from #fbdceb l c h);
+  --color-pink-200: oklch(from #f8b7d7 l c h);
+  --color-pink-300: oklch(from #f492c2 l c h);
+  --color-pink-400: oklch(from #f06dae l c h);
+  --color-pink-500: oklch(from #ec4899 l c h);
+  --color-pink-600: oklch(from #e4187d l c h);
+  --color-pink-700: oklch(from #b11261 l c h);
+  --color-pink-800: oklch(from #7f0d45 l c h);
+  --color-pink-900: oklch(from #4c0829 l c h);
+
   --color-alveus-tan: oklch(from #faeee6 l c h);
   --color-alveus-tan-50: oklch(from #fdfaf7 l c h);
   --color-alveus-tan-100: oklch(from #faeee6 l c h);
