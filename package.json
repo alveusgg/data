@@ -12,8 +12,8 @@
   "scripts": {
     "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"**/*.ts\" --fix",
-    "format": "prettier --write \"**/*.ts\"",
-    "format:check": "prettier --check \"**/*.ts\"",
+    "format": "prettier --write \"**/*.{ts,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,css}\"",
     "test": "tsc --noEmit",
     "prepare": "husky",
     "prepublishOnly": "tsx script/build.ts"
