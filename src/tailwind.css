@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-alveus-tan: oklch(from #faeee6 l c h);
+  --color-alveus-tan-50: oklch(from #fdfaf7 l c h);
+  --color-alveus-tan-100: oklch(from #faeee6 l c h);
+  --color-alveus-tan-200: oklch(from #f1ceb7 l c h);
+  --color-alveus-tan-300: oklch(from #e7ae88 l c h);
+  --color-alveus-tan-400: oklch(from #de8f5a l c h);
+  --color-alveus-tan-500: oklch(from #d56f2b l c h);
+  --color-alveus-tan-600: oklch(from #a65621 l c h);
+  --color-alveus-tan-700: oklch(from #773e18 l c h);
+  --color-alveus-tan-800: oklch(from #49260f l c h);
+  --color-alveus-tan-900: oklch(from #1a0e05 l c h);
+
+  --color-alveus-green: oklch(from #636a60 l c h);
+  --color-alveus-green-50: oklch(from #e9ebe9 l c h);
+  --color-alveus-green-100: oklch(from #dfe1de l c h);
+  --color-alveus-green-200: oklch(from #cacec8 l c h);
+  --color-alveus-green-300: oklch(from #b5bab3 l c h);
+  --color-alveus-green-400: oklch(from #a0a79e l c h);
+  --color-alveus-green-500: oklch(from #8c9388 l c h);
+  --color-alveus-green-600: oklch(from #777f73 l c h);
+  --color-alveus-green-700: oklch(from #636a60 l c h);
+  --color-alveus-green-800: oklch(from #484d45 l c h);
+  --color-alveus-green-900: oklch(from #2c2f2b l c h);
+
+  --color-fall: oklch(from #834a26 l c h);
+
+  --color-carnival: oklch(from #4e1362 l c h);
+  --color-carnival-700: oklch(from #390e47 l c h);
+  --color-carnival-800: oklch(from #28122f l c h);
+
+  --color-twitch: oklch(from #6441a5 l c h);
+
+  --color-highlight: oklch(from #ff9f1c l c h);
+}
