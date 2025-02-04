@@ -13,6 +13,7 @@ import abbottImageIcon from "../assets/ambassadors/abbott/icon.png";
 
 import akelaImage1 from "../assets/ambassadors/akela/01.png";
 import akelaImage2 from "../assets/ambassadors/akela/02.png";
+import akelaImageIcon from "../assets/ambassadors/akela/icon.png";
 
 import appaImage1 from "../assets/ambassadors/appa/01.jpg";
 import appaImage2 from "../assets/ambassadors/appa/02.jpg";
@@ -583,6 +584,7 @@ export const ambassadorIconImages: Partial<{
   [key in AmbassadorKey]: AmbassadorImage;
 }> = {
   abbott: { src: abbottImageIcon, alt: "" },
+  akela: { src: akelaImageIcon, alt: "" },
   appa: { src: appaImageIcon, alt: "" },
   awa: { src: awaImageIcon, alt: "" },
   barbaraBakedBean: { src: barbaraBakedBeanImageIcon, alt: "" },
