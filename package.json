@@ -23,7 +23,7 @@
     "build"
   ],
   "devDependencies": {
-    "@types/node": "^22.12.0",
+    "@types/node": "^22.13.1",
     "eslint": "^9.19.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
@@ -32,7 +32,7 @@
     "sharp": "^0.33.5",
     "tsx": "^4.19.1",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0",
+    "typescript-eslint": "^8.23.0",
     "zod": "^3.24.1"
   },
   "peerDependencies": {
