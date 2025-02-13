@@ -36,6 +36,8 @@ import bbImage3 from "../assets/ambassadors/bb/03.jpg";
 import bbImage4 from "../assets/ambassadors/bb/04.jpg";
 import bbImageIcon from "../assets/ambassadors/bb/icon.png";
 
+import bettyImage1 from "../assets/ambassadors/betty/01.jpg";
+
 import chipsAhoyImage1 from "../assets/ambassadors/chipsAhoy/01.jpg";
 import chipsAhoyImage2 from "../assets/ambassadors/chipsAhoy/02.jpg";
 import chipsImageIcon from "../assets/ambassadors/chipsAhoy/icon.png";
@@ -293,6 +295,9 @@ const ambassadorImages: {
     { src: bbImage2, alt: "BB the Spanish Orange Isopods" },
     { src: bbImage3, alt: "BB the Spanish Orange Isopods" },
     { src: bbImage4, alt: "BB the Spanish Orange Isopods" },
+  ],
+  betty: [
+    { src: bettyImage1, alt: "Betty the Cochin Chicken", position: "50% 0%" },
   ],
   chipsAhoy: [
     { src: chipsAhoyImage1, alt: "Chips Ahoy the Rat" },
