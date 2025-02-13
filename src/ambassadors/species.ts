@@ -101,6 +101,20 @@ const species = {
     },
     class: "aves",
   },
+  chickenCochin: {
+    name: "Cochin Chicken",
+    scientificName: "Gallus gallus domesticus",
+    iucn: { id: null, status: "NE" },
+    native: {
+      text: "China (Domesticated)",
+      source: "https://en.wikipedia.org/wiki/Cochin_chicken",
+    },
+    lifespan: {
+      captivity: { min: 8, max: 10 },
+      source: "https://www.sfzoo.org/cochin-chicken/",
+    },
+    class: "aves",
+  },
   chickenHalfBrahmaHalfSaipan: {
     name: "Half Dark Brahma, Half Saipan Chicken",
     scientificName: "Gallus gallus domesticus",
