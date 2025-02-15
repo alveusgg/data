@@ -9,6 +9,7 @@ import {
   readFile,
   stat,
   unlink,
+  copyFile,
 } from "node:fs/promises";
 
 import optimize from "./optimize";
@@ -64,4 +65,13 @@ const processed = new Set(optimized.values());
 const files = glob(`${src}/**/*.ts`);
 for await (const file of files)
   processed.add(await imports(file, file.replace(src, dest), optimized));
+
+const css = glob(`${src}/**/*.css`);
+for await (const file of css) {
+  const path = file.replace(src, dest);
+  await mkdir(dirname(path), { recursive: true });
+  await copyFile(file, path);
+  processed.add(path);
+}
+
 await clean(dest, processed);
