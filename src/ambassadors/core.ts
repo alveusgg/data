@@ -266,7 +266,7 @@ const ambassadors = {
     name: "Nugget",
     alternate: [],
     commands: ["nugget"],
-    species: "chickenOliveEgger",
+    species: "chickenAmeraucana",
     sex: "Female",
     birth: "2019",
     arrival: "2021-04",
