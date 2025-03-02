@@ -76,12 +76,28 @@ jobs:
           scope: '@alveusgg'
 
       - name: Cache optimized assets
+        id: cache
         uses: actions/cache@v4
         with:
           path: build/assets
           key: optimized-assets-${{ hashFiles('src/assets/**') }}
           restore-keys: |
             optimized-assets-
+
+      - name: Restore latest assets
+        if: ${{ steps.cache.outputs.cache-hit == '' }}
+        run: |
+          set -e -o pipefail
+          echo "No GitHub cache hit, restoring assets from latest package release"
+          mkdir -p build/assets/restore
+          cd build/assets/restore
+          npm pack @alveusgg/data@latest
+          tar -xf *.tgz --strip-components=1
+          mv build/assets/* ../
+          cd ..
+          rm -rf restore
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
