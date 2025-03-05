@@ -29,6 +29,8 @@ Finally, install the package as normal using `npm install @alveusgg/data`.
 
 To work with this repository locally, install the dependencies with `npm ci`.
 
+If you're using VSCode, add `"typescript.tsdk": "node_modules/typescript/lib"` to `.vscode/settings.json` to ensure you're using the correct TypeScript version.
+
 To test changes locally across the Alveus.gg projects, update the version in this repository using
 `npm version --no-git-tag-version preminor` (use `prepatch` instead if the change is a fix, or
 `prerelease` for repeat testing), and install this repository as a file-based dependency:
