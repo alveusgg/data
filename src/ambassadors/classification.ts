@@ -3,6 +3,7 @@ const classificationOrder = [
   "Birds",
   "Reptiles & Amphibians",
   "Invertebrates",
+  "Plants",
 ] as const;
 
 export type Classification = (typeof classificationOrder)[number];
@@ -16,6 +17,7 @@ const classes = {
   diplopoda: "Invertebrates",
   insecta: "Invertebrates",
   malacostraca: "Invertebrates",
+  plantae: "Plants",
 } as const satisfies Record<string, Classification>;
 
 export type Class = keyof typeof classes;
