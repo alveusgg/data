@@ -511,6 +511,62 @@ const species = {
     },
     class: "mammalia",
   },
+
+  plantVeitchPitcher: {
+    name: "Veitch's Pitcher-plant",
+    scientificName: "Nepenthes veitchii",
+    iucn: { id: 39709, status: "LC" },
+    native: {
+      text: "Borneo (lowland rain forests)",
+      source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
+  plantForkLeavedSundew: {
+    name: "Fork-leaved Sundew",
+    scientificName: "Drosera binata var. dichotoma",
+    iucn: { id: 66437287, status: "LC" },
+    native: {
+      text: "Australia, New Zealand, and Tasmania",
+      source: "https://en.wikipedia.org/wiki/Drosera_binata",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
+  plantMexicanButterwort: {
+    name: "Mexican Butterwort",
+    scientificName: "Pinguicula 'John Rizzi'",
+    iucn: { id: null, status: "NE" },
+    native: {
+      text: "Mexico",
+      source: "https://en.wikipedia.org/wiki/Pinguicula_moranensis",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
+  plantCorpseFlower: {
+    name: "Corpse Flower",
+    scientificName: "Amorphophallus titanum",
+    iucn: { id: 118042834, status: "EN" },
+    native: {
+      text: "Sumatra, Indonesia",
+      source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
+  plantVenusFlytrap: {
+    name: "Venus Flytrap",
+    scientificName: "Dionaea muscipula",
+    iucn: { id: 39636, status: "VU" },
+    native: {
+      text: "North and South Carolina (subtropical wetlands)",
+      source: "https://en.wikipedia.org/wiki/Venus_flytrap",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
 } as const satisfies Record<string, Species>;
 
 export type SpeciesKey = keyof typeof species;
