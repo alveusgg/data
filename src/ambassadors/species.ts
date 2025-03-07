@@ -567,6 +567,17 @@ const species = {
     lifespan: { source: "" },
     class: "plantae",
   },
+  plantFlaskPitcher: {
+    name: "Flask-Shaped Pitcher-Plant",
+    scientificName: "Nepenthes ampullaria",
+    iucn: { id: 39640, status: "LC" },
+    native: {
+      text: "Borneo (lowland rain forests)",
+      source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria",
+    },
+    lifespan: { source: "" },
+    class: "plantae",
+  },
 } as const satisfies Record<string, Species>;
 
 export type SpeciesKey = keyof typeof species;

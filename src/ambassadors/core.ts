@@ -845,6 +845,24 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  drew: {
+    name: "Drew",
+    alternate: [],
+    commands: ["drew"],
+    species: "plantFlaskPitcher",
+    sex: null,
+    birth: null,
+    arrival: "2025-03-04",
+    retired: null,
+    enclosure: "greenhouse",
+    story:
+      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+    mission:
+      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
 
   // Retired ambassadors
   orion: {

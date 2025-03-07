@@ -54,6 +54,9 @@ import deweyImage1 from "../assets/ambassadors/dewey/01.jpg";
 import deweyImage2 from "../assets/ambassadors/dewey/02.jpg";
 import deweyImage3 from "../assets/ambassadors/dewey/03.jpg";
 
+import drewImage1 from "../assets/ambassadors/drew/01.jpg";
+import drewImage2 from "../assets/ambassadors/drew/02.jpg";
+
 import duckyImage1 from "../assets/ambassadors/ducky/01.jpg";
 import duckyImage2 from "../assets/ambassadors/ducky/02.jpg";
 import duckyImageIcon from "../assets/ambassadors/ducky/icon.png";
@@ -337,6 +340,10 @@ const ambassadorImages: {
     { src: deweyImage1, alt: "Dewey the Fork-Leaved Sundew Plant" },
     { src: deweyImage2, alt: "Dewey the Fork-Leaved Sundew Plant" },
     { src: deweyImage3, alt: "Dewey the Fork-Leaved Sundew Plant" },
+  ],
+  drew: [
+    { src: drewImage1, alt: "Drew the Flask-Shaped Pitcher-Plant" },
+    { src: drewImage2, alt: "Drew the Flask-Shaped Pitcher-Plant" },
   ],
   ducky: [
     { src: duckyImage1, alt: "Ducky the Rubber Ducky Isopods" },
