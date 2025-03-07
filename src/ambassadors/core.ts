@@ -766,7 +766,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
@@ -784,7 +784,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
@@ -802,7 +802,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
@@ -820,7 +820,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
@@ -838,7 +838,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
@@ -856,7 +856,7 @@ const ambassadors = {
     retired: null,
     enclosure: "greenhouse",
     story:
-      "Our plants were donated from a carnivorous and rare plant nursery local to Alveus.",
+      "Our plants were acquired from a carnivorous and rare plant nursery local to Alveus.",
     mission:
       "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
     clips: [],
