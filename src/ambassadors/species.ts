@@ -513,7 +513,7 @@ const species = {
   },
 
   plantVeitchPitcher: {
-    name: "Veitch's Pitcher-plant",
+    name: "Veitch's Pitcher-Plant",
     scientificName: "Nepenthes veitchii",
     iucn: { id: 39709, status: "LC" },
     native: {
@@ -524,7 +524,7 @@ const species = {
     class: "plantae",
   },
   plantForkLeavedSundew: {
-    name: "Fork-leaved Sundew",
+    name: "Fork-Leaved Sundew",
     scientificName: "Drosera binata var. dichotoma",
     iucn: { id: 66437287, status: "LC" },
     native: {

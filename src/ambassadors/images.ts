@@ -478,9 +478,9 @@ const ambassadorImages: {
     { src: patchyImage2, alt: "Patchy the Ball Python" },
   ],
   pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
-  pitchJars: [
-    { src: pitchJarsImage1, alt: "Pitch Jars the Veitch's Pitcher-Plant" },
-    { src: pitchJarsImage2, alt: "Pitch Jars the Veitch's Pitcher-Plant" },
+  pitchjars: [
+    { src: pitchJarsImage1, alt: "PitchJars the Veitch's Pitcher-Plant" },
+    { src: pitchJarsImage2, alt: "PitchJars the Veitch's Pitcher-Plant" },
   ],
   polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
   puppy: [

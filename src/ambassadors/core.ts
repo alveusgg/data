@@ -755,8 +755,8 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  pitchJars: {
-    name: "Pitch Jars",
+  pitchjars: {
+    name: "PitchJars",
     alternate: [],
     commands: ["pitchjars"],
     species: "plantVeitchPitcher",
