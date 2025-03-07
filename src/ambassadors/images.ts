@@ -543,7 +543,13 @@ const ambassadorImages: {
     { src: snorkImage1, alt: "Snork the Chinchilla", position: "0% 50%" },
     { src: snorkImage2, alt: "Snork the Chinchilla", position: "50% 0%" },
   ],
-  stinky: [{ src: stinkyImage1, alt: "Stinky the Corpse Flower Plant" }],
+  stinky: [
+    {
+      src: stinkyImage1,
+      alt: "Stinky the Corpse Flower Plant",
+      position: "50% 75%",
+    },
+  ],
   stompy: [
     { src: stompyImage1, alt: "Stompy the Emu", position: "50% 30%" },
     { src: stompyImage2, alt: "Stompy the Emu" },
