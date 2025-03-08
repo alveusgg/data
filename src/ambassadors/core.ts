@@ -768,7 +768,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
@@ -786,7 +786,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
@@ -804,7 +804,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
@@ -822,7 +822,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
@@ -840,7 +840,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
@@ -858,7 +858,7 @@ const ambassadors = {
     story:
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
-      "They are an ambassador for the conservation of carnivorous plants and reducing the poaching of wild plants.",
+      "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
     homepage: null,
     plush: null,
