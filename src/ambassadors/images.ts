@@ -38,6 +38,10 @@ import bbImageIcon from "../assets/ambassadors/bb/icon.png";
 
 import bettyImage1 from "../assets/ambassadors/betty/01.jpg";
 
+import buttImage1 from "../assets/ambassadors/butt/01.jpg";
+import buttImage2 from "../assets/ambassadors/butt/02.jpg";
+import buttImage3 from "../assets/ambassadors/butt/03.jpg";
+
 import chipsAhoyImage1 from "../assets/ambassadors/chipsAhoy/01.jpg";
 import chipsAhoyImage2 from "../assets/ambassadors/chipsAhoy/02.jpg";
 import chipsImageIcon from "../assets/ambassadors/chipsAhoy/icon.png";
@@ -45,6 +49,13 @@ import chipsImageIcon from "../assets/ambassadors/chipsAhoy/icon.png";
 import coconutImage1 from "../assets/ambassadors/coconut/01.png";
 import coconutImage2 from "../assets/ambassadors/coconut/02.jpg";
 import coconutImageIcon from "../assets/ambassadors/coconut/icon.png";
+
+import deweyImage1 from "../assets/ambassadors/dewey/01.jpg";
+import deweyImage2 from "../assets/ambassadors/dewey/02.jpg";
+import deweyImage3 from "../assets/ambassadors/dewey/03.jpg";
+
+import drewImage1 from "../assets/ambassadors/drew/01.jpg";
+import drewImage2 from "../assets/ambassadors/drew/02.jpg";
 
 import duckyImage1 from "../assets/ambassadors/ducky/01.jpg";
 import duckyImage2 from "../assets/ambassadors/ducky/02.jpg";
@@ -90,6 +101,10 @@ import martyImage1 from "../assets/ambassadors/marty/01.jpg";
 import martyImage2 from "../assets/ambassadors/marty/02.jpg";
 import martyImage3 from "../assets/ambassadors/marty/03.jpg";
 import martyImageIcon from "../assets/ambassadors/marty/icon.png";
+
+import martyMcflyImage1 from "../assets/ambassadors/martyMcfly/01.jpg";
+import martyMcflyImage2 from "../assets/ambassadors/martyMcfly/02.jpg";
+import martyMcflyImage3 from "../assets/ambassadors/martyMcfly/03.jpg";
 
 import miaImage1 from "../assets/ambassadors/mia/01.jpg";
 import miaImage2 from "../assets/ambassadors/mia/02.jpg";
@@ -143,6 +158,9 @@ import patchyImageIcon from "../assets/ambassadors/patchy/icon.png";
 import picklesImage1 from "../assets/ambassadors/pickles/01.jpg";
 import picklesImageIcon from "../assets/ambassadors/pickles/icon.png";
 
+import pitchJarsImage1 from "../assets/ambassadors/pitchJars/01.jpg";
+import pitchJarsImage2 from "../assets/ambassadors/pitchJars/02.jpg";
+
 import pollyImage1 from "../assets/ambassadors/polly/01.jpg";
 import pollyImageIcon from "../assets/ambassadors/polly/icon.png";
 
@@ -183,6 +201,8 @@ import sirenImageIcon from "../assets/ambassadors/siren/icon.png";
 import snorkImage1 from "../assets/ambassadors/snork/01.jpg";
 import snorkImage2 from "../assets/ambassadors/snork/02.jpg";
 import snorkImageIcon from "../assets/ambassadors/snork/icon.png";
+
+import stinkyImage1 from "../assets/ambassadors/stinky/01.jpg";
 
 import stompyImage1 from "../assets/ambassadors/stompy/01.jpg";
 import stompyImage2 from "../assets/ambassadors/stompy/02.jpg";
@@ -299,6 +319,11 @@ const ambassadorImages: {
   betty: [
     { src: bettyImage1, alt: "Betty the Cochin Chicken", position: "50% 0%" },
   ],
+  butt: [
+    { src: buttImage1, alt: "Butt the Mexican Butterwort Plant" },
+    { src: buttImage2, alt: "Butt the Mexican Butterwort Plant" },
+    { src: buttImage3, alt: "Butt the Mexican Butterwort Plant" },
+  ],
   chipsAhoy: [
     { src: chipsAhoyImage1, alt: "Chips Ahoy the Rat" },
     { src: chipsAhoyImage2, alt: "Chips Ahoy the Rat" },
@@ -310,6 +335,15 @@ const ambassadorImages: {
       position: "50% 30%",
     },
     { src: coconutImage2, alt: "Coconut the American Crow" },
+  ],
+  dewey: [
+    { src: deweyImage1, alt: "Dewey the Fork-Leaved Sundew Plant" },
+    { src: deweyImage2, alt: "Dewey the Fork-Leaved Sundew Plant" },
+    { src: deweyImage3, alt: "Dewey the Fork-Leaved Sundew Plant" },
+  ],
+  drew: [
+    { src: drewImage1, alt: "Drew the Flask-Shaped Pitcher-Plant" },
+    { src: drewImage2, alt: "Drew the Flask-Shaped Pitcher-Plant" },
   ],
   ducky: [
     { src: duckyImage1, alt: "Ducky the Rubber Ducky Isopods" },
@@ -369,6 +403,11 @@ const ambassadorImages: {
     { src: martyImage1, alt: "Marty the Zebra Isopods", position: "50% 100%" },
     { src: martyImage2, alt: "Marty the Zebra Isopods" },
     { src: martyImage3, alt: "Marty the Zebra Isopods" },
+  ],
+  martyMcfly: [
+    { src: martyMcflyImage1, alt: "Marty McFly the Venus Flytrap Plant" },
+    { src: martyMcflyImage2, alt: "Marty McFly the Venus Flytrap Plant" },
+    { src: martyMcflyImage3, alt: "Marty McFly the Venus Flytrap Plant" },
   ],
   mia: [
     { src: miaImage1, alt: "Mia the African Grey", position: "50% 10%" },
@@ -446,6 +485,10 @@ const ambassadorImages: {
     { src: patchyImage2, alt: "Patchy the Ball Python" },
   ],
   pickles: [{ src: picklesImage1, alt: "Pickles the Vinegaroon" }],
+  pitchjars: [
+    { src: pitchJarsImage1, alt: "PitchJars the Veitch's Pitcher-Plant" },
+    { src: pitchJarsImage2, alt: "PitchJars the Veitch's Pitcher-Plant" },
+  ],
   polly: [{ src: pollyImage1, alt: "Polly the Silkie Chicken" }],
   puppy: [
     { src: puppyImage1, alt: "Puppy the Emperor Scorpion" },
@@ -499,6 +542,13 @@ const ambassadorImages: {
   snork: [
     { src: snorkImage1, alt: "Snork the Chinchilla", position: "0% 50%" },
     { src: snorkImage2, alt: "Snork the Chinchilla", position: "50% 0%" },
+  ],
+  stinky: [
+    {
+      src: stinkyImage1,
+      alt: "Stinky the Corpse Flower Plant",
+      position: "50% 75%",
+    },
   ],
   stompy: [
     { src: stompyImage1, alt: "Stompy the Emu", position: "50% 30%" },
