@@ -52,3 +52,17 @@ Once the pull request is merged, update the dependency in the website and extens
 
 - Website: `cd apps/website && pnpm add @alveusgg/data@latest`
 - Extension: `pnpm add @alveusgg/data@latest`
+
+### Animal Quest Videos
+
+New Animal Quest videos are uploaded to the Alveus.gg Cloudflare Stream account.
+
+Before being uploaded, all intro/outro content should be trimmed from the video
+(`ffmpeg -ss <hh:mm:ss.nnn> -i <input> -to <hh:mm:ss.nnn> -map 0 -c copy <output>` can be used to
+trim without re-encoding [`-to` is optional if no end trimming is needed]).
+
+Once uploaded and processed, MP4 downloads should be enabled for the video, and English
+auto-generated captions should be added. All other details should be left as-is (no signed URLs,
+no creator, no public details).
+
+A copy of each trimmed episode should also be uploaded to the shared Google Drive folder.
