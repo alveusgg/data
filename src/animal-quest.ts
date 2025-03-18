@@ -6,7 +6,7 @@ type HostKey = keyof typeof hosts;
 export const hosts = {
   maya: {
     name: "Maya Higa",
-    link: "https://www.alveussanctuary.org/about/maya",
+    link: "https://www.alveussanctuary.org/about/staff#maya",
   },
 } as const satisfies Record<string, Host>;
 
