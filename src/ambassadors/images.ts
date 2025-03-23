@@ -15,6 +15,7 @@ import abbottImageEmote from "../assets/ambassadors/abbott/emote.png";
 import akelaImage1 from "../assets/ambassadors/akela/01.png";
 import akelaImage2 from "../assets/ambassadors/akela/02.png";
 import akelaImageIcon from "../assets/ambassadors/akela/icon.png";
+import akelaImageBadge from "../assets/ambassadors/akela/badge.png";
 
 import appaImage1 from "../assets/ambassadors/appa/01.jpg";
 import appaImage2 from "../assets/ambassadors/appa/02.jpg";
@@ -22,11 +23,13 @@ import appaImage3 from "../assets/ambassadors/appa/03.jpg";
 import appaImage4 from "../assets/ambassadors/appa/04.jpg";
 import appaImageIcon from "../assets/ambassadors/appa/icon.png";
 import appaImageEmote from "../assets/ambassadors/appa/emote.png";
+import appaImageBadge from "../assets/ambassadors/appa/badge.png";
 
 import awaImage1 from "../assets/ambassadors/awa/01.jpg";
 import awaImage2 from "../assets/ambassadors/awa/02.jpg";
 import awaImageIcon from "../assets/ambassadors/awa/icon.png";
 import awaImageEmote from "../assets/ambassadors/awa/emote.png";
+import awaImageBadge from "../assets/ambassadors/awa/badge.png";
 
 import barbaraBakedBeanImage1 from "../assets/ambassadors/barbaraBakedBean/01.jpg";
 import barbaraBakedBeanImage2 from "../assets/ambassadors/barbaraBakedBean/02.jpg";
@@ -40,6 +43,7 @@ import bbImage3 from "../assets/ambassadors/bb/03.jpg";
 import bbImage4 from "../assets/ambassadors/bb/04.jpg";
 import bbImageIcon from "../assets/ambassadors/bb/icon.png";
 import bbImageEmote from "../assets/ambassadors/bb/emote.png";
+import bbImageBadge from "../assets/ambassadors/bb/badge.png";
 
 import bettyImage1 from "../assets/ambassadors/betty/01.jpg";
 import bettyImageEmote from "../assets/ambassadors/betty/emote.png";
@@ -85,6 +89,7 @@ import georgieImage4 from "../assets/ambassadors/georgie/04.png";
 import georgieImage5 from "../assets/ambassadors/georgie/05.jpg";
 import georgieImageMerch from "../assets/ambassadors/georgie/merch.jpg";
 import georgieImageIcon from "../assets/ambassadors/georgie/icon.png";
+import georgieImageBadge from "../assets/ambassadors/georgie/badge.png";
 
 import hankMrMctrainImage1 from "../assets/ambassadors/hankMrMctrain/01.jpg";
 import hankMrMctrainImage2 from "../assets/ambassadors/hankMrMctrain/02.jpg";
@@ -102,6 +107,7 @@ import henriqueImage2 from "../assets/ambassadors/henrique/02.jpg";
 import henriqueImage3 from "../assets/ambassadors/henrique/03.jpg";
 import henriqueImageIcon from "../assets/ambassadors/henrique/icon.png";
 import henriqueImageEmote from "../assets/ambassadors/henrique/emote.png";
+import henriqueImageBadge from "../assets/ambassadors/henrique/badge.png";
 
 import jalapenoImage1 from "../assets/ambassadors/jalapeno/01.jpg";
 import jalapenoImage2 from "../assets/ambassadors/jalapeno/02.jpg";
@@ -110,6 +116,7 @@ import jalapenoImage4 from "../assets/ambassadors/jalapeno/04.png";
 import jalapenoImage5 from "../assets/ambassadors/jalapeno/05.jpg";
 import jalapenoImageIcon from "../assets/ambassadors/jalapeno/icon.png";
 import jalapenoImageEmote from "../assets/ambassadors/jalapeno/emote.png";
+import jalapenoImageBadge from "../assets/ambassadors/jalapeno/badge.png";
 
 import martyImage1 from "../assets/ambassadors/marty/01.jpg";
 import martyImage2 from "../assets/ambassadors/marty/02.jpg";
@@ -120,6 +127,7 @@ import martyImageEmote from "../assets/ambassadors/marty/emote.png";
 import martyMcflyImage1 from "../assets/ambassadors/martyMcfly/01.jpg";
 import martyMcflyImage2 from "../assets/ambassadors/martyMcfly/02.jpg";
 import martyMcflyImage3 from "../assets/ambassadors/martyMcfly/03.jpg";
+import martyMcflyImageBadge from "../assets/ambassadors/martyMcfly/badge.png";
 
 import miaImage1 from "../assets/ambassadors/mia/01.jpg";
 import miaImage2 from "../assets/ambassadors/mia/02.jpg";
@@ -194,6 +202,7 @@ import puppyImage2 from "../assets/ambassadors/puppy/02.jpg";
 import puppyImage3 from "../assets/ambassadors/puppy/03.jpg";
 import puppyImageIcon from "../assets/ambassadors/puppy/icon.png";
 import puppyImageEmote from "../assets/ambassadors/puppy/emote.png";
+import puppyImageBadge from "../assets/ambassadors/puppy/badge.png";
 
 import pushPopImage1 from "../assets/ambassadors/pushPop/01.jpg";
 import pushPopImage2 from "../assets/ambassadors/pushPop/02.jpg";
@@ -201,6 +210,7 @@ import pushPopImage3 from "../assets/ambassadors/pushPop/03.jpg";
 import pushPopImage4 from "../assets/ambassadors/pushPop/04.jpg";
 import pushPopImageIcon from "../assets/ambassadors/pushPop/icon.png";
 import pushPopImageEmote from "../assets/ambassadors/pushPop/emote.png";
+import pushPopImageBadge from "../assets/ambassadors/pushPop/badge.png";
 
 import reedImage1 from "../assets/ambassadors/reed/01.jpg";
 import reedImage2 from "../assets/ambassadors/reed/02.jpg";
@@ -209,6 +219,7 @@ import reedImage4 from "../assets/ambassadors/reed/04.jpg";
 import reedImage5 from "../assets/ambassadors/reed/05.jpg";
 import reedImageIcon from "../assets/ambassadors/reed/icon.png";
 import reedImageEmote from "../assets/ambassadors/reed/emote.png";
+import reedImageBadge from "../assets/ambassadors/reed/badge.png";
 
 import serranoImage1 from "../assets/ambassadors/serrano/01.jpg";
 import serranoImage2 from "../assets/ambassadors/serrano/02.jpg";
@@ -227,6 +238,7 @@ import sirenImage7 from "../assets/ambassadors/siren/07.jpg";
 import sirenImageMerch from "../assets/ambassadors/siren/merch.png";
 import sirenImageIcon from "../assets/ambassadors/siren/icon.png";
 import sirenImageEmote from "../assets/ambassadors/siren/emote.png";
+import sirenImageBadge from "../assets/ambassadors/siren/badge.png";
 
 import snorkImage1 from "../assets/ambassadors/snork/01.jpg";
 import snorkImage2 from "../assets/ambassadors/snork/02.jpg";
@@ -244,12 +256,14 @@ import stompyImage6 from "../assets/ambassadors/stompy/06.jpg";
 import stompyImageMerch from "../assets/ambassadors/stompy/merch.jpg";
 import stompyImageIcon from "../assets/ambassadors/stompy/icon.png";
 import stompyImageEmote from "../assets/ambassadors/stompy/emote.png";
+import stompyImageBadge from "../assets/ambassadors/stompy/badge.png";
 
 import ticoImage1 from "../assets/ambassadors/tico/01.jpg";
 import ticoImage2 from "../assets/ambassadors/tico/02.jpg";
 import ticoImage3 from "../assets/ambassadors/tico/03.jpg";
 import ticoImageIcon from "../assets/ambassadors/tico/icon.png";
 import ticoImageEmote from "../assets/ambassadors/tico/emote.png";
+import ticoImageBadge from "../assets/ambassadors/tico/badge.png";
 
 import timberImage1 from "../assets/ambassadors/timber/01.jpg";
 import timberImage2 from "../assets/ambassadors/timber/02.jpg";
@@ -264,6 +278,7 @@ import toasterStrudelImage4 from "../assets/ambassadors/toasterStrudel/04.jpg";
 import toasterStrudelImage5 from "../assets/ambassadors/toasterStrudel/05.jpg";
 import toasterStrudelImageIcon from "../assets/ambassadors/toasterStrudel/icon.png";
 import toasterStrudelImageEmote from "../assets/ambassadors/toasterStrudel/emote.png";
+import toasterStrudelImageBadge from "../assets/ambassadors/toasterStrudel/badge.png";
 
 import tortelliniImage1 from "../assets/ambassadors/tortellini/01.jpg";
 import tortelliniImage2 from "../assets/ambassadors/tortellini/02.jpg";
@@ -282,6 +297,7 @@ import winnieTheMooImage7 from "../assets/ambassadors/winnieTheMoo/07.jpg";
 import winnieTheMooImageMerch from "../assets/ambassadors/winnieTheMoo/merch.png";
 import winnieTheMooImageIcon from "../assets/ambassadors/winnieTheMoo/icon.png";
 import winnieTheMooImageEmote from "../assets/ambassadors/winnieTheMoo/emote.png";
+import winnieTheMooImageBadge from "../assets/ambassadors/winnieTheMoo/badge.png";
 
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
@@ -787,4 +803,34 @@ export const getAmbassadorEmoteImage = (
 ): AmbassadorImage | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
   return ambassadorEmoteImages[ambassador];
+};
+
+// Marked as Partial as these images are from the Twitch channel
+// sub badges and are not created for every ambassador.
+export const ambassadorBadgeImages: Partial<{
+  [key in AmbassadorKey]: AmbassadorImage;
+}> = {
+  akela: { src: akelaImageBadge, alt: "" },
+  appa: { src: appaImageBadge, alt: "" },
+  awa: { src: awaImageBadge, alt: "" },
+  bb: { src: bbImageBadge, alt: "" },
+  georgie: { src: georgieImageBadge, alt: "" },
+  henrique: { src: henriqueImageBadge, alt: "" },
+  jalapeno: { src: jalapenoImageBadge, alt: "" },
+  martyMcfly: { src: martyMcflyImageBadge, alt: "" },
+  puppy: { src: puppyImageBadge, alt: "" },
+  pushPop: { src: pushPopImageBadge, alt: "" },
+  reed: { src: reedImageBadge, alt: "" },
+  siren: { src: sirenImageBadge, alt: "" },
+  stompy: { src: stompyImageBadge, alt: "" },
+  tico: { src: ticoImageBadge, alt: "" },
+  toasterStrudel: { src: toasterStrudelImageBadge, alt: "" },
+  winnieTheMoo: { src: winnieTheMooImageBadge, alt: "" },
+};
+
+export const getAmbassadorBadgeImage = (
+  ambassador: AmbassadorKey | string,
+): AmbassadorImage | undefined => {
+  if (!isAmbassadorKey(ambassador)) return undefined;
+  return ambassadorBadgeImages[ambassador];
 };
