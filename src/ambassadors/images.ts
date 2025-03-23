@@ -44,7 +44,7 @@ import buttImage3 from "../assets/ambassadors/butt/03.jpg";
 
 import chipsAhoyImage1 from "../assets/ambassadors/chipsAhoy/01.jpg";
 import chipsAhoyImage2 from "../assets/ambassadors/chipsAhoy/02.jpg";
-import chipsImageIcon from "../assets/ambassadors/chipsAhoy/icon.png";
+import chipsAhoyImageIcon from "../assets/ambassadors/chipsAhoy/icon.png";
 
 import coconutImage1 from "../assets/ambassadors/coconut/01.png";
 import coconutImage2 from "../assets/ambassadors/coconut/02.jpg";
@@ -624,6 +624,12 @@ const ambassadorImages: {
   ],
 };
 
+export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
+  if (!isAmbassadorKey(ambassador)) return undefined;
+  return ambassadorImages[ambassador];
+}) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
+  ((ambassador: string) => AmbassadorImages | undefined);
+
 export const ambassadorMerchImages: {
   [key in AmbassadorWithPlushKey<Ambassadors>]: AmbassadorImage;
 } = {
@@ -632,6 +638,14 @@ export const ambassadorMerchImages: {
   stompy: { src: stompyImageMerch, alt: "" },
   winnieTheMoo: { src: winnieTheMooImageMerch, alt: "" },
 };
+
+export const getAmbassadorMerchImage = ((
+  ambassador: AmbassadorWithPlushKey<Ambassadors> | string,
+) => {
+  if (!isAmbassadorWithPlushKey<Ambassadors>(ambassador)) return undefined;
+  return ambassadorMerchImages[ambassador];
+}) as ((ambassador: AmbassadorWithPlushKey<Ambassadors>) => AmbassadorImage) &
+  ((ambassador: string) => AmbassadorImage | undefined);
 
 // Marked as Partial as these images are provided by a community member,
 // LazyGoose, and so might not exist when adding a new ambassador.
@@ -644,7 +658,7 @@ export const ambassadorIconImages: Partial<{
   awa: { src: awaImageIcon, alt: "" },
   barbaraBakedBean: { src: barbaraBakedBeanImageIcon, alt: "" },
   bb: { src: bbImageIcon, alt: "" },
-  chipsAhoy: { src: chipsImageIcon, alt: "" },
+  chipsAhoy: { src: chipsAhoyImageIcon, alt: "" },
   coconut: { src: coconutImageIcon, alt: "" },
   ducky: { src: duckyImageIcon, alt: "" },
   fenn: { src: fennImageIcon, alt: "" },
@@ -680,25 +694,9 @@ export const ambassadorIconImages: Partial<{
   winnieTheMoo: { src: winnieTheMooImageIcon, alt: "" },
 };
 
-export const getAmbassadorImages = ((ambassador: AmbassadorKey | string) => {
+export const getAmbassadorIconImage = (
+  ambassador: AmbassadorKey | string,
+): AmbassadorImage | undefined => {
   if (!isAmbassadorKey(ambassador)) return undefined;
-
-  return ambassadorImages[ambassador];
-}) as ((ambassador: AmbassadorKey) => AmbassadorImages) &
-  ((ambassador: string) => AmbassadorImages | undefined);
-
-export const getAmbassadorMerchImage = ((
-  ambassador: AmbassadorWithPlushKey<Ambassadors> | string,
-) => {
-  if (!isAmbassadorWithPlushKey<Ambassadors>(ambassador)) return undefined;
-
-  return ambassadorMerchImages[ambassador];
-}) as ((ambassador: AmbassadorWithPlushKey<Ambassadors>) => AmbassadorImage) &
-  ((ambassador: string) => AmbassadorImage | undefined);
-
-export const getAmbassadorIconImage = ((ambassador: AmbassadorKey | string) => {
-  if (!isAmbassadorKey(ambassador)) return undefined;
-
   return ambassadorIconImages[ambassador];
-}) as ((ambassador: AmbassadorKey) => AmbassadorImage | undefined) &
-  ((ambassador: string) => AmbassadorImage | undefined);
+};
