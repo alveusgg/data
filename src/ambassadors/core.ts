@@ -608,7 +608,7 @@ const ambassadors = {
     alternate: ["Poppy"],
     commands: ["pushpop", "poppy"],
     species: "tortoiseSulcata",
-    sex: null, // Unknown, assumed female
+    sex: "Female",
     birth: "2019",
     arrival: "2024-02",
     retired: null,
