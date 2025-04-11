@@ -608,7 +608,7 @@ const ambassadors = {
     alternate: ["Poppy"],
     commands: ["pushpop", "poppy"],
     species: "tortoiseSulcata",
-    sex: null, // Unknown, assumed female
+    sex: "Female",
     birth: "2019",
     arrival: "2024-02",
     retired: null,
@@ -632,7 +632,7 @@ const ambassadors = {
     alternate: [],
     commands: ["toast", "toaster"],
     species: "skinkBlueTongued",
-    sex: "Male",
+    sex: null,
     birth: "2022-07-04",
     arrival: "2022-11",
     retired: null,
@@ -640,7 +640,7 @@ const ambassadors = {
     story:
       "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
-      "He is an ambassador for how human development and invasive species can affect natural habitats and native species.",
+      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
     clips: [],
     homepage: null,
     plush: null,
