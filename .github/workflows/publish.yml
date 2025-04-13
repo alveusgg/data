@@ -110,6 +110,9 @@ jobs:
           CURRENT_VERSION=$(jq -r .version package.json)
           NEW_VERSION="$CURRENT_VERSION-pre.${{ github.event.after }}"
           npm version --no-git-tag-version "$NEW_VERSION"
+      
+      - name: Build package
+        run: npm run build
 
       - name: Publish package
         run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}

@@ -15,8 +15,8 @@
     "format": "prettier --write \"**/*.{ts,css}\"",
     "format:check": "prettier --check \"**/*.{ts,css}\"",
     "test": "tsc --noEmit",
-    "prepare": "husky",
-    "prepublishOnly": "tsx script/build.ts"
+    "build": "tsup",
+    "prepare": "husky"
   },
   "type": "module",
   "files": [
@@ -30,6 +30,7 @@
     "prettier": "^3.5.3",
     "sharp": "^0.34.1",
     "tailwindcss": "^4.1.4",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.30.1",

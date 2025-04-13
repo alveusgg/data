@@ -1,0 +1,27 @@
+/// <reference types="@types/node" />
+
+import { glob } from "node:fs/promises";
+
+import { defineConfig } from "tsup";
+
+export default defineConfig(async () => ({
+  // Every .ts file should be accessible from the outside
+  // Don't include .d.ts files as they throw errors
+  entry: await Array.fromAsync(glob("src/**/*.ts", { exclude: ["**/*.d.ts"] })),
+
+  // Output to the build directory, making sure it is empty
+  outDir: "build",
+  clean: true,
+
+  // Generate ESM .js files in the build directory
+  format: ["esm"],
+  outExtension: () => ({ js: ".js" }),
+
+  // We also want .d.ts and .map files for each .js file
+  dts: true,
+  sourcemap: true,
+
+  // Ensure that any shared code is chunked into dedicated files
+  // This mimics how we're doing imports in the source code
+  splitting: true,
+}));
