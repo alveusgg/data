@@ -4,7 +4,7 @@ import { copyFile, glob } from "node:fs/promises";
 
 import { defineConfig } from "tsup";
 
-import optimize from "./script/optimize";
+import optimize from "./tsup.optimize";
 
 const log = (files: (string | [string, string])[]) => {
   // Get the longest file name

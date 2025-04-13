@@ -17,6 +17,6 @@
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
   },
-  "include": ["**/*.ts"],
+  "include": ["src", "*.ts"],
   "exclude": ["node_modules", "build"]
 }
