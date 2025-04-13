@@ -72,8 +72,9 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-          registry-url: https://npm.pkg.github.com
-          scope: '@alveusgg'
+
+      - name: Authenticate GitHub Package Registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Cache optimized assets
         id: cache
@@ -101,8 +102,6 @@ jobs:
 
           # Clean up the temporary directory
           rm -rf ${TMP_DIR}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
@@ -121,8 +120,6 @@ jobs:
 
       - name: Publish package
         run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Report summary
         run: |
