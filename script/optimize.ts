@@ -1,29 +1,87 @@
 /// <reference types="@types/node" />
 
-import { dirname, relative } from "node:path";
-import { glob, writeFile, stat, mkdir, readFile } from "node:fs/promises";
-import { hash } from "node:crypto";
+import {
+  glob,
+  writeFile,
+  stat,
+  readFile,
+  copyFile,
+  mkdir,
+  unlink,
+} from "node:fs/promises";
+import { dirname, relative, resolve } from "node:path";
 
 import sharp from "sharp";
 
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
-const shrink = async (source: string, dest: string) => {
-  const contents = await readFile(source);
-  const sha = hash("sha256", contents, "hex");
-  const hashed = dest.replace(/(\.[^.]*)?$/, `.${sha}$1`);
+const warn = (message: string) => console.warn(`\x1b[33m${message}\x1b[0m`);
 
-  if (await stat(hashed).catch(() => null)) {
-    console.log(
-      `Skipping ${source} -> ${relative(process.cwd(), hashed)} (already optimized)`,
-    );
-    return hashed;
+const cache = "node_modules/.cache/optimize";
+
+// Copy a file from the cache if it exists
+// Assumes that the file name contains a content hash
+const restoreCache = async (file: string) => {
+  const cached = `${cache}/${file}`;
+  if (await stat(cached).catch(() => null)) {
+    await copyFile(cached, file);
+    return true;
   }
+  return false;
+};
 
+// Copy a file to the cache
+const writeCache = async (file: string) => {
+  const cached = `${cache}/${file}`;
+  await mkdir(dirname(cached), { recursive: true });
+  await copyFile(file, cached);
+};
+
+// Remove any files in the cache not provided
+const purgeCache = async (files: string[]) => {
+  const permitted = new Set(files);
+
+  // Get all the files in the cache, excluding directories
+  const resolved = resolve(cache);
+  const cached = await Array.fromAsync(
+    glob(`${cache}/**/*`, { withFileTypes: true }),
+  ).then((files) =>
+    files
+      .filter((file) => file.isFile())
+      .map((file) => relative(resolved, `${file.parentPath}/${file.name}`)),
+  );
+
+  await Promise.all(
+    cached.map(async (file) => {
+      if (!permitted.has(file)) {
+        const cachedFile = `${cache}/${file}`;
+        await unlink(cachedFile).catch(() => {
+          warn(`${cachedFile}: failed to unlink`);
+        });
+      }
+    }),
+  );
+};
+
+interface OptimizeResultStats {
+  width: number;
+  height: number;
+  size: number;
+  quality: number;
+}
+
+interface OptimizeResult {
+  original: OptimizeResultStats;
+  optimized?: OptimizeResultStats;
+}
+
+// Optimize a file in-place
+const optimize = async (file: string): Promise<OptimizeResult | void> => {
+  const contents = await readFile(file);
   let img = await sharp(contents);
   const metadata = await img.metadata();
   if (!metadata.width || !metadata.height || !metadata.format) {
-    console.warn(`Failed to read metadata for ${source}`);
+    warn(`${file}: failed to read metadata`);
     return;
   }
 
@@ -41,51 +99,85 @@ const shrink = async (source: string, dest: string) => {
   const step = 5;
   const min = 50;
   let quality = 100;
-  let file: Buffer | undefined;
+  let shrunk: Buffer | undefined;
   while (quality >= min) {
-    file = await img.toFormat(metadata.format, { quality, ...opts }).toBuffer();
-    if (file.length <= 1024 * 1024 && file.length <= contents.length) break;
+    shrunk = await img
+      .toFormat(metadata.format, { quality, ...opts })
+      .toBuffer();
+    if (shrunk.length <= 1024 * 1024 && shrunk.length <= contents.length) break;
     quality -= step;
   }
 
-  if (!file) {
-    console.warn(`Failed to optimize ${source}`);
+  if (!shrunk) {
+    warn(`${file}: failed to optimize`);
     return;
   }
 
-  if (file.length > contents.length) {
-    console.log(
-      `Using original ${source} -> ${relative(process.cwd(), hashed)}, optimized larger [ ${kb(contents.length)} -> ${kb(file.length)} ]`,
+  if (shrunk.length > contents.length) {
+    warn(
+      `${file}: optimized larger than original [ ${kb(contents.length)} -> ${kb(shrunk.length)} ]`,
     );
-    file = contents;
+    return {
+      original: {
+        width: metadata.width,
+        height: metadata.height,
+        size: contents.length,
+        quality: 100,
+      },
+    };
   }
 
-  await mkdir(dirname(hashed), { recursive: true });
-  await writeFile(hashed, file);
-  if (file !== contents) {
-    console.log(
-      `Optimized ${relative(process.cwd(), source)} -> ${relative(process.cwd(), hashed)}:`,
-      "[",
-      `${kb(contents.length)} -> ${kb(file.length)},`,
-      resized
-        ? `resized (${metadata.width}x${metadata.height} -> ${resized.width}x${resized.height}),`
-        : `original (${metadata.width}x${metadata.height}),`,
-      `quality ${quality} (${(100 - quality) / step + 1}))`,
-      "]",
-    );
-  }
-
-  return hashed;
+  await writeFile(file, shrunk);
+  return {
+    original: {
+      width: metadata.width,
+      height: metadata.height,
+      size: contents.length,
+      quality: 100,
+    },
+    optimized: {
+      width: resized?.width ?? metadata.width,
+      height: resized?.height ?? metadata.height,
+      size: shrunk.length,
+      quality,
+    },
+  };
 };
 
-const optimize = async (source: string, dest: string) => {
-  const assets = glob(`${source}/**/*.{jpg,jpeg,png}`);
-  const optimized = new Map<string, string>();
-  for await (const asset of assets) {
-    const path = await shrink(asset, asset.replace(source, dest));
-    if (path) optimized.set(asset, path);
-  }
-  return optimized;
-};
+export default async (pattern: string) => {
+  // Track processed files and an associated stat
+  const processed: [string, string][] = [];
 
-export default optimize;
+  for await (const file of glob(pattern)) {
+    // Check if the file exists in the cache
+    const cached = await restoreCache(file);
+    if (cached) {
+      processed.push([file, "cached"]);
+      continue;
+    }
+
+    // Otherwise, optimize the file
+    const optimized = await optimize(file);
+    if (!optimized) {
+      continue;
+    }
+
+    // If not optimized, don't store it in the cache
+    if (optimized.optimized === undefined) {
+      processed.push([file, "unoptimized"]);
+      continue;
+    }
+
+    // Store the optimized file in the cache
+    await writeCache(file);
+    processed.push([
+      file,
+      `optimized (${kb(optimized.original.size)} -> ${kb(optimized.optimized.size)} @ ${optimized.optimized.quality}%)`,
+    ]);
+  }
+
+  // Remove any unknown files in the cache
+  await purgeCache(processed.map(([file]) => file));
+
+  return processed;
+};

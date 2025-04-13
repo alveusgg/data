@@ -4,10 +4,19 @@ import { copyFile, glob } from "node:fs/promises";
 
 import { defineConfig } from "tsup";
 
-const log = (files: string[]) => {
-  files.forEach((file) => {
-    console.log("EXT", file);
-  });
+import optimize from "./script/optimize";
+
+const log = (files: (string | [string, string])[]) => {
+  // Get the longest file name
+  const maxLength = Math.max(
+    ...files.map((file) => (Array.isArray(file) ? file[0] : file).length),
+  );
+
+  // Log each file name with the same length, followed by the stat if available
+  for (const file of files) {
+    const [name, stat] = Array.isArray(file) ? file : [file, ""];
+    console.log("EXT", name.padEnd(maxLength), stat);
+  }
 };
 
 export default defineConfig(async () => ({
@@ -59,5 +68,9 @@ export default defineConfig(async () => ({
         ),
     );
     log(cssDts);
+
+    // Optimize all the images in the build directory
+    const images = await optimize("build/**/*.@(png|jpg|jpeg)");
+    log(images);
   },
 }));
