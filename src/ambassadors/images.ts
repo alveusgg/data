@@ -311,15 +311,16 @@ const isPosition = (str: string): str is Position => {
   return rest.length === 0 && !!x && !!y && isPercentage(x) && isPercentage(y);
 };
 
+type ImagePng = typeof import("*.png");
+type ImageJpg = typeof import("*.jpg");
+type ImageJpeg = typeof import("*.jpeg");
+
 export const ambassadorImageSchema = z.object({
   // Use an always true refine to narrow down the type
   // Ensure the image import type includes jpg + png
   src: z
     .unknown()
-    .refine(
-      (src: unknown): src is typeof abbottImage1 | typeof abbottImageIcon =>
-        true,
-    ),
+    .refine((src: unknown): src is ImagePng | ImageJpg | ImageJpeg => true),
   alt: z.string(),
   position: z.string().refine(isPosition).optional(),
 });

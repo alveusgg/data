@@ -24,4 +24,11 @@ export default defineConfig(async () => ({
   // Ensure that any shared code is chunked into dedicated files
   // This mimics how we're doing imports in the source code
   splitting: true,
+
+  // Imported images should remain as imports that're copied to the output
+  loader: {
+    ".png": "copy",
+    ".jpg": "copy",
+    ".jpeg": "copy",
+  },
 }));
