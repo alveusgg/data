@@ -6,7 +6,9 @@ import { defineConfig } from "tsup";
 
 import optimize from "./tsup.optimize";
 
-const log = (files: (string | [string, string])[]) => {
+const log = (...messages: unknown[]) => console.log("EXT", ...messages);
+
+const logFiles = (files: (string | [string, string])[]) => {
   // Get the longest file name
   const maxLength = Math.max(
     ...files.map((file) => (Array.isArray(file) ? file[0] : file).length),
@@ -15,7 +17,7 @@ const log = (files: (string | [string, string])[]) => {
   // Log each file name with the same length, followed by the stat if available
   for (const file of files) {
     const [name, stat] = Array.isArray(file) ? file : [file, ""];
-    console.log("EXT", name.padEnd(maxLength), stat);
+    log(name.padEnd(maxLength), stat);
   }
 };
 
@@ -55,10 +57,13 @@ export default defineConfig(async () => ({
   },
 
   onSuccess: async () => {
+    const start = performance.now();
+    log("Post-build start");
+
     // Copy across our Tailwind CSS files
     // As well as our .d.ts files that tsup can't handle
-    const cssDts = await Array.fromAsync(glob("src/**/*.@(d.ts|css)")).then(
-      (files) =>
+    await Array.fromAsync(glob("src/**/*.@(d.ts|css)"))
+      .then((files) =>
         Promise.all(
           files.map(async (file) => {
             const dest = file.replace(/^src\//, "build/");
@@ -66,11 +71,15 @@ export default defineConfig(async () => ({
             return dest;
           }),
         ),
-    );
-    log(cssDts);
+      )
+      .then((files) => logFiles(files));
 
     // Optimize all the images in the build directory
-    const images = await optimize("build/**/*.@(png|jpg|jpeg)");
-    log(images);
+    await optimize("build/**/*.@(png|jpg|jpeg)").then((files) =>
+      logFiles(files),
+    );
+
+    // Log the time taken
+    log(`✨ Post-build success in ${Math.round(performance.now() - start)}ms`);
   },
 }));
