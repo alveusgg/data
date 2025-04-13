@@ -31,4 +31,11 @@ export default defineConfig(async () => ({
     ".jpg": "copy",
     ".jpeg": "copy",
   },
+
+  // When images are copied, match their original directory structure
+  // For any chucked code generated, store it in a dedicated directory
+  esbuildOptions: (options) => {
+    options.assetNames = "[dir]/[name]-[hash]";
+    options.chunkNames = "chunks/[name]-[hash]";
+  },
 }));
