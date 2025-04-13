@@ -1,8 +1,14 @@
 /// <reference types="@types/node" />
 
-import { glob } from "node:fs/promises";
+import { copyFile, glob } from "node:fs/promises";
 
 import { defineConfig } from "tsup";
+
+const log = (files: string[]) => {
+  files.forEach((file) => {
+    console.log("EXT", file);
+  });
+};
 
 export default defineConfig(async () => ({
   // Every .ts file should be accessible from the outside
@@ -37,5 +43,21 @@ export default defineConfig(async () => ({
   esbuildOptions: (options) => {
     options.assetNames = "[dir]/[name]-[hash]";
     options.chunkNames = "chunks/[name]-[hash]";
+  },
+
+  onSuccess: async () => {
+    // Copy across our Tailwind CSS files
+    // As well as our .d.ts files that tsup can't handle
+    const cssDts = await Array.fromAsync(glob("src/**/*.@(d.ts|css)")).then(
+      (files) =>
+        Promise.all(
+          files.map(async (file) => {
+            const dest = file.replace(/^src\//, "build/");
+            await copyFile(file, dest);
+            return dest;
+          }),
+        ),
+    );
+    log(cssDts);
   },
 }));
