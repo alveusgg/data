@@ -315,20 +315,23 @@ type ImagePng = (typeof import("*.png"))["default"];
 type ImageJpg = (typeof import("*.jpg"))["default"];
 type ImageJpeg = (typeof import("*.jpeg"))["default"];
 type ImageImport = ImagePng | ImageJpg | ImageJpeg;
-type ZodImageImport = z.ZodType<ImageImport>;
 
-const imageImportSchema: ZodImageImport = z.custom<ImageImport>();
+// Manually set the type of the schema to avoid TS inferring `ImageImport` and `Position`
+// We want `ImageImport` to retain its original type using `import` calls
+// And we want `Position` to not be expanded into a massive union literal type
+type ZodImageObject = z.ZodObject<{
+  src: z.ZodType<ImageImport>;
+  alt: z.ZodString;
+  position: z.ZodOptional<z.ZodEffects<z.ZodString, Position>>;
+}>;
 
-export const ambassadorImageSchema = z.object({
-  src: imageImportSchema,
+export const ambassadorImageSchema: ZodImageObject = z.object({
+  src: z.custom<ImageImport>(),
   alt: z.string(),
   position: z.string().refine(isPosition).optional(),
 });
 
-// Override the `src` type so that Zod/TypeScript doesn't infer it as `unknown`
-export type AmbassadorImage = z.infer<typeof ambassadorImageSchema> & {
-  src: ImageImport;
-};
+export type AmbassadorImage = z.infer<typeof ambassadorImageSchema>;
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
 const ambassadorImages: {
