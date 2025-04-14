@@ -311,21 +311,24 @@ const isPosition = (str: string): str is Position => {
   return rest.length === 0 && !!x && !!y && isPercentage(x) && isPercentage(y);
 };
 
-type ImagePng = typeof import("*.png");
-type ImageJpg = typeof import("*.jpg");
-type ImageJpeg = typeof import("*.jpeg");
+type ImagePng = (typeof import("*.png"))["default"];
+type ImageJpg = (typeof import("*.jpg"))["default"];
+type ImageJpeg = (typeof import("*.jpeg"))["default"];
+type ImageImport = ImagePng | ImageJpg | ImageJpeg;
+type ZodImageImport = z.ZodType<ImageImport>;
+
+const imageImportSchema: ZodImageImport = z.custom<ImageImport>();
 
 export const ambassadorImageSchema = z.object({
-  // Use an always true refine to narrow down the type
-  // Ensure the image import type includes jpg + png
-  src: z
-    .unknown()
-    .refine((src: unknown): src is ImagePng | ImageJpg | ImageJpeg => true),
+  src: imageImportSchema,
   alt: z.string(),
   position: z.string().refine(isPosition).optional(),
 });
 
-export type AmbassadorImage = z.infer<typeof ambassadorImageSchema>;
+// Override the `src` type so that Zod/TypeScript doesn't infer it as `unknown`
+export type AmbassadorImage = z.infer<typeof ambassadorImageSchema> & {
+  src: ImageImport;
+};
 export type AmbassadorImages = [AmbassadorImage, ...AmbassadorImage[]];
 
 const ambassadorImages: {
