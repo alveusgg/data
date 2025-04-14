@@ -75,9 +75,7 @@ export default defineConfig(async () => ({
       .then((files) => logFiles(files));
 
     // Optimize all the images in the build directory
-    await optimize("build/**/*.@(png|jpg|jpeg)").then((files) =>
-      logFiles(files),
-    );
+    await optimize().then((files) => logFiles(files));
 
     // Log the time taken
     log(`✨ Post-build success in ${Math.round(performance.now() - start)}ms`);

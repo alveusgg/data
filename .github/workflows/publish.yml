@@ -76,6 +76,9 @@ jobs:
       - name: Authenticate GitHub Package Registry
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Cache optimized assets
         id: cache
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
@@ -87,24 +90,7 @@ jobs:
 
       - name: Restore latest assets
         if: ${{ steps.cache.outputs.cache-hit == '' }}
-        run: |
-          set -e -o pipefail
-          echo "No GitHub cache hit, restoring from latest package release"
-
-          # Extract the latest package in a temporary directory
-          TMP_DIR=$(mktemp -d)
-          npm pack @alveusgg/data@latest --pack-destination ${TMP_DIR}
-          tar -xzf ${TMP_DIR}/*.tgz -C ${TMP_DIR} --strip-components=1
-
-          # Copy all build assets to the cache directory
-          mkdir -p node_modules/.cache/optimize/build
-          find ${TMP_DIR}/build -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp {} node_modules/.cache/optimize/build \;
-
-          # Clean up the temporary directory
-          rm -rf ${TMP_DIR}
-
-      - name: Install dependencies
-        run: npm ci
+        run: npm run populate
 
       # If this push wasn't to main, add the commit hash to the version
       - name: Update version

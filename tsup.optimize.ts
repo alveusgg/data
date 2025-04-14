@@ -12,12 +12,17 @@ import {
 import { dirname, relative, resolve } from "node:path";
 
 import sharp from "sharp";
+import pacote from "pacote";
+import npmConfig from "@npmcli/config";
+
+import packageJson from "./package.json" assert { type: "json" };
 
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
 const warn = (message: string) => console.warn(`\x1b[33m${message}\x1b[0m`);
 
 const cache = "node_modules/.cache/optimize";
+const images = "build/**/*.@(png|jpg|jpeg)";
 
 // Copy a file from the cache if it exists
 // Assumes that the file name contains a content hash
@@ -59,6 +64,41 @@ const purgeCache = async (files: string[]) => {
           warn(`${cachedFile}: failed to unlink`);
         });
       }
+    }),
+  );
+};
+
+const populateCache = async () => {
+  // Load the npm config for the current context
+  // This will include registry and auth settings
+  const config = new npmConfig({
+    npmPath: new URL("./", import.meta.url).pathname,
+    definitions: {},
+    shorthands: {},
+    flatten: (data, flat = {}) => Object.assign(flat, data),
+  });
+  await config.load();
+
+  // Extract the most recent build of the package
+  await mkdir(cache, { recursive: true });
+  await pacote.extract(`${packageJson.name}@latest`, cache, config.flat);
+
+  // Remove any files that aren't images
+  const files = await Array.fromAsync(
+    glob(`${cache}/**/*`, {
+      withFileTypes: true,
+      exclude: [`${cache}/${images}`],
+    }),
+  ).then((files) =>
+    files
+      .filter((file) => file.isFile())
+      .map((file) => `${file.parentPath}/${file.name}`),
+  );
+  await Promise.all(
+    files.map(async (file) => {
+      await unlink(file).catch(() => {
+        warn(`${file}: failed to unlink`);
+      });
     }),
   );
 };
@@ -144,11 +184,11 @@ const optimize = async (file: string): Promise<OptimizeResult | void> => {
   };
 };
 
-export default async (pattern: string) => {
+export default async () => {
   // Track processed files and an associated stat
   const processed: [string, string][] = [];
 
-  for await (const file of glob(pattern)) {
+  for await (const file of glob(images)) {
     // Check if the file exists in the cache
     const cached = await restoreCache(file);
     if (cached) {
@@ -181,3 +221,9 @@ export default async (pattern: string) => {
 
   return processed;
 };
+
+// If this script has been run directly, populate the cache
+if (import.meta.filename === process.argv[1]) {
+  console.log("Populating cache from latest published package...");
+  await populateCache();
+}
