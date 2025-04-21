@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2022",
+    "target": "esnext",
+    "lib": ["esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -12,11 +13,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
     "noUncheckedIndexedAccess": true,
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src", "*.ts"],
+  "exclude": ["node_modules", "build"]
 }

@@ -311,15 +311,22 @@ const isPosition = (str: string): str is Position => {
   return rest.length === 0 && !!x && !!y && isPercentage(x) && isPercentage(y);
 };
 
-export const ambassadorImageSchema = z.object({
-  // Use an always true refine to narrow down the type
-  // Ensure the image import type includes jpg + png
-  src: z
-    .unknown()
-    .refine(
-      (src: unknown): src is typeof abbottImage1 | typeof abbottImageIcon =>
-        true,
-    ),
+type ImagePng = (typeof import("*.png"))["default"];
+type ImageJpg = (typeof import("*.jpg"))["default"];
+type ImageJpeg = (typeof import("*.jpeg"))["default"];
+type ImageImport = ImagePng | ImageJpg | ImageJpeg;
+
+// Manually set the type of the schema to avoid TS inferring `ImageImport` and `Position`
+// We want `ImageImport` to retain its original type using `import` calls
+// And we want `Position` to not be expanded into a massive union literal type
+type ZodImageObject = z.ZodObject<{
+  src: z.ZodType<ImageImport>;
+  alt: z.ZodString;
+  position: z.ZodOptional<z.ZodEffects<z.ZodString, Position>>;
+}>;
+
+export const ambassadorImageSchema: ZodImageObject = z.object({
+  src: z.custom<ImageImport>(),
   alt: z.string(),
   position: z.string().refine(isPosition).optional(),
 });
