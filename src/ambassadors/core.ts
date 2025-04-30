@@ -16,6 +16,7 @@ export const ambassadorSchema = z.object({
   enclosure: z.string().refine(isEnclosureKey),
   story: z.string(),
   mission: z.string(),
+  fact: z.string().optional(),
   clips: z
     .array(
       z.object({
@@ -101,6 +102,7 @@ const ambassadors = {
       "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
+    fact: "African Bullfrogs, like many other amphibians, have semipermeable skin that allows them to absorb water and oxygen. This adaptation is super important to allow them to drink and breathe while they're underwater or buried in the mud.\n\nUnfortunately, this also means that they can absorb any harmful chemicals in their environment, which is why it is so important to keep pollution and litter out of our waterways!",
     clips: [
       { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
       { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
