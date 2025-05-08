@@ -306,7 +306,7 @@ const ambassadors = {
     birth: null,
     arrival: "2024-09",
     retired: null,
-    enclosure: "nutrition",
+    enclosure: "chickens",
     story: "Betty was rehomed from a local farm.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
