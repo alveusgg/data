@@ -44,7 +44,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     prezi: "YRnYHgjrgcC4EmnnTq8w",
     ambassadors: {
       featured: ["polly"],
-      related: ["oliver", "nugget", "henrique", "henrietta"],
+      related: ["oliver", "nugget", "henrique", "henrietta", "betty"],
     },
   },
   {
