@@ -44,7 +44,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     prezi: "YRnYHgjrgcC4EmnnTq8w",
     ambassadors: {
       featured: ["polly"],
-      related: ["oliver", "nugget", "henrique", "henrietta"],
+      related: ["oliver", "nugget", "henrique", "henrietta", "betty"],
     },
   },
   {
@@ -419,6 +419,23 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     ambassadors: {
       featured: ["pushPop"],
       related: [],
+    },
+  },
+  {
+    video: {
+      id: "01b71e76c86941362eda7755932d4ca7",
+      cu: "agf91muwks8sd9ee",
+    },
+    edition: "Wolf Hybrid Edition",
+    description:
+      "Learn about Awa and Akela, Alveus' Wolf Hybrids, the natural history of wolves as a keystone species, how wolf hybrids and wolfdogs were created through the pet trade, and why conservation efforts are so important for them.",
+    broadcast: new Date("2025-05-21"),
+    host: "maya",
+    length: length(1, 27, 15),
+    prezi: "bPVYufbplQi1UNdFbpSF",
+    ambassadors: {
+      featured: ["awa", "akela"],
+      related: ["timber"],
     },
   },
 ] as const;
