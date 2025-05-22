@@ -428,7 +428,7 @@ const animalQuest: Readonly<AnimalQuest[]> = [
     },
     edition: "Wolf Hybrid Edition",
     description:
-      "Learn about Awa and Akela, Alveus' Wolf Hybrids, the natural history of wolves as a keystone species, how wolf hybrids and wolfdogs were created through the pet trade, and why conseration efforts are so important for them.",
+      "Learn about Awa and Akela, Alveus' Wolf Hybrids, the natural history of wolves as a keystone species, how wolf hybrids and wolfdogs were created through the pet trade, and why conservation efforts are so important for them.",
     broadcast: new Date("2025-05-21"),
     host: "maya",
     length: length(1, 27, 15),
