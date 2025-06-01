@@ -107,18 +107,28 @@ jobs:
       - name: Publish package
         run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}
 
-      - name: Report summary
+      - name: Generate summary
+        id: summary
         run: |
           set -e -o pipefail
           PACKAGE_NAME=$(jq -r .name package.json)
           CURRENT_VERSION=$(jq -r .version package.json)
+
           echo "::notice title=Version published::\`$PACKAGE_NAME@$CURRENT_VERSION\`"
-          echo "### Version published :rocket:" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "npm install $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "pnpm add $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+          SUMMARY=$(cat <<EOF
+          ### Version published :rocket:
+          ```bash
+          npm install $PACKAGE_NAME@$CURRENT_VERSION
+          ```
+          ```bash
+          pnpm add $PACKAGE_NAME@$CURRENT_VERSION
+          ```
+          EOF
+          )
+
+          echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+          
+          echo "summary<<EOF" >> $GITHUB_OUTPUT
+          echo "$SUMMARY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
