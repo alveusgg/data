@@ -138,13 +138,17 @@ jobs:
         id: pr
         if: ${{ github.ref != 'refs/heads/main' }}
         run: |
+          set -e -o pipefail
           PR_NUMBER=$(gh pr list --state open --json number,headRefName --jq ".[] | select(.headRefName == \"$REF_NAME\") | .number" || echo "")
+
           if [ -z "$PR_NUMBER" ]; then
             echo "No open PR found for branch $REF_NAME"
             exit 0
           fi
+          
           echo "number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
         env:
+          GH_TOKEN: ${{ github.token }}
           REF_NAME: ${{ github.ref_name }}
       
       - name: PR comment
