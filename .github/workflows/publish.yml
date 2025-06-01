@@ -119,12 +119,12 @@ jobs:
 
           SUMMARY=$(cat <<EOF
           ### Version published :rocket:
-          ```bash
+          \`\`\`bash
           npm install $PACKAGE_NAME@$CURRENT_VERSION
-          ```
-          ```bash
+          \`\`\`
+          \`\`\`bash
           pnpm add $PACKAGE_NAME@$CURRENT_VERSION
-          ```
+          \`\`\`
           EOF
           )
 
@@ -145,7 +145,7 @@ jobs:
             echo "No open PR found for branch $REF_NAME"
             exit 0
           fi
-          
+
           echo "number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ github.token }}
