@@ -16,6 +16,7 @@ export const ambassadorSchema = z.object({
   enclosure: z.string().refine(isEnclosureKey),
   story: z.string(),
   mission: z.string(),
+  fact: z.string().optional(),
   clips: z
     .array(
       z.object({
@@ -60,6 +61,8 @@ const ambassadors = {
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
       "He is an ambassador for teaching about the exotic meat trade, traditional medicine, and the use of animal products in cosmetics.",
+    fact: "Emus are terrestrial birds that walk on two legs and have three toes, characteristics that also belong to an extinct group of dinosaurs called theropods, which include the Tyrannosaurus rex and Velociraptor.\n\nStompy's long legs and specialized musculature allow him to run efficiently while also maintaining high speeds of around 30 mph.",
+    // Fact source: https://www.entomoljournal.com/archives/2020/vol8issue2/PartE/8-1-233-269.pdf
     clips: [
       {
         id: "GsBRS13e8mY",
@@ -101,6 +104,8 @@ const ambassadors = {
       "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
+    fact: "African Bullfrogs, like many other amphibians, have semipermeable skin that allows them to absorb water and oxygen. This adaptation is super important to allow them to drink and breathe while they're underwater or buried in the mud.\n\nUnfortunately, this also means that they can absorb any harmful chemicals in their environment, which is why it is so important to keep pollution and litter out of our waterways!",
+    // Fact source: https://www.nps.gov/hosp/learn/nature/amphibians.htm
     clips: [
       { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
       { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
@@ -131,6 +136,8 @@ const ambassadors = {
       "Tico was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
+    fact: 'At dawn and dusk, one of Tico\'s behaviors includes very loud calls that can exceed 100 dB, an intensity that can cause hearing loss due to prolonged exposure.\n\nIn the wild, blue and gold macaws vocalize at dawn and dusk to communicate with other members of their flock as a "check-in" measure. In captivity, these vocalizations can become bothersome and harmful to humans because of their intensity.',
+    // Fact source: https://onlinelibrary.wiley.com/doi/book/10.1002/9780470344651#page=168
     clips: [
       { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
       { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
@@ -152,6 +159,8 @@ const ambassadors = {
       "Miley was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
+    fact: "In captivity, Catalina macaws like Miley require a lot of mental stimulation in the form of environmental enrichment. Without access to enrichment opportunities, these birds can become frustrated and destructive to their surroundings, including chewing through solid wood, which is yet another reason why they shouldn't be kept as pets.",
+    // Fact source: https://www.sciencedirect.com/science/article/abs/pii/S0168159116301058
     clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
     homepage: null,
     plush: null,
@@ -170,6 +179,8 @@ const ambassadors = {
       "Mia was rehomed to Alveus as the previous sanctuary's owner was retiring.",
     mission:
       "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
+    fact: 'African greys are both smart and social. They are known to use different sets of sounds/words depending on the social situation. This can be seen in Mia using more beeps, whistles, and bird calls when humans aren\'t present, but more "Hello"s, "Bye"s, and explosions when keepers are around.',
+    // Fact source: Colbert-White EN, Covington MA, Fragaszy DM. Social context influences the vocalizations of a home-raised African Grey parrot (Psittacus erithacus erithacus). J Comp Psychol. 2011 May;125(2):175-84. doi: 10.1037/a0022097. PMID: 21381810.
     clips: [
       { id: "nIw-qTRT5Nc", caption: "Mia Dances With Connor" },
       { id: "KRJy_nR1u5k", caption: "Mia Walks Around The Aviary" },
@@ -221,6 +232,8 @@ const ambassadors = {
       "Abbott was brought into a wildlife rehab center as a baby. He imprinted during the rehab process and then was deemed non-releasable.",
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
+    fact: "American crows are considered to be occasional tool users in the wild, a trait that was once thought to be unique to humans, and in captivity, they are capable of learning how to use a variety of tools.\n\nOne of the skills Abbott has learned through training sessions involves retrieving and stacking rings onto a stationary post.",
+    // Fact source: https://www.nature.com/articles/s41467-023-42203-8
     clips: [
       { id: "GqvK9m6yoBQ", caption: "Abbott Explores His New Enrichment" },
     ],
@@ -293,6 +306,8 @@ const ambassadors = {
     story: "Henrique was rehomed from a local farm.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    fact: "The closest wild relative of domestic chickens, like Henrique, are red junglefowl. While our commercial layers have been selectively bred to lay over 300 eggs per year, their wild counterparts only lay around 12 eggs per year.\n\nThe difference in egg yield between the two species highlights the impact that selective breeding can have on the process of domestication.",
+    // Fact source: https://doi.org/10.1016/j.psj.2023.102489
     clips: [],
     homepage: null,
     plush: null,
@@ -344,6 +359,8 @@ const ambassadors = {
     story: "Winnie came from a cattle operation in Oklahoma.",
     mission:
       "She is an ambassador for the beef industry and how people can use their consumer choice to impact the environment in a positive way.",
+    fact: "Before arriving at Alveus, Winnie was part of a cattle operation as a Red Angus Beef Cow. The massive demand for beef around the world has led to vast deforestation and land clearing to provide space for cattle farming, resulting in habitat loss in critical ecosystems like the Amazon Rainforest, as well as the methane generated contributing to global warming.",
+    // Fact source: https://www.thebureauinvestigates.com/stories/2023-06-02/almost-a-billion-trees-felled-to-feed-appetite-for-brazilian-beef
     clips: [
       { id: "FKU7-u5-L24", caption: "Winnie Causes Chaos In The Grain Stall" },
       { id: "qWDd5nnWSuI", caption: "Winnie's First Day On Stream" },
@@ -409,6 +426,8 @@ const ambassadors = {
       "Fenn was confiscated from the illegal pet trade by California Department of Fish and Wildlife. He was then rehomed to Alveus.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
+    fact: "While Fenn has dark grey fur, he is an American Red Fox. His different coat color is due to selective breeding orchestrated by humans for both the illegal pet trade and the fur trade. Selective breeding results in a higher chance of genetic defects and a smaller pool of genetic diversity, and the conditions animals bred for the fur trade are subjected to are often inhumane.",
+    // Fact source: https://www.humaneworld.org/en/blog/undercover-investigation-fur-farm-cruelty
     clips: [
       { id: "670RYU2Xw98", caption: "Fenn Digs Up A Friend In The Enclosure" },
       { id: "awX8PnOfhQA", caption: "Fenn Finds A Well Hidden Treasure" },
@@ -435,6 +454,8 @@ const ambassadors = {
       "Reed was orphaned as a wild kit and was rescued to be raised at a zoo to be an educational ambassador. He was then rehomed to Alveus.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the pet trade and the fur trade.",
+    fact: "Foxes like Reed may look cute, but make for terrible pets. Foxes have a distinct musky smell, often described as similar to a skunk's, and their natural behaviors include frequently urinating and defecating to mark their territory. Foxes also enjoy digging as their dens are underground and can easily dig escape routes.",
+    // Fact source: https://www.nature.org/content/dam/tnc/nature/en/documents/UT_WingsWater_WetlandsMammals_Jan19.pdf
     clips: [
       { id: "ClWtgsoWta0", caption: "Reed Gets Weighed With Target Training" },
       { id: "4HZMQJoEkVA", caption: "Reed Is The Best Boy" },
@@ -496,6 +517,8 @@ const ambassadors = {
       "Snork was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "She is an ambassador for the exploitation of wildlife in the fur trade.",
+    fact: "At 20,000 hairs per square centimeter, chinchillas have the densest fur of all living terrestrial mammals! Because of this density, their fur is incredibly soft but makes them susceptible to overheating easily in temperatures over 80°F (26°C).",
+    // Fact source: https://www.medvet.com/chinchilla-history-care-sheet/
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: null,
     plush: null,
@@ -513,6 +536,8 @@ const ambassadors = {
     story: "Moomin was rehomed from a local pet owner.",
     mission:
       "He is an ambassador for the exploitation of wildlife in the fur trade.",
+    fact: "Because of their very dense and soft fur, chinchillas have often been used in the fur trade. It can take upwards of 100 chinchilla pelts to make a single fur coat. Chinchillas are currently endangered because they have been poached for their pelts, as well as due to habitat loss.",
+    // Fact source: https://www.iucnredlist.org/species/4651/22191157
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
     homepage: {
       title: "Moomin is Movin' In!",
@@ -555,6 +580,8 @@ const ambassadors = {
       "Appa was rescued by Alveus after being surrendered to a veterinarian due to neglect.",
     mission:
       "He is an ambassador for the exotic pet trade and how it affects primate species worldwide.",
+    fact: 'Appa is a "common" or white-tufted marmoset, which is a New World monkey originating from Brazil. The first part of his scientific name, "Callithrix", means beautiful hair. The second part, "jacchus", is after the God Bacchus, who is the god of agriculture, wine, and fertility. Marmosets spread seeds from fruits and nuts as they poop everywhere, helping to populate the vegetation in their area, making it a fitting name and a good reason to not have them as pets.',
+    // Fact source: Simple English Wikipedia, https://animaldiversity.org/accounts/Callitrichinae/classification/#Callitrichinae
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
@@ -575,6 +602,8 @@ const ambassadors = {
       "Noodle was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
+    fact: "Most people think of snakes as a reptile that slithers around on the ground, but coastal carpet pythons like Noodle are an arboreal or semi-arboreal species, meaning they spend a lot of their lives hunting, lounging, and sleeping in trees.\n\nReplicating these environments in captivity can be extremely challenging, and so people should reconsider whether they're able to provide optimal living conditions to an animal before they own one.",
+    // Fact source: https://doi.org/10.1093/biolinnean/bly097
     clips: [
       {
         id: "SU3b-ndBZ7M",
@@ -599,6 +628,8 @@ const ambassadors = {
       "Patchy was rehomed to Alveus from a local breeder after it was discovered that she had a genetic defect and was missing an eye.",
     mission:
       "She is an ambassador for how the pet trade and habitat loss has affected hers and many other reptile species worldwide.",
+    fact: "Breeding ball pythons for specific colors and patterns is very popular within the pet trade. However, some of the sought-after traits are linked to genes that can also cause major health issues, including exophthalmos (where the eyes protrude from the head excessively), reduced fertility, wobble syndrome (where the head wobbles from side to side), or even death sometimes.\n\nThese genetic associations highlight the importance of ethical breeding within the pet trade to avoid unnecessary health issues, as can be seen with Patchy and his missing eye.",
+    // Fact source: https://doi.org/10.1016/j.jcpa.2022.05.003
     clips: [],
     homepage: null,
     plush: null,
@@ -641,6 +672,8 @@ const ambassadors = {
       "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
       "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
+    // Fact source: https://www.jstor.org/stable/44857402
     clips: [],
     homepage: null,
     plush: null,
@@ -659,6 +692,8 @@ const ambassadors = {
       "Our smokey ghost millipede was born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    fact: "Hank, a smokey ghost millipede, is a detritivore who spends a lot of time burrowed in the ground. Having existed on our planet for over 400 million years, the structure of millipede burrows can be differentiated from other burrowing organisms to help identify sediment composition and moisture content in the fossil record, providing us with a better understanding of soil health.",
+    // Fact source: https://doi.org/10.26879/395
     clips: [
       { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
       { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
@@ -697,6 +732,8 @@ const ambassadors = {
     story: "Our zebra isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
+    fact: "Zebra isopods are crustaceans named for their black and white stripes that resemble a zebra. These characteristics are unique to Marty's species, but other isopods also have their own distinct and diverse colors, patterns, and sizes. Some can grow to be 16 inches long, while others may be purple, have spots, or even be translucent.",
+    // Fact source: https://doi.org/10.7717/peerj.15984
     clips: [],
     homepage: null,
     plush: null,
@@ -715,6 +752,8 @@ const ambassadors = {
       "Our spanish orange isopods were born in captivity and ethically sourced.",
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
+    fact: "Like other detritivores, the ecological role of BB and all Spanish orange isopods in the wild is to break down organic matter like leaf litter. As the isopods are decomposing nutrient-rich leaf litter, they produce feces that accelerate the decomposition of nutrient-poor leaf litter, further relieving the ecosystem of excessive organic matter buildup.",
+    // Fact source: https://doi.org/10.1016/j.apsoil.2014.10.015
     clips: [],
     homepage: null,
     plush: null,
@@ -733,6 +772,8 @@ const ambassadors = {
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    fact: "Scorpions, like Tortellini, glow brightly under UV light due to a UV-reactive layer in their exoskeletons. Why they glow continues to remain a mystery to science, and there are multiple potential theories. Some recent studies suggest it plays a role in a scorpion's light detection to allow them to detect when they are under shelter, for example.",
+    // Fact source: https://www.sciencedirect.com/science/article/abs/pii/S0003347211005069?via%3Dihub
     clips: [],
     homepage: null,
     plush: null,
@@ -751,6 +792,8 @@ const ambassadors = {
       "Our emperor scorpions were born in captivity and ethically sourced.",
     mission:
       "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    fact: "While scorpions are often perceived as scary or dangerous, only about 1% of species (25 of roughly 2500 known species) are dangerous to humans. Most scorpions' stings (including the emperor scorpion like Puppy) are no worse than a bee sting.",
+    // Fact source: https://www.ncbi.nlm.nih.gov/books/NBK430928
     clips: [],
     homepage: null,
     plush: null,
@@ -769,6 +812,8 @@ const ambassadors = {
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
+    fact: "The Veitch's Pitcher-Plant, like PitchJars, belongs to a genus of carnivorous plants called Nepenthes. Because of their variability in pitcher color, pattern, and structure, pitcher plants are often poached out of the wild from their very small and unique natural habitats to become part of the carnivorous plant trade. Currently, 25 species of Nepenthes are considered endangered.",
+    // Fact source: https://doi.org/10.1016/j.gecco.2020.e01272
     clips: [],
     homepage: null,
     plush: null,
@@ -805,6 +850,8 @@ const ambassadors = {
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
+    fact: "Butt, and all Mexican Butterworts, passively trap and digest insects on their leaves. They produce a sticky substance called mucilage that coats the leaves to initially trap the insect. Enzymes are then released to begin the digestion process, and nutrient-rich fluids are absorbed through small holes in the leaf's surface.",
+    // Fact source: https://www.britannica.com/plant/butterwort
     clips: [],
     homepage: null,
     plush: null,
@@ -823,6 +870,8 @@ const ambassadors = {
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
+    fact: "Despite Amorphophallus titanum smelling like rotting corpses when in bloom (giving it the nickname corpse flower), which attracts many flies and other insects, the flower is not actually carnivorous. It collects nutrients through photosynthesis, like most plants, and stores them in its tuber, while the smell produced is used to attract pollinators to the plant while it is blooming.",
+    // Fact source: https://www.kew.org/plants/titan-arum
     clips: [],
     homepage: null,
     plush: null,
@@ -859,6 +908,8 @@ const ambassadors = {
       "Our plants were acquired from Carnivero, a carnivorous and rare plant nursery in Austin, Texas.",
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
+    fact: "While Drew may appear to look like other carnivorous pitcher plants, the flask-shaped pitcher plant is predominantly a detritivore, especially of leaf litter. It spends less effort on attracting prey and instead carpets the area on the ground to catch as much decaying material, such as falling leaves, as possible.",
+    // Fact source: PAVLOVIČ, A., SLOVÁKOVÁ, Ľ. and ŠANTRŮČEK, J. (2011), Nutritional benefit from leaf litter utilization in the pitcher plant Nepenthes ampullaria. Plant, Cell & Environment, 34: 1865-1873. https://doi.org/10.1111/j.1365-3040.2011.02382.x
     clips: [],
     homepage: null,
     plush: null,
