@@ -58,6 +58,7 @@ jobs:
 
     permissions:
       packages: write
+      pull-requests: write
 
     # Version changes in any branch can be published
     needs: check
@@ -107,18 +108,53 @@ jobs:
       - name: Publish package
         run: npm publish --access public --tag ${{ github.ref == 'refs/heads/main' && 'latest' || 'pre' }}
 
-      - name: Report summary
+      - name: Generate summary
+        id: summary
         run: |
           set -e -o pipefail
           PACKAGE_NAME=$(jq -r .name package.json)
           CURRENT_VERSION=$(jq -r .version package.json)
+
           echo "::notice title=Version published::\`$PACKAGE_NAME@$CURRENT_VERSION\`"
-          echo "### Version published :rocket:" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "npm install $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "pnpm add $PACKAGE_NAME@$CURRENT_VERSION" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+          SUMMARY=$(cat <<EOF
+          ### Version published :rocket:
+          \`\`\`bash
+          npm install $PACKAGE_NAME@$CURRENT_VERSION
+          \`\`\`
+          \`\`\`bash
+          pnpm add $PACKAGE_NAME@$CURRENT_VERSION
+          \`\`\`
+          EOF
+          )
+
+          echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
+          
+          echo "summary<<EOF" >> $GITHUB_OUTPUT
+          echo "$SUMMARY" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Get PR number
+        id: pr
+        if: ${{ github.ref != 'refs/heads/main' }}
+        run: |
+          set -e -o pipefail
+          PR_NUMBER=$(gh pr list --state open --json number,headRefName --jq ".[] | select(.headRefName == \"$REF_NAME\") | .number" || echo "")
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No open PR found for branch $REF_NAME"
+            exit 0
+          fi
+
+          echo "number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REF_NAME: ${{ github.ref_name }}
+      
+      - name: PR comment
+        if: ${{ steps.pr.outputs.number != '' }}
+        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3.0.1
+        with:
+          message: "${{ steps.summary.outputs.summary }}"
+          comment-tag: publish
+          pr-number: ${{ steps.pr.outputs.number }}
