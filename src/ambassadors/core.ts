@@ -1,19 +1,19 @@
 import { z } from "zod";
 
-import { isEnclosureKey } from "../enclosures";
-import { isPartialDateString } from "../types";
-import { isSpecies } from "./species";
+import { enclosureKeySchema } from "../enclosures";
+import { partialDateStringSchema } from "../types";
+import { speciesKeySchema } from "./species";
 
 export const ambassadorSchema = z.object({
   name: z.string(),
   alternate: z.array(z.string()).readonly(),
   commands: z.array(z.string()).readonly(),
-  species: z.string().refine(isSpecies),
+  species: speciesKeySchema,
   sex: z.enum(["Male", "Female"]).nullable(),
-  birth: z.string().refine(isPartialDateString).nullable(),
-  arrival: z.string().refine(isPartialDateString).nullable(),
-  retired: z.string().refine(isPartialDateString).nullable(),
-  enclosure: z.string().refine(isEnclosureKey),
+  birth: partialDateStringSchema.nullable(),
+  arrival: partialDateStringSchema.nullable(),
+  retired: partialDateStringSchema.nullable(),
+  enclosure: enclosureKeySchema,
   story: z.string(),
   mission: z.string(),
   fact: z.string().optional(),
