@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 
 import { isAmbassadorKey, type Ambassadors, type AmbassadorKey } from "./core";
 import {
@@ -332,7 +332,7 @@ type ImageImport = ImagePng | ImageJpg | ImageJpeg;
 type ZodImageObject = z.ZodObject<{
   src: z.ZodType<ImageImport>;
   alt: z.ZodString;
-  position: z.ZodOptional<z.ZodType<Position>>;
+  position: z.ZodOptional<z.ZodCustom<Position>>;
 }>;
 
 const isPositionSchema = z.custom<Position>(

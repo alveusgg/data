@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 
 import { enclosureKeySchema } from "../enclosures";
 import { partialDateStringSchema } from "../types";
@@ -9,7 +9,7 @@ export const ambassadorSchema = z.object({
   alternate: z.array(z.string()).readonly(),
   commands: z.array(z.string()).readonly(),
   species: speciesKeySchema,
-  sex: z.enum(["Male", "Female"]).nullable(),
+  sex: z.literal(["Male", "Female"]).nullable(),
   birth: partialDateStringSchema.nullable(),
   arrival: partialDateStringSchema.nullable(),
   retired: partialDateStringSchema.nullable(),

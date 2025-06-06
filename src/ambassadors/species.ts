@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 
 import { iucnStatusSchema } from "../iucn";
 import { classSchema } from "./classification";
@@ -23,7 +23,7 @@ export const speciesSchema = z.object({
       .optional(),
     source: z.string(),
   }),
-  birth: z.enum(["live", "egg", "seed"]),
+  birth: z.literal(["live", "egg", "seed"]),
   class: classSchema,
 });
 
