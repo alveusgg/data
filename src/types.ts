@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type DateStringYear =
@@ -22,5 +24,10 @@ export const isPartialDateString = (
     `^(${year}|${year}-${month}|${year}-${month}-${day})$`,
   ).test(value);
 };
+
+export const partialDateStringSchema = z.custom<PartialDateString>(
+  (value) => typeof value === "string" && isPartialDateString(value),
+  "must be a valid partial date string (YYYY-MM-DD, YYYY-MM, YYYY)",
+);
 
 export type Nullable<T> = T | null;

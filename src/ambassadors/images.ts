@@ -332,13 +332,18 @@ type ImageImport = ImagePng | ImageJpg | ImageJpeg;
 type ZodImageObject = z.ZodObject<{
   src: z.ZodType<ImageImport>;
   alt: z.ZodString;
-  position: z.ZodOptional<z.ZodEffects<z.ZodString, Position>>;
+  position: z.ZodOptional<z.ZodType<Position>>;
 }>;
+
+const isPositionSchema = z.custom<Position>(
+  (val) => typeof val === "string" && isPosition(val),
+  "must be a valid position string with two percentage values",
+);
 
 export const ambassadorImageSchema: ZodImageObject = z.object({
   src: z.custom<ImageImport>(),
   alt: z.string(),
-  position: z.string().refine(isPosition).optional(),
+  position: isPositionSchema.optional(),
 });
 
 export type AmbassadorImage = z.infer<typeof ambassadorImageSchema>;

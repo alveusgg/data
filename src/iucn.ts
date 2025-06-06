@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 const iucnStatuses = {
   EX: "Extinct",
   EW: "Extinct in the Wild",
@@ -34,6 +36,11 @@ export const isIUCNStatus = (str: string): str is IUCNStatus => {
 
   return true;
 };
+
+export const iucnStatusSchema = z.custom<IUCNStatus>(
+  (val) => typeof val === "string" && isIUCNStatus(val),
+  `must be a valid IUCN status (${Object.keys(iucnStatuses).join(", ")} [optionally suffixed with /${Object.keys(iucnFlags).join(", /")}])`,
+);
 
 export const getIUCNStatus = (fullStatus: IUCNStatus): string => {
   const [status, flag] = fullStatus.split("/");

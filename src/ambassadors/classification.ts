@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 const classificationOrder = [
   "Mammals",
   "Birds",
@@ -24,6 +26,11 @@ export type Class = keyof typeof classes;
 
 export const isClass = (str: string): str is Class =>
   Object.keys(classes).includes(str);
+
+export const classSchema = z.custom<Class>(
+  (val) => typeof val === "string" && isClass(val),
+  `must be a valid class (${Object.keys(classes).join(", ")})`,
+);
 
 export const getClassification = (c: Class): Classification => classes[c];
 

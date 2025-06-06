@@ -1,14 +1,14 @@
 import { z } from "zod";
 
-import { isIUCNStatus } from "../iucn";
-import { isClass } from "./classification";
+import { iucnStatusSchema } from "../iucn";
+import { classSchema } from "./classification";
 
 export const speciesSchema = z.object({
   name: z.string(),
   scientificName: z.string(),
   iucn: z.object({
     id: z.number().nullable(),
-    status: z.string().refine(isIUCNStatus),
+    status: iucnStatusSchema,
   }),
   native: z.object({
     text: z.string(),
@@ -24,7 +24,7 @@ export const speciesSchema = z.object({
     source: z.string(),
   }),
   birth: z.enum(["live", "egg", "seed"]),
-  class: z.string().refine(isClass),
+  class: classSchema,
 });
 
 export type Species = z.infer<typeof speciesSchema>;
@@ -655,7 +655,12 @@ const species = {
 
 export type SpeciesKey = keyof typeof species;
 
-export const isSpecies = (str: string): str is SpeciesKey =>
+export const isSpeciesKey = (str: string): str is SpeciesKey =>
   Object.keys(species).includes(str);
+
+export const speciesKeySchema = z.custom<SpeciesKey>(
+  (value) => typeof value === "string" && isSpeciesKey(value),
+  `must be a valid species key (${Object.keys(species).join(", ")})`,
+);
 
 export const getSpecies = (key: SpeciesKey): Species => species[key];
