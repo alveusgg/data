@@ -798,6 +798,42 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  eva: {
+    name: "Eva",
+    alternate: [],
+    commands: ["eva"],
+    species: "tarantulaMexicanRedRump",
+    sex: "Female",
+    birth: "2022",
+    arrival: "2025-06-16",
+    retired: null,
+    enclosure: "critters",
+    story:
+      "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
+    mission:
+      "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  kiwi: {
+    name: "Kiwi",
+    alternate: [],
+    commands: ["kiwi"],
+    species: "tarantulaHonduranCurlyHair",
+    sex: "Female",
+    birth: "2022",
+    arrival: "2025-06-16",
+    retired: null,
+    enclosure: "critters",
+    story:
+      "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
+    mission:
+      "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   pitchjars: {
     name: "PitchJars",
     alternate: ["Pitchy"],
