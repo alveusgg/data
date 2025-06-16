@@ -512,6 +512,37 @@ const species = {
     class: "mammalia",
   },
 
+  tarantulaMexicanRedRump: {
+    name: "Mexican Red Rump Tarantula",
+    scientificName: "Tliltocatl vagans",
+    iucn: { id: 66082199, status: "LC/decreasing" },
+    native: {
+      text: "Yucatán Peninsula (dry scrublands, forest edges)",
+      source: "https://en.wikipedia.org/wiki/Tliltocatl_vagans",
+    },
+    lifespan: {
+      captivity: { min: 5, max: 25 },
+      source:
+        "https://www.thetarantulacollective.com/caresheets/tliltocatl-vagans",
+    },
+    class: "arachnida",
+  },
+  tarantulaHonduranCurlyHair: {
+    name: "Honduran Curly-Hair Tarantula",
+    scientificName: "Tliltocatl albopilosus",
+    iucn: { id: 66081213, status: "LC/decreasing" },
+    native: {
+      text: "Central America (rainforests)",
+      source: "https://en.wikipedia.org/wiki/Tliltocatl_albopilosus",
+    },
+    lifespan: {
+      captivity: { min: 5, max: 25 },
+      source:
+        "https://www.thetarantulacollective.com/caresheets/tliltocatl-albopilosus",
+    },
+    class: "arachnida",
+  },
+
   plantVeitchPitcher: {
     name: "Veitch's Pitcher-Plant",
     scientificName: "Nepenthes veitchii",
