@@ -74,6 +74,11 @@ import duckyImage2 from "../assets/ambassadors/ducky/02.jpg";
 import duckyImageIcon from "../assets/ambassadors/ducky/icon.png";
 import duckyImageEmote from "../assets/ambassadors/ducky/emote.png";
 
+import evaImage1 from "../assets/ambassadors/eva/01.jpg";
+import evaImage2 from "../assets/ambassadors/eva/02.jpg";
+import evaImage3 from "../assets/ambassadors/eva/03.jpg";
+import evaImage4 from "../assets/ambassadors/eva/04.jpg";
+
 import fennImage1 from "../assets/ambassadors/fenn/01.jpg";
 import fennImage2 from "../assets/ambassadors/fenn/02.jpg";
 import fennImage3 from "../assets/ambassadors/fenn/03.jpg";
@@ -117,6 +122,11 @@ import jalapenoImage5 from "../assets/ambassadors/jalapeno/05.jpg";
 import jalapenoImageIcon from "../assets/ambassadors/jalapeno/icon.png";
 import jalapenoImageEmote from "../assets/ambassadors/jalapeno/emote.png";
 import jalapenoImageBadge from "../assets/ambassadors/jalapeno/badge.png";
+
+import kiwiImage1 from "../assets/ambassadors/kiwi/01.jpg";
+import kiwiImage2 from "../assets/ambassadors/kiwi/02.jpg";
+import kiwiImage3 from "../assets/ambassadors/kiwi/03.jpg";
+import kiwiImage4 from "../assets/ambassadors/kiwi/04.jpg";
 
 import martyImage1 from "../assets/ambassadors/marty/01.jpg";
 import martyImage2 from "../assets/ambassadors/marty/02.jpg";
@@ -409,6 +419,12 @@ const ambassadorImages: {
     { src: duckyImage1, alt: "Ducky the Rubber Ducky Isopods" },
     { src: duckyImage2, alt: "Ducky the Rubber Ducky Isopods" },
   ],
+  eva: [
+    { src: evaImage1, alt: "Eva the Mexican Red Rump Tarantula" },
+    { src: evaImage2, alt: "Eva the Mexican Red Rump Tarantula" },
+    { src: evaImage3, alt: "Eva the Mexican Red Rump Tarantula" },
+    { src: evaImage4, alt: "Eva the Mexican Red Rump Tarantula" },
+  ],
   fenn: [
     { src: fennImage1, alt: "Fenn the American Red Fox", position: "50% 35%" },
     { src: fennImage2, alt: "Fenn the American Red Fox" },
@@ -458,6 +474,12 @@ const ambassadorImages: {
     { src: jalapenoImage3, alt: "Jalapeño the Domestic Donkey" },
     { src: jalapenoImage4, alt: "Jalapeño the Domestic Donkey" },
     { src: jalapenoImage5, alt: "Jalapeño the Domestic Donkey" },
+  ],
+  kiwi: [
+    { src: kiwiImage1, alt: "Kiwi the Honduran Curly Hair Tarantula" },
+    { src: kiwiImage2, alt: "Kiwi the Honduran Curly Hair Tarantula" },
+    { src: kiwiImage3, alt: "Kiwi the Honduran Curly Hair Tarantula" },
+    { src: kiwiImage4, alt: "Kiwi the Honduran Curly Hair Tarantula" },
   ],
   marty: [
     { src: martyImage1, alt: "Marty the Zebra Isopods", position: "50% 100%" },
