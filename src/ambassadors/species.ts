@@ -23,6 +23,7 @@ export const speciesSchema = z.object({
       .optional(),
     source: z.string(),
   }),
+  birth: z.enum(["live", "egg", "seed"]),
   class: z.string().refine(isClass),
 });
 
@@ -42,6 +43,7 @@ const species = {
       captivity: 60,
       source: "https://en.wikipedia.org/wiki/African_grey_parrot",
     },
+    birth: "egg",
     class: "aves",
   },
   blueFrontedAmazon: {
@@ -56,6 +58,7 @@ const species = {
       captivity: 60,
       source: "https://animaldiversity.org/accounts/Amazona_aestiva/",
     },
+    birth: "egg",
     class: "aves",
   },
   bullfrogAfrican: {
@@ -70,6 +73,7 @@ const species = {
       captivity: 35,
       source: "https://en.wikipedia.org/wiki/African_bullfrog",
     },
+    birth: "egg",
     class: "amphibia",
   },
 
@@ -85,6 +89,7 @@ const species = {
       captivity: 8,
       source: "https://animal-world.com/olive-egger-chickens/",
     },
+    birth: "egg",
     class: "aves",
   },
   chickenBantamSilkie: {
@@ -99,6 +104,7 @@ const species = {
       captivity: { min: 7, max: 9 },
       source: "https://animal-world.com/silkie-chicken/",
     },
+    birth: "egg",
     class: "aves",
   },
   chickenCochin: {
@@ -113,6 +119,7 @@ const species = {
       captivity: { min: 8, max: 10 },
       source: "https://www.sfzoo.org/cochin-chicken/",
     },
+    birth: "egg",
     class: "aves",
   },
   chickenHalfBrahmaHalfSaipan: {
@@ -127,6 +134,7 @@ const species = {
       captivity: { min: 5, max: 8 },
       source: "https://animal-world.com/brahma-chicken/",
     },
+    birth: "egg",
     class: "aves",
   },
   chickenJerseyGiant: {
@@ -141,6 +149,7 @@ const species = {
       captivity: { min: 6, max: 7 },
       source: "https://animal-world.com/jersey-giant-chicken/",
     },
+    birth: "egg",
     class: "aves",
   },
   chickenOliveEgger: {
@@ -155,6 +164,7 @@ const species = {
       captivity: 8,
       source: "https://animal-world.com/olive-egger-chickens/",
     },
+    birth: "egg",
     class: "aves",
   },
 
@@ -171,6 +181,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Chinchilla",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -186,6 +197,7 @@ const species = {
       captivity: 3,
       source: "https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach",
     },
+    birth: "egg",
     class: "insecta",
   },
 
@@ -201,6 +213,7 @@ const species = {
       captivity: { min: 12, max: 25 },
       source: "https://animal-world.com/red-angus-cattle-breed/",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -217,6 +230,7 @@ const species = {
       captivity: 30,
       source: "https://en.wikipedia.org/wiki/American_crow",
     },
+    birth: "egg",
     class: "aves",
   },
 
@@ -229,6 +243,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Donkey",
     },
     lifespan: { captivity: 40, source: "https://en.wikipedia.org/wiki/Donkey" },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -245,6 +260,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Emu",
     },
+    birth: "egg",
     class: "aves",
   },
 
@@ -260,6 +276,7 @@ const species = {
       wild: { min: 2, max: 5 },
       source: "https://www.ndow.org/species/prairie-falcon/",
     },
+    birth: "egg",
     class: "aves",
   },
 
@@ -276,6 +293,7 @@ const species = {
       captivity: 15,
       source: "https://en.wikipedia.org/wiki/Red_fox",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -288,6 +306,7 @@ const species = {
       captivity: { min: 2, max: 3 },
       source: "https://bantam.earth/cubaris-rubber-ducky-isopods/",
     },
+    birth: "egg",
     class: "malacostraca",
   },
 
@@ -303,6 +322,7 @@ const species = {
       wild: 2,
       source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
     },
+    birth: "egg",
     class: "malacostraca",
   },
   isopodZebra: {
@@ -317,6 +337,7 @@ const species = {
       captivity: { min: 1, max: 3 },
       source: "https://bantam.earth/zebra-isopods-armadillidium-maculatum/",
     },
+    birth: "egg",
     class: "malacostraca",
   },
 
@@ -334,6 +355,7 @@ const species = {
       source:
         "https://animaldiversity.org/accounts/Ara_ararauna/#lifespan_longevity",
     },
+    birth: "egg",
     class: "aves",
   },
   macawCatalina: {
@@ -349,6 +371,7 @@ const species = {
       source:
         "https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity",
     },
+    birth: "egg",
     class: "aves",
   },
 
@@ -361,6 +384,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
     },
     lifespan: { wild: 7, source: "https://animalia.bio/black-tufted-marmoset" },
+    birth: "live",
     class: "mammalia",
   },
   marmosetCommon: {
@@ -375,6 +399,7 @@ const species = {
       wild: { min: 5, max: 7 },
       source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775658/",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -390,6 +415,7 @@ const species = {
       captivity: 11,
       source: "https://www.whatsthatbug.com/how-to-care-for-a-millipede/",
     },
+    birth: "egg",
     class: "diplopoda",
   },
 
@@ -405,6 +431,7 @@ const species = {
       captivity: { min: 15, max: 30 },
       source: "https://en.wikipedia.org/wiki/Ball_python",
     },
+    birth: "egg",
     class: "reptilia",
   },
 
@@ -420,6 +447,7 @@ const species = {
       captivity: 30,
       source: "https://en.wikipedia.org/wiki/Morelia_spilota",
     },
+    birth: "egg",
     class: "reptilia",
   },
 
@@ -435,6 +463,7 @@ const species = {
       captivity: { min: 2, max: 3 },
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -450,6 +479,7 @@ const species = {
       wild: { min: 6, max: 8 },
       source: "https://en.wikipedia.org/wiki/Emperor_scorpion",
     },
+    birth: "live",
     class: "arachnida",
   },
 
@@ -465,6 +495,7 @@ const species = {
       captivity: 20,
       source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
     },
+    birth: "live",
     class: "reptilia",
   },
 
@@ -481,6 +512,7 @@ const species = {
       captivity: 100,
       source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
     },
+    birth: "egg",
     class: "reptilia",
   },
 
@@ -493,6 +525,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Vinegaroon",
     },
     lifespan: { wild: 8, source: "https://en.wikipedia.org/wiki/Uropygi" },
+    birth: "live",
     class: "arachnida",
   },
 
@@ -509,6 +542,7 @@ const species = {
       source:
         "https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/",
     },
+    birth: "live",
     class: "mammalia",
   },
 
@@ -525,6 +559,7 @@ const species = {
       source:
         "https://www.thetarantulacollective.com/caresheets/tliltocatl-vagans",
     },
+    birth: "egg",
     class: "arachnida",
   },
   tarantulaHonduranCurlyHair: {
@@ -540,6 +575,7 @@ const species = {
       source:
         "https://www.thetarantulacollective.com/caresheets/tliltocatl-albopilosus",
     },
+    birth: "egg",
     class: "arachnida",
   },
 
@@ -552,6 +588,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
   plantForkLeavedSundew: {
@@ -563,6 +600,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Drosera_binata",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
   plantMexicanButterwort: {
@@ -574,6 +612,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Pinguicula_moranensis",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
   plantCorpseFlower: {
@@ -585,6 +624,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
   plantVenusFlytrap: {
@@ -596,6 +636,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Venus_flytrap",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
   plantFlaskPitcher: {
@@ -607,6 +648,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria",
     },
     lifespan: { source: "" },
+    birth: "seed",
     class: "plantae",
   },
 } as const satisfies Record<string, Species>;
