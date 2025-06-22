@@ -1,3 +1,5 @@
+import { z } from "zod/v4";
+
 export type Enclosure = {
   name: string;
 };
@@ -50,5 +52,10 @@ const enclosureKeys = Object.keys(enclosures) as EnclosureKey[];
 
 export const isEnclosureKey = (str: string): str is EnclosureKey =>
   enclosureKeys.includes(str as EnclosureKey);
+
+export const enclosureKeySchema = z.custom<EnclosureKey>(
+  (value) => typeof value === "string" && isEnclosureKey(value),
+  `must be a valid enclosure key (${enclosureKeys.join(", ")})`,
+);
 
 export default enclosures;
