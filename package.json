@@ -16,7 +16,8 @@
     "format:check": "prettier --check \"**/*.{ts,css}\"",
     "test": "tsc --noEmit",
     "build": "tsup",
-    "populate": "tsx tsup.optimize.ts",
+    "populate": "tsx scripts/optimize.ts",
+    "iucn": "tsx scripts/iucn.ts",
     "prepare": "husky"
   },
   "type": "module",

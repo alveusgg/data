@@ -15,7 +15,7 @@ import sharp from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
 
-import packageJson from "./package.json" assert { type: "json" };
+import packageJson from "../package.json" assert { type: "json" };
 
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
