@@ -6,6 +6,9 @@ on:
     # Run every Tuesday at midnight, giving time to merge before org-wide
     #  Dependabot PRs are generated on Wednesday at midnight
     - cron: "0 0 * * 2"
+  push:
+    branches:
+      - MattIPv4/iucn-assessment-id
 
 jobs:
   update:
