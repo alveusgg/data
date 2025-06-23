@@ -1,0 +1,58 @@
+name: IUCN
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run every Tuesday at midnight, giving time to merge before org-wide
+    #  Dependabot PRs are generated on Wednesday at midnight
+    - cron: "0 0 * * 2"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Authenticate GitHub Package Registry
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update IUCN data
+        run: npm run iucn
+        env:
+          IUCN_API_TOKEN: ${{ secrets.IUCN_API_TOKEN }}
+
+      - name: Bump version
+        id: version
+        run: |
+          # Check if there are any changes
+          if git diff --exit-code; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          # Bump the version
+          npm version minor --no-git-tag-version
+
+          # Output the new version
+          echo "version=$(jq -r .version package.json)" >> $GITHUB_OUTPUT
+
+      - name: Create PR
+        if: steps.version.outputs.version != ''
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
+        with:
+          token: ${{ secrets.GH_PR_TOKEN }}
+          title: Update IUCN species data
+          body: Generated via `npm run iucn`
+          commit-message: Update IUCN species data
+          branch: automated/iucn
