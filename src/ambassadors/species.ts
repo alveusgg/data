@@ -45,7 +45,7 @@ const species = {
   africanGrey: {
     name: "African Grey",
     scientificName: "Psittacus erithacus",
-    iucn: { id: 22724813, assessment: 0, status: "EN/decreasing" },
+    iucn: { id: 22724813, assessment: 154428817, status: "EN/decreasing" },
     native: {
       text: "Equatorial Africa (dense forests)",
       source: "https://en.wikipedia.org/wiki/African_grey_parrot",
@@ -61,7 +61,7 @@ const species = {
   blueFrontedAmazon: {
     name: "Blue-fronted Amazon",
     scientificName: "Amazona aestiva",
-    iucn: { id: 22686332, assessment: 0, status: "NT/decreasing" },
+    iucn: { id: 22686332, assessment: 154573813, status: "NT/decreasing" },
     native: {
       text: "South America (tropical rainforests)",
       source: "https://en.wikipedia.org/wiki/Blue-fronted_amazon",
@@ -76,7 +76,7 @@ const species = {
   bullfrogAfrican: {
     name: "African Bullfrog",
     scientificName: "Pyxicephalus adspersus",
-    iucn: { id: 58535, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 58535, assessment: 3070700, status: "LC/decreasing" },
     native: {
       text: "Sub-Saharan Africa (dry savanna, freshwater lakes, marshes, etc.)",
       source: "https://en.wikipedia.org/wiki/African_bullfrog",
@@ -183,7 +183,7 @@ const species = {
   chinchilla: {
     name: "Chinchilla",
     scientificName: "Chinchilla lanigera",
-    iucn: { id: 4652, assessment: 0, status: "EN/decreasing" },
+    iucn: { id: 4652, assessment: 117975205, status: "EN/decreasing" },
     native: {
       text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
@@ -232,7 +232,7 @@ const species = {
   crowAmerican: {
     name: "American Crow",
     scientificName: "Corvus brachyrhynchos",
-    iucn: { id: 22705990, assessment: 0, status: "LC/increasing" },
+    iucn: { id: 22705990, assessment: 131945410, status: "LC/increasing" },
     native: {
       text: "North America (forests)",
       source: "https://en.wikipedia.org/wiki/American_crow",
@@ -262,7 +262,7 @@ const species = {
   emu: {
     name: "Emu",
     scientificName: "Dromaius novaehollandiae",
-    iucn: { id: 22678117, assessment: 0, status: "LC" },
+    iucn: { id: 22678117, assessment: 131902466, status: "LC" },
     native: {
       text: "Australia (savannah woodlands and sclerophyll forests)",
       source: "https://en.wikipedia.org/wiki/Emu",
@@ -295,7 +295,7 @@ const species = {
   foxAmericanRed: {
     name: "American Red Fox",
     scientificName: "Vulpes vulpes fulva",
-    iucn: { id: 23062, assessment: 0, status: "LC" },
+    iucn: { id: 23062, assessment: 223595579, status: "LC/increasing" },
     native: {
       text: "North America",
       source: "https://en.wikipedia.org/wiki/American_red_fox",
@@ -356,7 +356,7 @@ const species = {
   macawBlueAndGold: {
     name: "Blue and Gold Macaw",
     scientificName: "Ara ararauna",
-    iucn: { id: 22685539, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 22685539, assessment: 131917270, status: "LC/decreasing" },
     native: {
       text: "South America (tropical rainforests)",
       source: "https://en.wikipedia.org/wiki/Blue-and-yellow_macaw",
@@ -390,7 +390,7 @@ const species = {
   marmosetBlackTufted: {
     name: "Black Tufted Marmoset",
     scientificName: "Callithrix penicillata",
-    iucn: { id: 41519, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 41519, assessment: 191705321, status: "LC/decreasing" },
     native: {
       text: "Brazil (Neo-tropical gallery forests)",
       source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
@@ -402,7 +402,7 @@ const species = {
   marmosetCommon: {
     name: "Common Marmoset",
     scientificName: "Callithrix jacchus",
-    iucn: { id: 41518, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 41518, assessment: 191705043, status: "LC/decreasing" },
     native: {
       text: "Brazil",
       source: "https://en.wikipedia.org/wiki/Common_marmoset",
@@ -434,7 +434,7 @@ const species = {
   pythonBall: {
     name: "Ball Python",
     scientificName: "Python regius",
-    iucn: { id: 177562, assessment: 0, status: "NT/decreasing" },
+    iucn: { id: 177562, assessment: 220378972, status: "NT/decreasing" },
     native: {
       text: "West Sub Saharan Africa (grasslands, savannas, sparsely wooded areas)",
       source: "https://en.wikipedia.org/wiki/Ball_python",
@@ -450,7 +450,7 @@ const species = {
   pythonCoastalCarpet: {
     name: "Coastal Carpet Python",
     scientificName: "Morelia spilota mcdowelli",
-    iucn: { id: 62232, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 62232, assessment: 21649539, status: "LC/decreasing" },
     native: {
       text: "Australia (suburban area, rainforests, forests, etc.)",
       source: "https://en.wikipedia.org/wiki/Carpet_python",
@@ -466,7 +466,7 @@ const species = {
   ratDomestic: {
     name: "Domestic Rat",
     scientificName: "Rattus norvegicus f. domestica",
-    iucn: { id: 19353, assessment: 0, status: "LC" },
+    iucn: { id: 19353, assessment: 221339363, status: "NA" },
     native: {
       text: "Worldwide (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Fancy_rat",
@@ -498,7 +498,7 @@ const species = {
   skinkBlueTongued: {
     name: "Blue-tongued Skink",
     scientificName: "Tiliqua scincoides intermedia",
-    iucn: { id: 109481538, assessment: 0, status: "LC" },
+    iucn: { id: 109481538, assessment: 109481555, status: "LC" },
     native: {
       text: "Australia",
       source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
@@ -514,7 +514,7 @@ const species = {
   tortoiseSulcata: {
     name: "Sulcata Tortoise",
     scientificName: "Centrochelys sulcata",
-    iucn: { id: 163423, assessment: 0, status: "EN/decreasing" },
+    iucn: { id: 163423, assessment: 1006958, status: "EN/decreasing" },
     native: {
       text: "Sahara Desert and the Sahel (shrubland, grassland)",
       source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
@@ -544,7 +544,7 @@ const species = {
   wolfHybrid: {
     name: "Wolf Hybrid",
     scientificName: "Canis lupus x Canis familiaris",
-    iucn: { id: 3746, assessment: 0, status: "LC" },
+    iucn: { id: 3746, assessment: 216872082, status: "LC/increasing" },
     native: {
       text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
       source: "https://en.wikipedia.org/wiki/Wolf",
@@ -561,7 +561,7 @@ const species = {
   tarantulaMexicanRedRump: {
     name: "Mexican Red Rump Tarantula",
     scientificName: "Tliltocatl vagans",
-    iucn: { id: 66082199, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 66082199, assessment: 148729363, status: "LC/decreasing" },
     native: {
       text: "Yucatán Peninsula (dry scrublands, forest edges)",
       source: "https://en.wikipedia.org/wiki/Tliltocatl_vagans",
@@ -577,7 +577,7 @@ const species = {
   tarantulaHonduranCurlyHair: {
     name: "Honduran Curly-Hair Tarantula",
     scientificName: "Tliltocatl albopilosus",
-    iucn: { id: 66081213, assessment: 0, status: "LC/decreasing" },
+    iucn: { id: 66081213, assessment: 148680192, status: "LC/decreasing" },
     native: {
       text: "Central America (rainforests)",
       source: "https://en.wikipedia.org/wiki/Tliltocatl_albopilosus",
@@ -594,7 +594,7 @@ const species = {
   plantVeitchPitcher: {
     name: "Veitch's Pitcher-Plant",
     scientificName: "Nepenthes veitchii",
-    iucn: { id: 39709, assessment: 0, status: "LC" },
+    iucn: { id: 39709, assessment: 143965852, status: "LC" },
     native: {
       text: "Borneo (lowland rain forests)",
       source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii",
@@ -606,7 +606,7 @@ const species = {
   plantForkLeavedSundew: {
     name: "Fork-Leaved Sundew",
     scientificName: "Drosera binata var. dichotoma",
-    iucn: { id: 66437287, assessment: 0, status: "LC" },
+    iucn: { id: 66437287, assessment: 143975087, status: "LC" },
     native: {
       text: "Australia, New Zealand, and Tasmania",
       source: "https://en.wikipedia.org/wiki/Drosera_binata",
@@ -630,7 +630,7 @@ const species = {
   plantCorpseFlower: {
     name: "Corpse Flower",
     scientificName: "Amorphophallus titanum",
-    iucn: { id: 118042834, assessment: 0, status: "EN" },
+    iucn: { id: 118042834, assessment: 118043213, status: "EN/decreasing" },
     native: {
       text: "Sumatra, Indonesia",
       source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum",
@@ -642,7 +642,7 @@ const species = {
   plantVenusFlytrap: {
     name: "Venus Flytrap",
     scientificName: "Dionaea muscipula",
-    iucn: { id: 39636, assessment: 0, status: "VU" },
+    iucn: { id: 39636, assessment: 10253384, status: "VU" },
     native: {
       text: "North and South Carolina (subtropical wetlands)",
       source: "https://en.wikipedia.org/wiki/Venus_flytrap",
@@ -654,7 +654,7 @@ const species = {
   plantFlaskPitcher: {
     name: "Flask-Shaped Pitcher-Plant",
     scientificName: "Nepenthes ampullaria",
-    iucn: { id: 39640, assessment: 0, status: "LC" },
+    iucn: { id: 39640, assessment: 143958546, status: "LC" },
     native: {
       text: "Borneo (lowland rain forests)",
       source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria",
