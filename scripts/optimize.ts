@@ -10,24 +10,29 @@ import {
   unlink,
 } from "node:fs/promises";
 import { dirname, relative, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import sharp from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
 
-import packageJson from "./package.json" assert { type: "json" };
-
+import packageJson from "../package.json" assert { type: "json" };
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
 const warn = (message: string) => console.warn(`\x1b[33m${message}\x1b[0m`);
 
-const cache = "node_modules/.cache/optimize";
-const images = "build/**/*.@(png|jpg|jpeg)";
+const root = fileURLToPath(new URL("../", import.meta.url));
+const cache = fileURLToPath(
+  new URL("../node_modules/.cache/optimize", import.meta.url),
+);
+const images = fileURLToPath(
+  new URL("../build/**/*.@(png|jpg|jpeg)", import.meta.url),
+);
 
 // Copy a file from the cache if it exists
 // Assumes that the file name contains a content hash
 const restoreCache = async (file: string) => {
-  const cached = `${cache}/${file}`;
+  const cached = `${cache}/${relative(root, file)}`;
   if (await stat(cached).catch(() => null)) {
     await copyFile(cached, file);
     return true;
@@ -37,14 +42,14 @@ const restoreCache = async (file: string) => {
 
 // Copy a file to the cache
 const writeCache = async (file: string) => {
-  const cached = `${cache}/${file}`;
+  const cached = `${cache}/${relative(root, file)}`;
   await mkdir(dirname(cached), { recursive: true });
   await copyFile(file, cached);
 };
 
 // Remove any files in the cache not provided
-const purgeCache = async (files: string[]) => {
-  const permitted = new Set(files);
+const purgeCache = async (relFiles: string[]) => {
+  const permitted = new Set(relFiles);
 
   // Get all the files in the cache, excluding directories
   const resolved = resolve(cache);
@@ -72,7 +77,7 @@ const populateCache = async () => {
   // Load the npm config for the current context
   // This will include registry and auth settings
   const config = new npmConfig({
-    npmPath: new URL("./", import.meta.url).pathname,
+    npmPath: root,
     definitions: {},
     shorthands: {},
     flatten: (data, flat = {}) => Object.assign(flat, data),
@@ -87,7 +92,7 @@ const populateCache = async () => {
   const files = await Array.fromAsync(
     glob(`${cache}/**/*`, {
       withFileTypes: true,
-      exclude: [`${cache}/${images}`],
+      exclude: [`${cache}/${relative(root, images)}`],
     }),
   ).then((files) =>
     files
@@ -149,13 +154,13 @@ const optimize = async (file: string): Promise<OptimizeResult | void> => {
   }
 
   if (!shrunk) {
-    warn(`${file}: failed to optimize`);
+    warn(`${relative(root, file)}: failed to optimize`);
     return;
   }
 
   if (shrunk.length > contents.length) {
     warn(
-      `${file}: optimized larger than original [ ${kb(contents.length)} -> ${kb(shrunk.length)} ]`,
+      `${relative(root, file)}: optimized larger than original [ ${kb(contents.length)} -> ${kb(shrunk.length)} ]`,
     );
     return {
       original: {
@@ -189,10 +194,12 @@ export default async () => {
   const processed: [string, string][] = [];
 
   for await (const file of glob(images)) {
+    const rel = relative(root, file);
+
     // Check if the file exists in the cache
     const cached = await restoreCache(file);
     if (cached) {
-      processed.push([file, "cached"]);
+      processed.push([rel, "cached"]);
       continue;
     }
 
@@ -204,14 +211,14 @@ export default async () => {
 
     // If not optimized, don't store it in the cache
     if (optimized.optimized === undefined) {
-      processed.push([file, "unoptimized"]);
+      processed.push([rel, "unoptimized"]);
       continue;
     }
 
     // Store the optimized file in the cache
     await writeCache(file);
     processed.push([
-      file,
+      rel,
       `optimized (${kb(optimized.original.size)} -> ${kb(optimized.optimized.size)} @ ${optimized.optimized.quality}%)`,
     ]);
   }

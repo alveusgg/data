@@ -9,6 +9,7 @@ const iucnStatuses = {
   NT: "Near Threatened",
   LC: "Least Concern",
   DD: "Data Deficient",
+  NA: "Not Applicable",
   NE: "Not Evaluated",
 } as const;
 
