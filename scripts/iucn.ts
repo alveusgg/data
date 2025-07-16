@@ -1,7 +1,7 @@
 /// <reference types="@types/node" />
 
 import { Project, SyntaxKind } from "ts-morph";
-import { z } from "zod/v4";
+import { z } from "zod";
 
 import { iucnStatusSchema } from "../src/iucn";
 
