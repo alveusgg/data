@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 type OneToNine = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
 type ZeroToNine = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
