@@ -90,6 +90,24 @@ const ambassadors = {
       link: "https://youtooz.com/products/stompy-plush-9-inch",
     },
   },
+  nolie: {
+    name: "Nolie",
+    alternate: [],
+    commands: ["nolie"],
+    species: "emu",
+    sex: "Female",
+    birth: "2020",
+    arrival: "2025-09-12",
+    retired: null,
+    enclosure: "emus",
+    story:
+      "Nolie was bought as a pet and was then transferred to Alveus when the family moved states.",
+    mission:
+      "She is an ambassador for teaching about the exotic meat trade, traditional medicine, and the use of animal products in cosmetics.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   georgie: {
     name: "Georgie",
     alternate: [],
