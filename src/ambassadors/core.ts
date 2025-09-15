@@ -56,7 +56,7 @@ const ambassadors = {
     birth: "2021-02-14",
     arrival: "2021-06-01",
     retired: null,
-    enclosure: "pasture",
+    enclosure: "emus",
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
