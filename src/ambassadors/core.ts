@@ -47,6 +47,62 @@ export type Ambassador = z.infer<typeof ambassadorSchema>;
 
 const ambassadors = {
   // Active ambassadors
+  georgie: {
+    name: "Georgie",
+    alternate: [],
+    commands: ["georgie"],
+    species: "bullfrogAfrican",
+    sex: "Male",
+    birth: "2021",
+    arrival: "2021-04",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
+    fact: "African Bullfrogs, like many other amphibians, have semipermeable skin that allows them to absorb water and oxygen. This adaptation is super important to allow them to drink and breathe while they're underwater or buried in the mud.\n\nUnfortunately, this also means that they can absorb any harmful chemicals in their environment, which is why it is so important to keep pollution and litter out of our waterways!",
+    // Fact source: https://www.nps.gov/hosp/learn/nature/amphibians.htm
+    clips: [
+      { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
+      { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
+      { id: "pjfNXZxmQ2M", caption: "Georgie Poops In His New Enclosure" },
+      { id: "NlHmTLHHcKg", caption: "Georgie Actually Does A Backflip" },
+      { id: "_kt-VaruYJo", caption: "Georgie Goes For A Swim" },
+    ],
+    homepage: {
+      title: "Georgie!",
+      description:
+        "He is here to teach all about threats to his species and to amphibians worldwide.",
+    },
+    plush: {
+      link: "https://youtooz.com/products/georgie-plush-9-inch",
+    },
+  },
+  pushPop: {
+    name: "Push Pop",
+    alternate: ["Poppy"],
+    commands: ["pushpop", "poppy"],
+    species: "tortoiseSulcata",
+    sex: "Female",
+    birth: "2019",
+    arrival: "2024-02",
+    retired: null,
+    enclosure: "tortoise",
+    story:
+      "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
+    mission:
+      "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
+    clips: [
+      { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
+      {
+        id: "0yqMN0X8Ruw",
+        caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
+      },
+    ],
+    homepage: null,
+    plush: null,
+  },
   stompy: {
     name: "Stompy",
     alternate: [],
@@ -56,7 +112,7 @@ const ambassadors = {
     birth: "2021-02-14",
     arrival: "2021-06-01",
     retired: null,
-    enclosure: "pasture",
+    enclosure: "emus",
     story:
       "Stompy was hatched in captivity and was hand raised by Maya to be the first Alveus ambassador.",
     mission:
@@ -90,37 +146,23 @@ const ambassadors = {
       link: "https://youtooz.com/products/stompy-plush-9-inch",
     },
   },
-  georgie: {
-    name: "Georgie",
+  nolie: {
+    name: "Nolie",
     alternate: [],
-    commands: ["georgie"],
-    species: "bullfrogAfrican",
-    sex: "Male",
-    birth: "2021",
-    arrival: "2021-04",
+    commands: ["nolie"],
+    species: "emu",
+    sex: "Female",
+    birth: "2020",
+    arrival: "2025-09-12",
     retired: null,
-    enclosure: "reptiles",
+    enclosure: "emus",
     story:
-      "Georgie was part of an educational program at a zoo and was rehomed to Alveus.",
+      "Nolie was bought as a pet and was then transferred to Alveus when the family moved states.",
     mission:
-      "He is an ambassador for the wildlife trade and how chytrid fungus is affecting amphibian species worldwide.",
-    fact: "African Bullfrogs, like many other amphibians, have semipermeable skin that allows them to absorb water and oxygen. This adaptation is super important to allow them to drink and breathe while they're underwater or buried in the mud.\n\nUnfortunately, this also means that they can absorb any harmful chemicals in their environment, which is why it is so important to keep pollution and litter out of our waterways!",
-    // Fact source: https://www.nps.gov/hosp/learn/nature/amphibians.htm
-    clips: [
-      { id: "4WpuyhCXTTs", caption: "Georgie's Journey At Alveus" },
-      { id: "YNHssqn1O40", caption: "Georgie Gets Fed By ConnorEatsPants" },
-      { id: "pjfNXZxmQ2M", caption: "Georgie Poops In His New Enclosure" },
-      { id: "NlHmTLHHcKg", caption: "Georgie Actually Does A Backflip" },
-      { id: "_kt-VaruYJo", caption: "Georgie Goes For A Swim" },
-    ],
-    homepage: {
-      title: "Georgie!",
-      description:
-        "He is here to teach all about threats to his species and to amphibians worldwide.",
-    },
-    plush: {
-      link: "https://youtooz.com/products/georgie-plush-9-inch",
-    },
+      "She is an ambassador for teaching about the exotic meat trade, traditional medicine, and the use of animal products in cosmetics.",
+    clips: [],
+    homepage: null,
+    plush: null,
   },
   tico: {
     name: "Tico",
@@ -634,50 +676,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  pushPop: {
-    name: "Push Pop",
-    alternate: ["Poppy"],
-    commands: ["pushpop", "poppy"],
-    species: "tortoiseSulcata",
-    sex: "Female",
-    birth: "2019",
-    arrival: "2024-02",
-    retired: null,
-    enclosure: "tortoise",
-    story:
-      "Push Pop was bought as a pet and was rehomed when the family moved states. She was then transferred to Alveus.",
-    mission:
-      "She is an ambassador for teaching the world about the exotic pet trade, habitat loss due to agricultural expansion for cattle, and the gradual effects of climate change on our natural world.",
-    clips: [
-      { id: "4-eInn7D-xE", caption: "Push Pop's First Time On Stream" },
-      {
-        id: "0yqMN0X8Ruw",
-        caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
-      },
-    ],
-    homepage: null,
-    plush: null,
-  },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    commands: ["toast", "toaster"],
-    species: "skinkBlueTongued",
-    sex: null,
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
-    // Fact source: https://www.jstor.org/stable/44857402
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   hankMrMctrain: {
     name: "Hank Mr. McTrain",
     alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
@@ -830,6 +828,26 @@ const ambassadors = {
       "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    commands: ["toast", "toaster"],
+    species: "skinkBlueTongued",
+    sex: null,
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
+    // Fact source: https://www.jstor.org/stable/44857402
     clips: [],
     homepage: null,
     plush: null,

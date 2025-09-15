@@ -170,6 +170,10 @@ import nillaWaferImage2 from "../assets/ambassadors/nillaWafer/02.jpg";
 import nillaWaferImageIcon from "../assets/ambassadors/nillaWafer/icon.png";
 import nillaWaferImageEmote from "../assets/ambassadors/nillaWafer/emote.png";
 
+import nolieImage1 from "../assets/ambassadors/nolie/01.jpg";
+import nolieImage2 from "../assets/ambassadors/nolie/02.jpg";
+import nolieImage3 from "../assets/ambassadors/nolie/03.jpg";
+
 import noodleImage1 from "../assets/ambassadors/noodle/01.jpg";
 import noodleImage2 from "../assets/ambassadors/noodle/02.jpg";
 import noodleImage3 from "../assets/ambassadors/noodle/03.jpg";
@@ -533,6 +537,11 @@ const ambassadorImages: {
   nillaWafer: [
     { src: nillaWaferImage1, alt: "Nilla Wafer the Rat" },
     { src: nillaWaferImage2, alt: "Nilla Wafer the Rat" },
+  ],
+  nolie: [
+    { src: nolieImage1, alt: "Nolie the Emu", position: "90% 10%" },
+    { src: nolieImage2, alt: "Nolie the Emu", position: "0% 25%" },
+    { src: nolieImage3, alt: "Nolie the Emu", position: "90% 10%" },
   ],
   noodle: [
     { src: noodleImage1, alt: "Noodle the Carpet Python" },
