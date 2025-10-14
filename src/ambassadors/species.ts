@@ -183,7 +183,7 @@ const species = {
   chinchilla: {
     name: "Chinchilla",
     scientificName: "Chinchilla lanigera",
-    iucn: { id: 4652, assessment: 117975205, status: "EN/decreasing" },
+    iucn: { id: 4652, assessment: 271314552, status: "EN" },
     native: {
       text: "Andes Mountains, South America (Domesticated)",
       source: "https://en.wikipedia.org/wiki/Chinchilla",
