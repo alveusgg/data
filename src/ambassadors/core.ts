@@ -148,8 +148,8 @@ const ambassadors = {
   },
   nolie: {
     name: "Nolie",
-    alternate: [],
-    commands: ["nolie"],
+    alternate: ["Nolan's Mom"],
+    commands: ["nolie", "nolansmom"],
     species: "emu",
     sex: "Female",
     birth: "2020",
