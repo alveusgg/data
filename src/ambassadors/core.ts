@@ -160,7 +160,14 @@ const ambassadors = {
       "Nolie was bought as a pet and was then transferred to Alveus when the family moved states.",
     mission:
       "She is an ambassador for teaching about the exotic meat trade, traditional medicine, and the use of animal products in cosmetics.",
-    clips: [],
+    fact: "Nolie's full name is actually \"Nolan's Mom\". MrBeast gave her this name after helping rescue her and building the new Emu Grove enclosure for both Nolie and Stompy. MrBeast also donated $50,000 to help kick-start the Alveus Research and Recovery Institute while he was visiting.",
+    // Fact source: https://www.youtube.com/watch?v=ukg8wzaVrWQ
+    clips: [
+      {
+        id: "ukg8wzaVrWQ",
+        caption: "How Nolie Got Her Name & Enclosure With MrBeast",
+      },
+    ],
     homepage: null,
     plush: null,
   },
