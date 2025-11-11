@@ -247,6 +247,7 @@ import serranoImageEmote from "../assets/ambassadors/serrano/emote.png";
 import sirenImage1 from "../assets/ambassadors/siren/01.jpg";
 import sirenImage2 from "../assets/ambassadors/siren/02.jpg";
 import sirenImage3 from "../assets/ambassadors/siren/03.jpg";
+import sirenImage4 from "../assets/ambassadors/siren/04.jpg";
 import sirenImageMerch from "../assets/ambassadors/siren/merch.png";
 import sirenImageIcon from "../assets/ambassadors/siren/icon.png";
 import sirenImageEmote from "../assets/ambassadors/siren/emote.png";
@@ -629,6 +630,11 @@ const ambassadorImages: {
       src: sirenImage3,
       alt: "Siren the Blue-fronted Amazon",
       position: "0% 50%",
+    },
+    {
+      src: sirenImage4,
+      alt: "Siren the Blue-fronted Amazon",
+      position: "45% 35%",
     },
   ],
   snork: [
