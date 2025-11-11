@@ -247,10 +247,6 @@ import serranoImageEmote from "../assets/ambassadors/serrano/emote.png";
 import sirenImage1 from "../assets/ambassadors/siren/01.jpg";
 import sirenImage2 from "../assets/ambassadors/siren/02.jpg";
 import sirenImage3 from "../assets/ambassadors/siren/03.jpg";
-import sirenImage4 from "../assets/ambassadors/siren/04.jpg";
-import sirenImage5 from "../assets/ambassadors/siren/05.jpg";
-import sirenImage6 from "../assets/ambassadors/siren/06.jpg";
-import sirenImage7 from "../assets/ambassadors/siren/07.jpg";
 import sirenImageMerch from "../assets/ambassadors/siren/merch.png";
 import sirenImageIcon from "../assets/ambassadors/siren/icon.png";
 import sirenImageEmote from "../assets/ambassadors/siren/emote.png";
@@ -634,10 +630,6 @@ const ambassadorImages: {
       alt: "Siren the Blue-fronted Amazon",
       position: "0% 50%",
     },
-    { src: sirenImage4, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage5, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage6, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage7, alt: "Siren the Blue-fronted Amazon" },
   ],
   snork: [
     { src: snorkImage1, alt: "Snork the Chinchilla", position: "0% 50%" },
