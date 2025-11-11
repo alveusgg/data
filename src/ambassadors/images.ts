@@ -12,8 +12,8 @@ import abbottImage3 from "../assets/ambassadors/abbott/03.png";
 import abbottImageIcon from "../assets/ambassadors/abbott/icon.png";
 import abbottImageEmote from "../assets/ambassadors/abbott/emote.png";
 
-import akelaImage1 from "../assets/ambassadors/akela/01.png";
-import akelaImage2 from "../assets/ambassadors/akela/02.png";
+import akelaImage3 from "../assets/ambassadors/akela/03.png";
+import akelaImage4 from "../assets/ambassadors/akela/04.png";
 import akelaImageIcon from "../assets/ambassadors/akela/icon.png";
 import akelaImageBadge from "../assets/ambassadors/akela/badge.png";
 
@@ -362,8 +362,8 @@ const ambassadorImages: {
     { src: abbottImage3, alt: "Abbott the American Crow", position: "0% 0%" },
   ],
   akela: [
-    { src: akelaImage1, alt: "Akela the Wolfdog" },
-    { src: akelaImage2, alt: "Akela the Wolfdog" },
+    { src: akelaImage3, alt: "Akela the Wolfdog" },
+    { src: akelaImage4, alt: "Akela the Wolfdog" },
   ],
   appa: [
     { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
