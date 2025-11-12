@@ -361,7 +361,7 @@ const ambassadorImages: {
     { src: abbottImage3, alt: "Abbott the American Crow", position: "0% 0%" },
   ],
   akela: [
-    { src: akelaImage1, alt: "Akela the Wolfdog", position: "50% 35%" },
+    { src: akelaImage1, alt: "Akela the Wolfdog", position: "50% 30%" },
     { src: akelaImage2, alt: "Akela the Wolfdog", position: "25% 25%" },
     { src: akelaImage3, alt: "Akela the Wolfdog" },
     { src: akelaImage4, alt: "Akela the Wolfdog" },
@@ -554,7 +554,7 @@ const ambassadorImages: {
     {
       src: nuggetImage1,
       alt: "Nugget the Ameraucana Chicken",
-      position: "65% 15%",
+      position: "65% 5%",
     },
     { src: nuggetImage2, alt: "Nugget the Ameraucana Chicken" },
     { src: nuggetImage3, alt: "Nugget the Ameraucana Chicken" },
