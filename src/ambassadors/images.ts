@@ -182,7 +182,6 @@ import noodleImage3 from "../assets/ambassadors/noodle/03.jpg";
 import noodleImage4 from "../assets/ambassadors/noodle/04.jpg";
 import noodleImageIcon from "../assets/ambassadors/noodle/icon.png";
 
-import nuggetImage1 from "../assets/ambassadors/nugget/01.jpg";
 import nuggetImage2 from "../assets/ambassadors/nugget/02.jpg";
 import nuggetImage3 from "../assets/ambassadors/nugget/03.jpg";
 import nuggetImageIcon from "../assets/ambassadors/nugget/icon.png";
@@ -551,11 +550,6 @@ const ambassadorImages: {
     { src: noodleImage4, alt: "Noodle the Carpet Python", position: "0% 100%" },
   ],
   nugget: [
-    {
-      src: nuggetImage1,
-      alt: "Nugget the Ameraucana Chicken",
-      position: "100% 0%",
-    },
     { src: nuggetImage2, alt: "Nugget the Ameraucana Chicken" },
     { src: nuggetImage3, alt: "Nugget the Ameraucana Chicken" },
   ],
