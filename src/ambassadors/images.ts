@@ -221,7 +221,6 @@ import puppyImageEmote from "../assets/ambassadors/puppy/emote.png";
 import puppyImageBadge from "../assets/ambassadors/puppy/badge.png";
 
 import pushPopImage1 from "../assets/ambassadors/pushPop/01.jpg";
-import pushPopImage2 from "../assets/ambassadors/pushPop/02.jpg";
 import pushPopImage3 from "../assets/ambassadors/pushPop/03.jpg";
 import pushPopImage4 from "../assets/ambassadors/pushPop/04.jpg";
 import pushPopImageIcon from "../assets/ambassadors/pushPop/icon.png";
@@ -594,7 +593,6 @@ const ambassadorImages: {
   ],
   pushPop: [
     { src: pushPopImage1, alt: "Push Pop the Sulcata Tortoise" },
-    { src: pushPopImage2, alt: "Push Pop the Sulcata Tortoise" },
     { src: pushPopImage3, alt: "Push Pop the Sulcata Tortoise" },
     { src: pushPopImage4, alt: "Push Pop the Sulcata Tortoise" },
   ],
