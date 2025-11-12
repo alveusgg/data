@@ -12,8 +12,10 @@ import abbottImage3 from "../assets/ambassadors/abbott/03.png";
 import abbottImageIcon from "../assets/ambassadors/abbott/icon.png";
 import abbottImageEmote from "../assets/ambassadors/abbott/emote.png";
 
-import akelaImage1 from "../assets/ambassadors/akela/01.png";
-import akelaImage2 from "../assets/ambassadors/akela/02.png";
+import akelaImage1 from "../assets/ambassadors/akela/01.jpg";
+import akelaImage2 from "../assets/ambassadors/akela/02.jpg";
+import akelaImage3 from "../assets/ambassadors/akela/03.png";
+import akelaImage4 from "../assets/ambassadors/akela/04.png";
 import akelaImageIcon from "../assets/ambassadors/akela/icon.png";
 import akelaImageBadge from "../assets/ambassadors/akela/badge.png";
 
@@ -246,9 +248,6 @@ import sirenImage1 from "../assets/ambassadors/siren/01.jpg";
 import sirenImage2 from "../assets/ambassadors/siren/02.jpg";
 import sirenImage3 from "../assets/ambassadors/siren/03.jpg";
 import sirenImage4 from "../assets/ambassadors/siren/04.jpg";
-import sirenImage5 from "../assets/ambassadors/siren/05.jpg";
-import sirenImage6 from "../assets/ambassadors/siren/06.jpg";
-import sirenImage7 from "../assets/ambassadors/siren/07.jpg";
 import sirenImageMerch from "../assets/ambassadors/siren/merch.png";
 import sirenImageIcon from "../assets/ambassadors/siren/icon.png";
 import sirenImageEmote from "../assets/ambassadors/siren/emote.png";
@@ -362,8 +361,10 @@ const ambassadorImages: {
     { src: abbottImage3, alt: "Abbott the American Crow", position: "0% 0%" },
   ],
   akela: [
-    { src: akelaImage1, alt: "Akela the Wolfdog" },
-    { src: akelaImage2, alt: "Akela the Wolfdog" },
+    { src: akelaImage1, alt: "Akela the Wolfdog", position: "50% 30%" },
+    { src: akelaImage2, alt: "Akela the Wolfdog", position: "25% 25%" },
+    { src: akelaImage3, alt: "Akela the Wolfdog" },
+    { src: akelaImage4, alt: "Akela the Wolfdog" },
   ],
   appa: [
     { src: appaImage1, alt: "Appa the Common Marmoset", position: "50% 25%" },
@@ -553,7 +554,7 @@ const ambassadorImages: {
     {
       src: nuggetImage1,
       alt: "Nugget the Ameraucana Chicken",
-      position: "100% 0%",
+      position: "65% 5%",
     },
     { src: nuggetImage2, alt: "Nugget the Ameraucana Chicken" },
     { src: nuggetImage3, alt: "Nugget the Ameraucana Chicken" },
@@ -630,10 +631,11 @@ const ambassadorImages: {
       alt: "Siren the Blue-fronted Amazon",
       position: "0% 50%",
     },
-    { src: sirenImage4, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage5, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage6, alt: "Siren the Blue-fronted Amazon" },
-    { src: sirenImage7, alt: "Siren the Blue-fronted Amazon" },
+    {
+      src: sirenImage4,
+      alt: "Siren the Blue-fronted Amazon",
+      position: "45% 35%",
+    },
   ],
   snork: [
     { src: snorkImage1, alt: "Snork the Chinchilla", position: "0% 50%" },
