@@ -25,7 +25,7 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^10.4.3",
+    "@npmcli/config": "^10.4.4",
     "@types/node": "^22.19.1",
     "@types/npmcli__config": "^6.0.3",
     "@types/pacote": "^11.1.8",
@@ -33,15 +33,15 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "pacote": "^21.0.4",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.3",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17",
     "ts-morph": "^27.0.2",
     "tsup": "^8.5.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0",
-    "zod": "^4.1.12"
+    "typescript-eslint": "^8.48.0",
+    "zod": "^4.1.13"
   },
   "peerDependencies": {
     "tailwindcss": "^4.0.0",
