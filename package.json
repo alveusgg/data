@@ -24,6 +24,9 @@
   "files": [
     "build"
   ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "devDependencies": {
     "@npmcli/config": "^10.4.4",
     "@types/node": "^22.19.1",
