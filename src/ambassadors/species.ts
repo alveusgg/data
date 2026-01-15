@@ -27,21 +27,18 @@ export const speciesSchema = z.object({
     source: z.string(),
   }),
   lifespan: z.object({
-    wild: z
-      .union([
-        z.number(),
-        z.object({ min: z.number(), max: z.number() }),
-        z.literal("Not Applicable"),
-      ])
-      .optional(),
-    captivity: z
-      .union([
-        z.number(),
-        z.object({ min: z.number(), max: z.number() }),
-        z.literal("Not Applicable"),
-      ])
-      .optional(),
-    source: z.string(),
+    wild: z.union([
+      z.number(),
+      z.object({ min: z.number(), max: z.number() }),
+      z.literal("Not Applicable"),
+      z.literal("Unknown"),
+    ]),
+    captivity: z.union([
+      z.number(),
+      z.object({ min: z.number(), max: z.number() }),
+      z.literal("Not Applicable"),
+      z.literal("Unknown"),
+    ]),
   }),
   birth: z.literal(["live", "egg", "seed"]),
   class: classSchema,
@@ -61,7 +58,7 @@ const species = {
     lifespan: {
       wild: 23,
       captivity: 60,
-      source: "https://en.wikipedia.org/wiki/African_grey_parrot",
+      // source: https://en.wikipedia.org/wiki/African_grey_parrot
     },
     birth: "egg",
     class: "aves",
@@ -76,7 +73,7 @@ const species = {
     },
     lifespan: {
       captivity: 60,
-      source: "https://animaldiversity.org/accounts/Amazona_aestiva/",
+      // source: https://animaldiversity.org/accounts/Amazona_aestiva/
     },
     birth: "egg",
     class: "aves",
@@ -91,7 +88,7 @@ const species = {
     },
     lifespan: {
       captivity: 35,
-      source: "https://en.wikipedia.org/wiki/African_bullfrog",
+      // source: https://en.wikipedia.org/wiki/African_bullfrog
     },
     birth: "egg",
     class: "amphibia",
@@ -107,7 +104,7 @@ const species = {
     },
     lifespan: {
       captivity: 8,
-      source: "https://animal-world.com/olive-egger-chickens/",
+      // source: https://animal-world.com/olive-egger-chickens/
     },
     birth: "egg",
     class: "aves",
@@ -122,7 +119,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 7, max: 9 },
-      source: "https://animal-world.com/silkie-chicken/",
+      // source: https://animal-world.com/silkie-chicken/
     },
     birth: "egg",
     class: "aves",
@@ -137,7 +134,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 8, max: 10 },
-      source: "https://www.sfzoo.org/cochin-chicken/",
+      // source: https://www.sfzoo.org/cochin-chicken/
     },
     birth: "egg",
     class: "aves",
@@ -152,7 +149,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 8 },
-      source: "https://animal-world.com/brahma-chicken/",
+      // source: https://animal-world.com/brahma-chicken/
     },
     birth: "egg",
     class: "aves",
@@ -167,7 +164,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 6, max: 7 },
-      source: "https://animal-world.com/jersey-giant-chicken/",
+      // source: https://animal-world.com/jersey-giant-chicken/
     },
     birth: "egg",
     class: "aves",
@@ -182,7 +179,7 @@ const species = {
     },
     lifespan: {
       captivity: 8,
-      source: "https://animal-world.com/olive-egger-chickens/",
+      // source: https://animal-world.com/olive-egger-chickens/
     },
     birth: "egg",
     class: "aves",
@@ -199,7 +196,7 @@ const species = {
     lifespan: {
       wild: 10,
       captivity: 20,
-      source: "https://en.wikipedia.org/wiki/Chinchilla",
+      // source: https://en.wikipedia.org/wiki/Chinchilla
     },
     birth: "live",
     class: "mammalia",
@@ -215,7 +212,7 @@ const species = {
     },
     lifespan: {
       captivity: 3,
-      source: "https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach",
+      // source: https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach
     },
     birth: "egg",
     class: "insecta",
@@ -231,7 +228,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 12, max: 25 },
-      source: "https://animal-world.com/red-angus-cattle-breed/",
+      // source: https://animal-world.com/red-angus-cattle-breed/
     },
     birth: "live",
     class: "mammalia",
@@ -248,7 +245,7 @@ const species = {
     lifespan: {
       wild: 7,
       captivity: 30,
-      source: "https://en.wikipedia.org/wiki/American_crow",
+      // source: https://en.wikipedia.org/wiki/American_crow
     },
     birth: "egg",
     class: "aves",
@@ -262,7 +259,10 @@ const species = {
       text: "Worldwide (domesticated)",
       source: "https://en.wikipedia.org/wiki/Donkey",
     },
-    lifespan: { captivity: 40, source: "https://en.wikipedia.org/wiki/Donkey" },
+    lifespan: {
+      captivity: 40,
+      // source: https://en.wikipedia.org/wiki/Donkey
+    },
     birth: "live",
     class: "mammalia",
   },
@@ -278,7 +278,7 @@ const species = {
     lifespan: {
       wild: 10,
       captivity: 20,
-      source: "https://en.wikipedia.org/wiki/Emu",
+      // source: https://en.wikipedia.org/wiki/Emu
     },
     birth: "egg",
     class: "aves",
@@ -294,7 +294,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 2, max: 5 },
-      source: "https://www.ndow.org/species/prairie-falcon/",
+      // source: https://www.ndow.org/species/prairie-falcon/
     },
     birth: "egg",
     class: "aves",
@@ -311,7 +311,7 @@ const species = {
     lifespan: {
       wild: 5,
       captivity: 15,
-      source: "https://en.wikipedia.org/wiki/Red_fox",
+      // source: https://en.wikipedia.org/wiki/Red_fox
     },
     birth: "live",
     class: "mammalia",
@@ -324,7 +324,7 @@ const species = {
     native: { text: "Asia", source: "https://en.wikipedia.org/wiki/Cubaris" },
     lifespan: {
       captivity: { min: 2, max: 3 },
-      source: "https://bantam.earth/cubaris-rubber-ducky-isopods/",
+      // source: https://bantam.earth/cubaris-rubber-ducky-isopods/
     },
     birth: "egg",
     class: "malacostraca",
@@ -340,7 +340,7 @@ const species = {
     },
     lifespan: {
       wild: 2,
-      source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
+      // source: https://en.wikipedia.org/wiki/Porcellio_scaber
     },
     birth: "egg",
     class: "malacostraca",
@@ -355,7 +355,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 1, max: 3 },
-      source: "https://bantam.earth/zebra-isopods-armadillidium-maculatum/",
+      // source: https://bantam.earth/zebra-isopods-armadillidium-maculatum/
     },
     birth: "egg",
     class: "malacostraca",
@@ -372,8 +372,7 @@ const species = {
     lifespan: {
       wild: 50,
       captivity: 70,
-      source:
-        "https://animaldiversity.org/accounts/Ara_ararauna/#lifespan_longevity",
+      // source: https://animaldiversity.org/accounts/Ara_ararauna/#lifespan_longevity
     },
     birth: "egg",
     class: "aves",
@@ -388,8 +387,7 @@ const species = {
     },
     lifespan: {
       captivity: 70,
-      source:
-        "https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity",
+      // source: https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity
     },
     birth: "egg",
     class: "aves",
@@ -403,7 +401,10 @@ const species = {
       text: "Brazil (Neo-tropical gallery forests)",
       source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
     },
-    lifespan: { wild: 7, source: "https://animalia.bio/black-tufted-marmoset" },
+    lifespan: {
+      wild: 7,
+      // source: https://animalia.bio/black-tufted-marmoset
+    },
     birth: "live",
     class: "mammalia",
   },
@@ -417,7 +418,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 5, max: 7 },
-      source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775658/",
+      // source: https://pmc.ncbi.nlm.nih.gov/articles/PMC3775658/
     },
     birth: "live",
     class: "mammalia",
@@ -433,7 +434,7 @@ const species = {
     },
     lifespan: {
       captivity: 11,
-      source: "https://www.whatsthatbug.com/how-to-care-for-a-millipede/",
+      // source: https://www.whatsthatbug.com/how-to-care-for-a-millipede/
     },
     birth: "egg",
     class: "diplopoda",
@@ -449,7 +450,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 15, max: 30 },
-      source: "https://en.wikipedia.org/wiki/Ball_python",
+      // source: https://en.wikipedia.org/wiki/Ball_python
     },
     birth: "egg",
     class: "reptilia",
@@ -465,7 +466,7 @@ const species = {
     },
     lifespan: {
       captivity: 30,
-      source: "https://en.wikipedia.org/wiki/Morelia_spilota",
+      // source: https://en.wikipedia.org/wiki/Morelia_spilota
     },
     birth: "egg",
     class: "reptilia",
@@ -481,7 +482,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 2, max: 3 },
-      source: "https://en.wikipedia.org/wiki/Fancy_rat",
+      // source: https://en.wikipedia.org/wiki/Fancy_rat
     },
     birth: "live",
     class: "mammalia",
@@ -497,7 +498,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 6, max: 8 },
-      source: "https://en.wikipedia.org/wiki/Emperor_scorpion",
+      // source: https://en.wikipedia.org/wiki/Emperor_scorpion
     },
     birth: "live",
     class: "arachnida",
@@ -513,7 +514,7 @@ const species = {
     },
     lifespan: {
       captivity: 20,
-      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
+      // source: https://en.wikipedia.org/wiki/Blue-tongued_skink
     },
     birth: "live",
     class: "reptilia",
@@ -530,7 +531,7 @@ const species = {
     lifespan: {
       wild: 75,
       captivity: 100,
-      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
+      // source: https://en.wikipedia.org/wiki/African_spurred_tortoise
     },
     birth: "egg",
     class: "reptilia",
@@ -544,7 +545,10 @@ const species = {
       text: "Tropical and subtropical areas, excluding Europe and Australia",
       source: "https://en.wikipedia.org/wiki/Vinegaroon",
     },
-    lifespan: { wild: 8, source: "https://en.wikipedia.org/wiki/Uropygi" },
+    lifespan: {
+      wild: 8,
+      // source: https://en.wikipedia.org/wiki/Uropygi
+    },
     birth: "live",
     class: "arachnida",
   },
@@ -560,8 +564,7 @@ const species = {
     lifespan: {
       wild: "Not Applicable",
       captivity: { min: 12, max: 14 },
-      source:
-        "https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/",
+      // source: https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/
     },
     birth: "live",
     class: "mammalia",
@@ -577,8 +580,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 25 },
-      source:
-        "https://www.thetarantulacollective.com/caresheets/tliltocatl-vagans",
+      // source: https://www.thetarantulacollective.com/caresheets/tliltocatl-vagans
     },
     birth: "egg",
     class: "arachnida",
@@ -593,8 +595,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 25 },
-      source:
-        "https://www.thetarantulacollective.com/caresheets/tliltocatl-albopilosus",
+      // source: https://www.thetarantulacollective.com/caresheets/tliltocatl-albopilosus
     },
     birth: "egg",
     class: "arachnida",
