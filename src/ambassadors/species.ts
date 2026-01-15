@@ -28,10 +28,18 @@ export const speciesSchema = z.object({
   }),
   lifespan: z.object({
     wild: z
-      .union([z.number(), z.object({ min: z.number(), max: z.number() })])
+      .union([
+        z.number(),
+        z.object({ min: z.number(), max: z.number() }),
+        z.literal("Not Applicable"),
+      ])
       .optional(),
     captivity: z
-      .union([z.number(), z.object({ min: z.number(), max: z.number() })])
+      .union([
+        z.number(),
+        z.object({ min: z.number(), max: z.number() }),
+        z.literal("Not Applicable"),
+      ])
       .optional(),
     source: z.string(),
   }),
@@ -550,6 +558,7 @@ const species = {
       source: "https://en.wikipedia.org/wiki/Wolf",
     },
     lifespan: {
+      wild: "Not Applicable",
       captivity: { min: 12, max: 14 },
       source:
         "https://wolf.org/wolf-info/basic-wolf-info/wolves-and-humans/wolf-dog-hybrids/",
