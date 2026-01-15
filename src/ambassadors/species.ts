@@ -73,6 +73,7 @@ const species = {
     },
     lifespan: {
       captivity: 60,
+      wild: "Unknown",
       // source: https://animaldiversity.org/accounts/Amazona_aestiva/
     },
     birth: "egg",
@@ -88,6 +89,7 @@ const species = {
     },
     lifespan: {
       captivity: 35,
+      wild: "Unknown",
       // source: https://en.wikipedia.org/wiki/African_bullfrog
     },
     birth: "egg",
@@ -104,6 +106,7 @@ const species = {
     },
     lifespan: {
       captivity: 8,
+      wild: "Not Applicable",
       // source: https://animal-world.com/olive-egger-chickens/
     },
     birth: "egg",
@@ -119,6 +122,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 7, max: 9 },
+      wild: "Not Applicable",
       // source: https://animal-world.com/silkie-chicken/
     },
     birth: "egg",
@@ -134,6 +138,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 8, max: 10 },
+      wild: "Not Applicable",
       // source: https://www.sfzoo.org/cochin-chicken/
     },
     birth: "egg",
@@ -149,6 +154,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 8 },
+      wild: "Not Applicable",
       // source: https://animal-world.com/brahma-chicken/
     },
     birth: "egg",
@@ -164,6 +170,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 6, max: 7 },
+      wild: "Not Applicable",
       // source: https://animal-world.com/jersey-giant-chicken/
     },
     birth: "egg",
@@ -179,6 +186,7 @@ const species = {
     },
     lifespan: {
       captivity: 8,
+      wild: "Not Applicable",
       // source: https://animal-world.com/olive-egger-chickens/
     },
     birth: "egg",
@@ -212,6 +220,7 @@ const species = {
     },
     lifespan: {
       captivity: 3,
+      wild: "Unknown",
       // source: https://en.wikipedia.org/wiki/Madagascar_hissing_cockroach
     },
     birth: "egg",
@@ -228,6 +237,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 12, max: 25 },
+      wild: "Not Applicable",
       // source: https://animal-world.com/red-angus-cattle-breed/
     },
     birth: "live",
@@ -261,6 +271,7 @@ const species = {
     },
     lifespan: {
       captivity: 40,
+      wild: "Not Applicable",
       // source: https://en.wikipedia.org/wiki/Donkey
     },
     birth: "live",
@@ -294,6 +305,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 2, max: 5 },
+      captivity: "Unknown",
       // source: https://www.ndow.org/species/prairie-falcon/
     },
     birth: "egg",
@@ -324,6 +336,7 @@ const species = {
     native: { text: "Asia", source: "https://en.wikipedia.org/wiki/Cubaris" },
     lifespan: {
       captivity: { min: 2, max: 3 },
+      wild: "Unknown",
       // source: https://bantam.earth/cubaris-rubber-ducky-isopods/
     },
     birth: "egg",
@@ -340,6 +353,7 @@ const species = {
     },
     lifespan: {
       wild: 2,
+      captivity: "Unknown",
       // source: https://en.wikipedia.org/wiki/Porcellio_scaber
     },
     birth: "egg",
@@ -355,6 +369,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 1, max: 3 },
+      wild: "Unknown",
       // source: https://bantam.earth/zebra-isopods-armadillidium-maculatum/
     },
     birth: "egg",
@@ -387,6 +402,7 @@ const species = {
     },
     lifespan: {
       captivity: 70,
+      wild: { min: 40, max: 50 },
       // source: https://animaldiversity.org/accounts/Ara_macao/#lifespan_longevity
     },
     birth: "egg",
@@ -403,6 +419,7 @@ const species = {
     },
     lifespan: {
       wild: 7,
+      captivity: "Unknown",
       // source: https://animalia.bio/black-tufted-marmoset
     },
     birth: "live",
@@ -418,6 +435,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 5, max: 7 },
+      captivity: "Unknown",
       // source: https://pmc.ncbi.nlm.nih.gov/articles/PMC3775658/
     },
     birth: "live",
@@ -434,6 +452,7 @@ const species = {
     },
     lifespan: {
       captivity: 11,
+      wild: "Unknown",
       // source: https://www.whatsthatbug.com/how-to-care-for-a-millipede/
     },
     birth: "egg",
@@ -450,6 +469,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 15, max: 30 },
+      wild: "Unknown",
       // source: https://en.wikipedia.org/wiki/Ball_python
     },
     birth: "egg",
@@ -466,6 +486,7 @@ const species = {
     },
     lifespan: {
       captivity: 30,
+      wild: "Unknown",
       // source: https://en.wikipedia.org/wiki/Morelia_spilota
     },
     birth: "egg",
@@ -482,6 +503,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 2, max: 3 },
+      wild: "Not Applicable",
       // source: https://en.wikipedia.org/wiki/Fancy_rat
     },
     birth: "live",
@@ -498,6 +520,7 @@ const species = {
     },
     lifespan: {
       wild: { min: 6, max: 8 },
+      captivity: "Unknown",
       // source: https://en.wikipedia.org/wiki/Emperor_scorpion
     },
     birth: "live",
@@ -514,6 +537,7 @@ const species = {
     },
     lifespan: {
       captivity: 20,
+      wild: "Unknown",
       // source: https://en.wikipedia.org/wiki/Blue-tongued_skink
     },
     birth: "live",
@@ -547,6 +571,7 @@ const species = {
     },
     lifespan: {
       wild: 8,
+      captivity: "Unknown",
       // source: https://en.wikipedia.org/wiki/Uropygi
     },
     birth: "live",
@@ -580,6 +605,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 25 },
+      wild: "Unknown",
       // source: https://www.thetarantulacollective.com/caresheets/tliltocatl-vagans
     },
     birth: "egg",
@@ -595,6 +621,7 @@ const species = {
     },
     lifespan: {
       captivity: { min: 5, max: 25 },
+      wild: "Unknown",
       // source: https://www.thetarantulacollective.com/caresheets/tliltocatl-albopilosus
     },
     birth: "egg",
@@ -609,7 +636,10 @@ const species = {
       text: "Borneo (lowland rain forests)",
       source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
@@ -621,7 +651,10 @@ const species = {
       text: "Australia, New Zealand, and Tasmania",
       source: "https://en.wikipedia.org/wiki/Drosera_binata",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
@@ -633,7 +666,10 @@ const species = {
       text: "Mexico",
       source: "https://en.wikipedia.org/wiki/Pinguicula_moranensis",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
@@ -645,7 +681,10 @@ const species = {
       text: "Sumatra, Indonesia",
       source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
@@ -657,7 +696,10 @@ const species = {
       text: "North and South Carolina (subtropical wetlands)",
       source: "https://en.wikipedia.org/wiki/Venus_flytrap",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
@@ -669,7 +711,10 @@ const species = {
       text: "Borneo (lowland rain forests)",
       source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria",
     },
-    lifespan: { source: "" },
+    lifespan: {
+      wild: "Unknown",
+      captivity: "Unknown",
+    },
     birth: "seed",
     class: "plantae",
   },
