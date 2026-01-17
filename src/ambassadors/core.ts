@@ -240,33 +240,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  siren: {
-    name: "Siren",
-    alternate: [],
-    commands: ["siren"],
-    species: "blueFrontedAmazon",
-    sex: "Female",
-    birth: null,
-    arrival: "2021-04",
-    retired: null,
-    enclosure: "parrots",
-    story:
-      "Siren was rehomed to Alveus as the previous sanctuary's owner was retiring.",
-    mission:
-      "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
-    clips: [
-      { id: "ociryM83xIo", caption: "Siren Is Given Enrichment" }, // This is a Maya clip
-      { id: "ynv06rC9aHM", caption: "Siren Talks, Sings, And More" },
-      { id: "n8OFY1UN3S0", caption: "Sea Shanty Duet With Kayla & Siren" },
-      { id: "si3puzE6ypE", caption: "Siren Zooming To Her Enrichment" },
-      { id: "LqpK1DhBH-E", caption: "Siren Sings A Song" },
-      { id: "0foatCEQ5vk", caption: "Siren Has A Conversation" },
-    ],
-    homepage: null,
-    plush: {
-      link: "https://youtooz.com/products/siren-plush-9-inch",
-    },
-  },
   abbott: {
     name: "Abbott",
     alternate: [],
@@ -994,6 +967,33 @@ const ambassadors = {
     clips: [],
     homepage: null,
     plush: null,
+  },
+  siren: {
+    name: "Siren",
+    alternate: [],
+    commands: ["siren"],
+    species: "blueFrontedAmazon",
+    sex: "Female",
+    birth: null,
+    arrival: "2021-04",
+    retired: "2026-01-16",
+    enclosure: "parrots",
+    story:
+      "Siren was rehomed to Alveus as the previous sanctuary's owner was retiring.\n\nSiren sadly passed away in January 2026 due to complications from heart disease.",
+    mission:
+      "She is an ambassador for how the pet trade has affected her parrot species and many others around the world.",
+    clips: [
+      { id: "ociryM83xIo", caption: "Siren Is Given Enrichment" }, // This is a Maya clip
+      { id: "ynv06rC9aHM", caption: "Siren Talks, Sings, And More" },
+      { id: "n8OFY1UN3S0", caption: "Sea Shanty Duet With Kayla & Siren" },
+      { id: "si3puzE6ypE", caption: "Siren Zooming To Her Enrichment" },
+      { id: "LqpK1DhBH-E", caption: "Siren Sings A Song" },
+      { id: "0foatCEQ5vk", caption: "Siren Has A Conversation" },
+    ],
+    homepage: null,
+    plush: {
+      link: "https://youtooz.com/products/siren-plush-9-inch",
+    },
   },
   pickles: {
     name: "Pickles",
