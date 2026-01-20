@@ -1024,7 +1024,7 @@ const ambassadors = {
     retired: "2023-03",
     enclosure: "chickens",
     story:
-      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023 and moved to living in a chicken coop with Maya's rabbit and another chicken.",
+      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
