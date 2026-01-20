@@ -961,7 +961,7 @@ const ambassadors = {
     retired: "2022-06-14",
     enclosure: "falcon",
     story:
-      "Orion was originally owned by Maya before becoming an ambassador at Alveus.\n\nOrion sadly passed away in June 2022 after an unfortunate accident in his enclosure.",
+      "Orion was originally owned by Maya before becoming an ambassador at Alveus.\n\nOrion sadly passed away in June 2022 after an unfortunate self-inflicted accident in his enclosure.",
     mission:
       "He is an ambassador for showing how pest control affects wildlife globally and how to conserve major keystone species.",
     clips: [],
@@ -1024,7 +1024,7 @@ const ambassadors = {
     retired: "2023-03",
     enclosure: "chickens",
     story:
-      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023 and now lives in a chicken coop at Maya's Tiny House with her rabbit and other chicken.",
+      "Henrietta was rehomed from a local farm.\n\nHenrietta was retired from being an ambassador in March 2023.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
@@ -1060,7 +1060,7 @@ const ambassadors = {
     retired: "2024-12-05",
     enclosure: "nutrition",
     story:
-      "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
+      "Nilla Wafer was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.\n\nNilla passed away peacefully in December 2024 from old age.",
     mission:
       "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
@@ -1078,7 +1078,7 @@ const ambassadors = {
     retired: "2024-12-13",
     enclosure: "nutrition",
     story:
-      "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.",
+      "Chips Ahoy was bred as a feeder rat for snakes, but she will now live out her full life at Alveus.\n\nChips passed away peacefully in December 2024 from old age.",
     mission:
       "She is an ambassador for how rodenticide use and outdoor cats affect all levels of wildlife.",
     clips: [{ id: "C2Ob-gQ_9os", caption: "Target Training With The Rats" }],
@@ -1096,7 +1096,7 @@ const ambassadors = {
     retired: "2024-12-08",
     enclosure: "wolves",
     story:
-      "Timber was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.",
+      "Timber was rescued from a facility that has received numerous USDA citations based on violations of the Animal Welfare Act.\n\nUnfortunately, Timber passed away in December 2024 after not waking up from emergency surgery to treat his stomach unexpectedly twisting.",
     mission:
       "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
     clips: [],
