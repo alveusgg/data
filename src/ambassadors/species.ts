@@ -22,10 +22,7 @@ export const speciesSchema = z.object({
         status: iucnStatusSchema,
       }),
     ),
-  native: z.object({
-    text: z.string(),
-    source: z.string(),
-  }),
+  native: z.string(),
   lifespan: z.object({
     wild: z.union([
       z.number(),
@@ -51,10 +48,8 @@ const species = {
     name: "African Grey",
     scientificName: "Psittacus erithacus",
     iucn: { id: 22724813, assessment: 154428817, status: "EN/decreasing" },
-    native: {
-      text: "Equatorial Africa (dense forests)",
-      source: "https://en.wikipedia.org/wiki/African_grey_parrot",
-    },
+    native: "Equatorial Africa (dense forests)",
+    // source "https://en.wikipedia.org/wiki/African_grey_parrot"
     lifespan: {
       wild: 23,
       captivity: 60,
@@ -67,10 +62,8 @@ const species = {
     name: "Blue-fronted Amazon",
     scientificName: "Amazona aestiva",
     iucn: { id: 22686332, assessment: 154573813, status: "NT/decreasing" },
-    native: {
-      text: "South America (tropical rainforests)",
-      source: "https://en.wikipedia.org/wiki/Blue-fronted_amazon",
-    },
+    native: "South America (tropical rainforests)",
+    // source "https://en.wikipedia.org/wiki/Blue-fronted_amazon"
     lifespan: {
       captivity: 60,
       wild: "Unknown",
@@ -83,10 +76,8 @@ const species = {
     name: "African Bullfrog",
     scientificName: "Pyxicephalus adspersus",
     iucn: { id: 58535, assessment: 3070700, status: "LC/decreasing" },
-    native: {
-      text: "Sub-Saharan Africa (dry savanna, freshwater lakes, marshes, etc.)",
-      source: "https://en.wikipedia.org/wiki/African_bullfrog",
-    },
+    native: "Sub-Saharan Africa (dry savanna, freshwater lakes, marshes, etc.)",
+    // source: "https://en.wikipedia.org/wiki/African_bullfrog"
     lifespan: {
       captivity: 35,
       wild: "Unknown",
@@ -100,10 +91,8 @@ const species = {
     name: "Ameraucana Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
+    native: "North America (domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Chicken"
     lifespan: {
       captivity: 8,
       wild: "Not Applicable",
@@ -116,10 +105,8 @@ const species = {
     name: "Bantam Silkie Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "China (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Silkie",
-    },
+    native: "China (Domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Silkie",
     lifespan: {
       captivity: { min: 7, max: 9 },
       wild: "Not Applicable",
@@ -132,10 +119,8 @@ const species = {
     name: "Cochin Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "China (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Cochin_chicken",
-    },
+    native: "China (Domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Cochin_chicken"
     lifespan: {
       captivity: { min: 8, max: 10 },
       wild: "Not Applicable",
@@ -148,10 +133,8 @@ const species = {
     name: "Half Dark Brahma, Half Saipan Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
+    native: "North America (domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Chicken"
     lifespan: {
       captivity: { min: 5, max: 8 },
       wild: "Not Applicable",
@@ -164,10 +147,8 @@ const species = {
     name: "Jersey Giant Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "United States (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Jersey_Giant",
-    },
+    native: "United States (Domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Jersey_Giant"
     lifespan: {
       captivity: { min: 6, max: 7 },
       wild: "Not Applicable",
@@ -180,10 +161,8 @@ const species = {
     name: "Olive Egger Chicken",
     scientificName: "Gallus gallus domesticus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "North America (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chicken",
-    },
+    native: "North America (domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Chicken"
     lifespan: {
       captivity: 8,
       wild: "Not Applicable",
@@ -197,10 +176,8 @@ const species = {
     name: "Chinchilla",
     scientificName: "Chinchilla lanigera",
     iucn: { id: 4652, assessment: 271314552, status: "EN" },
-    native: {
-      text: "Andes Mountains, South America (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Chinchilla",
-    },
+    native: "Andes Mountains, South America (Domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Chinchilla"
     lifespan: {
       wild: 10,
       captivity: 20,
@@ -214,10 +191,8 @@ const species = {
     name: "Madagascar Hissing Cockroaches",
     scientificName: "Gromphadorhina portentosa",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Madagascar",
-      source: "https://en.wikipedia.org/wiki/Gromphadorhina_portentosa",
-    },
+    native: "Madagascar",
+    // source: "https://en.wikipedia.org/wiki/Gromphadorhina_portentosa"
     lifespan: {
       captivity: 3,
       wild: "Unknown",
@@ -231,10 +206,8 @@ const species = {
     name: "Red Angus Beef Cow",
     scientificName: "Bos (primigenius) taurus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Australia, United States (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Red_Angus",
-    },
+    native: "Australia, United States (domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Red_Angus"
     lifespan: {
       captivity: { min: 12, max: 25 },
       wild: "Not Applicable",
@@ -248,10 +221,8 @@ const species = {
     name: "American Crow",
     scientificName: "Corvus brachyrhynchos",
     iucn: { id: 22705990, assessment: 131945410, status: "LC/increasing" },
-    native: {
-      text: "North America (forests)",
-      source: "https://en.wikipedia.org/wiki/American_crow",
-    },
+    native: "North America (forests)",
+    // source: "https://en.wikipedia.org/wiki/American_crow"
     lifespan: {
       wild: 7,
       captivity: 30,
@@ -265,10 +236,8 @@ const species = {
     name: "Domestic Donkey",
     scientificName: "Equus africanus asinus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Worldwide (domesticated)",
-      source: "https://en.wikipedia.org/wiki/Donkey",
-    },
+    native: "Worldwide (domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Donkey"
     lifespan: {
       captivity: 40,
       wild: "Not Applicable",
@@ -282,10 +251,8 @@ const species = {
     name: "Emu",
     scientificName: "Dromaius novaehollandiae",
     iucn: { id: 22678117, assessment: 131902466, status: "LC" },
-    native: {
-      text: "Australia (savannah woodlands and sclerophyll forests)",
-      source: "https://en.wikipedia.org/wiki/Emu",
-    },
+    native: "Australia (savannah woodlands and sclerophyll forests)",
+    // source: "https://en.wikipedia.org/wiki/Emu"
     lifespan: {
       wild: 10,
       captivity: 20,
@@ -299,10 +266,8 @@ const species = {
     name: "Prairie/Peregrine Falcon",
     scientificName: "Falco mexicanus x Falco peregrinus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Western North America",
-      source: "https://en.wikipedia.org/wiki/Prairie_falcon",
-    },
+    native: "Western North America",
+    // source: "https://en.wikipedia.org/wiki/Prairie_falcon"
     lifespan: {
       wild: { min: 2, max: 5 },
       captivity: "Unknown",
@@ -316,10 +281,8 @@ const species = {
     name: "American Red Fox",
     scientificName: "Vulpes vulpes fulva",
     iucn: { id: 23062, assessment: 223595579, status: "LC/increasing" },
-    native: {
-      text: "North America",
-      source: "https://en.wikipedia.org/wiki/American_red_fox",
-    },
+    native: "North America",
+    // source: "https://en.wikipedia.org/wiki/American_red_fox"
     lifespan: {
       wild: 5,
       captivity: 15,
@@ -333,7 +296,8 @@ const species = {
     name: "Rubber Ducky Isopods",
     scientificName: "Cubaris sp.",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: { text: "Asia", source: "https://en.wikipedia.org/wiki/Cubaris" },
+    native: "Asia",
+    // source: "https://en.wikipedia.org/wiki/Cubaris"
     lifespan: {
       captivity: { min: 2, max: 3 },
       wild: "Unknown",
@@ -347,10 +311,8 @@ const species = {
     name: "Spanish Orange Isopods",
     scientificName: "Porcellio scaber",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Europe",
-      source: "https://en.wikipedia.org/wiki/Porcellio_scaber",
-    },
+    native: "Europe",
+    // source: "https://en.wikipedia.org/wiki/Porcellio_scaber"
     lifespan: {
       wild: 2,
       captivity: "Unknown",
@@ -363,10 +325,8 @@ const species = {
     name: "Zebra Isopods",
     scientificName: "Armadillidium maculatum",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Southern France",
-      source: "https://en.wikipedia.org/wiki/Armadillidium_maculatum",
-    },
+    native: "Southern France",
+    // source: "https://en.wikipedia.org/wiki/Armadillidium_maculatum"
     lifespan: {
       captivity: { min: 1, max: 3 },
       wild: "Unknown",
@@ -380,10 +340,8 @@ const species = {
     name: "Blue and Gold Macaw",
     scientificName: "Ara ararauna",
     iucn: { id: 22685539, assessment: 131917270, status: "LC/decreasing" },
-    native: {
-      text: "South America (tropical rainforests)",
-      source: "https://en.wikipedia.org/wiki/Blue-and-yellow_macaw",
-    },
+    native: "South America (tropical rainforests)",
+    // source: "https://en.wikipedia.org/wiki/Blue-and-yellow_macaw"
     lifespan: {
       wild: 50,
       captivity: 70,
@@ -396,10 +354,8 @@ const species = {
     name: "Catalina Macaw",
     scientificName: "Ara ararauna x Ara macao",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Usually bred in captivity",
-      source: "https://en.wikipedia.org/wiki/Catalina_macaw",
-    },
+    native: "Usually bred in captivity",
+    // source: "https://en.wikipedia.org/wiki/Catalina_macaw"
     lifespan: {
       captivity: 70,
       wild: { min: 40, max: 50 },
@@ -413,10 +369,8 @@ const species = {
     name: "Black Tufted Marmoset",
     scientificName: "Callithrix penicillata",
     iucn: { id: 41519, assessment: 191705321, status: "LC/decreasing" },
-    native: {
-      text: "Brazil (Neo-tropical gallery forests)",
-      source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset",
-    },
+    native: "Brazil (Neo-tropical gallery forests)",
+    // source: "https://en.wikipedia.org/wiki/Black-tufted_marmoset"
     lifespan: {
       wild: 7,
       captivity: "Unknown",
@@ -429,10 +383,8 @@ const species = {
     name: "Common Marmoset",
     scientificName: "Callithrix jacchus",
     iucn: { id: 41518, assessment: 191705043, status: "LC/decreasing" },
-    native: {
-      text: "Brazil",
-      source: "https://en.wikipedia.org/wiki/Common_marmoset",
-    },
+    native: "Brazil",
+    // source: "https://en.wikipedia.org/wiki/Common_marmoset"
     lifespan: {
       wild: { min: 5, max: 7 },
       captivity: "Unknown",
@@ -446,10 +398,8 @@ const species = {
     name: "Smokey Ghost Millipede",
     scientificName: "Narceus gordanus",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Eastern United States",
-      source: "https://en.wikipedia.org/wiki/Narceus_gordanus",
-    },
+    native: "Eastern United States",
+    // source: "https://en.wikipedia.org/wiki/Narceus_gordanus"
     lifespan: {
       captivity: 11,
       wild: "Unknown",
@@ -463,10 +413,9 @@ const species = {
     name: "Ball Python",
     scientificName: "Python regius",
     iucn: { id: 177562, assessment: 220378972, status: "NT/decreasing" },
-    native: {
-      text: "West Sub Saharan Africa (grasslands, savannas, sparsely wooded areas)",
-      source: "https://en.wikipedia.org/wiki/Ball_python",
-    },
+    native:
+      "West Sub Saharan Africa (grasslands, savannas, sparsely wooded areas)",
+    // source: "https://en.wikipedia.org/wiki/Ball_python"
     lifespan: {
       captivity: { min: 15, max: 30 },
       wild: "Unknown",
@@ -480,10 +429,8 @@ const species = {
     name: "Coastal Carpet Python",
     scientificName: "Morelia spilota mcdowelli",
     iucn: { id: 62232, assessment: 21649539, status: "LC/decreasing" },
-    native: {
-      text: "Australia (suburban area, rainforests, forests, etc.)",
-      source: "https://en.wikipedia.org/wiki/Carpet_python",
-    },
+    native: "Australia (suburban area, rainforests, forests, etc.)",
+    // source: "https://en.wikipedia.org/wiki/Carpet_python"
     lifespan: {
       captivity: 30,
       wild: "Unknown",
@@ -497,10 +444,8 @@ const species = {
     name: "Domestic Rat",
     scientificName: "Rattus norvegicus f. domestica",
     iucn: { id: 19353, assessment: 221339363, status: "NA" },
-    native: {
-      text: "Worldwide (Domesticated)",
-      source: "https://en.wikipedia.org/wiki/Fancy_rat",
-    },
+    native: "Worldwide (Domesticated)",
+    // source: "https://en.wikipedia.org/wiki/Fancy_rat"
     lifespan: {
       captivity: { min: 2, max: 3 },
       wild: "Not Applicable",
@@ -514,10 +459,8 @@ const species = {
     name: "Emperor Scorpion",
     scientificName: "Pandinus imperator",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Africa (rainforests, savannas)",
-      source: "https://en.wikipedia.org/wiki/Pandinus_imperator",
-    },
+    native: "Africa (rainforests, savannas)",
+    // source: "https://en.wikipedia.org/wiki/Pandinus_imperator"
     lifespan: {
       wild: { min: 6, max: 8 },
       captivity: "Unknown",
@@ -531,10 +474,8 @@ const species = {
     name: "Blue-tongued Skink",
     scientificName: "Tiliqua scincoides intermedia",
     iucn: { id: 109481538, assessment: 109481555, status: "LC" },
-    native: {
-      text: "Australia",
-      source: "https://en.wikipedia.org/wiki/Blue-tongued_skink",
-    },
+    native: "Australia",
+    // source: "https://en.wikipedia.org/wiki/Blue-tongued_skink"
     lifespan: {
       captivity: 20,
       wild: "Unknown",
@@ -548,10 +489,8 @@ const species = {
     name: "Sulcata Tortoise",
     scientificName: "Centrochelys sulcata",
     iucn: { id: 163423, assessment: 1006958, status: "EN/decreasing" },
-    native: {
-      text: "Sahara Desert and the Sahel (shrubland, grassland)",
-      source: "https://en.wikipedia.org/wiki/African_spurred_tortoise",
-    },
+    native: "Sahara Desert and the Sahel (shrubland, grassland)",
+    // source: "https://en.wikipedia.org/wiki/African_spurred_tortoise"
     lifespan: {
       wild: 75,
       captivity: 100,
@@ -565,10 +504,8 @@ const species = {
     name: "Vinegaroon",
     scientificName: "Mastigoproctus tohono",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Tropical and subtropical areas, excluding Europe and Australia",
-      source: "https://en.wikipedia.org/wiki/Vinegaroon",
-    },
+    native: "Tropical and subtropical areas, excluding Europe and Australia",
+    // source: "https://en.wikipedia.org/wiki/Vinegaroon"
     lifespan: {
       wild: 8,
       captivity: "Unknown",
@@ -582,10 +519,9 @@ const species = {
     name: "Wolf Hybrid",
     scientificName: "Canis lupus x Canis familiaris",
     iucn: { id: 3746, assessment: 216872082, status: "LC/increasing" },
-    native: {
-      text: "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
-      source: "https://en.wikipedia.org/wiki/Wolf",
-    },
+    native:
+      "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
+    // source: "https://en.wikipedia.org/wiki/Wolf"
     lifespan: {
       wild: "Not Applicable",
       captivity: { min: 12, max: 14 },
@@ -599,10 +535,8 @@ const species = {
     name: "Mexican Red Rump Tarantula",
     scientificName: "Tliltocatl vagans",
     iucn: { id: 66082199, assessment: 148729363, status: "LC/decreasing" },
-    native: {
-      text: "Yucatán Peninsula (dry scrublands, forest edges)",
-      source: "https://en.wikipedia.org/wiki/Tliltocatl_vagans",
-    },
+    native: "Yucatán Peninsula (dry scrublands, forest edges)",
+    // source: "https://en.wikipedia.org/wiki/Tliltocatl_vagans"
     lifespan: {
       captivity: { min: 5, max: 25 },
       wild: "Unknown",
@@ -615,10 +549,8 @@ const species = {
     name: "Honduran Curly-Hair Tarantula",
     scientificName: "Tliltocatl albopilosus",
     iucn: { id: 66081213, assessment: 148680192, status: "LC/decreasing" },
-    native: {
-      text: "Central America (rainforests)",
-      source: "https://en.wikipedia.org/wiki/Tliltocatl_albopilosus",
-    },
+    native: "Central America (rainforests)",
+    // source: "https://en.wikipedia.org/wiki/Tliltocatl_albopilosus"
     lifespan: {
       captivity: { min: 5, max: 25 },
       wild: "Unknown",
@@ -632,10 +564,8 @@ const species = {
     name: "Veitch's Pitcher-Plant",
     scientificName: "Nepenthes veitchii",
     iucn: { id: 39709, assessment: 143965852, status: "LC" },
-    native: {
-      text: "Borneo (lowland rain forests)",
-      source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii",
-    },
+    native: "Borneo (lowland rain forests)",
+    // source: "https://en.wikipedia.org/wiki/Nepenthes_veitchii"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
@@ -647,10 +577,8 @@ const species = {
     name: "Fork-Leaved Sundew",
     scientificName: "Drosera binata var. dichotoma",
     iucn: { id: 66437287, assessment: 143975087, status: "LC" },
-    native: {
-      text: "Australia, New Zealand, and Tasmania",
-      source: "https://en.wikipedia.org/wiki/Drosera_binata",
-    },
+    native: "Australia, New Zealand, and Tasmania",
+    // source: "https://en.wikipedia.org/wiki/Drosera_binata"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
@@ -662,10 +590,8 @@ const species = {
     name: "Mexican Butterwort",
     scientificName: "Pinguicula 'John Rizzi'",
     iucn: { id: null, assessment: null, status: "NE" },
-    native: {
-      text: "Mexico",
-      source: "https://en.wikipedia.org/wiki/Pinguicula_moranensis",
-    },
+    native: "Mexico",
+    // source: "https://en.wikipedia.org/wiki/Pinguicula_moranensis"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
@@ -677,10 +603,8 @@ const species = {
     name: "Corpse Flower",
     scientificName: "Amorphophallus titanum",
     iucn: { id: 118042834, assessment: 118043213, status: "EN/decreasing" },
-    native: {
-      text: "Sumatra, Indonesia",
-      source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum",
-    },
+    native: "Sumatra, Indonesia",
+    // source: "https://en.wikipedia.org/wiki/Amorphophallus_titanum"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
@@ -692,10 +616,8 @@ const species = {
     name: "Venus Flytrap",
     scientificName: "Dionaea muscipula",
     iucn: { id: 39636, assessment: 10253384, status: "VU" },
-    native: {
-      text: "North and South Carolina (subtropical wetlands)",
-      source: "https://en.wikipedia.org/wiki/Venus_flytrap",
-    },
+    native: "North and South Carolina (subtropical wetlands)",
+    // source: "https://en.wikipedia.org/wiki/Venus_flytrap"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
@@ -707,10 +629,8 @@ const species = {
     name: "Flask-Shaped Pitcher-Plant",
     scientificName: "Nepenthes ampullaria",
     iucn: { id: 39640, assessment: 143958546, status: "LC" },
-    native: {
-      text: "Borneo (lowland rain forests)",
-      source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria",
-    },
+    native: "Borneo (lowland rain forests)",
+    // source: "https://en.wikipedia.org/wiki/Nepenthes_ampullaria"
     lifespan: {
       wild: "Unknown",
       captivity: "Unknown",
