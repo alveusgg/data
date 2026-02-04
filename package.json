@@ -32,7 +32,7 @@
     "eslint": "^9.39.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "pacote": "^21.0.4",
+    "pacote": "^21.1.0",
     "prettier": "^3.8.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.18",
@@ -40,7 +40,7 @@
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.1",
+    "typescript-eslint": "^8.54.0",
     "zod": "^4.3.6"
   },
   "peerDependencies": {
