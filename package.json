@@ -29,7 +29,7 @@
     "@types/node": "^22.19.11",
     "@types/npmcli__config": "^6.0.3",
     "@types/pacote": "^11.1.8",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "pacote": "^21.3.1",
