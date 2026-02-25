@@ -25,7 +25,7 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^10.7.0",
+    "@npmcli/config": "^10.7.1",
     "@types/node": "^22.19.11",
     "@types/npmcli__config": "^6.0.3",
     "@types/pacote": "^11.1.8",
@@ -35,12 +35,12 @@
     "pacote": "^21.3.1",
     "prettier": "^3.8.1",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.0",
     "ts-morph": "^27.0.2",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.55.0",
+    "typescript-eslint": "^8.56.0",
     "zod": "^4.3.6"
   },
   "peerDependencies": {
