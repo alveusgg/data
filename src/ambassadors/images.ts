@@ -1,10 +1,14 @@
 import { z } from "zod";
 
-import { isAmbassadorKey, type Ambassadors, type AmbassadorKey } from "./core";
+import {
+  isAmbassadorKey,
+  type Ambassadors,
+  type AmbassadorKey,
+} from "./core.ts";
 import {
   isAmbassadorWithPlushKey,
   type AmbassadorWithPlushKey,
-} from "./filters";
+} from "./filters.ts";
 
 import abbottImage1 from "../assets/ambassadors/abbott/01.jpg";
 import abbottImage2 from "../assets/ambassadors/abbott/02.jpg";

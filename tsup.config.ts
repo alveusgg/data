@@ -4,7 +4,7 @@ import { copyFile, glob } from "node:fs/promises";
 
 import { defineConfig } from "tsup";
 
-import optimize from "./scripts/optimize";
+import optimize from "./scripts/optimize.ts";
 
 const log = (...messages: unknown[]) => console.log("EXT", ...messages);
 

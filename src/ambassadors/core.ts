@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-import { enclosureKeySchema } from "../enclosures";
-import { partialDateStringSchema } from "../types";
-import { speciesKeySchema } from "./species";
+import { enclosureKeySchema } from "../enclosures.ts";
+import { partialDateStringSchema } from "../types.ts";
+import { speciesKeySchema } from "./species.ts";
 
 export const ambassadorSchema = z.object({
   name: z.string(),
