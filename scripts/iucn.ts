@@ -3,7 +3,7 @@
 import { Project, SyntaxKind } from "ts-morph";
 import { z } from "zod";
 
-import { iucnStatusSchema } from "../src/iucn";
+import { iucnStatusSchema } from "../src/iucn.ts";
 
 const token = process.env.IUCN_API_TOKEN;
 if (!token) {

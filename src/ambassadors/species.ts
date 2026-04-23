@@ -1,7 +1,7 @@
 import { z } from "zod";
 
-import { iucnStatusSchema } from "../iucn";
-import { classSchema } from "./classification";
+import { iucnStatusSchema } from "../iucn.ts";
+import { classSchema } from "./classification.ts";
 
 export const speciesSchema = z.object({
   name: z.string(),

@@ -1,4 +1,4 @@
-import { isAmbassadorKey, type AmbassadorKey } from "./ambassadors/core";
+import { isAmbassadorKey, type AmbassadorKey } from "./ambassadors/core.ts";
 
 type Host = { name: string; link?: string };
 type HostKey = keyof typeof hosts;

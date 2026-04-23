@@ -1,4 +1,4 @@
-import ambassadors, { type Ambassador } from "./core";
+import ambassadors, { type Ambassador } from "./core.ts";
 
 type AmbassadorsData = Record<string, Ambassador>;
 

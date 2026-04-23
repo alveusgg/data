@@ -16,7 +16,7 @@ import sharp from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
 
-import packageJson from "../package.json" assert { type: "json" };
+import packageJson from "../package.json" with { type: "json" };
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
 const warn = (message: string) => console.warn(`\x1b[33m${message}\x1b[0m`);
