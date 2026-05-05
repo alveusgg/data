@@ -496,7 +496,7 @@ const ambassadorImages: {
     { src: jalapenoImage5, alt: "Jalapeño the Domestic Donkey" },
   ],
   kasi: [
-    { src: kasiImage1, alt: "Kasi the Serval", position: "50% 40%" },
+    { src: kasiImage1, alt: "Kasi the Serval", position: "50% 30%" },
     { src: kasiImage2, alt: "Kasi the Serval", position: "50% 20%" },
   ],
   kiwi: [
