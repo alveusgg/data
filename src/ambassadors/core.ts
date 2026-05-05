@@ -240,6 +240,24 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  tipsy: {
+    name: "Tipsy",
+    alternate: [],
+    commands: ["tipsy"],
+    species: "africanGrey",
+    sex: "Female",
+    birth: "1995",
+    arrival: "2026-03-10",
+    retired: null,
+    enclosure: "parrots",
+    story:
+      "Tipsy was previously at a golf resort where they offered exotic bird experiences. It was clear that this program was not a good fit for her when she started exhibiting stress-induced feather plucking behavior. This led her to be rehomed to Alveus. ",
+    mission:
+      "She is an ambassador for how the pet trade and habitat loss has affected her parrot species and many others around the world.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   abbott: {
     name: "Abbott",
     alternate: [],

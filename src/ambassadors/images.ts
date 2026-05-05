@@ -288,6 +288,9 @@ import timberImage3 from "../assets/ambassadors/timber/03.jpg";
 import timberImageIcon from "../assets/ambassadors/timber/icon.png";
 import timberImageEmote from "../assets/ambassadors/timber/emote.png";
 
+import tipsyImage1 from "../assets/ambassadors/tipsy/01.jpg";
+import tipsyImage2 from "../assets/ambassadors/tipsy/02.jpg";
+
 import toasterStrudelImage1 from "../assets/ambassadors/toasterStrudel/01.jpg";
 import toasterStrudelImage2 from "../assets/ambassadors/toasterStrudel/02.jpg";
 import toasterStrudelImage3 from "../assets/ambassadors/toasterStrudel/03.jpg";
@@ -673,6 +676,10 @@ const ambassadorImages: {
     { src: timberImage1, alt: "Timber the Wolfdog", position: "75% 25%" },
     { src: timberImage2, alt: "Timber the Wolfdog", position: "50% 0%" },
     { src: timberImage3, alt: "Timber the Wolfdog", position: "100% 25%" },
+  ],
+  tipsy: [
+    { src: tipsyImage1, alt: "Tipsy the African Grey", position: "50% 40%" },
+    { src: tipsyImage2, alt: "Tipsy the African Grey", position: "20% 40%" },
   ],
   toasterStrudel: [
     {
