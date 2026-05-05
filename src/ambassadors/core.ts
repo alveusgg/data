@@ -240,6 +240,24 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  tipsy: {
+    name: "Tipsy",
+    alternate: [],
+    commands: ["tipsy"],
+    species: "africanGrey",
+    sex: "Female",
+    birth: "1995",
+    arrival: "2026-03-10",
+    retired: null,
+    enclosure: "parrots",
+    story:
+      "Tipsy was previously at a golf resort where they offered exotic bird experiences. It was clear that this program was not a good fit for her when she started exhibiting stress-induced feather plucking behavior. This led her to be rehomed to Alveus.",
+    mission:
+      "She is an ambassador for how the pet trade and habitat loss have affected her parrot species and many others around the world.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   abbott: {
     name: "Abbott",
     alternate: [],
@@ -828,6 +846,24 @@ const ambassadors = {
       "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
     fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
     // Fact source: https://www.jstor.org/stable/44857402
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  kasi: {
+    name: "Kasi",
+    alternate: [],
+    commands: ["kasi"],
+    species: "serval",
+    sex: "Male",
+    birth: "2024",
+    arrival: "2026-04-01",
+    retired: null,
+    enclosure: "serval",
+    story:
+      "Originally purchased as a pet at a Texas flea market, Kasi was then surrendered to another rescue facility before being transferred to Alveus.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects his species.",
     clips: [],
     homepage: null,
     plush: null,

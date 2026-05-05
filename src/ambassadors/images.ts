@@ -129,6 +129,9 @@ import jalapenoImageIcon from "../assets/ambassadors/jalapeno/icon.png";
 import jalapenoImageEmote from "../assets/ambassadors/jalapeno/emote.png";
 import jalapenoImageBadge from "../assets/ambassadors/jalapeno/badge.png";
 
+import kasiImage1 from "../assets/ambassadors/kasi/01.jpg";
+import kasiImage2 from "../assets/ambassadors/kasi/02.jpg";
+
 import kiwiImage1 from "../assets/ambassadors/kiwi/01.jpg";
 import kiwiImage2 from "../assets/ambassadors/kiwi/02.jpg";
 import kiwiImage3 from "../assets/ambassadors/kiwi/03.jpg";
@@ -287,6 +290,9 @@ import timberImage2 from "../assets/ambassadors/timber/02.jpg";
 import timberImage3 from "../assets/ambassadors/timber/03.jpg";
 import timberImageIcon from "../assets/ambassadors/timber/icon.png";
 import timberImageEmote from "../assets/ambassadors/timber/emote.png";
+
+import tipsyImage1 from "../assets/ambassadors/tipsy/01.jpg";
+import tipsyImage2 from "../assets/ambassadors/tipsy/02.jpg";
 
 import toasterStrudelImage1 from "../assets/ambassadors/toasterStrudel/01.jpg";
 import toasterStrudelImage2 from "../assets/ambassadors/toasterStrudel/02.jpg";
@@ -489,6 +495,10 @@ const ambassadorImages: {
     { src: jalapenoImage4, alt: "Jalapeño the Domestic Donkey" },
     { src: jalapenoImage5, alt: "Jalapeño the Domestic Donkey" },
   ],
+  kasi: [
+    { src: kasiImage1, alt: "Kasi the Serval", position: "50% 30%" },
+    { src: kasiImage2, alt: "Kasi the Serval", position: "50% 20%" },
+  ],
   kiwi: [
     { src: kiwiImage1, alt: "Kiwi the Honduran Curly Hair Tarantula" },
     { src: kiwiImage2, alt: "Kiwi the Honduran Curly Hair Tarantula" },
@@ -673,6 +683,10 @@ const ambassadorImages: {
     { src: timberImage1, alt: "Timber the Wolfdog", position: "75% 25%" },
     { src: timberImage2, alt: "Timber the Wolfdog", position: "50% 0%" },
     { src: timberImage3, alt: "Timber the Wolfdog", position: "100% 25%" },
+  ],
+  tipsy: [
+    { src: tipsyImage1, alt: "Tipsy the African Grey", position: "50% 40%" },
+    { src: tipsyImage2, alt: "Tipsy the African Grey", position: "20% 40%" },
   ],
   toasterStrudel: [
     {
