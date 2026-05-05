@@ -470,6 +470,21 @@ const species = {
     class: "arachnida",
   },
 
+  serval: {
+    name: "Serval",
+    scientificName: "Leptailurus serval",
+    iucn: { id: 11638, assessment: 156536762, status: "LC" },
+    native: "Africa (savannas, grasslands, wetlands)",
+    // source: "https://en.wikipedia.org/wiki/Serval"
+    lifespan: {
+      captivity: 20,
+      wild: 10,
+      // source: https://en.wikipedia.org/wiki/Serval
+    },
+    birth: "live",
+    class: "mammalia",
+  },
+
   skinkBlueTongued: {
     name: "Blue-tongued Skink",
     scientificName: "Tiliqua scincoides intermedia",

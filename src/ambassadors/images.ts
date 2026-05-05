@@ -129,6 +129,9 @@ import jalapenoImageIcon from "../assets/ambassadors/jalapeno/icon.png";
 import jalapenoImageEmote from "../assets/ambassadors/jalapeno/emote.png";
 import jalapenoImageBadge from "../assets/ambassadors/jalapeno/badge.png";
 
+import kasiImage1 from "../assets/ambassadors/kasi/01.jpg";
+import kasiImage2 from "../assets/ambassadors/kasi/02.jpg";
+
 import kiwiImage1 from "../assets/ambassadors/kiwi/01.jpg";
 import kiwiImage2 from "../assets/ambassadors/kiwi/02.jpg";
 import kiwiImage3 from "../assets/ambassadors/kiwi/03.jpg";
@@ -491,6 +494,10 @@ const ambassadorImages: {
     { src: jalapenoImage3, alt: "Jalapeño the Domestic Donkey" },
     { src: jalapenoImage4, alt: "Jalapeño the Domestic Donkey" },
     { src: jalapenoImage5, alt: "Jalapeño the Domestic Donkey" },
+  ],
+  kasi: [
+    { src: kasiImage1, alt: "Kasi the Serval", position: "50% 40%" },
+    { src: kasiImage2, alt: "Kasi the Serval", position: "50% 20%" },
   ],
   kiwi: [
     { src: kiwiImage1, alt: "Kiwi the Honduran Curly Hair Tarantula" },

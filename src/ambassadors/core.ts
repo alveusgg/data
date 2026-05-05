@@ -850,6 +850,24 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  kasi: {
+    name: "Kasi",
+    alternate: [],
+    commands: ["kasi"],
+    species: "serval",
+    sex: "Male",
+    birth: "2024",
+    arrival: "2026-04-01",
+    retired: null,
+    enclosure: "serval",
+    story:
+      "Originally purchased as a pet at a Texas flea market, Kasi was then surrendered to another rescue facility before being transferred to Alveus.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects his species.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   pitchjars: {
     name: "PitchJars",
     alternate: ["Pitchy"],
