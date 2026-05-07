@@ -251,9 +251,9 @@ const ambassadors = {
     retired: null,
     enclosure: "parrots",
     story:
-      "Tipsy was previously at a golf resort where they offered exotic bird experiences. It was clear that this program was not a good fit for her when she started exhibiting stress-induced feather plucking behavior. This led her to be rehomed to Alveus.",
+      "Tipsy was previously at a golf resort where they offered exotic bird experiences. It was clear that this program was not a good fit for him when he started exhibiting stress-induced feather plucking behavior. This led him to be rehomed to Alveus.",
     mission:
-      "She is an ambassador for how the pet trade and habitat loss have affected her parrot species and many others around the world.",
+      "He is an ambassador for how the pet trade and habitat loss have affected his parrot species and many others around the world.",
     clips: [],
     homepage: null,
     plush: null,
