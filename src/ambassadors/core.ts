@@ -245,7 +245,7 @@ const ambassadors = {
     alternate: [],
     commands: ["tipsy"],
     species: "africanGrey",
-    sex: "Female",
+    sex: "Male",
     birth: "1995",
     arrival: "2026-03-10",
     retired: null,
