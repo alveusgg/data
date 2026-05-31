@@ -1,4 +1,4 @@
-name: IUCN
+name: Update IUCN
 
 on:
   workflow_dispatch:
