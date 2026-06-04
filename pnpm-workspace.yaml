@@ -1,0 +1,7 @@
+optimisticRepeatInstall: true
+strictPeerDependencies: true
+dedupePeers: true
+
+allowBuilds:
+  esbuild: true
+  sharp: true

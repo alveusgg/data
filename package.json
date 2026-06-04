@@ -9,6 +9,10 @@
   "bugs": {
     "url": "https://github.com/alveusgg/data/issues"
   },
+  "engines": {
+    "pnpm": "^11.3.0"
+  },
+  "packageManager": "pnpm@11.3.0",
   "scripts": {
     "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"**/*.ts\" --fix",
