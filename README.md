@@ -27,19 +27,19 @@ Finally, install the package as normal using `npm install @alveusgg/data`.
 
 ## Development
 
-To work with this repository locally, install the dependencies with `npm ci`.
+To work with this repository locally, install the dependencies with `pnpm install --frozen-lockfile`.
 
 If you're using VSCode, add `"typescript.tsdk": "node_modules/typescript/lib"` to
 `.vscode/settings.json` to ensure you're using the correct TypeScript version.
 
-If you're planning to build the package locally, it is recommended that `npm run populate` is run
-after running `npm ci` to pre-populate your asset optimization cache with the latest distributed
-assets. This will reduce the time of the first build significantly as it will not need to optimize
-all assets from scratch.
+If you're planning to build the package locally, it is recommended that `pnpm populate` is run
+after running `pnpm install --frozen-lockfile` to pre-populate your asset optimization cache with
+the latest distributed assets. This will reduce the time of the first build significantly as it will
+not need to optimize all assets from scratch.
 
 To test changes locally across the Alveus.gg projects, update the version in this repository using
-`npm version --no-git-tag-version preminor` (use `prepatch` instead if the change is a fix, or
-`prerelease` for repeat testing), run `npm run build` and install this repository as a file-based
+`pnpm version --no-git-tag-version preminor` (use `prepatch` instead if the change is a fix, or
+`prerelease` for repeat testing), run `pnpm build` and install this repository as a file-based
 dependency:
 
 - Website: `cd apps/website && pnpm remove @alveusgg/data && pnpm add file:../../../data`
@@ -52,7 +52,7 @@ the pre-release branch to GitHub and install the version reported by the `publis
 - Extension: `pnpm add @alveusgg/data@<version>-pre.<hash>`
 
 When the change is ready to release, update the version in this repository using
-`npm version --no-git-tag-version minor` (use `patch` instead if the change is a fix) and open a
+`pnpm version --no-git-tag-version minor` (use `patch` instead if the change is a fix) and open a
 pull request.
 
 Once the pull request is merged, update the dependency in the website and extension:

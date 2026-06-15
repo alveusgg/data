@@ -15,6 +15,8 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
+// @ts-expect-error - https://github.com/DefinitelyTyped/DefinitelyTyped/pull/75112
+import npmDefinitions from "@npmcli/config/lib/definitions/index.js";
 
 import packageJson from "../package.json" with { type: "json" };
 const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
@@ -78,9 +80,9 @@ const populateCache = async () => {
   // This will include registry and auth settings
   const config = new npmConfig({
     npmPath: root,
-    definitions: {},
-    shorthands: {},
-    flatten: (data, flat = {}) => Object.assign(flat, data),
+    definitions: npmDefinitions.definitions,
+    shorthands: npmDefinitions.shorthands,
+    flatten: npmDefinitions.flatten,
   });
   await config.load();
 
