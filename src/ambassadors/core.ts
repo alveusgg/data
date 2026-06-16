@@ -25,6 +25,15 @@ export const ambassadorSchema = z.object({
       }),
     )
     .readonly(),
+  sounds: z
+  .array(
+    z.object({
+      src: z.string(),
+      caption: z.string(),
+    }),
+  )
+    .readonly()
+    .optional(),
   homepage: z
     .object({
       title: z.string(),
