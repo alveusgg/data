@@ -25,15 +25,6 @@ export const ambassadorSchema = z.object({
       }),
     )
     .readonly(),
-  sounds: z
-    .array(
-      z.object({
-        src: z.string(),
-        caption: z.string(),
-      }),
-    )
-    .readonly()
-    .optional(),
   homepage: z
     .object({
       title: z.string(),
@@ -200,7 +191,6 @@ const ambassadors = {
       { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
       { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
     ],
-    sounds: [{ src: "tico_sounds.mp3", caption: "Tico Calling" }],
     homepage: null,
     plush: null,
   },
@@ -305,7 +295,6 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     clips: [],
-    sounds: [{ src: "coconut_sounds.mp3", caption: "Coconut Crowing" }],
     homepage: null,
     plush: null,
   },
@@ -323,7 +312,6 @@ const ambassadors = {
     mission:
       "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
-    sounds: [{ src: "oliver_sounds.mp3", caption: "Oliver Clucking" }],
     homepage: null,
     plush: null,
   },
