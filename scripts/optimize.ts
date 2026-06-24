@@ -12,15 +12,15 @@ import {
 import { dirname, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import sharp from "sharp";
+import sharp, { type Metadata } from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
 // @ts-expect-error - https://github.com/DefinitelyTyped/DefinitelyTyped/pull/75112
 import npmDefinitions from "@npmcli/config/lib/definitions/index.js";
 
 import packageJson from "../package.json" with { type: "json" };
-const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 
+const kb = (bytes: number) => `${(bytes / 1024).toFixed(2)} KB`;
 const warn = (message: string) => console.warn(`\x1b[33m${message}\x1b[0m`);
 
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -125,14 +125,14 @@ interface OptimizeResult {
 // Optimize a file in-place
 const optimize = async (file: string): Promise<OptimizeResult | void> => {
   const contents = await readFile(file);
-  let img = await sharp(contents);
+  let img = sharp(contents);
   const metadata = await img.metadata();
   if (!metadata.width || !metadata.height || !metadata.format) {
     warn(`${file}: failed to read metadata`);
     return;
   }
 
-  let resized: sharp.Metadata | undefined;
+  let resized: Metadata | undefined;
   if (metadata.width > 4096 || metadata.height > 4096) {
     img = img.resize({ width: 4096, height: 4096, fit: "inside" });
     resized = await img.toBuffer().then((buf) => sharp(buf).metadata());
