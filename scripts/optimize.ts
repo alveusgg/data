@@ -15,7 +15,6 @@ import { fileURLToPath } from "node:url";
 import sharp, { type Metadata } from "sharp";
 import pacote from "pacote";
 import npmConfig from "@npmcli/config";
-// @ts-expect-error - https://github.com/DefinitelyTyped/DefinitelyTyped/pull/75112
 import npmDefinitions from "@npmcli/config/lib/definitions/index.js";
 
 import packageJson from "../package.json" with { type: "json" };
