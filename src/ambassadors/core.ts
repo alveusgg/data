@@ -315,24 +315,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  nugget: {
-    name: "Nugget",
-    alternate: [],
-    commands: ["nugget"],
-    species: "chickenAmeraucana",
-    sex: "Female",
-    birth: "2019",
-    arrival: "2021-04",
-    retired: null,
-    enclosure: "chickens",
-    story:
-      "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.",
-    mission:
-      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
-    clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
-    homepage: null,
-    plush: null,
-  },
   henrique: {
     name: "Henrique",
     alternate: [],
@@ -382,6 +364,24 @@ const ambassadors = {
     story: "Polly was rehomed from another owner.",
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  kasi: {
+    name: "Kasi",
+    alternate: [],
+    commands: ["kasi"],
+    species: "serval",
+    sex: "Male",
+    birth: "2024",
+    arrival: "2026-04-01",
+    retired: null,
+    enclosure: "serval",
+    story:
+      "Originally purchased as a pet at a Texas flea market, Kasi was then surrendered to another rescue facility before being transferred to Alveus.",
+    mission:
+      "He is an ambassador for the exotic pet trade and how it affects his species.",
     clips: [],
     homepage: null,
     plush: null,
@@ -850,24 +850,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  kasi: {
-    name: "Kasi",
-    alternate: [],
-    commands: ["kasi"],
-    species: "serval",
-    sex: "Male",
-    birth: "2024",
-    arrival: "2026-04-01",
-    retired: null,
-    enclosure: "serval",
-    story:
-      "Originally purchased as a pet at a Texas flea market, Kasi was then surrendered to another rescue facility before being transferred to Alveus.",
-    mission:
-      "He is an ambassador for the exotic pet trade and how it affects his species.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   pitchjars: {
     name: "PitchJars",
     alternate: ["Pitchy"],
@@ -1136,6 +1118,24 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
     clips: [],
+    homepage: null,
+    plush: null,
+  },
+  nugget: {
+    name: "Nugget",
+    alternate: [],
+    commands: ["nugget"],
+    species: "chickenAmeraucana",
+    sex: "Female",
+    birth: "2019",
+    arrival: "2021-04",
+    retired: "2026-07-09",
+    enclosure: "chickens",
+    story:
+      "Nugget was rehomed to Alveus because she was bullied by hens in her previous flock.\n\nUnfortunately, Nugget passed away peacefully in July 2026, likely from cancer impacting her digestive tract making her unable to maintain her weight.",
+    mission:
+      "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
+    clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
     homepage: null,
     plush: null,
   },
