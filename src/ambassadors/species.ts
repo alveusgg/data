@@ -443,7 +443,7 @@ const species = {
   ratDomestic: {
     name: "Domestic Rat",
     scientificName: "Rattus norvegicus f. domestica",
-    iucn: { id: 19353, assessment: 221339363, status: "NA" },
+    iucn: { id: 19353, assessment: 286459858, status: "LC" },
     native: "Worldwide (Domesticated)",
     // source: "https://en.wikipedia.org/wiki/Fancy_rat"
     lifespan: {
@@ -533,7 +533,7 @@ const species = {
   wolfHybrid: {
     name: "Wolf Hybrid",
     scientificName: "Canis lupus x Canis familiaris",
-    iucn: { id: 3746, assessment: 216872082, status: "LC/increasing" },
+    iucn: { id: 3746, assessment: 226161232, status: "LC" },
     native:
       "Eurasia and North America (forests, inland wetlands, shrublands, grasslands (including Arctic tundra), pastures, deserts, and rocky peaks on mountains)",
     // source: "https://en.wikipedia.org/wiki/Wolf"
