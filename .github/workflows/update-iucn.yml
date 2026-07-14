@@ -45,7 +45,7 @@ jobs:
           fi
 
           # Bump the version
-          pnpm version minor --no-git-tag-version
+          pnpm version minor --no-git-checks --no-git-tag-version
 
           # Output the new version
           echo "version=$(jq -r .version package.json)" >> $GITHUB_OUTPUT
