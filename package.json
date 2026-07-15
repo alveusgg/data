@@ -29,7 +29,7 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^10.12.0",
+    "@npmcli/config": "^11.0.0",
     "@types/node": "^22.20.1",
     "@types/npmcli__config": "^6.0.4",
     "@types/pacote": "^11.1.8",
