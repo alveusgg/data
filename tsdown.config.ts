@@ -34,6 +34,7 @@ export default defineConfig({
     ".png": "copy" as const,
     ".jpg": "copy" as const,
     ".jpeg": "copy" as const,
+    ".mp3": "copy" as const,
   },
 
   // Copy across our Tailwind CSS files
