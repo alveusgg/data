@@ -1510,8 +1510,8 @@ packages:
   tailwindcss@4.3.3:
     resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
 
-  tar@7.5.16:
-    resolution: {integrity: sha512-56adEpPMouktRlBLXiaYFFzZ/3+JXa8P9n7WbR+ibIjtviN55mEaOkiysCnPnWm+7kkui1Dn8J9l+g6zV8731w==}
+  tar@7.5.22:
+    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
     engines: {node: '>=18'}
 
   tinyexec@1.2.4:
@@ -2786,7 +2786,7 @@ snapshots:
       nopt: 10.0.1
       proc-log: 7.0.0
       semver: 7.8.5
-      tar: 7.5.16
+      tar: 7.5.22
       tinyglobby: 0.2.17
       undici: 6.27.0
       which: 7.0.0
@@ -2878,7 +2878,7 @@ snapshots:
       proc-log: 7.0.0
       sigstore: 5.0.0
       ssri: 14.0.0
-      tar: 7.5.16
+      tar: 7.5.22
     transitivePeerDependencies:
       - kerberos
       - supports-color
@@ -3033,7 +3033,7 @@ snapshots:
 
   tailwindcss@4.3.3: {}
 
-  tar@7.5.16:
+  tar@7.5.22:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
