@@ -29,13 +29,13 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^11.0.0",
+    "@npmcli/config": "^11.0.1",
     "@types/node": "^22.20.1",
     "@types/npmcli__config": "^6.0.4",
     "@types/pacote": "^11.1.8",
     "eslint": "^10.8.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.2.0",
+    "lint-staged": "^17.3.0",
     "pacote": "^22.0.0",
     "prettier": "^3.9.6",
     "sharp": "^0.35.3",
