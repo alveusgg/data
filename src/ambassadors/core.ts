@@ -852,7 +852,7 @@ const ambassadors = {
   },
   pitchjars: {
     name: "PitchJars",
-    alternate: ["Pitchy"],
+    alternate: ["Pitchy", "Gorlita"],
     commands: ["pitchjars", "pitchy"],
     species: "plantVeitchPitcher",
     sex: null,
