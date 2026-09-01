@@ -674,6 +674,26 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    commands: ["toast", "toaster"],
+    species: "skinkBlueTongued",
+    sex: null,
+    birth: "2022-07-04",
+    arrival: "2022-11",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
+    mission:
+      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
+    // Fact source: https://www.jstor.org/stable/44857402
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   barbaraBakedBean: {
     name: "Barbara / Baked Bean",
     alternate: [],
@@ -803,26 +823,6 @@ const ambassadors = {
       "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    commands: ["toast", "toaster"],
-    species: "skinkBlueTongued",
-    sex: null,
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
-    // Fact source: https://www.jstor.org/stable/44857402
     clips: [],
     homepage: null,
     plush: null,
