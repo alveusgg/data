@@ -674,26 +674,23 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  hankMrMctrain: {
-    name: "Hank Mr. McTrain",
-    alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
-    commands: ["hank"],
-    species: "millipedeSmokeyGhost",
-    sex: "Male",
-    birth: "2022",
-    arrival: "2022-01",
+  toasterStrudel: {
+    name: "Toaster Strudel",
+    alternate: [],
+    commands: ["toast", "toaster"],
+    species: "skinkBlueTongued",
+    sex: null,
+    birth: "2022-07-04",
+    arrival: "2022-11",
     retired: null,
-    enclosure: "critters",
+    enclosure: "reptiles",
     story:
-      "Our smokey ghost millipede was born in captivity and ethically sourced.",
+      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
     mission:
-      "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
-    fact: "Hank, a smokey ghost millipede, is a detritivore who spends a lot of time burrowed in the ground. Having existed on our planet for over 400 million years, the structure of millipede burrows can be differentiated from other burrowing organisms to help identify sediment composition and moisture content in the fossil record, providing us with a better understanding of soil health.",
-    // Fact source: https://doi.org/10.26879/395
-    clips: [
-      { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
-      { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
-    ],
+      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
+    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
+    // Fact source: https://www.jstor.org/stable/44857402
+    clips: [],
     homepage: null,
     plush: null,
   },
@@ -826,26 +823,6 @@ const ambassadors = {
       "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
-  toasterStrudel: {
-    name: "Toaster Strudel",
-    alternate: [],
-    commands: ["toast", "toaster"],
-    species: "skinkBlueTongued",
-    sex: null,
-    birth: "2022-07-04",
-    arrival: "2022-11",
-    retired: null,
-    enclosure: "reptiles",
-    story:
-      "Toaster Strudel was part of an educational program at a zoo and was rehomed to Alveus.",
-    mission:
-      "They are an ambassador for how human development and invasive species can affect natural habitats and native species.",
-    fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
-    // Fact source: https://www.jstor.org/stable/44857402
     clips: [],
     homepage: null,
     plush: null,
@@ -1136,6 +1113,29 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
+    homepage: null,
+    plush: null,
+  },
+  hankMrMctrain: {
+    name: "Hank Mr. McTrain",
+    alternate: ["Hank The Tank Choo Choo Mr. McTrain", "Mr. Conductor Man"],
+    commands: ["hank"],
+    species: "millipedeSmokeyGhost",
+    sex: "Male",
+    birth: "2022",
+    arrival: "2022-01",
+    retired: "2026-08-30",
+    enclosure: "critters",
+    story:
+      "Our smokey ghost millipede was born in captivity and ethically sourced.\n\nHank passed away peacefully in August 2026 from old age.",
+    mission:
+      "He is an ambassador for the importance of invertebrates and the misconceptions they face.",
+    fact: "Hank, a smokey ghost millipede, is a detritivore who spends a lot of time burrowed in the ground. Having existed on our planet for over 400 million years, the structure of millipede burrows can be differentiated from other burrowing organisms to help identify sediment composition and moisture content in the fossil record, providing us with a better understanding of soil health.",
+    // Fact source: https://doi.org/10.26879/395
+    clips: [
+      { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
+      { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
+    ],
     homepage: null,
     plush: null,
   },
