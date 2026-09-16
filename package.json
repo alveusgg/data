@@ -30,12 +30,12 @@
   ],
   "devDependencies": {
     "@npmcli/config": "^11.0.1",
-    "@types/node": "^22.20.1",
+    "@types/node": "^22.20.2",
     "@types/npmcli__config": "^6.0.4",
     "@types/pacote": "^11.1.8",
     "eslint": "^10.10.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.5.0",
+    "lint-staged": "^17.5.1",
     "pacote": "^22.0.0",
     "prettier": "^3.9.6",
     "sharp": "^0.35.4",
@@ -44,8 +44,8 @@
     "tsdown": "^0.23.0",
     "tsx": "^4.23.13",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.69.0",
-    "zod": "^4.5.4"
+    "typescript-eslint": "^8.70.0",
+    "zod": "^4.6.4"
   },
   "peerDependencies": {
     "tailwindcss": "^4.0.0",
