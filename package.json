@@ -29,22 +29,22 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^11.1.0",
-    "@types/node": "^22.20.4",
+    "@npmcli/config": "^11.2.0",
+    "@types/node": "^22.20.5",
     "@types/npmcli__config": "^6.0.4",
     "@types/pacote": "^11.1.8",
-    "eslint": "^10.11.0",
+    "eslint": "^10.12.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "pacote": "^22.0.0",
     "prettier": "^3.9.9",
-    "sharp": "^0.35.4",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "ts-morph": "^28.0.0",
     "tsdown": "^0.23.0",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.70.1",
+    "typescript-eslint": "^8.71.0",
     "zod": "^4.6.5"
   },
   "peerDependencies": {
