@@ -37,15 +37,15 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "pacote": "^22.0.0",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "ts-morph": "^28.0.0",
-    "tsdown": "^0.23.0",
+    "tsdown": "^0.23.1",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.0",
-    "zod": "^4.6.5"
+    "typescript-eslint": "^8.71.1",
+    "zod": "^4.6.6"
   },
   "peerDependencies": {
     "tailwindcss": "^4.0.0",
