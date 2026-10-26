@@ -28,7 +28,7 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm ci
 
       - name: Update IUCN data
         run: pnpm iucn
