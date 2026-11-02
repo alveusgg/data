@@ -25,6 +25,10 @@ export const ambassadorSchema = z.object({
       }),
     )
     .readonly(),
+  clipsPlaylist: z.string().optional(),
+  // Group name for the website's "Watch more [label] clips here" button text,
+  // only set when the playlist covers a group rather than one or two ambassadors
+  clipsPlaylistLabel: z.string().optional(),
   homepage: z
     .object({
       title: z.string(),
@@ -70,6 +74,7 @@ const ambassadors = {
       { id: "NlHmTLHHcKg", caption: "Georgie Actually Does A Backflip" },
       { id: "_kt-VaruYJo", caption: "Georgie Goes For A Swim" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaNzkbxIhu1T6uWlxe6L8_-",
     homepage: {
       title: "Georgie!",
       description:
@@ -100,6 +105,7 @@ const ambassadors = {
         caption: "Push Pop Eating For 8 Minutes And 4 Seconds",
       },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaN7efv5nqRGgDkQl2S1sP_",
     homepage: null,
     plush: null,
   },
@@ -137,6 +143,7 @@ const ambassadors = {
         caption: "Callback: Baby Stompy",
       },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaIzGPoNi44D7w4VTagR63q",
     homepage: {
       title: "Stompy!",
       description:
@@ -168,6 +175,7 @@ const ambassadors = {
         caption: "How Nolie Got Her Name & Enclosure With MrBeast",
       },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaIzGPoNi44D7w4VTagR63q",
     homepage: null,
     plush: null,
   },
@@ -191,6 +199,7 @@ const ambassadors = {
       { id: "7Zqpoxpm0aQ", caption: "Training With Tico And Kayla" },
       { id: "du1TIuJ6BAk", caption: "Tico Dancing With Kayla" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgYgwwe-JnLwRPy8UfrzxP8k",
     homepage: null,
     plush: null,
   },
@@ -211,6 +220,7 @@ const ambassadors = {
     fact: "In captivity, Catalina macaws like Miley require a lot of mental stimulation in the form of environmental enrichment. Without access to enrichment opportunities, these birds can become frustrated and destructive to their surroundings, including chewing through solid wood, which is yet another reason why they shouldn't be kept as pets.",
     // Fact source: https://www.sciencedirect.com/science/article/abs/pii/S0168159116301058
     clips: [{ id: "HEcrzoXofB8", caption: "Maya Gives Miley A Bath" }],
+    clipsPlaylist: "PLIwu72K9NwgYgwwe-JnLwRPy8UfrzxP8k",
     homepage: null,
     plush: null,
   },
@@ -237,6 +247,7 @@ const ambassadors = {
       { id: "bj0YavBUAsc", caption: "Bomb Explodes At Alveus" },
       { id: "5ETmZ7oafo4", caption: "Mia Makes A Car Alarm Sound" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgbH3AqvcbqluMJt1z3gDM4E",
     homepage: null,
     plush: null,
   },
@@ -255,6 +266,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for how the pet trade and habitat loss have affected his parrot species and many others around the world.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbH3AqvcbqluMJt1z3gDM4E",
     homepage: null,
     plush: null,
   },
@@ -277,6 +289,7 @@ const ambassadors = {
     clips: [
       { id: "GqvK9m6yoBQ", caption: "Abbott Explores His New Enrichment" },
     ],
+    clipsPlaylist: "PLIwu72K9Nwgb-lkun5w29tGXUoBJuzbdz",
     homepage: null,
     plush: null,
   },
@@ -295,6 +308,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people on the misconceptions that wildlife face as well as human-wildlife conflict.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9Nwgb-lkun5w29tGXUoBJuzbdz",
     homepage: null,
     plush: null,
   },
@@ -312,6 +326,8 @@ const ambassadors = {
     mission:
       "He is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -331,6 +347,8 @@ const ambassadors = {
     fact: "The closest wild relative of domestic chickens, like Henrique, are red junglefowl. While our commercial layers have been selectively bred to lay over 300 eggs per year, their wild counterparts only lay around 12 eggs per year.\n\nThe difference in egg yield between the two species highlights the impact that selective breeding can have on the process of domestication.",
     // Fact source: https://doi.org/10.1016/j.psj.2023.102489
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -348,6 +366,8 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -365,6 +385,8 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -383,6 +405,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for the exotic pet trade and how it affects his species.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgZ2-dU6oIVwX1SMVXrqFr-Y",
     homepage: null,
     plush: null,
   },
@@ -405,6 +428,7 @@ const ambassadors = {
       { id: "FKU7-u5-L24", caption: "Winnie Causes Chaos In The Grain Stall" },
       { id: "qWDd5nnWSuI", caption: "Winnie's First Day On Stream" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgYAKs9fJ83ZeTIlVYS-Gcnh",
     homepage: null,
     plush: {
       link: "https://youtooz.com/products/winnie-plush-9-inch",
@@ -429,6 +453,7 @@ const ambassadors = {
       { id: "P_bDfL4pCTc", caption: "Serrano Wants Food. NOW" },
       { id: "YWNRdnNleXw", caption: "Serrano Enjoying A Popsicle" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgZjKui5LoBLcRZbo8d6f6wF",
     homepage: null,
     plush: null,
   },
@@ -449,6 +474,7 @@ const ambassadors = {
       { id: "D0daZV1P3AM", caption: "Donkeys Fighting For The Ball" },
       { id: "81Zrv7veNMY", caption: "The Donkeys Play With A Ball At Night" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgZjKui5LoBLcRZbo8d6f6wF",
     homepage: null,
     plush: null,
   },
@@ -477,6 +503,7 @@ const ambassadors = {
         caption: "The Foxes Are Excited To Be Reunited",
       },
     ],
+    clipsPlaylist: "PLIwu72K9NwgY-F-yY8RWt_FWRsb63bxjf",
     homepage: null,
     plush: null,
   },
@@ -504,6 +531,7 @@ const ambassadors = {
         caption: "The Foxes Are Excited To Be Reunited",
       },
     ],
+    clipsPlaylist: "PLIwu72K9NwgY-F-yY8RWt_FWRsb63bxjf",
     homepage: null,
     plush: null,
   },
@@ -524,6 +552,7 @@ const ambassadors = {
     fact: "At 20,000 hairs per square centimeter, chinchillas have the densest fur of all living terrestrial mammals! Because of this density, their fur is incredibly soft but makes them susceptible to overheating easily in temperatures over 80°F (26°C).",
     // Fact source: https://www.medvet.com/chinchilla-history-care-sheet/
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
+    clipsPlaylist: "PLIwu72K9NwgYRE4ia9e6oo0b3BOrjezw1",
     homepage: null,
     plush: null,
   },
@@ -543,6 +572,7 @@ const ambassadors = {
     fact: "Because of their very dense and soft fur, chinchillas have often been used in the fur trade. It can take upwards of 100 chinchilla pelts to make a single fur coat. Chinchillas are currently endangered because they have been poached for their pelts, as well as due to habitat loss.",
     // Fact source: https://www.iucnredlist.org/species/4651/22191157
     clips: [{ id: "djDIUl2c0v8", caption: "Moomin Steals A Stick From Snork" }],
+    clipsPlaylist: "PLIwu72K9NwgYRE4ia9e6oo0b3BOrjezw1",
     homepage: {
       title: "Moomin is Movin' In!",
       description:
@@ -567,6 +597,7 @@ const ambassadors = {
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaoweYiClc5PoBQXxN5m6mG",
     homepage: null,
     plush: null,
   },
@@ -589,6 +620,7 @@ const ambassadors = {
     clips: [
       { id: "kSC1O1Tqgz8", caption: "The Monkeys Make Their Debut On Stream" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgaoweYiClc5PoBQXxN5m6mG",
     homepage: null,
     plush: null,
   },
@@ -607,6 +639,7 @@ const ambassadors = {
     mission:
       "He is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgZ1TZTAa7xParb2ES1sByod",
     homepage: null,
     plush: null,
   },
@@ -633,6 +666,7 @@ const ambassadors = {
       },
       { id: "H5g9i75AQS4", caption: "Noodle Yawns On Stream" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgY3MoIp2jkHp5Wjkgt_0Zdd",
     homepage: null,
     plush: null,
   },
@@ -653,6 +687,7 @@ const ambassadors = {
     fact: "Breeding ball pythons for specific colors and patterns is very popular within the pet trade. However, some of the sought-after traits are linked to genes that can also cause major health issues, including exophthalmos (where the eyes protrude from the head excessively), reduced fertility, wobble syndrome (where the head wobbles from side to side), or even death sometimes.\n\nThese genetic associations highlight the importance of ethical breeding within the pet trade to avoid unnecessary health issues, as can be seen with Patchy and his missing eye.",
     // Fact source: https://doi.org/10.1016/j.jcpa.2022.05.003
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgY3MoIp2jkHp5Wjkgt_0Zdd",
     homepage: null,
     plush: null,
   },
@@ -673,6 +708,7 @@ const ambassadors = {
     fact: "Blue-tongued skinks are aptly named after their blue tongue, which is used in a type of anti-predator behavior called deimatic display. In a species like Toast, deimatic display involves rapid full-tongued movements during an encounter with a predator in hopes that the bright-colored and fast-moving tongue will deter the predator.",
     // Fact source: https://www.jstor.org/stable/44857402
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYS860IPDUeRdWv4nriBJE8",
     homepage: null,
     plush: null,
   },
@@ -692,6 +728,8 @@ const ambassadors = {
     fact: "Zebra isopods are crustaceans named for their black and white stripes that resemble a zebra. These characteristics are unique to Marty's species, but other isopods also have their own distinct and diverse colors, patterns, and sizes. Some can grow to be 16 inches long, while others may be purple, have spots, or even be translucent.",
     // Fact source: https://doi.org/10.7717/peerj.15984
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -712,6 +750,8 @@ const ambassadors = {
     fact: "Like other detritivores, the ecological role of BB and all Spanish orange isopods in the wild is to break down organic matter like leaf litter. As the isopods are decomposing nutrient-rich leaf litter, they produce feces that accelerate the decomposition of nutrient-poor leaf litter, further relieving the ecosystem of excessive organic matter buildup.",
     // Fact source: https://doi.org/10.1016/j.apsoil.2014.10.015
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -732,6 +772,8 @@ const ambassadors = {
     fact: "Scorpions, like Tortellini, glow brightly under UV light due to a UV-reactive layer in their exoskeletons. Why they glow continues to remain a mystery to science, and there are multiple potential theories. Some recent studies suggest it plays a role in a scorpion's light detection to allow them to detect when they are under shelter, for example.",
     // Fact source: https://www.sciencedirect.com/science/article/abs/pii/S0003347211005069?via%3Dihub
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -752,6 +794,8 @@ const ambassadors = {
     fact: "While scorpions are often perceived as scary or dangerous, only about 1% of species (25 of roughly 2500 known species) are dangerous to humans. Most scorpions' stings (including the emperor scorpion like Puppy) are no worse than a bee sting.",
     // Fact source: https://www.ncbi.nlm.nih.gov/books/NBK430928
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -770,6 +814,8 @@ const ambassadors = {
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -788,6 +834,8 @@ const ambassadors = {
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -806,6 +854,8 @@ const ambassadors = {
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -826,6 +876,8 @@ const ambassadors = {
     fact: "The Veitch's Pitcher-Plant, like PitchJars, belongs to a genus of carnivorous plants called Nepenthes. Because of their variability in pitcher color, pattern, and structure, pitcher plants are often poached out of the wild from their very small and unique natural habitats to become part of the carnivorous plant trade. Currently, 25 species of Nepenthes are considered endangered.",
     // Fact source: https://doi.org/10.1016/j.gecco.2020.e01272
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -844,6 +896,8 @@ const ambassadors = {
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -864,6 +918,8 @@ const ambassadors = {
     fact: "Butt, and all Mexican Butterworts, passively trap and digest insects on their leaves. They produce a sticky substance called mucilage that coats the leaves to initially trap the insect. Enzymes are then released to begin the digestion process, and nutrient-rich fluids are absorbed through small holes in the leaf's surface.",
     // Fact source: https://www.britannica.com/plant/butterwort
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -884,6 +940,8 @@ const ambassadors = {
     fact: "Despite Amorphophallus titanum smelling like rotting corpses when in bloom (giving it the nickname corpse flower), which attracts many flies and other insects, the flower is not actually carnivorous. It collects nutrients through photosynthesis, like most plants, and stores them in its tuber, while the smell produced is used to attract pollinators to the plant while it is blooming.",
     // Fact source: https://www.kew.org/plants/titan-arum
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -902,6 +960,8 @@ const ambassadors = {
     mission:
       "They are ambassadors for the conservation of plants and reducing the poaching of wild plants.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -922,6 +982,8 @@ const ambassadors = {
     fact: "While Drew may appear to look like other carnivorous pitcher plants, the flask-shaped pitcher plant is predominantly a detritivore, especially of leaf litter. It spends less effort on attracting prey and instead carpets the area on the ground to catch as much decaying material, such as falling leaves, as possible.",
     // Fact source: PAVLOVIČ, A., SLOVÁKOVÁ, Ľ. and ŠANTRŮČEK, J. (2011), Nutritional benefit from leaf litter utilization in the pitcher plant Nepenthes ampullaria. Plant, Cell & Environment, 34: 1865-1873. https://doi.org/10.1111/j.1365-3040.2011.02382.x
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYum7VKecQgblpNtOvkS_Sr",
+    clipsPlaylistLabel: "Plant",
     homepage: null,
     plush: null,
   },
@@ -967,6 +1029,7 @@ const ambassadors = {
       { id: "LqpK1DhBH-E", caption: "Siren Sings A Song" },
       { id: "0foatCEQ5vk", caption: "Siren Has A Conversation" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgYbWCAk584P0z9Rdr-k6gWz",
     homepage: null,
     plush: {
       link: "https://youtooz.com/products/siren-plush-9-inch",
@@ -987,6 +1050,8 @@ const ambassadors = {
     mission:
       "She is an ambassador for the importance of invertebrates and the misconceptions they face.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -1005,6 +1070,8 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -1023,6 +1090,8 @@ const ambassadors = {
     mission:
       "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -1095,6 +1164,8 @@ const ambassadors = {
     mission:
       "She is an ambassador for the agricultural industry and how people can use consumer choice to impact the environment in a positive way.",
     clips: [{ id: "GcPu01J0G-Q", caption: "Nugget Belongs In A Circus" }],
+    clipsPlaylist: "PLIwu72K9NwgYOGEdw1HTEsFsOUyZCeNUR",
+    clipsPlaylistLabel: "Chicken",
     homepage: null,
     plush: null,
   },
@@ -1118,6 +1189,8 @@ const ambassadors = {
       { id: "eUOJbijrsCk", caption: "Hank Says Hi To Stream" },
       { id: "D-KMGuj3NfY", caption: "Hank Poops While Being Introduced" },
     ],
+    clipsPlaylist: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_",
+    clipsPlaylistLabel: "Bug",
     homepage: null,
     plush: null,
   },
@@ -1136,6 +1209,7 @@ const ambassadors = {
     mission:
       "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
     clips: [],
+    clipsPlaylist: "PLSvK0r10vmNc",
     homepage: null,
     plush: null,
   },
