@@ -730,6 +730,26 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  gojira: {
+    name: "Gojira",
+    alternate: ["Goji"],
+    commands: ["gojira", "goji"],
+    species: "monitorBlackThroated",
+    sex: null,
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Gojira was someone's pet but was released after they grew too large. They were picked up by an animal shelter and stayed there before being transferred to the South Korean National Institute of Ecology in 2024.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Monitor lizards, including the Black-throated Monitor, are well known to display exceptional cognitive abilities. They've been observed being able to solve simple puzzles for food as well as recognizing their keepers individually.",
+    // Fact source: https://pubmed.ncbi.nlm.nih.gov/17899226/ + https://www.academia.edu/101100829/Keeper_Dragon_Behavioural_Differences_in_Two_Komodo_Dragon_Varanus_komodoensis_Brothers_During_Training
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   marty: {
     name: "Marty",
     alternate: [],

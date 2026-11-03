@@ -105,6 +105,9 @@ import georgieImageMerch from "../assets/ambassadors/georgie/merch.jpg";
 import georgieImageIcon from "../assets/ambassadors/georgie/icon.png";
 import georgieImageBadge from "../assets/ambassadors/georgie/badge.png";
 
+import gojiraImage1 from "../assets/ambassadors/gojira/01.jpg";
+import gojiraImage2 from "../assets/ambassadors/gojira/02.jpg";
+
 import hankMrMctrainImage1 from "../assets/ambassadors/hankMrMctrain/01.jpg";
 import hankMrMctrainImage2 from "../assets/ambassadors/hankMrMctrain/02.jpg";
 import hankMrMctrainImage3 from "../assets/ambassadors/hankMrMctrain/03.jpg";
@@ -465,6 +468,14 @@ const ambassadorImages: {
     { src: georgieImage3, alt: "Georgie the African Bullfrog" },
     { src: georgieImage4, alt: "Georgie the African Bullfrog" },
     { src: georgieImage5, alt: "Georgie the African Bullfrog" },
+  ],
+  gojira: [
+    {
+      src: gojiraImage1,
+      alt: "Gojira the Black-Throated Monitor",
+      position: "30% 50%",
+    },
+    { src: gojiraImage2, alt: "Gojira the Black-Throated Monitor" },
   ],
   hankMrMctrain: [
     { src: hankMrMctrainImage1, alt: "Hank the Smokey Ghost Millipede" },

@@ -409,6 +409,20 @@ const species = {
     class: "diplopoda",
   },
 
+  monitorBlackThroated: {
+    name: "Black-throated Monitor",
+    scientificName: "Varanus albigularis microstictus",
+    iucn: { id: null, assessment: null, status: "NE" },
+    native: "East Africa (savannas, forests)",
+    // source: "https://en.wikipedia.org/wiki/Black-throated_monitor"
+    lifespan: {
+      captivity: "Unknown",
+      wild: "Unknown",
+    },
+    birth: "egg",
+    class: "reptilia",
+  },
+
   pythonBall: {
     name: "Ball Python",
     scientificName: "Python regius",
