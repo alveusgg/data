@@ -93,6 +93,9 @@ import fennImage5 from "../assets/ambassadors/fenn/05.jpg";
 import fennImageIcon from "../assets/ambassadors/fenn/icon.png";
 import fennImageEmote from "../assets/ambassadors/fenn/emote.png";
 
+import figImage1 from "../assets/ambassadors/fig/01.jpg";
+import figImage2 from "../assets/ambassadors/fig/02.jpg";
+
 import georgieImage1 from "../assets/ambassadors/georgie/01.jpg";
 import georgieImage2 from "../assets/ambassadors/georgie/02.jpg";
 import georgieImage3 from "../assets/ambassadors/georgie/03.jpg";
@@ -451,6 +454,10 @@ const ambassadorImages: {
     { src: fennImage3, alt: "Fenn the American Red Fox" },
     { src: fennImage4, alt: "Fenn the American Red Fox" },
     { src: fennImage5, alt: "Fenn the American Red Fox" },
+  ],
+  fig: [
+    { src: figImage1, alt: "Fig the Pig-Nosed Turtle", position: "35% 90%" },
+    { src: figImage2, alt: "Fig the Pig-Nosed Turtle", position: "30% 50%" },
   ],
   georgie: [
     { src: georgieImage1, alt: "Georgie the African Bullfrog" },

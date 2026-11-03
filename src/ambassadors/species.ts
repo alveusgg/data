@@ -515,6 +515,22 @@ const species = {
     class: "reptilia",
   },
 
+  turtleFlyRiver: {
+    name: "Fly River Turtle",
+    scientificName: "Carettochelys insculpta",
+    iucn: { id: 3898, assessment: 2884984, status: "EN/decreasing" },
+    native:
+      "Northern Australia and Southern New Guinea (rivers, freshwater wetlands)",
+    // source: "https://en.wikipedia.org/wiki/Pig-nosed_turtle"
+    lifespan: {
+      wild: "Unknown",
+      captivity: 30,
+      // source: https://nationalzoo.si.edu/animals/fly-river-turtle
+    },
+    birth: "egg",
+    class: "reptilia",
+  },
+
   vinegaroon: {
     name: "Vinegaroon",
     scientificName: "Mastigoproctus tohono",

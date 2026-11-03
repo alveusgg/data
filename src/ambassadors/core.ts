@@ -710,6 +710,26 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  fig: {
+    name: "Fig",
+    alternate: [],
+    commands: ["fig"],
+    species: "turtleFlyRiver",
+    sex: null,
+    birth: "2024",
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Fig was confiscated at an airport as a hatchling while being trafficked for the illegal pet trade and was transferred to the South Korean National Institute of Ecology. They were likely wild-caught.",
+    mission:
+      "They are an ambassador for the international wildlife trafficking for both human consumption and the pet trade, as well as habitat loss due to agriculture.",
+    fact: "Fly River turtles are known for their distinctive pig-like snout, leading to their other common name, the pig-nosed turtle. Their snout allows them to remain submerged and hidden under the surface of the water while still being able to breathe.",
+    // Fact source: https://nationalzoo.si.edu/animals/fly-river-turtle
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   marty: {
     name: "Marty",
     alternate: [],
