@@ -721,7 +721,7 @@ const ambassadors = {
     retired: null,
     enclosure: "reptiles",
     story:
-      "Fig was confiscated at an airport as a hatchling while being trafficked for the illegal pet trade and was transferred to the South Korean National Institute of Ecology. They were likely wild-caught.",
+      "Fig was confiscated at an airport as a hatchling while being trafficked for the illegal pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. They were likely wild-caught.",
     mission:
       "They are an ambassador for the international wildlife trafficking for both human consumption and the pet trade, as well as habitat loss due to agriculture.",
     fact: "Fly River turtles are known for their distinctive pig-like snout, leading to their other common name, the pig-nosed turtle. Their snout allows them to remain submerged and hidden under the surface of the water while still being able to breathe.",
@@ -741,7 +741,7 @@ const ambassadors = {
     retired: null,
     enclosure: "reptiles",
     story:
-      "Gojira was someone's pet but was released after they grew too large. They were picked up by an animal shelter and stayed there before being transferred to the South Korean National Institute of Ecology in 2024.",
+      "Gojira was someone's pet but was released after they grew too large. They were picked up by an animal shelter and stayed there before being transferred to the South Korean National Institute of Ecology in 2024 prior to being rehomed to Alveus.",
     mission:
       "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
     fact: "Monitor lizards, including the Black-throated Monitor, are well known to display exceptional cognitive abilities. They've been observed being able to solve simple puzzles for food as well as recognizing their keepers individually.",
