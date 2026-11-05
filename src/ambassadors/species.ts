@@ -409,6 +409,20 @@ const species = {
     class: "diplopoda",
   },
 
+  monitorBlackThroated: {
+    name: "Black-throated Monitor",
+    scientificName: "Varanus albigularis microstictus",
+    iucn: { id: null, assessment: null, status: "NE" },
+    native: "East Africa (savannas, forests)",
+    // source: "https://en.wikipedia.org/wiki/Black-throated_monitor"
+    lifespan: {
+      captivity: "Unknown",
+      wild: "Unknown",
+    },
+    birth: "egg",
+    class: "reptilia",
+  },
+
   pythonBall: {
     name: "Ball Python",
     scientificName: "Python regius",
@@ -510,6 +524,22 @@ const species = {
       wild: 75,
       captivity: 100,
       // source: https://en.wikipedia.org/wiki/African_spurred_tortoise
+    },
+    birth: "egg",
+    class: "reptilia",
+  },
+
+  turtleFlyRiver: {
+    name: "Fly River Turtle",
+    scientificName: "Carettochelys insculpta",
+    iucn: { id: 3898, assessment: 2884984, status: "EN/decreasing" },
+    native:
+      "Northern Australia and Southern New Guinea (rivers, freshwater wetlands)",
+    // source: "https://en.wikipedia.org/wiki/Pig-nosed_turtle"
+    lifespan: {
+      wild: "Unknown",
+      captivity: 30,
+      // source: https://nationalzoo.si.edu/animals/fly-river-turtle
     },
     birth: "egg",
     class: "reptilia",
