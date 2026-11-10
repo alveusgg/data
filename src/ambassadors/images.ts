@@ -250,6 +250,10 @@ import reedImageIcon from "../assets/ambassadors/reed/icon.png";
 import reedImageEmote from "../assets/ambassadors/reed/emote.png";
 import reedImageBadge from "../assets/ambassadors/reed/badge.png";
 
+import roxyImage1 from "../assets/ambassadors/roxy/01.jpg";
+import roxyImage2 from "../assets/ambassadors/roxy/02.jpg";
+import roxyImage3 from "../assets/ambassadors/roxy/03.jpg";
+
 import serranoImage1 from "../assets/ambassadors/serrano/01.jpg";
 import serranoImage2 from "../assets/ambassadors/serrano/02.jpg";
 import serranoImage3 from "../assets/ambassadors/serrano/03.jpg";
@@ -636,6 +640,11 @@ const ambassadorImages: {
     { src: reedImage3, alt: "Reed the American Red Fox" },
     { src: reedImage4, alt: "Reed the American Red Fox" },
     { src: reedImage5, alt: "Reed the American Red Fox" },
+  ],
+  roxy: [
+    { src: roxyImage1, alt: "Roxy the Wolf Hybrid", position: "50% 30%" },
+    { src: roxyImage2, alt: "Roxy the Wolf Hybrid", position: "35% 35%" },
+    { src: roxyImage3, alt: "Roxy the Wolf Hybrid" },
   ],
   serrano: [
     { src: serranoImage1, alt: "Serrano the Domestic Donkey" },

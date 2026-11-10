@@ -641,6 +641,25 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  roxy: {
+    name: "Roxy",
+    alternate: [],
+    commands: ["roxy", "roxie"],
+    species: "wolfHybrid",
+    sex: "Female",
+    birth: "2026-05-01",
+    arrival: "2026-10-29",
+    retired: null,
+    enclosure: "wolves",
+    story:
+      "Roxy was the result of an accidental breeding at a privately owned facility. She was rehomed to Alveus so that she could live in a larger enclosure and receive high quality care. ",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    clips: [],
+    playlist: { id: "PLIwu72K9NwgZ1TZTAa7xParb2ES1sByod" },
+    homepage: null,
+    plush: null,
+  },
   noodle: {
     name: "Noodle",
     alternate: [],
