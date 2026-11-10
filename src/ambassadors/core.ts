@@ -729,26 +729,6 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  fig: {
-    name: "Fig",
-    alternate: [],
-    commands: ["fig"],
-    species: "turtleFlyRiver",
-    sex: null,
-    birth: "2024",
-    arrival: "2026-10",
-    retired: null,
-    enclosure: "reptiles",
-    story:
-      "Fig was confiscated at an airport as a hatchling while being trafficked for the illegal pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. They were likely wild-caught.",
-    mission:
-      "They are an ambassador for the international wildlife trafficking for both human consumption and the pet trade, as well as habitat loss due to agriculture.",
-    fact: "Fly River turtles are known for their distinctive pig-like snout, leading to their other common name, the pig-nosed turtle. Their snout allows them to remain submerged and hidden under the surface of the water while still being able to breathe.",
-    // Fact source: https://nationalzoo.si.edu/animals/fly-river-turtle
-    clips: [],
-    homepage: null,
-    plush: null,
-  },
   gojira: {
     name: "Gojira",
     alternate: ["Goji"],
@@ -806,6 +786,45 @@ const ambassadors = {
     fact: "Tokay geckos communicate vocally, similar to birds and mammals, using a range of different vocalizations, including for defense and during mating season.",
     // Fact source: https://pmc.ncbi.nlm.nih.gov/articles/PMC5454267/
     clips: [],
+    homepage: null,
+    plush: null,
+  },
+  fig: {
+    name: "Fig",
+    alternate: [],
+    commands: ["fig"],
+    species: "turtleFlyRiver",
+    sex: null,
+    birth: "2024",
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Fig was confiscated at an airport as a hatchling while being trafficked for the illegal pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. They were likely wild-caught.",
+    mission:
+      "They are an ambassador for the international wildlife trafficking for both human consumption and the pet trade, as well as habitat loss due to agriculture.",
+    fact: "Fly River turtles are known for their distinctive pig-like snout, leading to their other common name, the pig-nosed turtle. Their snout allows them to remain submerged and hidden under the surface of the water while still being able to breathe.",
+    // Fact source: https://nationalzoo.si.edu/animals/fly-river-turtle
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  barbaraBakedBean: {
+    name: "Barbara / Baked Bean",
+    alternate: [],
+    commands: ["barbara", "bakedbean"],
+    species: "cockroachMadagascarHissing",
+    sex: null,
+    birth: null,
+    arrival: "2022-01",
+    retired: null,
+    enclosure: "critters",
+    story:
+      "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
+    mission:
+      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
+    clips: [],
+    playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
     homepage: null,
     plush: null,
   },
@@ -925,25 +944,6 @@ const ambassadors = {
       "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
-    clips: [],
-    playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
-    homepage: null,
-    plush: null,
-  },
-  barbaraBakedBean: {
-    name: "Barbara / Baked Bean",
-    alternate: [],
-    commands: ["barbara", "bakedbean"],
-    species: "cockroachMadagascarHissing",
-    sex: null,
-    birth: null,
-    arrival: "2022-01",
-    retired: null,
-    enclosure: "critters",
-    story:
-      "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
-    mission:
-      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
     playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
     homepage: null,
