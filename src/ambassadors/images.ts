@@ -43,6 +43,11 @@ import barbaraBakedBeanImage3 from "../assets/ambassadors/barbaraBakedBean/03.jp
 import barbaraBakedBeanImageIcon from "../assets/ambassadors/barbaraBakedBean/icon.png";
 import barbaraBakedBeanImageEmote from "../assets/ambassadors/barbaraBakedBean/emote.png";
 
+import barongImage1 from "../assets/ambassadors/barong/01.jpg";
+import barongImage2 from "../assets/ambassadors/barong/02.jpg";
+
+import basukiImage1 from "../assets/ambassadors/basuki/01.jpg";
+
 import bbImage1 from "../assets/ambassadors/bb/01.jpg";
 import bbImage2 from "../assets/ambassadors/bb/02.jpg";
 import bbImage3 from "../assets/ambassadors/bb/03.jpg";
@@ -409,6 +414,13 @@ const ambassadorImages: {
       src: barbaraBakedBeanImage3,
       alt: "Barbara / Baked Bean the Madagascar Hissing Cockroaches",
     },
+  ],
+  barong: [
+    { src: barongImage1, alt: "Barong the Tokay Gecko", position: "50% 40%" },
+    { src: barongImage2, alt: "Barong the Tokay Gecko", position: "40% 50%" },
+  ],
+  basuki: [
+    { src: basukiImage1, alt: "Basuki the Tokay Gecko", position: "75% 60%" },
   ],
   bb: [
     { src: bbImage1, alt: "BB the Spanish Orange Isopods" },

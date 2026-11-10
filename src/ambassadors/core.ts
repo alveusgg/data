@@ -769,6 +769,46 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  barong: {
+    name: "Barong",
+    alternate: [],
+    commands: ["barong"],
+    species: "geckoTokay",
+    sex: "Female",
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Barong was confiscated in 2024 while being trafficked for the pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. She was most likely wild caught.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Tokay geckos, like Barong, are the second-largest species of gecko in the world, with females growing up to 12 inches (30 cm) long and weighing around 9-12 ounces (250-350 grams).",
+    // Fact source: https://nationalzoo.si.edu/animals/tokay-gecko + https://www.saczoo.org/tokay-gecko
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  basuki: {
+    name: "Basuki",
+    alternate: [],
+    commands: ["basuki"],
+    species: "geckoTokay",
+    sex: "Female",
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Basuki was confiscated in 2024 while being trafficked for the pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. She was most likely wild caught.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Tokay geckos communicate vocally, similar to birds and mammals, using a range of different vocalizations, including for defense and during mating season.",
+    // Fact source: https://pmc.ncbi.nlm.nih.gov/articles/PMC5454267/
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   marty: {
     name: "Marty",
     alternate: [],
