@@ -43,6 +43,11 @@ import barbaraBakedBeanImage3 from "../assets/ambassadors/barbaraBakedBean/03.jp
 import barbaraBakedBeanImageIcon from "../assets/ambassadors/barbaraBakedBean/icon.png";
 import barbaraBakedBeanImageEmote from "../assets/ambassadors/barbaraBakedBean/emote.png";
 
+import barongImage1 from "../assets/ambassadors/barong/01.jpg";
+import barongImage2 from "../assets/ambassadors/barong/02.jpg";
+
+import basukiImage1 from "../assets/ambassadors/basuki/01.jpg";
+
 import bbImage1 from "../assets/ambassadors/bb/01.jpg";
 import bbImage2 from "../assets/ambassadors/bb/02.jpg";
 import bbImage3 from "../assets/ambassadors/bb/03.jpg";
@@ -250,6 +255,10 @@ import reedImageIcon from "../assets/ambassadors/reed/icon.png";
 import reedImageEmote from "../assets/ambassadors/reed/emote.png";
 import reedImageBadge from "../assets/ambassadors/reed/badge.png";
 
+import roxyImage1 from "../assets/ambassadors/roxy/01.jpg";
+import roxyImage2 from "../assets/ambassadors/roxy/02.jpg";
+import roxyImage3 from "../assets/ambassadors/roxy/03.jpg";
+
 import serranoImage1 from "../assets/ambassadors/serrano/01.jpg";
 import serranoImage2 from "../assets/ambassadors/serrano/02.jpg";
 import serranoImage3 from "../assets/ambassadors/serrano/03.jpg";
@@ -405,6 +414,13 @@ const ambassadorImages: {
       src: barbaraBakedBeanImage3,
       alt: "Barbara / Baked Bean the Madagascar Hissing Cockroaches",
     },
+  ],
+  barong: [
+    { src: barongImage1, alt: "Barong the Tokay Gecko", position: "50% 40%" },
+    { src: barongImage2, alt: "Barong the Tokay Gecko", position: "40% 50%" },
+  ],
+  basuki: [
+    { src: basukiImage1, alt: "Basuki the Tokay Gecko", position: "75% 60%" },
   ],
   bb: [
     { src: bbImage1, alt: "BB the Spanish Orange Isopods" },
@@ -636,6 +652,11 @@ const ambassadorImages: {
     { src: reedImage3, alt: "Reed the American Red Fox" },
     { src: reedImage4, alt: "Reed the American Red Fox" },
     { src: reedImage5, alt: "Reed the American Red Fox" },
+  ],
+  roxy: [
+    { src: roxyImage1, alt: "Roxy the Wolf Hybrid", position: "50% 30%" },
+    { src: roxyImage2, alt: "Roxy the Wolf Hybrid", position: "35% 35%" },
+    { src: roxyImage3, alt: "Roxy the Wolf Hybrid" },
   ],
   serrano: [
     { src: serranoImage1, alt: "Serrano the Domestic Donkey" },

@@ -292,6 +292,21 @@ const species = {
     class: "mammalia",
   },
 
+  geckoTokay: {
+    name: "Tokay Gecko",
+    scientificName: "Gekko gecko",
+    iucn: { id: 195309, assessment: 2378260, status: "LC" },
+    native: "Asia (rainforests)",
+    // source: "https://en.wikipedia.org/wiki/Tokay_gecko"
+    lifespan: {
+      wild: "Unknown",
+      captivity: 10,
+      // source: https://nationalzoo.si.edu/animals/tokay-gecko
+    },
+    birth: "egg",
+    class: "reptilia",
+  },
+
   isopodRubberDucky: {
     name: "Rubber Ducky Isopods",
     scientificName: "Cubaris sp.",

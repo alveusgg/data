@@ -641,6 +641,25 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  roxy: {
+    name: "Roxy",
+    alternate: [],
+    commands: ["roxy", "roxie"],
+    species: "wolfHybrid",
+    sex: "Female",
+    birth: "2026-05-01",
+    arrival: "2026-10-29",
+    retired: null,
+    enclosure: "wolves",
+    story:
+      "Roxy was the result of an accidental breeding at a privately owned facility. She was rehomed to Alveus so that she could live in a larger enclosure and receive high quality care. ",
+    mission:
+      "She is an ambassador for educating people about responsible pet ownership, the historic persecution of wolves by humans, and the importance of wolves as keystone species in their ecosystems.",
+    clips: [],
+    playlist: { id: "PLIwu72K9NwgZ1TZTAa7xParb2ES1sByod" },
+    homepage: null,
+    plush: null,
+  },
   noodle: {
     name: "Noodle",
     alternate: [],
@@ -710,6 +729,66 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
+  gojira: {
+    name: "Gojira",
+    alternate: ["Goji"],
+    commands: ["gojira", "goji"],
+    species: "monitorBlackThroated",
+    sex: null,
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Gojira was someone's pet but was released after they grew too large. They were picked up by an animal shelter and stayed there before being transferred to the South Korean National Institute of Ecology in 2024 prior to being rehomed to Alveus.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Monitor lizards, including the Black-throated Monitor, are well known to display exceptional cognitive abilities. They've been observed being able to solve simple puzzles for food as well as recognizing their keepers individually.",
+    // Fact source: https://pubmed.ncbi.nlm.nih.gov/17899226/ + https://www.academia.edu/101100829/Keeper_Dragon_Behavioural_Differences_in_Two_Komodo_Dragon_Varanus_komodoensis_Brothers_During_Training
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  barong: {
+    name: "Barong",
+    alternate: [],
+    commands: ["barong"],
+    species: "geckoTokay",
+    sex: "Female",
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Barong was confiscated in 2024 while being trafficked for the pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. She was most likely wild caught.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Tokay geckos, like Barong, are the second-largest species of gecko in the world, with females growing up to 12 inches (30 cm) long and weighing around 9-12 ounces (250-350 grams).",
+    // Fact source: https://nationalzoo.si.edu/animals/tokay-gecko + https://www.saczoo.org/tokay-gecko
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
+  basuki: {
+    name: "Basuki",
+    alternate: [],
+    commands: ["basuki"],
+    species: "geckoTokay",
+    sex: "Female",
+    birth: null,
+    arrival: "2026-10",
+    retired: null,
+    enclosure: "reptiles",
+    story:
+      "Basuki was confiscated in 2024 while being trafficked for the pet trade and was transferred to the South Korean National Institute of Ecology prior to being rehomed to Alveus. She was most likely wild caught.",
+    mission:
+      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
+    fact: "Tokay geckos communicate vocally, similar to birds and mammals, using a range of different vocalizations, including for defense and during mating season.",
+    // Fact source: https://pmc.ncbi.nlm.nih.gov/articles/PMC5454267/
+    clips: [],
+    homepage: null,
+    plush: null,
+  },
   fig: {
     name: "Fig",
     alternate: [],
@@ -730,23 +809,22 @@ const ambassadors = {
     homepage: null,
     plush: null,
   },
-  gojira: {
-    name: "Gojira",
-    alternate: ["Goji"],
-    commands: ["gojira", "goji"],
-    species: "monitorBlackThroated",
+  barbaraBakedBean: {
+    name: "Barbara / Baked Bean",
+    alternate: [],
+    commands: ["barbara", "bakedbean"],
+    species: "cockroachMadagascarHissing",
     sex: null,
     birth: null,
-    arrival: "2026-10",
+    arrival: "2022-01",
     retired: null,
-    enclosure: "reptiles",
+    enclosure: "critters",
     story:
-      "Gojira was someone's pet but was released after they grew too large. They were picked up by an animal shelter and stayed there before being transferred to the South Korean National Institute of Ecology in 2024 prior to being rehomed to Alveus.",
+      "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
     mission:
-      "They are an ambassador to teach people about responsible pet ownership, proper care for reptiles, and the illegal wildlife trade.",
-    fact: "Monitor lizards, including the Black-throated Monitor, are well known to display exceptional cognitive abilities. They've been observed being able to solve simple puzzles for food as well as recognizing their keepers individually.",
-    // Fact source: https://pubmed.ncbi.nlm.nih.gov/17899226/ + https://www.academia.edu/101100829/Keeper_Dragon_Behavioural_Differences_in_Two_Komodo_Dragon_Varanus_komodoensis_Brothers_During_Training
+      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
+    playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
     homepage: null,
     plush: null,
   },
@@ -866,25 +944,6 @@ const ambassadors = {
       "Our tarantulas were captive bred by an entomologist before being donated to Alveus.",
     mission:
       "She is here to help people overcome their misconceptions towards spiders and to teach people about how important spiders are in our ecosystems.",
-    clips: [],
-    playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
-    homepage: null,
-    plush: null,
-  },
-  barbaraBakedBean: {
-    name: "Barbara / Baked Bean",
-    alternate: [],
-    commands: ["barbara", "bakedbean"],
-    species: "cockroachMadagascarHissing",
-    sex: null,
-    birth: null,
-    arrival: "2022-01",
-    retired: null,
-    enclosure: "critters",
-    story:
-      "Our cockroach colony was started with 7 roaches that were part of an educational colony at a school in Pennsylvania.",
-    mission:
-      "They are ambassadors for the importance of invertebrates and the misconceptions they face.",
     clips: [],
     playlist: { id: "PLIwu72K9NwgbyL3RdOOtu6yHwbvNhvuc_", label: "Bug" },
     homepage: null,
