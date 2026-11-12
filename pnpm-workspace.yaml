@@ -1,6 +1,7 @@
 optimisticRepeatInstall: true
 strictPeerDependencies: true
 dedupePeers: true
+autoDedupe: true
 
 allowBuilds:
   esbuild: true
