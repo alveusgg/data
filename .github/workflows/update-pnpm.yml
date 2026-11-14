@@ -49,8 +49,6 @@ jobs:
             echo "skip=true" >> $GITHUB_OUTPUT
           fi
 
-          cat <<< $(jq '.engines.pnpm = "^" + (.packageManager | split("@")[1])' package.json) > package.json
-
       - name: Create PR
         if: steps.update.outputs.old != steps.update.outputs.new && steps.update.outputs.skip != 'true'
         uses: peter-evans/create-pull-request@15733dbdfeedb4f7fdb73d13c6f5ac83b710fab8 # v8.1.2

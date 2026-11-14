@@ -9,10 +9,19 @@
   "bugs": {
     "url": "https://github.com/alveusgg/data/issues"
   },
-  "engines": {
-    "pnpm": "^11.28.9"
+  "packageManager": "pnpm@12.18.0",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.11.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    }
   },
-  "packageManager": "pnpm@11.28.9",
   "scripts": {
     "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"**/*.ts\" --fix",
