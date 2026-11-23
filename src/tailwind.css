@@ -84,6 +84,7 @@
   --color-alveus-tan: oklch(from #faeee6 l c h);
   --color-alveus-tan-50: oklch(from #fdfaf7 l c h);
   --color-alveus-tan-100: oklch(from #faeee6 l c h);
+  --color-alveus-tan-150: oklch(from #f7e4d8 l c h);
   --color-alveus-tan-200: oklch(from #f1ceb7 l c h);
   --color-alveus-tan-300: oklch(from #e7ae88 l c h);
   --color-alveus-tan-400: oklch(from #de8f5a l c h);
