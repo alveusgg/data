@@ -38,13 +38,13 @@
     "build"
   ],
   "devDependencies": {
-    "@npmcli/config": "^11.2.0",
+    "@npmcli/config": "^11.2.1",
     "@types/node": "^22.20.5",
     "@types/npmcli__config": "^6.0.4",
     "@types/pacote": "^11.1.8",
     "eslint": "^10.15.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.6.0",
+    "lint-staged": "^17.6.1",
     "pacote": "^22.0.1",
     "prettier": "^3.10.1",
     "sharp": "^0.35.5",
@@ -53,7 +53,7 @@
     "tsdown": "^0.23.7",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.2",
+    "typescript-eslint": "^8.73.0",
     "zod": "^4.6.7"
   },
   "peerDependencies": {
